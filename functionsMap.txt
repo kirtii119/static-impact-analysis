@@ -1,0 +1,7 @@
+/var/www/magento/vendor/magento/composer/src/ConsoleArrayInputFactory.php
+{"ConsoleArrayInputFactory::create":[]}
+/var/www/magento/vendor/magento/composer/src/InfoCommand.php
+/var/www/magento/vendor/magento/composer/src/ConsoleArrayInputFactory.php
+/var/www/magento/vendor/magento/composer/src/ConsoleArrayInputFactory.php
+{"ConsoleArrayInputFactory::create":[]}
+/var/www/magento/vendor/magento/composer/src/InfoCommand.php
