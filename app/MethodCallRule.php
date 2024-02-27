@@ -18,7 +18,7 @@ class MethodCallRule implements \PHPStan\Rules\Rule
 
 	public function processNode(Node $node, Scope $scope): array
 	{
-		$resultFile = './result.txt';
+		$resultFile = './result2.txt';
         $meraData = $node->get(MethodCallCollector::class);
 
 		foreach ($meraData as $file => $declarations) {
