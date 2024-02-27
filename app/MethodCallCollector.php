@@ -34,11 +34,11 @@ class MethodCallCollector implements Collector
         if ($resolvedType instanceof \PHPStan\Type\ObjectType or $resolvedType instanceof \PHPStan\Type\ThisType) {
             $methCallClassName = $resolvedType->getClassName(); //getClassName works only for object types
         } elseif($resolvedType instanceof \PHPStan\Type\MixedType) {
-            $methCallClassName = "mixedty"; //getClassName works only for object types
+            $methCallClassName = "Mixedty"; //getClassName works only for object types
         } elseif($resolvedType instanceof \PHPStan\Type\IntersectionType or $resolvedType instanceof \PHPStan\Type\UnionType ) {
             $methCallClassName = $resolvedType->toPhpDocNode();//this gives list of possible types 
         } elseif ($resolvedType instanceof \PHPStan\Type\StringType) {
-            $methCallClassName = "stringty"; //getClassName works only for object types
+            $methCallClassName = "str"; //getClassName works only for object types
         } elseif ($resolvedType instanceof \PHPStan\Type\ObjectWithoutClassType) {
             $methCallClassName = "objwithoutclasst"; //getClassName works only for object types
         } elseif ($resolvedType instanceof \PHPStan\Type\NeverType) {

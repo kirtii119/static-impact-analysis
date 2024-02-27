@@ -23,6 +23,8 @@ Magento\Framework\View\Helper\PathPattern :: translatePatternFromGlob - 42
 Magento\Framework\App\ObjectManager :: get - 46
 Laminas\Mail\Transport\Sendmail :: send - 55
 Magento\Framework\Mail\MessageInterface :: getRawMessage - 56
+
+
 unionty :: error - 59
 /var/www/magento/vendor/magento/framework/Mail/Test/Unit/AddressTest.php
 Magento\Framework\Mail\Test\Unit\AddressTest :: assertNull - 31
@@ -57645,3 +57647,42 @@ ReflectionClass :: getInterfaces - 107
 ReflectionClass :: isSubclassOf - 108
 ReflectionClass :: hasMethod - 109
 ReflectionClass :: getName - 111
+/var/www/magento/vendor/magento/framework/Mail/Transport.php
+46 - 
+55 - 
+56 - 
+59 - 
+/var/www/magento/vendor/magento/framework/Mail/Transport.php
+ - 
+ - 
+ - 
+ - 
+/var/www/magento/vendor/magento/framework/Mail/Transport.php
+mixedty::get - 
+Laminas\Mail\Transport\Sendmail::send - 
+Magento\Framework\Mail\MessageInterface::getRawMessage - 
+(Psr\Log\LoggerInterface | null)::error - 
+/var/www/magento/vendor/magento/framework/Mail/Transport.php
+::get - 
+::send - 
+::getRawMessage - 
+::error - 
+/var/www/magento/vendor/magento/framework/Mail/Transport.php
+::get - 
+Laminas\Mail\Transport\Sendmail::send - 
+Magento\Framework\Mail\MessageInterface::getRawMessage - 
+::error - 
+/var/www/magento/vendor/magento/framework/Api/Test/Unit/ExtensionAttribute/Config/SchemaLocatorTest.php
+Array - 31
+Array - 32
+Array - 32
+Array - 32
+Array - 32
+Array - 32
+Array - 36
+Array - 43
+Array - 44
+Array - 45
+Array - 51
+Array - 52
+Array - 53
