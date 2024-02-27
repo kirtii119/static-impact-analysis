@@ -1,0 +1,13 @@
+{
+  "Magento\\Framework\\Composer\\MagentoComposerApplicationFactory::__construct": [
+    "Magento\\Framework\\Composer\\ComposerJsonFinder::findComposerJson",
+    "Magento\\Framework\\App\\Filesystem\\DirectoryList::getPath"
+  ],
+  "Magento\\Framework\\Composer\\MagentoComposerApplicationFactory::createInfoCommand": [
+    "Magento\\Framework\\Composer\\MagentoComposerApplicationFactory::create"
+  ],
+  "Magento\\Framework\\Composer\\MagentoComposerApplicationFactory::createRequireUpdateDryRunCommand": [
+    "Magento\\Framework\\Composer\\MagentoComposerApplicationFactory::create",
+    "Magento\\Framework\\Composer\\MagentoComposerApplicationFactory::createInfoCommand"
+  ]
+}
