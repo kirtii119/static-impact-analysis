@@ -19,50 +19,48 @@ class MethodCallCollector implements Collector
 	public function processNode(Node $node, Scope $scope): array
 	{
         // var_dump($node->getLine()); //line number
-        $funcName = $node->name->name; //will only work if name is an identifier, it can also be an expression
-
-        $resolvedType = $scope->getType($node->var);
+        $methCall = $node->name->name; //will only work if name is an identifier, it can also be an expression
+        $resolvedType = $scope->getType($node->var); //gives type of method caller
+        $funcName = $scope->getFunctionName();
+        
+        if ($scope->isInClass()){
+            $orgClassName = $scope->getClassReflection()->getName();
+            $funcName = $orgClassName."::".$funcName;
+        }
         // if($resolvedType instanceof \PHPStan\Type\ObjectType or $resolvedType instanceof \PHPStan\Type\ThisType  ){
-        //     $className =  $resolvedType->getClassName(); //getClassName works only for object types
+        //     $methCallClassName =  $resolvedType->getClassName(); //getClassName works only for object types
         // }
         if($resolvedType instanceof \PHPStan\Type\MixedType){
-            $className =  "idontknow"; //getClassName works only for object types
+            $methCallClassName =  "idontknow"; //getClassName works only for object types
         }
         elseif($resolvedType instanceof \PHPStan\Type\IntersectionType){
-            $className =  "idontknow"; //getClassName works only for object types
+            $methCallClassName =  "idontknow"; //getClassName works only for object types
         }
         elseif($resolvedType instanceof \PHPStan\Type\UnionType){
-            $className =  "idontknow"; //getClassName works only for object types
+            $methCallClassName =  "idontknow"; //getClassName works only for object types
         }
         elseif($resolvedType instanceof \PHPStan\Type\StringType){
-            $className =  "idontknow"; //getClassName works only for object types
+            $methCallClassName =  "idontknow"; //getClassName works only for object types
         }
         elseif($resolvedType instanceof \PHPStan\Type\ObjectWithoutClassType){
-            $className =  "idontknow"; //getClassName works only for object types
+            $methCallClassName =  "idontknow"; //getClassName works only for object types
         }
         elseif($resolvedType instanceof \PHPStan\Type\NeverType){
-            $className =  "idontknow"; //getClassName works only for object types
+            $methCallClassName =  "idontknow"; //getClassName works only for object types
         }
         elseif($resolvedType instanceof \PHPStan\Type\ResourceType){
-            $className =  "idontknow"; //getClassName works only for object types
+            $methCallClassName =  "idontknow"; //getClassName works only for object types
         }
         elseif($resolvedType instanceof \PHPStan\Type\ArrayType){
-            $className =  "idontknow"; //getClassName works only for object types
+            $methCallClassName =  "idontknow"; //getClassName works only for object types
         }
         else{
-            $className =  $resolvedType->getClassName();
+            $methCallClassName =  $resolvedType->getClassName();
         }
-        
 
-        // else{
-        //     $className = "idontknow";
-        // }
-
+        $methCall = $methCallClassName."::".$methCall;
         
-        // echo "$className :: $funcName";
-       
-        
-        return ["$className :: $funcName", $node->getLine()];
+        return [array($funcName => $methCall), $node->getLine()];
 
 	}
 }
