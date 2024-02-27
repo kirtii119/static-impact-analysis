@@ -16,14 +16,18 @@ class MethodCallRule implements \PHPStan\Rules\Rule
 		return 'PHPStan\Node\CollectedDataNode';
 	}
 
+	
+
 	public function processNode(Node $node, Scope $scope): array
 	{
 		$resultFile = './result.json';
         $meraData = $node->get(MethodCallCollector::class);
-		
 
+		file_put_contents($resultFile, "" );
+		
+		$result = [];
 		foreach ($meraData as $file => $declarations) {
-			$result = [];
+			
 			// file_put_contents($resultFile, $file . PHP_EOL , FILE_APPEND);
 			foreach ($declarations as [$name, $line]) {
 				foreach ($name as $myKey => $myValue){
@@ -37,12 +41,9 @@ class MethodCallRule implements \PHPStan\Rules\Rule
 			}
 			// print_r($result);
 			
-			file_put_contents($resultFile, json_encode($result) . PHP_EOL , FILE_APPEND);
+			
 		}
-
-
-		
-       
+		file_put_contents($resultFile, json_encode($result) . PHP_EOL , FILE_APPEND);
         
         return [];
 
