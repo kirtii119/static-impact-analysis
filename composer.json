@@ -1,5 +1,16 @@
 {
     "require": {
         "nikic/php-parser": "^5.0"
+    },
+    "config": {
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\" : [
+                "app/"
+            ]
+               
+          
+        }
     }
 }

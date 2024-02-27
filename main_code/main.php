@@ -1,6 +1,6 @@
 <?php
 // Create a call graph pt3
-// Increase spectrum 
+// Increase spectrum - scan all :)
 
 require_once __DIR__.'/vendor/autoload.php';
 use PhpParser\Error;
@@ -31,7 +31,10 @@ class mapFunctionCallsVisitor extends NodeVisitorAbstract{
     public $classContext = "";
     public $funcMethContext = "";
     public $varArr = [];
-    
+
+    // public function handleFuncMeth(){
+        
+    // }    
     public function enterNode(Node $node){
 
         // echo "HI";
@@ -45,6 +48,7 @@ class mapFunctionCallsVisitor extends NodeVisitorAbstract{
         //set class context
         else if($node instanceof Node\Stmt\Class_){
             $this->classContext = $node->name->name;
+            //does not work for extended classes
          }
 
          //set funcMethContext and initialise empty empty arr for that method
@@ -65,17 +69,46 @@ class mapFunctionCallsVisitor extends NodeVisitorAbstract{
         //push method calls from inside a method or inside a function
          else if($node instanceof Node\Expr\MethodCall &&  $this->funcMethContext){
 
-            if($this->classContext){
-            array_push($this->funcCallsArr[$this->classContext."::".$this->funcMethContext], $this->varArr[$node->var->name]."::".$node->name->name );
-            }
-            else{
-                array_push($this->funcCallsArr[$this->funcMethContext], $this->varArr[$node->var->name]."::".$node->name->name );
+            if($node->var instanceof Node\Expr\Variable)
+            {
+                //method call from inside a method
+                if($this->classContext){
+                    if($node->var->name == "this"){
+                        array_push($this->funcCallsArr[$this->classContext."::".$this->funcMethContext], $this->classContext."::".$node->name->name );
+                    }
+                    else{
+                        if(array_key_exists($node->var->name, $this->varArr)){
+                            $methName = $this->varArr[$node->var->name]."::".$node->name->name;
+                            }
+                            else{
+                                $methName = "unknown"."::".$node->name->name; //! check later - workaround
+                            }
+
+
+                        array_push($this->funcCallsArr[$this->classContext."::".$this->funcMethContext], $methName );
+            
+                    }
+                }
+
+                //method call from inside a function
+                else{
+                    if(array_key_exists($node->var->name, $this->varArr)){
+                        $methName = $this->varArr[$node->var->name]."::".$node->name->name;
+                        }
+                        else{
+                            $methName = "unknown"."::".$node->name->name; //! check later - workaround
+                        }
+                    array_push($this->funcCallsArr[$this->funcMethContext], $methName );
+                }
             }
          }
 
          //push function calls from inside a function or method
          else if($node instanceof Node\Expr\FuncCall && $this->funcMethContext){
             if($this->classContext){
+
+
+
                 array_push($this->funcCallsArr[$this->classContext."::".$this->funcMethContext], $node->name->name );
                 }
             else{
@@ -106,6 +139,7 @@ class mapFunctionCallsVisitor extends NodeVisitorAbstract{
 }
 
 function generateCallMapping($fullName){
+    file_put_contents($GLOBALS['filename'], $fullName . PHP_EOL , FILE_APPEND);
     $code  = file_get_contents($fullName);
     try{
         $ast = $GLOBALS['parser']->parse($code);
@@ -113,11 +147,16 @@ function generateCallMapping($fullName){
     catch(Error $e){
         echo ''.$e->getMessage().'';
     }
+
     echo $GLOBALS['dumper']->dump($ast);
+    // print_r($ast);
+
+    file_put_contents($GLOBALS['filename'], json_encode( $ast) . PHP_EOL , FILE_APPEND);
     //this visitor will map a function to its corresponding function calls
     $traverser = new NodeTraverser();
     $traverser->addVisitor(new mapFunctionCallsVisitor);
     $traverser->traverse($ast);
+
 }
 
 
@@ -135,7 +174,6 @@ function scanAll($dirFile){
         scanAll($fullName);
     }
     if(str_ends_with($fullName, ".php")){
-     file_put_contents($GLOBALS['filename'], $fullName . PHP_EOL , FILE_APPEND);
       generateCallMapping($fullName);
         echo $fullName."\n";
     }
@@ -145,8 +183,8 @@ function scanAll($dirFile){
 
 }
 
-scanAll($GLOBALS['main_dir']);
-
+// scanAll($GLOBALS['main_dir']);
+generateCallMapping('/var/www/magento/vendor/magento/composer/src/InfoCommand.php');
 
 // $code  = file_get_contents('');
 // try{
@@ -158,12 +196,6 @@ scanAll($GLOBALS['main_dir']);
 
 // echo $dumper->dump($ast);
 // print_r($ast);
-
-
-
-
-
-print_r($globFuncCallsArr);
 
 // $code = $prettyPrinter->prettyPrint($ast);
 // echo $code;
