@@ -31,32 +31,24 @@ class MethodCallCollector implements Collector
         // if($resolvedType instanceof \PHPStan\Type\ObjectType or $resolvedType instanceof \PHPStan\Type\ThisType  ){
         //     $methCallClassName =  $resolvedType->getClassName(); //getClassName works only for object types
         // }
-        if($resolvedType instanceof \PHPStan\Type\MixedType){
-            $methCallClassName =  "idontknow"; //getClassName works only for object types
-        }
-        elseif($resolvedType instanceof \PHPStan\Type\IntersectionType){
-            $methCallClassName =  "idontknow"; //getClassName works only for object types
-        }
-        elseif($resolvedType instanceof \PHPStan\Type\UnionType){
-            $methCallClassName =  "idontknow"; //getClassName works only for object types
-        }
-        elseif($resolvedType instanceof \PHPStan\Type\StringType){
-            $methCallClassName =  "idontknow"; //getClassName works only for object types
-        }
-        elseif($resolvedType instanceof \PHPStan\Type\ObjectWithoutClassType){
-            $methCallClassName =  "idontknow"; //getClassName works only for object types
-        }
-        elseif($resolvedType instanceof \PHPStan\Type\NeverType){
-            $methCallClassName =  "idontknow"; //getClassName works only for object types
-        }
-        elseif($resolvedType instanceof \PHPStan\Type\ResourceType){
-            $methCallClassName =  "idontknow"; //getClassName works only for object types
-        }
-        elseif($resolvedType instanceof \PHPStan\Type\ArrayType){
-            $methCallClassName =  "idontknow"; //getClassName works only for object types
-        }
-        else{
-            $methCallClassName =  $resolvedType->getClassName();
+        if ($resolvedType instanceof \PHPStan\Type\ObjectType or $resolvedType instanceof \PHPStan\Type\ThisType) {
+            $methCallClassName = $resolvedType->getClassName(); //getClassName works only for object types
+        } elseif($resolvedType instanceof \PHPStan\Type\MixedType) {
+            $methCallClassName = "mixedty"; //getClassName works only for object types
+        } elseif($resolvedType instanceof \PHPStan\Type\IntersectionType or $resolvedType instanceof \PHPStan\Type\UnionType ) {
+            $methCallClassName = $resolvedType->toPhpDocNode();//this gives list of possible types 
+        } elseif ($resolvedType instanceof \PHPStan\Type\StringType) {
+            $methCallClassName = "stringty"; //getClassName works only for object types
+        } elseif ($resolvedType instanceof \PHPStan\Type\ObjectWithoutClassType) {
+            $methCallClassName = "objwithoutclasst"; //getClassName works only for object types
+        } elseif ($resolvedType instanceof \PHPStan\Type\NeverType) {
+            $methCallClassName = "neverty"; //getClassName works only for object types
+        } elseif ($resolvedType instanceof \PHPStan\Type\ResourceType) {
+            $methCallClassName = "resourcety"; //getClassName works only for object types
+        } elseif ($resolvedType instanceof \PHPStan\Type\ArrayType) {
+            $methCallClassName = "arraty"; //getClassName works only for object types
+        } else {
+            $methCallClassName = $resolvedType->getClassName();
         }
 
         $methCall = $methCallClassName."::".$methCall;
