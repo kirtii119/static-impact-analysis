@@ -1,13 +1,32 @@
 {
-  "Magento\\Framework\\Composer\\MagentoComposerApplicationFactory::__construct": [
-    "Magento\\Framework\\Composer\\ComposerJsonFinder::findComposerJson",
-    "Magento\\Framework\\App\\Filesystem\\DirectoryList::getPath"
+  "Magento\\Framework\\Mail\\Test\\Unit\\MessageTest::testSetBodyHtml": [
+    "Magento\\Framework\\Mail\\Message::setBodyHtml",
+    "Mixedty::getParts",
+    "Magento\\Framework\\Mail\\Message::getBody",
+    "Magento\\Framework\\Mail\\Test\\Unit\\MessageTest::assertEquals",
+    "Mixedty::getType",
+    "Magento\\Framework\\Mail\\Test\\Unit\\MessageTest::assertEquals",
+    "Mixedty::getEncoding",
+    "Magento\\Framework\\Mail\\Test\\Unit\\MessageTest::assertEquals",
+    "Mixedty::getCharset",
+    "Magento\\Framework\\Mail\\Test\\Unit\\MessageTest::assertEquals",
+    "Mixedty::getContent",
+    "Magento\\Framework\\Mail\\Test\\Unit\\MessageTest::assertEquals",
+    "Mixedty::getDisposition"
   ],
-  "Magento\\Framework\\Composer\\MagentoComposerApplicationFactory::createInfoCommand": [
-    "Magento\\Framework\\Composer\\MagentoComposerApplicationFactory::create"
-  ],
-  "Magento\\Framework\\Composer\\MagentoComposerApplicationFactory::createRequireUpdateDryRunCommand": [
-    "Magento\\Framework\\Composer\\MagentoComposerApplicationFactory::create",
-    "Magento\\Framework\\Composer\\MagentoComposerApplicationFactory::createInfoCommand"
+  "Magento\\Framework\\Mail\\Test\\Unit\\MessageTest::testSetBodyText": [
+    "Magento\\Framework\\Mail\\Message::setBodyText",
+    "Mixedty::getParts",
+    "Magento\\Framework\\Mail\\Message::getBody",
+    "Magento\\Framework\\Mail\\Test\\Unit\\MessageTest::assertEquals",
+    "Mixedty::getType",
+    "Magento\\Framework\\Mail\\Test\\Unit\\MessageTest::assertEquals",
+    "Mixedty::getEncoding",
+    "Magento\\Framework\\Mail\\Test\\Unit\\MessageTest::assertEquals",
+    "Mixedty::getCharset",
+    "Magento\\Framework\\Mail\\Test\\Unit\\MessageTest::assertEquals",
+    "Mixedty::getContent",
+    "Magento\\Framework\\Mail\\Test\\Unit\\MessageTest::assertEquals",
+    "Mixedty::getDisposition"
   ]
 }
