@@ -1,0 +1,41 @@
+{
+  "Magento\\Framework\\Code\\Test\\Unit\\Generator\\ClassGeneratorTest::testAddMethods": {
+    "Magento\\Framework\\Code\\Generator\\ClassGenerator::addMethods": {
+      "Magento\\Framework\\Code\\Generator\\ClassGenerator::createMethodGenerator": [],
+      "Magento\\Framework\\Code\\Generator\\ClassGenerator::_setDataToObject": {
+        "objwithoutclasst::setterName": []
+      },
+      "Laminas\\Code\\Generator\\ParameterGenerator::setPosition": [],
+      "Laminas\\Code\\Generator\\MethodGenerator::setParameters": [],
+      "Laminas\\Code\\Generator\\DocBlockGenerator::setWordWrap": [],
+      "Laminas\\Code\\Generator\\MethodGenerator::setDocBlock": [],
+      "Laminas\\Code\\Generator\\MethodGenerator::setReturnType": [],
+      "Magento\\Framework\\Code\\Generator\\ClassGenerator::addMethodFromGenerator": {
+        "Laminas\\Code\\Generator\\MethodGenerator::getName": []
+      }
+    },
+    "Magento\\Framework\\Code\\Generator\\ClassGenerator::getMethods": [],
+    "Magento\\Framework\\Code\\Test\\Unit\\Generator\\ClassGeneratorTest::assertSameSize": [],
+    "Magento\\Framework\\Code\\Test\\Unit\\Generator\\ClassGeneratorTest::assertArrayHasKey": [],
+    "Magento\\Framework\\Code\\Test\\Unit\\Generator\\ClassGeneratorTest::assertEquals": [],
+    "Laminas\\Code\\Generator\\MethodGenerator::getName": [],
+    "Laminas\\Code\\Generator\\MethodGenerator::getBody": [],
+    "Magento\\Framework\\Code\\Test\\Unit\\Generator\\ClassGeneratorTest::_assertFlag": {
+      "Magento\\Framework\\Code\\Test\\Unit\\Generator\\ClassGeneratorTest::assertEquals": [],
+      "objwithoutclasst::flagGetter": []
+    },
+    "Magento\\Framework\\Code\\Test\\Unit\\Generator\\ClassGeneratorTest::_assertVisibility": {
+      "Magento\\Framework\\Code\\Test\\Unit\\Generator\\ClassGeneratorTest::assertEquals": [],
+      "Laminas\\Code\\Generator\\AbstractMemberGenerator::getVisibility": []
+    },
+    "Laminas\\Code\\Generator\\MethodGenerator::getParameters": [],
+    "Laminas\\Code\\Generator\\ParameterGenerator::getName": [],
+    "Laminas\\Code\\Generator\\ParameterGenerator::getType": [],
+    "Laminas\\Code\\Generator\\ParameterGenerator::getDefaultValue": [],
+    "Laminas\\Code\\Generator\\ValueGenerator::getValue": [],
+    "Laminas\\Code\\Generator\\MethodGenerator::getDocBlock": [],
+    "Magento\\Framework\\Code\\Test\\Unit\\Generator\\ClassGeneratorTest::_assertDocBlockData": {
+      "Magento\\Framework\\Code\\Test\\Unit\\Generator\\ClassGeneratorTest::markTestSkipped": []
+    }
+  }
+}
