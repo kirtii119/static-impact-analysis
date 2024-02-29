@@ -36,9 +36,13 @@ class Calc {
 function Hello(){
     echo "hi";
     hello2();
+    
     $obj = new Calc();
+    echo $obj->sub(1,2);
     echo ("\n");
     echo $obj->add(1,2);
+    $a = new Foo();
+    $t = $a->execute();
     return 0;
 
 }
@@ -57,7 +61,7 @@ function HELLO2(){
 
 $nj = Hello();
 $a = new Foo();
-$t = $a->execute();
+// $t = $a->execute();
 
 echo $t;
 
