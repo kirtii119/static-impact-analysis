@@ -54,6 +54,8 @@ class MethodCallCollector implements Collector
             $methCallClassName = "intty"; //getClassName works only for object types
         } elseif ($resolvedType instanceof \PHPStan\Type\FloatType) {
             $methCallClassName = "floatty"; //getClassName works only for object types
+        }elseif ($resolvedType instanceof \PHPStan\Type\Constant) {
+            $methCallClassName = "constantty"; //getClassName works only for object types
         }else {
             $methCallClassName = $resolvedType->getClassName();
         }
