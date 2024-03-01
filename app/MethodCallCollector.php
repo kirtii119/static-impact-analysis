@@ -56,13 +56,21 @@ class MethodCallCollector implements Collector
             $methCallClassName = "floatty"; //getClassName works only for object types
         }elseif ($resolvedType instanceof \PHPStan\Type\Constant) {
             $methCallClassName = "constantty"; //getClassName works only for object types
-        }else {
+        }
+        elseif ($resolvedType instanceof \PHPStan\Type\BooleanType) {
+            $methCallClassName = "Booleanty"; //getClassName works only for object types
+        }
+        else {
             $methCallClassName = $resolvedType->getClassName();
         }
 
         $methCall = $methCallClassName . "::" . $methCall;
+        
+		file_put_contents("./func-calls.txt", $funcName." => ".$methCall . PHP_EOL , FILE_APPEND);
+        return [];
 
-        return [array($funcName => $methCall), $node->getLine()];
+        // return [array($funcName => $methCall), $node->getLine()];
+
 
     }
 }

@@ -7,10 +7,9 @@ use PHPStan\Analyser\Scope;
 use PHPStan\Rules\RuleErrorBuilder;
 use PHPUnit\Framework\Constraint\IsInstanceOf;
 
+//include this rule only if you are returning somethign from the MethodCallCollector
 class MethodCallRule implements \PHPStan\Rules\Rule
 {
-
-
 	public function getNodeType(): string
 	{
 		return 'PHPStan\Node\CollectedDataNode';
@@ -20,11 +19,10 @@ class MethodCallRule implements \PHPStan\Rules\Rule
 
 	public function processNode(Node $node, Scope $scope): array
 	{
-		$resultFile = './result.json';
+		$resultFile = './func-call-mapping.json';
         $meraData = $node->get(MethodCallCollector::class);
 
 		file_put_contents($resultFile, "" );
-		
 		$result = [];
 		foreach ($meraData as $file => $declarations) {
 			
@@ -40,8 +38,6 @@ class MethodCallRule implements \PHPStan\Rules\Rule
 				}
 			}
 			// print_r($result);
-			
-			
 		}
 		file_put_contents($resultFile, json_encode($result) . PHP_EOL , FILE_APPEND);
         

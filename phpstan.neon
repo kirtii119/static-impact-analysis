@@ -1,22 +1,17 @@
 parameters:
-    level: 6
     polluteScopeWithLoopInitialAssignments: false
     checkFunctionNameCase: false
+    customRulesetUsed: true
     excludePaths:
         analyse:
             - vendor
             - node_modules
             - phpstan-src
-rules:
-    - App\MeraRule 
-    - App\MethodCallRule
-    
+            - */Test/*
+            - */TestFramework/*
+            - */dev/*
 
 services:
-    -
-        class: App\MeraCollector
-        tags:
-            - phpstan.collector
     -
         class: App\MethodCallCollector
         tags:

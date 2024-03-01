@@ -2,8 +2,29 @@
 
 require_once '/var/www/magento/vendor/magento/framework/App/AreaList.php';
 
-$funcCallMap  = (array)( json_decode(file_get_contents(__DIR__.'/func-call-mapping.json')));
 $resultFile = './call-graph-result.json';
+
+/**
+*  returns associative array like: ["function"=>["functionCall1", "functionCall2"]]
+*/
+function createMapFromTxt(string $txtFile){
+    $rawMapping  = explode("\n",file_get_contents($txtFile));
+    $mainMap = [];
+    foreach($rawMapping as $line){
+    
+    $explodedArr = explode(" => ",$line);
+    $key = $explodedArr[0];
+    $value = $explodedArr[1];
+
+        if(array_key_exists($key, $mainMap)){
+            $mainMap[$key][] = $value;
+        }
+        else{
+            $mainMap[$key] = [$value];
+        }
+}
+    return $mainMap;
+}
 
 
 class CallGraphBuilder {
@@ -15,6 +36,9 @@ class CallGraphBuilder {
     private $funcCallMap = [];
     
 
+    /**
+     * @param funCallMap -> ["function"=>["functionCall1", "functionCall2"]]
+     */
     public function __construct(array $funcCallMap ){
         $this->funcCallMap = $funcCallMap;
     }
@@ -25,7 +49,7 @@ class CallGraphBuilder {
     public function run(string $entryPoint, int $type){
         $this->callgraph = [];
         if($type==1){
-            $this->linearCallsList($entryPoint);
+            $this->buildLinearCallsList($entryPoint);
             return $this->callgraph;
         }
         
@@ -38,7 +62,7 @@ class CallGraphBuilder {
      * 
      * 
      */
-    protected function linearCallsList(string $callerFunction){
+    protected function buildLinearCallsList(string $callerFunction){
 
         if(in_array($callerFunction, $this->callgraph)){
             return;
@@ -51,7 +75,7 @@ class CallGraphBuilder {
         }
 
         foreach($this->funcCallMap[$callerFunction] as $funcCall){
-            $this->linearCallsList($funcCall);
+            $this->buildLinearCallsList($funcCall);
         }
     }
 
@@ -74,6 +98,8 @@ class CallGraphBuilder {
     }
 }
 
-$callGraphBuilder = new CallGraphBuilder($funcCallMap);
-$callGraphResult = $callGraphBuilder->run("Magento\Framework\Code\Test\Unit\Generator\ClassGeneratorTest::testAddMethods", CallGraphBuilder::GRAPH);
+// $funcCallMap  = (array)( json_decode(file_get_contents(__DIR__.'/func-call-mapping.json')));
+$funCallMap = createMapFromTxt('./func-calls-main.txt');
+$callGraphBuilder = new CallGraphBuilder($funCallMap);
+$callGraphResult = $callGraphBuilder->run("Magento\AdminNotification\Controller\Adminhtml\System\Message\ListAction::execute", CallGraphBuilder::GRAPH);
 file_put_contents($resultFile, json_encode($callGraphResult));
