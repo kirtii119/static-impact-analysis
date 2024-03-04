@@ -46,7 +46,8 @@ class CallGraphBuilder {
     /**
      * 
      */
-    public function run(string $entryPoint, int $type){
+    public function run(string $entryPoint, int $type) : array
+    {
         $this->callgraph = [];
         if($type==1){
             $this->buildLinearCallsList($entryPoint);
