@@ -8,7 +8,7 @@ class MethodCallCollectorTest extends TestCase
 
     protected function setUp() :void {
 
-        exec("../phpstan-src/bin/phpstan  analyse ./ObjectTestCase.php");
+        exec("../phpstan-src/bin/phpstan  analyse ./tests/testCases/ObjectTestCase.php");
     }
 
 
