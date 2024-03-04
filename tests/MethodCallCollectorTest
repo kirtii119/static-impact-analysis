@@ -8,13 +8,17 @@ class MethodCallCollectorTest extends TestCase
 
     protected function setUp() :void {
 
-        exec("../phpstan-src/bin/phpstan  analyse ./tests/testCases/ObjectTestCase.php");
+        exec("../phpstan-src/bin/phpstan  analyse ./tests/testCases");
     }
 
 
-    public function testProcessNodeMethodCallForSpecificObjectType()
+    public function testObjectType()
     {       
         $expectedOutput = "xyz::dontcallme => Employee::raiseSalary\n";
         $this->assertStringEqualsFile('./func-calls.txt', $expectedOutput);
     }
+
+
+
+
 }
