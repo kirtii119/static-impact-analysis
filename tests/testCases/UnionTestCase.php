@@ -1,56 +1,24 @@
 <?php
-// class Foo {
-//     /**
-//      * @param Foo[]|Collection $object
-//      */
-//     public function doSomethingUseful($object)
-//     {
-//         if ($object instanceof Foo) {
-//             // now we can be sure that $object is just Foo in this branch
-//         } elseif ($object instanceof Bar) {
-//             // dtto for Bar
-//         }
-//     }
-// }
-
-// class Testme {
-//     public function __construct() {
-//         $result = (new Foo())->doSomethingUseful([new Foo()]);
-//     }
-// }
-
-
-
-class noFoo{
-    function __construct(){
-        echo "here";
-    }
-}
-
-class Testme {
-    public function __construct() {
-       echo "doSomethingUseful";
-    }
-
-    public function defined(){
-        return "hey";
-    }
-}
-class FooWho {
+class Foo {
     /**
-     * @param Testme
+     * @param TestMe|TestMeToo $object
      */
-    public function doSomethingUseful(Testme $obj)
+    public function doSomethingUseful($object)
     {
-        if (!$obj instanceof noFoo) {
-            return;
-        } 
-
-        $var = $obj -> defined();;
-        $next = $obj;
-        echo "got it";
-        
+       $object->tryme();
     }
 }
 
+class TestMe {
+    public function tryMe() {
+        return "TestMeTryMe";           
+    }       
+}
 
+class TestMeToo {
+    public function tryMe(){
+        return "TestMeTooTryMe";
+    }
+}
+
+// expected o/p : Foo::doSomethingUseful => (TestMe | TestMeToo)::tryme
