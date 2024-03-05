@@ -7,23 +7,21 @@ class MethodCallCollectorTest extends TestCase
 
 
     protected function setUp() :void {
-
-        exec("../phpstan-src/bin/phpstan  analyse ./tests/testCases");
+        file_put_contents(__DIR__."/../func-calls.txt", "");
+        exec(__DIR__."/../phpstan-src/bin/phpstan clear-result-cache ");
+        exec(__DIR__."/../phpstan-src/bin/phpstan  analyse ./tests/testCases");
     }
 
 
-    // public function testObjectType()
-    // {       
-    //     $expectedOutput = "xyz::dontcallme => Employee::raiseSalary\n";
-    //     $this->assertStringEqualsFile('./func-calls.txt', $expectedOutput);
-    // }
-
-    public function testThisType()
+    public function testObjectType()
     {       
-        $expectedOutput = "Foo::Testme => Employee::raiseSalary\n";
-        $this->assertStringEqualsFile('./func-calls.txt', $expectedOutput);
-    }    
+        $expectedOutput = "xyz::dontcallme => Employee::raiseSalary\n";
+        $this->assertStringEqualsFile(__DIR__."/../func-calls.txt", $expectedOutput);
+    }
 
+    public function testStringType(){
+        
+    }
 
 
 
