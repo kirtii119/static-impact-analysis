@@ -1,7 +1,5 @@
 <?php
 
-require_once '/var/www/magento/vendor/magento/framework/App/AreaList.php';
-
 $resultFile = './src/call-graph-result.json';
 
 /**
