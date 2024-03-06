@@ -1,24 +1,24 @@
 <?php 
-class noFoo{
-    public function iamdefined(){
+class TestClass{
+    public function classMethod(){
         return "hey";
     }
 }
 
-interface Testme {
-    public function notdefined() { 
+interface TestInterface {
+    public function interfaceMethod() { 
     }  
 }
-class FooWho {
+class Tester {
 
-    public function doSomethingUseful(Testme $obj)
+    public function doSomethingUseful(TestClass $obj)
     {
-        if (!($obj instanceof noFoo)) {
+        if (!($obj instanceof TestInterface)) {
             return;
         } 
-        $var = $obj -> iamdefined();
+        $var = $obj->classMethod();
         return null;
     }
 }
 
-//expected o/p : FooWho::doSomethingUseful => (noFoo & Testme)::iamdefined
+//expected o/p : Tester::doSomethingUseful => (TestClass & TestInterface)::classMethod

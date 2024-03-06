@@ -1,24 +1,24 @@
 <?php
-class Foo {
+class Tester {
     /**
-     * @param TestMe|TestMeToo $object
+     * @param TestClassOne |TestClassTwo $object
      */
     public function doSomethingUseful($object)
     {
-       $object->tryme();
+       $object->testme();
     }
 }
 
-class TestMe {
-    public function tryMe() {
-        return "TestMeTryMe";           
+class TestClassOne {
+    public function testMe() {
+        return "TestMeTestMe";           
     }       
 }
 
-class TestMeToo {
-    public function tryMe(){
-        return "TestMeTooTryMe";
+class TestClassTwo {
+    public function testMe(){
+        return "TestClassTwoTestMe";
     }
 }
 
-// expected o/p : Foo::doSomethingUseful => (TestMe | TestMeToo)::tryme
+// expected o/p : Tester::doSomethingUseful => (TestClassOne| TestClassTwo)::testme

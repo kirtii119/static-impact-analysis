@@ -6,23 +6,41 @@ class MethodCallCollectorTest extends TestCase
 {
 
 
-    protected function setUp() :void {
+    protected function runFirst($filename) :void {
         file_put_contents(__DIR__."/../func-calls.txt", "");
         exec(__DIR__."/../phpstan-src/bin/phpstan clear-result-cache ");
-        exec(__DIR__."/../phpstan-src/bin/phpstan  analyse ./tests/testCases");
+        exec(__DIR__."/../phpstan-src/bin/phpstan  analyse tests/testCases/".$filename.".php");
     }
 
 
     public function testObjectType()
     {       
-        $expectedOutput = "xyz::dontcallme => Employee::raiseSalary\n";
+        $this->runFirst('ObjectTestCase');
+        $expectedOutput = "Tester::doSomethingUseful => TestClass::testme\n";
         $this->assertStringEqualsFile(__DIR__."/../func-calls.txt", $expectedOutput);
     }
 
-    public function testStringType(){
+    public function testThisType(){
+        $this->runFirst('ThisTestCase');
+        $expectedOutput = "Tester::doSomethingUseful => Tester::testme\n";
+        $this->assertStringEqualsFile(__DIR__."/../func-calls.txt", $expectedOutput);
         
     }
 
+    public function testUnionType(){
+        $this->runFirst('UnionTestCase');
+        $expectedOutput = "Tester::doSomethingUseful => (TestClassOne | TestClassTwo)::testme\n";
+        $this->assertStringEqualsFile(__DIR__."/../func-calls.txt", $expectedOutput);
+        
+    }
+
+
+    public function testIntersectionType(){
+        $this->runFirst('IntersectionTestCase');
+        $expectedOutput = "Tester::doSomethingUseful => (TestClass & TestInterface)::classMethod\n";
+        $this->assertStringEqualsFile(__DIR__."/../func-calls.txt", $expectedOutput);
+        
+    }
 
 
 }
