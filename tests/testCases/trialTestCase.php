@@ -26,32 +26,57 @@
     
 // }
 
-class A{
+// class A{
 
-    /** @return object */
-    function foo(){
-        return new B;
+//     /** @return object */
+//     function foo(){
+//         return new B;
+//     }
+// }
+
+// class B{
+//     function noFoo(){
+//         return null;
+//     }
+
+// }
+
+// class C{
+//     function fooWho(){
+//         $objA = new  A();
+
+//         /** @var B $objB  */
+//         $objB = $objA->foo();
+//         echo $objB->noFoo();
+//         $a =false;
+//         echo $a->foo2();
+//     }
+// }
+
+// $b = new C;
+// echo $b->fooWho();
+
+class TestClass1{
+    public function classMethod(){
+        return "hey";
     }
 }
 
-class B{
-    function noFoo(){
-        return null;
-    }
-
+interface TestInterface1 {
+    public function classMethod();
 }
-
-class C{
-    function fooWho(){
-        $objA = new  A();
-
-        /** @var B $objB  */
-        $objB = $objA->foo();
-        echo $objB->noFoo();
-        $a =false;
-        echo $a->foo2();
+class Tester {
+    public function doSomethingUseful(TestInterface1 $obj)
+    {
+        $var = $obj->classMethod();
+        return $var;
     }
 }
-
-$b = new C;
-echo $b->fooWho();
+class myMixed extends TestClass1 implements TestInterface1 {
+    public function classMethod(){
+        return "hey2";
+    }
+}
+$obj = new myMixed();
+$obj2 = new Tester();
+echo $obj2->doSomethingUseful($obj);

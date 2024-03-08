@@ -6,8 +6,7 @@ class TestClass{
 }
 
 interface TestInterface {
-    public function interfaceMethod() { 
-    }  
+    public function interfaceMethod();
 }
 class Tester {
 

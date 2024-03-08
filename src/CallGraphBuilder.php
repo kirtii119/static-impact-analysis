@@ -1,28 +1,7 @@
 <?php
 
 $resultFile = './src/call-graph-result.json';
-
-/**
-*  returns associative array like: ["function"=>["functionCall1", "functionCall2"]]
-*/
-function createMapFromTxt(string $txtFile){
-    $rawMapping  = explode("\n",file_get_contents($txtFile));
-    $mainMap = [];
-    foreach($rawMapping as $line){
-    
-    $explodedArr = explode(" => ",$line);
-    $key = $explodedArr[0];
-    $value = $explodedArr[1];
-
-        if(array_key_exists($key, $mainMap)){
-            $mainMap[$key][] = $value;
-        }
-        else{
-            $mainMap[$key] = [$value];
-        }
-}
-    return $mainMap;
-}
+$inputFilename = '/home/kirti/static-impact-analysis/func-calls.txt';
 
 
 class CallGraphBuilder {
@@ -35,17 +14,23 @@ class CallGraphBuilder {
     
 
     /**
-     * @param funCallMap -> ["function"=>["functionCall1", "functionCall2"]]
+     * @param array $funCallMap -> ["function"=>["functionCall1", "functionCall2"]]
      */
-    public function __construct(array $funcCallMap ){
-        $this->funcCallMap = $funcCallMap;
+    public function setup(array $map){
+        $this->funcCallMap = $map;
     }
 
     /**
-     * 
+     * @param string $entryPoint
+     * @param int $type
      */
-    public function run(string $entryPoint, int $type) : array
+    public function run(string $entryPoint, int $type) : array | false
     {
+        if(!$this->funcCallMap){
+            return false;
+        }
+
+
         $this->callgraph = [];
         if($type==1){
             $this->buildLinearCallsList($entryPoint);
@@ -95,10 +80,34 @@ class CallGraphBuilder {
             $this->buildCallGraph($funcCall, $callerFuncArrRefernce );
         }
     }
+
+    /**
+    *  returns associative array like: ["function"=>["functionCall1", "functionCall2"]]
+    */
+    function createMapFromTxt(string $txtFile){
+        $rawMapping  = explode("\n",file_get_contents($txtFile));
+        $mainMap = [];
+        foreach($rawMapping as $line){
+        
+        $explodedArr = explode(" => ",$line);
+        // var_dump($explodedArr);
+        $key = $explodedArr[0];
+        $value = $explodedArr[1];
+
+            if(array_key_exists($key, $mainMap)){
+                $mainMap[$key][] = $value;
+            }
+            else{
+                $mainMap[$key] = [$value];
+            }
+    }
+        return $mainMap;
+    }
 }
 
 // $funcCallMap  = (array)( json_decode(file_get_contents(__DIR__.'/func-call-mapping.json')));
-$funCallMap = createMapFromTxt(__DIR__.'/func-calls-main.txt');
-$callGraphBuilder = new CallGraphBuilder($funCallMap);
-$callGraphResult = $callGraphBuilder->run("Magento\AdminNotification\Controller\Adminhtml\System\Message\ListAction::execute", CallGraphBuilder::GRAPH);
+$callGraphBuilder = new CallGraphBuilder();
+$funCallMap = $callGraphBuilder->createMapFromTxt($inputFilename);
+$callGraphBuilder->setup($funCallMap);
+$callGraphResult = $callGraphBuilder->run("Magento\Catalog\Model\Product\Website\SaveHandler::execute", CallGraphBuilder::GRAPH);
 file_put_contents($resultFile, json_encode($callGraphResult));
