@@ -19,19 +19,31 @@ class StaticMethodCallCollector implements Collector
 
     public function processNode(Node $node, Scope $scope): array
     {
+
+        $funcName = $scope->getFunctionName(); 
+
+        if ($scope->isInClass()) {
+            $orgClassName = $scope->getClassReflection()->getName();
+            $funcName = $orgClassName . "::" . $funcName;
+        }else{
+            $funcName= "CallOutsideClass" ;
+        }
          // var_dump($node->getLine()); //line number
-         $methCall = $node->name->name; //will only work if name is an identifier, it can also be an expression
-         $resolvedType = $scope->class->parts[0]; //gives type of method caller
-         $orgfuncName = $scope->getFunctionName();
+          $methCall = $node->name->name; //will only work if name is an identifier, it can also be an expression
+         $resolvedType = $node->class->parts[0];
+         if($resolvedType=="parent"){
+            $resolvedType= $scope->getClassReflection()->getParentClass()->getName();
+        }elseif($resolvedType == "self"){
+            $resolvedType = $orgClassName;
+        }else{
+            
+        }
+        $methCall = $resolvedType. "::" .$methCall;
+        
 
-         print_r($scope -> getParentScope()->getType($node->class));
- 
-         if ($scope->isInClass()) {
-             $orgClassName = $scope->getClassReflection()->getName();
-             $orgfuncName = $orgClassName . "::" . $orgfuncName;
-         }
+        file_put_contents("./staticcall.txt", $funcName."=>".$methCall. PHP_EOL , FILE_APPEND);
 
-         return [];  
+        return [];  
     }
     
 }
