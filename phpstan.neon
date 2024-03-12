@@ -12,10 +12,21 @@ parameters:
             - */dev/*
 
 services:
-    -
+    -   
         class: App\MethodCallCollector
         tags:
-            - phpstan.collector
+            - phpstan.collector   
+    
+    -   
+        class: App\StaticMethodCallCollector
+        tags:
+            - phpstan.collector   
+    
+    -   
+        class: App\FunctionCallCollector
+        tags:
+            - phpstan.collector   
+    
     -
         class: App\TrialCollector
         tags:
