@@ -1,7 +1,7 @@
 <?php
 
-$resultFile = './src/call-graph-result.json';
-$inputFilename = ['/home/suyash/static-impact-analysis/staticcall.txt','/home/suyash/static-impact-analysis/func-calls.txt'];
+// $resultFile = './src/call-graph-result.json';
+// $inputFilename = ['/home/suyash/static-impact-analysis/staticcall.txt','/home/suyash/static-impact-analysis/func-calls.txt'];
 
 
 class CallGraphBuilder
@@ -92,12 +92,10 @@ class CallGraphBuilder
     {
         $mainMap = [];
          foreach ($txtFile as $file) {
-            $rawMapping = explode("\n", file_get_contents($file));
-            var_dump($file);
+            $rawMapping = file($file, FILE_SKIP_EMPTY_LINES + FILE_IGNORE_NEW_LINES);
             foreach ($rawMapping as $line) {
               
                 $explodedArr = explode("=>", $line);
-                // var_dump($explodedArr);
                 $key = trim($explodedArr[0]);
                 $value = trim($explodedArr[1]);
 
@@ -107,8 +105,6 @@ class CallGraphBuilder
                     $mainMap[$key] = [$value];
                 }
             }
-            //var_dump($mainMap);
-
         }
 
         return $mainMap;
@@ -117,8 +113,8 @@ class CallGraphBuilder
 }
 
 // $funcCallMap  = (array)( json_decode(file_get_contents(__DIR__.'/func-call-mapping.json')));
-$callGraphBuilder = new CallGraphBuilder();
-$funCallMap = $callGraphBuilder->createMapFromTxt($inputFilename);
-$callGraphBuilder->setup($funCallMap);
-$callGraphResult = $callGraphBuilder->run("Magento\Catalog\Model\Product\Website\SaveHandler::execute", CallGraphBuilder::GRAPH);
-file_put_contents($resultFile, json_encode($callGraphResult));
+// $callGraphBuilder = new CallGraphBuilder();
+// $funCallMap = $callGraphBuilder->createMapFromTxt($inputFilename);
+// $callGraphBuilder->setup($funCallMap);
+// $callGraphResult = $callGraphBuilder->run("Magento\Catalog\Model\Product\Website\SaveHandler::execute", CallGraphBuilder::GRAPH);
+// file_put_contents($resultFile, json_encode($callGraphResult));

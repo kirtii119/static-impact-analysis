@@ -1,6 +1,0 @@
-Acme\PaymentModule\Controller\Payment\Detail::execute
-Acme\OrderModule\Controller\Order\Detail::execute
-Acme\CartModule\Controller\Cart\Detail::execute
-Magento\Catalog\Cron\RefreshSpecialPrices::execute
-Magento\Catalog\Console\Command\ProductAttributesCleanUp::execute
-Magento\Catalog\Model\Product\Website\SaveHandler::execute

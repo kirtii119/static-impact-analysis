@@ -2,6 +2,12 @@
 
 require __DIR__.'/src/CallGraphSearch.php';
 
+if($argv){
+    $output = run($argv[1]);
+    print_r($output);
+    die;
+}
+
 // Check if the input parameter is provided
 if (!isset($_GET['input'])) {
     http_response_code(400); // Bad Request
@@ -13,19 +19,21 @@ if (!isset($_GET['input'])) {
 $input = $_GET['input'];
 // $input="Acme\CartModule\Controller\Cart\Detail::execute";
 
-// Perform operation based on the input
-$SearchCallGraphObj = new CallGraphSearch();
-$output = $SearchCallGraphObj->execute($input);
+$response = run($input);
 
-if ($output == -1){
-    $response = array("output" => "Function not found in any URL/ controller");
-}
-else{
-    $response = $output;
-}
-
-// Set the response headers
+// Set the response headers and send the response
 header("Content-Type: application/json");
-
-// Send the response
 echo json_encode($response);
+
+function run(string $input){
+    // Perform operation based on the input
+    $SearchCallGraphObj = new CallGraphSearch();
+    $output = $SearchCallGraphObj->execute($input);
+    
+    if ($output == -1){
+        return array("output" => "Function not found in any URL/ controller");
+    }
+    else{
+        return $output;
+    }
+    }

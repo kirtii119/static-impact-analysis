@@ -1,4 +1,0 @@
-Acme\CartModule\Controller\Cart\Detail::execute
-Acme\CartModule\Model\CartValidation::validPayment
-Acme\OrderModule\Model\Customer::getCustomer
-Acme\PaymentModule\Model\TransactionInterface::getCustomerName

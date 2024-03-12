@@ -1,0 +1,6 @@
+Acme\PaymentModule\Controller\Payment\Detail::execute=>url1
+Acme\OrderModule\Controller\Order\Detail::execute=>url2
+Acme\CartModule\Controller\Cart\Detail::execute=>url3
+Magento\Catalog\Cron\RefreshSpecialPrices::execute=>url4
+Magento\Catalog\Console\Command\ProductAttributesCleanUp::execute=>url5
+Magento\Catalog\Model\Product\Website\SaveHandler::execute=>url6
