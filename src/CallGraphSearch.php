@@ -7,7 +7,7 @@ class CallGraphSearch
 {
 
   public $callGraphDir = __DIR__ . '/call-graphs';
-  public $output_urls = array();
+  public $output_controllers = array();
   public $logfile = "./error.log";
   public $controllerUrlMap = [];
   function search($functionName)
@@ -28,13 +28,13 @@ class CallGraphSearch
       //array of all function calls in the file
       $lines = file($filePath, FILE_SKIP_EMPTY_LINES + FILE_IGNORE_NEW_LINES);
 
-      $url = str_replace(".txt", "", $filename);
+      $controller = str_replace(".txt", "", $filename);
 
-      //url doesn't already exist, only then search
-      if (!in_array($url, $this->output_urls)) {
+      //controller doesn't already exist, only then search
+      if (!in_array($controller, $this->output_controllers)) {
         $key = array_search("$functionName", $lines); //returns false if url not found 
         if ($key !== false) {
-          array_push($this->output_urls, $url);
+          array_push($this->output_controllers, $controller);
         }
 
       }
@@ -76,18 +76,24 @@ class CallGraphSearch
       //3. generate callGraphs for all entry points in urls.txt
       foreach ($this->controllerUrlMap as $entryPoint => $url) {
         $callGraphResult = $callGraphBuilder->run($entryPoint, CallGraphBuilder::LINEAR);
-        file_put_contents(__DIR__ . '/call-graphs/' . $url[0] . '.txt', "");
+        file_put_contents($this->callGraphDir . "/".$entryPoint . '.txt', "");
         foreach ($callGraphResult as $line) {
-          file_put_contents(__DIR__ . '/call-graphs/' . $url[0] . '.txt', $line . PHP_EOL, FILE_APPEND);
+          file_put_contents($this->callGraphDir . "/".$entryPoint . '.txt', $line . PHP_EOL, FILE_APPEND);
         }
       }
 
 
       //3. search input function's name in all extracted files and o/p url if the function is present
       $this->search($functionName);
-      if ($this->output_urls) {
-        // var_dump($this->output_urls);
-        return $this->output_urls;
+      $output_urls = [];
+      if ($this->output_controllers) {
+        // map controllers to urls
+        foreach($this->output_controllers as $controller){
+          $url = $this->controllerUrlMap[$controller][0];
+          array_push($output_urls, $url);
+        }
+
+        return $output_urls;
       }
       return -1;
     } catch (Exception $e) {
