@@ -65,7 +65,7 @@ class MethodCallCollector implements Collector
 
         $methCall = $methCallClassName . "::" . $methCall;
         
-		file_put_contents("./meth-calls.txt", $funcName." => ".$methCall . PHP_EOL , FILE_APPEND);
+		file_put_contents(__DIR__."/../call-mappings/meth-calls.txt", $funcName." => ".$methCall . PHP_EOL , FILE_APPEND);
         return [];
 
         // return [array($funcName => $methCall), $node->getLine()];

@@ -1,0 +1,8 @@
+CallOutsideClass=>Magento::register
+Acme\OrderModule\Model\OrderValidation::validPayment=>Acme\OrderModule\Model\Validation::getCustomerObject
+CallOutsideClass=>Magento::register
+Acme\PaymentModule\Model\PaymentValidation::validPayment=>Acme\OrderModule\Model\Validation::getCustomerObject
+CallOutsideClass=>Magento::register
+Acme\CartModule\Model\CartValidation::validPayment=>Acme\OrderModule\Model\Validation::getCustomerObject
+CallOutsideClass=>Magento::register
+Acme\ProductModule\Model\ProductValidation::validPayment=>Acme\OrderModule\Model\Validation::getCustomerObject

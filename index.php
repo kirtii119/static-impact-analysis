@@ -3,7 +3,8 @@
 require __DIR__.'/src/CallGraphSearch.php';
 
 if($argv){
-    $output = run($argv[1]);
+    $arg2 = count($argv)>2 ? $argv[2] : '';
+    $output = run($argv[1], $arg2);
     print_r($output);
     die;
 }
@@ -25,10 +26,12 @@ $response = run($input);
 header("Content-Type: application/json");
 echo json_encode($response);
 
-function run(string $input){
+function run(string $input, string $methCallsFilename){
     // Perform operation based on the input
     $SearchCallGraphObj = new CallGraphSearch();
-    $output = $SearchCallGraphObj->execute($input);
+    $output = ($methCallsFilename)
+                ?$SearchCallGraphObj->execute($input, $methCallsFilename)
+                :$SearchCallGraphObj->execute($input);
     
     if ($output == -1){
         return array("output" => "Function not found in any URL/ controller");

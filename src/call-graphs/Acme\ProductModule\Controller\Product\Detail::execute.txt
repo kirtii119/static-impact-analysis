@@ -1,0 +1,1 @@
+Acme\ProductModule\Controller\Product\Detail::execute

@@ -42,14 +42,14 @@ class CallGraphSearch
   }
 
 
-  function execute(string $functionName)
+  function execute(string $functionName, string $methCallsFilename = __DIR__ . '/../call-mappings/meth-calls.txt')
   {
 
     try {
 
       //1. build a map for method calls, static method calls
       $callGraphBuilder = new CallGraphBuilder();
-      $funcCallMap = $callGraphBuilder->createMapFromTxt([__DIR__ . '/../meth-calls.txt', __DIR__ . '/../static-calls.txt']);
+      $funcCallMap = $callGraphBuilder->createMapFromTxt([$methCallsFilename, __DIR__ . '/../call-mappings/static-calls.txt']);
       $callGraphBuilder->setup($funcCallMap);
 
       //2. build a map for controllers - url

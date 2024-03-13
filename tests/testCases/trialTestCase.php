@@ -56,27 +56,3 @@
 // $b = new C;
 // echo $b->fooWho();
 
-class TestClass1{
-    public function classMethod(){
-        return "hey";
-    }
-}
-
-interface TestInterface1 {
-    public function classMethod();
-}
-class Tester {
-    public function doSomethingUseful(TestInterface1 $obj)
-    {
-        $var = $obj->classMethod();
-        return $var;
-    }
-}
-class myMixed extends TestClass1 implements TestInterface1 {
-    public function classMethod(){
-        return "hey2";
-    }
-}
-$obj = new myMixed();
-$obj2 = new Tester();
-echo $obj2->doSomethingUseful($obj);
