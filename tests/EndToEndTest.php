@@ -26,10 +26,27 @@ final class EndToEndTest extends TestCase
         array_pop($lines);
         file_put_contents(__DIR__.'/../src/controller-url-map.txt', join(PHP_EOL,$lines));
 
+        $expectedOutput = ["Array", "(", "    [0] => testurl",")"];
+
+        exec("rm -rf 'src/call-graphs/Tester::execute.txt'");
+        $this->assertEquals($output, $expectedOutput);
+    }
+
+    public function testPlugin(): void
+    {
+
+        // $this->runFirst('PlTestCase');
+        file_put_contents(__DIR__.'/../src/controller-url-map.txt',PHP_EOL.'Tester::execute=>testurl' ,FILE_APPEND);
+
+        exec("php index.php 'TestClass::testPlugin'", $output);
+
+        $lines = file(__DIR__.'/../src/controller-url-map.txt', FILE_IGNORE_NEW_LINES);
+        array_pop($lines);
+        file_put_contents(__DIR__.'/../src/controller-url-map.txt', join(PHP_EOL,$lines));
+
 
         $expectedOutput = ["Array", "(", "    [0] => testurl",")"];
         
         $this->assertEquals($output, $expectedOutput);
     }
-
 }

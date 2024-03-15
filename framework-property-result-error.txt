@@ -1,0 +1,1502 @@
+ ------ --------------------------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/framework/Acl/Builder.php                                    
+ ------ --------------------------------------------------------------------------------------------- 
+  :85    Property Magento\Framework\Acl\Builder::$_acl (Magento\Framework\Acl) does not accept null.  
+ ------ --------------------------------------------------------------------------------------------- 
+
+ ------ ------------------------------------------------------------------------------------------------------ 
+  Line   /var/www/magento/vendor/magento/framework/Api/ImageProcessor.php                                      
+ ------ ------------------------------------------------------------------------------------------------------ 
+  :75    Property Magento\Framework\Api\ImageProcessor::$contentValidator (Magento\Framework\Filesystem) does  
+         not accept Magento\Framework\Api\ImageContentValidatorInterface.                                      
+ ------ ------------------------------------------------------------------------------------------------------ 
+
+ ------ ----------------------------------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/framework/Api/Search/SearchCriteriaBuilder.php                       
+ ------ ----------------------------------------------------------------------------------------------------- 
+  :64    Method Magento\Framework\Api\Search\SearchCriteriaBuilder::create() should return                    
+         Magento\Framework\Api\Search\SearchCriteria but returns Magento\Framework\Api\AbstractSimpleObject.  
+ ------ ----------------------------------------------------------------------------------------------------- 
+
+ ------ ---------------------------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/framework/Api/SearchCriteriaBuilder.php                       
+ ------ ---------------------------------------------------------------------------------------------- 
+  :58    Method Magento\Framework\Api\SearchCriteriaBuilder::create() should return                    
+         Magento\Framework\Api\SearchCriteria but returns Magento\Framework\Api\AbstractSimpleObject.  
+ ------ ---------------------------------------------------------------------------------------------- 
+
+ ------ ------------------------------------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/framework/Api/SimpleDataObjectConverter.php                            
+ ------ ------------------------------------------------------------------------------------------------------- 
+  :64    Method Magento\Framework\Api\SimpleDataObjectConverter::convertKeysToCamelCase() should return         
+         stdClass but returns array<string, mixed>.                                                             
+  :129   Method Magento\Framework\Api\SimpleDataObjectConverter::_unpackAssociativeArray() should return array  
+         but returns mixed.                                                                                     
+ ------ ------------------------------------------------------------------------------------------------------- 
+
+ ------ ---------------------------------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/framework/App/Arguments/FileResolver/Primary.php                    
+ ------ ---------------------------------------------------------------------------------------------------- 
+  :47    Method Magento\Framework\App\Arguments\FileResolver\Primary::get() should return array but returns  
+         Magento\Framework\Config\FileIterator.                                                              
+ ------ ---------------------------------------------------------------------------------------------------- 
+
+ ------ --------------------------------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/framework/App/Bootstrap.php                                        
+ ------ --------------------------------------------------------------------------------------------------- 
+  :197   Method Magento\Framework\App\Bootstrap::createConfigFilePool() should return                       
+         Magento\Framework\Filesystem\DriverPool but returns Magento\Framework\Config\File\ConfigFilePool.  
+ ------ --------------------------------------------------------------------------------------------------- 
+
+ ------ --------------------------------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/framework/App/Cache/Proxy.php                                      
+ ------ --------------------------------------------------------------------------------------------------- 
+  :56    Method Magento\Framework\App\Cache\Proxy::getFrontend() should return Zend_Cache_Core but returns  
+         Magento\Framework\Cache\FrontendInterface.                                                         
+ ------ --------------------------------------------------------------------------------------------------- 
+
+ ------ ---------------------------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/framework/App/Cache/Type/Dummy.php                            
+ ------ ---------------------------------------------------------------------------------------------- 
+  :35    Method Magento\Framework\App\Cache\Type\Dummy::load() should return string but returns null.  
+ ------ ---------------------------------------------------------------------------------------------- 
+
+ ------ --------------------------------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/framework/App/Config/Base.php                                      
+ ------ --------------------------------------------------------------------------------------------------- 
+  :39    Property Magento\Framework\Simplexml\Config::$_xml (Magento\Framework\Simplexml\Element) does not  
+         accept null.                                                                                       
+ ------ --------------------------------------------------------------------------------------------------- 
+
+ ------ ----------------------------------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/framework/App/Config/Element.php                                     
+ ------ ----------------------------------------------------------------------------------------------------- 
+  :54    Method Magento\Framework\App\Config\Element::getClassName() should return string but returns false.  
+ ------ ----------------------------------------------------------------------------------------------------- 
+
+ ------ ----------------------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/framework/App/Config/FileResolver.php                    
+ ------ ----------------------------------------------------------------------------------------- 
+  :71    Method Magento\Framework\App\Config\FileResolver::get() should return array but returns  
+         Magento\Framework\Config\FileIterator.                                                   
+ ------ ----------------------------------------------------------------------------------------- 
+
+ ------ ------------------------------------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/framework/App/Http.php                                                 
+ ------ ------------------------------------------------------------------------------------------------------- 
+  :122   Property Magento\Framework\App\Http::$_response (Magento\Framework\App\Response\Http) does not accept  
+         Magento\Framework\App\Response\HttpInterface.                                                          
+ ------ ------------------------------------------------------------------------------------------------------- 
+
+ ------ -------------------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/framework/App/Http/Context.php                        
+ ------ -------------------------------------------------------------------------------------- 
+  :87    Method Magento\Framework\App\Http\Context::unsValue() should return null but returns  
+         $this(Magento\Framework\App\Http\Context).                                            
+ ------ -------------------------------------------------------------------------------------- 
+
+ ------ ------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/framework/App/Language/Dictionary.php    
+ ------ ------------------------------------------------------------------------- 
+  :62    Property Magento\Framework\App\Language\Dictionary::$componentRegistrar  
+         (Magento\Framework\Filesystem\Directory\ReadFactory) does not accept     
+         Magento\Framework\Component\ComponentRegistrar.                          
+ ------ ------------------------------------------------------------------------- 
+
+ ------ ---------------------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/framework/App/MutableScopeConfig.php                    
+ ------ ---------------------------------------------------------------------------------------- 
+  :62    Property Magento\Framework\App\MutableScopeConfig::$data (array) does not accept null.  
+ ------ ---------------------------------------------------------------------------------------- 
+
+ ------ ------------------------------------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/framework/App/ObjectManager.php                                        
+ ------ ------------------------------------------------------------------------------------------------------- 
+  :50    Static property Magento\Framework\App\ObjectManager::$_instance (Magento\Framework\App\ObjectManager)  
+         does not accept Magento\Framework\ObjectManagerInterface.                                              
+ ------ ------------------------------------------------------------------------------------------------------- 
+
+ ------ ------------------------------------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/framework/App/PageCache/Kernel.php                                     
+ ------ ------------------------------------------------------------------------------------------------------- 
+  :85    Property Magento\Framework\App\PageCache\Kernel::$cache (Magento\PageCache\Model\Cache\Type) does not  
+         accept Magento\Framework\App\PageCache\Cache.                                                          
+ ------ ------------------------------------------------------------------------------------------------------- 
+
+ ------ --------------------------------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/framework/App/Route/ConfigInterface/Proxy.php                      
+ ------ --------------------------------------------------------------------------------------------------- 
+  :89    Property Magento\Framework\App\Route\ConfigInterface\Proxy::$_subject                              
+         (Magento\Framework\App\ResourceConnection) does not accept                                         
+         Magento\Framework\App\Route\ConfigInterface.                                                       
+  :104   Method Magento\Framework\App\Route\ConfigInterface\Proxy::_getSubject() should return              
+         Magento\Framework\App\Route\ConfigInterface but returns Magento\Framework\App\ResourceConnection.  
+ ------ --------------------------------------------------------------------------------------------------- 
+
+ ------ ------------------------------------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/framework/App/ScopeResolver.php                                        
+ ------ ------------------------------------------------------------------------------------------------------- 
+  :29    Property Magento\Framework\App\ScopeResolver::$objectManager                                           
+         (Magento\Store\Model\StoreManagerInterface) does not accept Magento\Framework\ObjectManagerInterface.  
+  :42    Method Magento\Framework\App\ScopeResolver::getScope() should return                                   
+         Magento\Framework\App\ScopeDefault but returns Magento\Framework\App\ScopeInterface.                   
+ ------ ------------------------------------------------------------------------------------------------------- 
+
+ ------ ---------------------------------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/framework/App/View/Deployment/Version/Storage/File.php              
+ ------ ---------------------------------------------------------------------------------------------------- 
+  :46    Method Magento\Framework\App\View\Deployment\Version\Storage\File::load() should return string but  
+         returns false.                                                                                      
+ ------ ---------------------------------------------------------------------------------------------------- 
+
+ ------ ------------------------------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/framework/Archive/Helper/File.php                                
+ ------ ------------------------------------------------------------------------------------------------- 
+  :93    Property Magento\Framework\Archive\Helper\File::$_isInWriteMode (bool) does not accept int.      
+  :189   Property Magento\Framework\Archive\Helper\File::$_fileHandler (resource) does not accept false.  
+ ------ ------------------------------------------------------------------------------------------------- 
+
+ ------ --------------------------------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/framework/Archive/Tar.php                                          
+ ------ --------------------------------------------------------------------------------------------------- 
+  :101   Property Magento\Framework\Archive\Tar::$_writer (Magento\Framework\Archive\Helper\File) does not  
+         accept null.                                                                                       
+  :143   Property Magento\Framework\Archive\Tar::$_reader (Magento\Framework\Archive\Helper\File) does not  
+         accept null.                                                                                       
+ ------ --------------------------------------------------------------------------------------------------- 
+
+ ------ ------------------------------------------------------------------------------ 
+  Line   /var/www/magento/vendor/magento/framework/Backup/Filesystem/Rollback/Ftp.php  
+ ------ ------------------------------------------------------------------------------ 
+  :169   No error to ignore is reported on line 169.                                   
+  :198   No error to ignore is reported on line 198.                                   
+ ------ ------------------------------------------------------------------------------ 
+
+ ------ ------------------------------------------------------------------------------------------------------ 
+  Line   /var/www/magento/vendor/magento/framework/Backup/Snapshot.php                                         
+ ------ ------------------------------------------------------------------------------------------------------ 
+  :131   Property Magento\Framework\Backup\Snapshot::$_dbBackupManager (Magento\Framework\Backup\Db) does not  
+         accept Magento\Framework\Backup\BackupInterface.                                                      
+  :134   Method Magento\Framework\Backup\Snapshot::_getDbBackupManager() should return                         
+         Magento\Framework\Backup\Db but returns Magento\Framework\Backup\BackupInterface.                     
+  :145   Property Magento\Framework\Backup\Snapshot::$_dbBackupManager (Magento\Framework\Backup\Db) does not  
+         accept Magento\Framework\Backup\AbstractBackup.                                                       
+ ------ ------------------------------------------------------------------------------------------------------ 
+
+ ------ ------------------------------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/framework/Cache/Backend/Database.php                             
+ ------ ------------------------------------------------------------------------------------------------- 
+  :449   Method Magento\Framework\Cache\Backend\Database::touch() should return bool but returns int.     
+  :608   Method Magento\Framework\Cache\Backend\Database::cleanOld() should return bool but returns int.  
+ ------ ------------------------------------------------------------------------------------------------- 
+
+ ------ ------------------------------------------------------------------------------------------------------ 
+  Line   /var/www/magento/vendor/magento/framework/Cache/Backend/Decorator/AbstractDecorator.php               
+ ------ ------------------------------------------------------------------------------------------------------ 
+  :36    Property Magento\Framework\Cache\Backend\Decorator\AbstractDecorator::$_backend (Zend_Cache_Backend)  
+         does not accept Zend_Cache_Backend_Interface.                                                         
+ ------ ------------------------------------------------------------------------------------------------------ 
+
+ ------ ----------------------------------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/framework/Cache/Backend/Eaccelerator.php                             
+ ------ ----------------------------------------------------------------------------------------------------- 
+  :50    Method Magento\Framework\Cache\Backend\Eaccelerator::load() should return string but returns false.  
+ ------ ----------------------------------------------------------------------------------------------------- 
+
+ ------ --------------------------------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/framework/Code/Generator/EntityAbstract.php                        
+ ------ --------------------------------------------------------------------------------------------------- 
+  :112   Method Magento\Framework\Code\Generator\EntityAbstract::generate() should return bool but returns  
+         string.                                                                                            
+ ------ --------------------------------------------------------------------------------------------------- 
+
+ ------ ------------------------------------------------------------------------------------------------------ 
+  Line   /var/www/magento/vendor/magento/framework/Code/Reader/ArgumentsReader.php                             
+ ------ ------------------------------------------------------------------------------------------------------ 
+  :118   Method Magento\Framework\Code\Reader\ArgumentsReader::processType() should return string but returns  
+         null.                                                                                                 
+ ------ ------------------------------------------------------------------------------------------------------ 
+
+ ------ ------------------------------------------------------------------------------------------------------ 
+  Line   /var/www/magento/vendor/magento/framework/Composer/DependencyChecker.php                              
+ ------ ------------------------------------------------------------------------------------------------------ 
+  :69    Method Magento\Framework\Composer\DependencyChecker::checkDependencies() should return array<string>  
+         but returns array<string, array<string>>.                                                             
+ ------ ------------------------------------------------------------------------------------------------------ 
+
+ ------ ------------------------------------------------------------------------------------------------------ 
+  Line   /var/www/magento/vendor/magento/framework/Config/AbstractXml.php                                      
+ ------ ------------------------------------------------------------------------------------------------------ 
+  :68    Method Magento\Framework\Config\AbstractXml::getPerFileSchemaFile() should return string but returns  
+         null.                                                                                                 
+ ------ ------------------------------------------------------------------------------------------------------ 
+
+ ------ ------------------------------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/framework/Config/Data/ConfigDataFactory.php                      
+ ------ ------------------------------------------------------------------------------------------------- 
+  :31    Property Magento\Framework\Config\Data\ConfigDataFactory::$objectManager                         
+         (Magento\Framework\App\ObjectManager) does not accept Magento\Framework\ObjectManagerInterface.  
+ ------ ------------------------------------------------------------------------------------------------- 
+
+ ------ -------------------------------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/framework/Config/Dom.php                                          
+ ------ -------------------------------------------------------------------------------------------------- 
+  :348   Method Magento\Framework\Config\Dom::_getMatchedNode() should return DOMElement|null but returns  
+         DOMNode|null.                                                                                     
+ ------ -------------------------------------------------------------------------------------------------- 
+
+ ------ -------------------------------------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/framework/Config/FileResolver.php                                       
+ ------ -------------------------------------------------------------------------------------------------------- 
+  :81    Property Magento\Framework\Config\FileResolver::$currentTheme (Magento\Framework\View\DesignInterface)  
+         does not accept Magento\Framework\View\Design\ThemeInterface.                                           
+ ------ -------------------------------------------------------------------------------------------------------- 
+
+ ------ ----------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/framework/Console/CommandList.php            
+ ------ ----------------------------------------------------------------------------- 
+  :34    Method Magento\Framework\Console\CommandList::getCommands() should return    
+         array<Symfony\Component\Console\Command\Command> but returns array<string>.  
+ ------ ----------------------------------------------------------------------------- 
+
+ ------ ---------------------------------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/framework/Currency/Data/Currency.php                                
+ ------ ---------------------------------------------------------------------------------------------------- 
+  :424   Static property Magento\Framework\Currency\Data\Currency::$cache (Zend_Cache_Core) does not accept  
+         null.                                                                                               
+ ------ ---------------------------------------------------------------------------------------------------- 
+
+ ------- ------------------------------------------------------------------------------------------------------- 
+  Line    /var/www/magento/vendor/magento/framework/DB/Adapter/Pdo/Mysql.php                                     
+ ------- ------------------------------------------------------------------------------------------------------- 
+  :257    Property Magento\Framework\DB\Adapter\Pdo\Mysql::$string (string) does not accept                      
+          Magento\Framework\Stdlib\StringUtils.                                                                  
+  :262    Property Magento\Framework\DB\Adapter\Pdo\Mysql::$exceptionMap (array<Zend_Db_Adapter_Exception>)      
+          does not accept array<int, string>.                                                                    
+  :491    Method Magento\Framework\DB\Adapter\Pdo\Mysql::rawQuery() should return Zend_Db_Statement_Interface    
+          but returns Zend_Db_Statement_Pdo|null.                                                                
+  :1017   Method Magento\Framework\DB\Adapter\Pdo\Mysql::addColumn() should return Zend_Db_Statement_Pdo|true    
+          but returns Zend_Db_Statement_Interface.                                                               
+  :1069   Method Magento\Framework\DB\Adapter\Pdo\Mysql::dropColumn() should return Zend_Db_Statement_Pdo|true   
+          but returns Zend_Db_Statement_Interface.                                                               
+  :1147   Method Magento\Framework\DB\Adapter\Pdo\Mysql::changeColumn() should return Zend_Db_Statement_Pdo but  
+          returns Zend_Db_Statement_Interface.                                                                   
+  :1938   Method Magento\Framework\DB\Adapter\Pdo\Mysql::changeTableEngine() should return                       
+          Zend_Db_Statement_Pdo but returns Zend_Db_Statement_Interface.                                         
+  :1954   Method Magento\Framework\DB\Adapter\Pdo\Mysql::changeTableComment() should return                      
+          Zend_Db_Statement_Pdo but returns Zend_Db_Statement_Interface.                                         
+  :2835   No error to ignore is reported on line 2835.                                                           
+ ------- ------------------------------------------------------------------------------------------------------- 
+
+ ------ ------------------------------------------------------------------------------------------ 
+  Line   /var/www/magento/vendor/magento/framework/DB/Logger/LoggerAbstract.php                    
+ ------ ------------------------------------------------------------------------------------------ 
+  :50    Property Magento\Framework\DB\Logger\LoggerAbstract::$timer (int) does not accept float.  
+ ------ ------------------------------------------------------------------------------------------ 
+
+ ------ ----------------------------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/framework/DB/Query.php                                         
+ ------ ----------------------------------------------------------------------------------------------- 
+  :143   Property Magento\Framework\DB\Query::$totalRecords (int) does not accept string.               
+  :169   Property Magento\Framework\DB\Query::$fetchStmt (Zend_Db_Statement_Pdo) does not accept null.  
+  :195   Property Magento\Framework\DB\Query::$fetchStmt (Zend_Db_Statement_Pdo) does not accept        
+         Zend_Db_Statement_Interface.                                                                   
+ ------ ----------------------------------------------------------------------------------------------- 
+
+ ------ ------------------------------------------------------------------------------------------------------ 
+  Line   /var/www/magento/vendor/magento/framework/DB/Query/BatchIterator.php                                  
+ ------ ------------------------------------------------------------------------------------------------------ 
+  :122   Property Magento\Framework\DB\Query\BatchIterator::$currentSelect (Magento\Framework\DB\Select) does  
+         not accept null.                                                                                      
+  :155   Property Magento\Framework\DB\Query\BatchIterator::$currentSelect (Magento\Framework\DB\Select) does  
+         not accept null.                                                                                      
+ ------ ------------------------------------------------------------------------------------------------------ 
+
+ ------ ------------------------------------------------------------------------------------------------------ 
+  Line   /var/www/magento/vendor/magento/framework/DB/Query/BatchRangeIterator.php                             
+ ------ ------------------------------------------------------------------------------------------------------ 
+  :153   Property Magento\Framework\DB\Query\BatchRangeIterator::$currentSelect (Magento\Framework\DB\Select)  
+         does not accept null.                                                                                 
+  :167   Property Magento\Framework\DB\Query\BatchRangeIterator::$currentSelect (Magento\Framework\DB\Select)  
+         does not accept null.                                                                                 
+ ------ ------------------------------------------------------------------------------------------------------ 
+
+ ------ ------------------------------------------------------------------------------------------ 
+  Line   /var/www/magento/vendor/magento/framework/DB/Sql/LookupExpression.php                     
+ ------ ------------------------------------------------------------------------------------------ 
+  :65    Property Magento\Framework\DB\Sql\LookupExpression::$resource (resource) does not accept  
+         Magento\Framework\App\ResourceConnection.                                                 
+ ------ ------------------------------------------------------------------------------------------ 
+
+ ------ ---------------------------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/framework/DB/Statement/Parameter.php                          
+ ------ ---------------------------------------------------------------------------------------------- 
+  :70    Method Magento\Framework\DB\Statement\Parameter::__construct() with return type void returns  
+         $this(Magento\Framework\DB\Statement\Parameter) but should not return anything.               
+ ------ ---------------------------------------------------------------------------------------------- 
+
+ ------- --------------------------------------------------------------------------- 
+  Line    /var/www/magento/vendor/magento/framework/DB/Tree.php                      
+ ------- --------------------------------------------------------------------------- 
+  :97     No error to ignore is reported on line 97.                                 
+  :178    Property Magento\Framework\DB\Tree::$_left (int) does not accept string.   
+  :192    Property Magento\Framework\DB\Tree::$_right (int) does not accept string.  
+  :206    Property Magento\Framework\DB\Tree::$_level (int) does not accept string.  
+  :220    Property Magento\Framework\DB\Tree::$_pid (int) does not accept string.    
+  :363    No error to ignore is reported on line 363.                                
+  :839    No error to ignore is reported on line 839.                                
+  :851    No error to ignore is reported on line 851.                                
+  :853    No error to ignore is reported on line 853.                                
+  :857    No error to ignore is reported on line 857.                                
+  :860    No error to ignore is reported on line 860.                                
+  :864    No error to ignore is reported on line 864.                                
+  :1008   No error to ignore is reported on line 1008.                               
+  :1015   No error to ignore is reported on line 1015.                               
+  :1066   No error to ignore is reported on line 1066.                               
+  :1107   No error to ignore is reported on line 1107.                               
+ ------- --------------------------------------------------------------------------- 
+
+ ------ ------------------------------------------------------------------------------------ 
+  Line   /var/www/magento/vendor/magento/framework/DB/Tree/Node.php                          
+ ------ ------------------------------------------------------------------------------------ 
+  :99    Method Magento\Framework\DB\Tree\Node::__construct() with return type void returns  
+         $this(Magento\Framework\DB\Tree\Node) but should not return anything.               
+ ------ ------------------------------------------------------------------------------------ 
+
+ ------ ---------------------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/framework/Data/AbstractSearchCriteriaBuilder.php        
+ ------ ---------------------------------------------------------------------------------------- 
+  :69    Method Magento\Framework\Data\AbstractSearchCriteriaBuilder::make() should return       
+         Magento\Framework\Data\SearchResultInterface but returns Magento\Framework\DataObject.  
+ ------ ---------------------------------------------------------------------------------------- 
+
+ ------ -------------------------------------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/framework/Data/Collection.php                                           
+ ------ -------------------------------------------------------------------------------------------------------- 
+  :489   Property Magento\Framework\Data\Collection::$_totalRecords (int) does not accept null.                  
+  :829   Method Magento\Framework\Data\Collection::getItemById() should return Magento\Framework\DataObject but  
+         returns null.                                                                                           
+ ------ -------------------------------------------------------------------------------------------------------- 
+
+ ------ ----------------------------------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/framework/Data/Collection/AbstractDb.php                             
+ ------ ----------------------------------------------------------------------------------------------------- 
+  :621   Property Magento\Framework\Data\Collection\AbstractDb::$_fetchStmt (Zend_Db_Statement_Pdo) does not  
+         accept Zend_Db_Statement_Interface.                                                                  
+  :631   Method Magento\Framework\Data\Collection\AbstractDb::fetchItem() should return                       
+         bool|Magento\Framework\Model\AbstractModel but returns Magento\Framework\DataObject.                 
+  :700   Property Magento\Framework\Data\Collection\AbstractDb::$_data (array) does not accept null.          
+  :769   Property Magento\Framework\Data\Collection\AbstractDb::$_data (array) does not accept null.          
+ ------ ----------------------------------------------------------------------------------------------------- 
+
+ ------ ------------------------------------------------------------------------------ 
+  Line   /var/www/magento/vendor/magento/framework/Data/Form/AbstractForm.php          
+ ------ ------------------------------------------------------------------------------ 
+  :190   Method Magento\Framework\Data\Form\AbstractForm::addFieldset() should return  
+         Magento\Framework\Data\Form\Element\Fieldset but returns                      
+         Magento\Framework\Data\Form\Element\AbstractElement.                          
+  :205   Method Magento\Framework\Data\Form\AbstractForm::addColumn() should return    
+         Magento\Framework\Data\Form\Element\Column but returns                        
+         Magento\Framework\Data\Form\Element\AbstractElement.                          
+ ------ ------------------------------------------------------------------------------ 
+
+ ------ ----------------------------------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/framework/Data/Form/Element/AbstractElement.php                      
+ ------ ----------------------------------------------------------------------------------------------------- 
+  :131   Method Magento\Framework\Data\Form\Element\AbstractElement::addElement() should return               
+         Magento\Framework\Data\Form but returns $this(Magento\Framework\Data\Form\Element\AbstractElement).  
+  :248   Property Magento\Framework\Data\Form\Element\AbstractElement::$_form (Magento\Framework\Data\Form)   
+         does not accept Magento\Framework\Data\Form\AbstractForm.                                            
+ ------ ----------------------------------------------------------------------------------------------------- 
+
+ ------ ----------------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/framework/Data/Form/Element/Collection.php         
+ ------ ----------------------------------------------------------------------------------- 
+  :195   Method Magento\Framework\Data\Form\Element\Collection::searchById() should return  
+         Magento\Framework\Data\Form\Element\AbstractElement but returns null.              
+ ------ ----------------------------------------------------------------------------------- 
+
+ ------ -------------------------------------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/framework/Data/Form/Element/Date.php                                    
+ ------ -------------------------------------------------------------------------------------------------------- 
+  :91    Property Magento\Framework\Data\Form\Element\Date::$_value (DateTime) does not accept string.           
+  :95    Property Magento\Framework\Data\Form\Element\Date::$_value (DateTime) does not accept                   
+         DateTimeInterface.                                                                                      
+  :104   Property Magento\Framework\Data\Form\Element\Date::$_value (DateTime) does not accept string.           
+  :107   Property Magento\Framework\Data\Form\Element\Date::$_value (DateTime) does not accept string.           
+  :148   Method Magento\Framework\Data\Form\Element\Date::getValueInstance() should return DateTime but returns  
+         null.                                                                                                   
+ ------ -------------------------------------------------------------------------------------------------------- 
+
+ ------ ------------------------------------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/framework/Data/Form/Element/Editor.php                                 
+ ------ ------------------------------------------------------------------------------------------------------- 
+  :493   Method Magento\Framework\Data\Form\Element\Editor::translate() should return Magento\Framework\Phrase  
+         but returns string.                                                                                    
+ ------ ------------------------------------------------------------------------------------------------------- 
+
+ ------ ---------------------------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/framework/Data/SearchResultIterator.php                       
+ ------ ---------------------------------------------------------------------------------------------- 
+  :85    Property Magento\Framework\Data\SearchResultIterator::$current (array) does not accept null.  
+ ------ ---------------------------------------------------------------------------------------------- 
+
+ ------ ----------------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/framework/Data/SearchResultIteratorFactory.php     
+ ------ ----------------------------------------------------------------------------------- 
+  :42    Method Magento\Framework\Data\SearchResultIteratorFactory::create() should return  
+         Magento\Framework\Data\SearchResultIterator but returns Traversable.               
+ ------ ----------------------------------------------------------------------------------- 
+
+ ------ ----------------------------------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/framework/Data/SearchResultProcessor.php                             
+ ------ ----------------------------------------------------------------------------------------------------- 
+  :38    Method Magento\Framework\Data\SearchResultProcessor::getCurrentPage() should return int but returns  
+         string.                                                                                              
+  :46    Method Magento\Framework\Data\SearchResultProcessor::getPageSize() should return int but returns     
+         string.                                                                                              
+ ------ ----------------------------------------------------------------------------------------------------- 
+
+ ------ ------------------------------------------------------------------------------------------------------ 
+  Line   /var/www/magento/vendor/magento/framework/Data/Tree.php                                               
+ ------ ------------------------------------------------------------------------------------------------------ 
+  :198   Method Magento\Framework\Data\Tree::getNodeById() should return Magento\Framework\Data\Tree\Node but  
+         returns null.                                                                                         
+ ------ ------------------------------------------------------------------------------------------------------ 
+
+ ------ ---------------------------------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/framework/Data/Tree/Node.php                                        
+ ------ ---------------------------------------------------------------------------------------------------- 
+  :138   Method Magento\Framework\Data\Tree\Node::getParent() should return Magento\Framework\Data\Tree but  
+         returns Magento\Framework\Data\Tree\Node.                                                           
+ ------ ---------------------------------------------------------------------------------------------------- 
+
+ ------ -------------------------------------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/framework/Data/Tree/Node/Collection.php                                 
+ ------ -------------------------------------------------------------------------------------------------------- 
+  :179   Method Magento\Framework\Data\Tree\Node\Collection::searchById() should return null but returns mixed.  
+ ------ -------------------------------------------------------------------------------------------------------- 
+
+ ------ -------------------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/framework/DataObject.php                              
+ ------ -------------------------------------------------------------------------------------- 
+  :15    No error to ignore is reported on line 15.                                            
+  :483   Method Magento\Framework\DataObject::debug() should return array but returns string.  
+ ------ -------------------------------------------------------------------------------------- 
+
+ ------ ------------------------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/framework/DataObject/Cache.php                             
+ ------ ------------------------------------------------------------------------------------------- 
+  :133   Method Magento\Framework\DataObject\Cache::save() should return string but returns false.  
+ ------ ------------------------------------------------------------------------------------------- 
+
+ ------ ------------------------------------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/framework/DataObject/Copy.php                                          
+ ------ ------------------------------------------------------------------------------------------------------- 
+  :139   Method Magento\Framework\DataObject\Copy::getDataFromFieldset() should return array but returns null.  
+  :144   Method Magento\Framework\DataObject\Copy::getDataFromFieldset() should return array but returns null.  
+ ------ ------------------------------------------------------------------------------------------------------- 
+
+ ------ -------------------------------------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/framework/DataObject/Copy/Config/Data/Proxy.php                         
+ ------ -------------------------------------------------------------------------------------------------------- 
+  :109   Method Magento\Framework\DataObject\Copy\Config\Data\Proxy::merge() with return type void returns null  
+         but should not return anything.                                                                         
+  :125   Method Magento\Framework\DataObject\Copy\Config\Data\Proxy::reset() with return type void returns null  
+         but should not return anything.                                                                         
+ ------ -------------------------------------------------------------------------------------------------------- 
+
+ ------ -------------------------------------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/framework/DataObject/IdentityService.php                                
+ ------ -------------------------------------------------------------------------------------------------------- 
+  :25    Property Magento\Framework\DataObject\IdentityService::$uuidFactory (Ramsey\Uuid\UuidFactoryInterface)  
+         does not accept Ramsey\Uuid\UuidFactory.                                                                
+ ------ -------------------------------------------------------------------------------------------------------- 
+
+ ------ -------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/framework/Encryption/Encryptor.php  
+ ------ -------------------------------------------------------------------- 
+  :466   No error to ignore is reported on line 466.                         
+ ------ -------------------------------------------------------------------- 
+
+ ------ -------------------------------------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/framework/EntityManager/EntityMetadata.php                              
+ ------ -------------------------------------------------------------------------------------------------------- 
+  :74    Property Magento\Framework\EntityManager\EntityMetadata::$eavEntityType (string) does not accept null.  
+ ------ -------------------------------------------------------------------------------------------------------- 
+
+ ------ ------------------------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/framework/EntityManager/HydratorPool.php                   
+ ------ ------------------------------------------------------------------------------------------- 
+  :34    Property Magento\Framework\EntityManager\HydratorPool::$hydrators                          
+         (array<Magento\Framework\EntityManager\HydratorInterface>) does not accept array<string>.  
+ ------ ------------------------------------------------------------------------------------------- 
+
+ ------ -------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/framework/EntityManager/MetadataPool.php  
+ ------ -------------------------------------------------------------------------- 
+  :101   Property Magento\Framework\EntityManager\MetadataPool::$registry          
+         (array<Magento\Framework\EntityManager\EntityMetadata>) does not accept   
+         array<Magento\Framework\EntityManager\EntityMetadataInterface>.           
+ ------ -------------------------------------------------------------------------- 
+
+ ------ --------------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/framework/EntityManager/Operation/Read.php       
+ ------ --------------------------------------------------------------------------------- 
+  :80    Property Magento\Framework\EntityManager\Operation\Read::$readExtensions         
+         (Magento\Framework\EntityManager\Operation\Read\ReadAttributes) does not accept  
+         Magento\Framework\EntityManager\Operation\Read\ReadExtensions.                   
+ ------ --------------------------------------------------------------------------------- 
+
+ ------ ----------------------------------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/framework/Exception/AbstractAggregateException.php                   
+ ------ ----------------------------------------------------------------------------------------------------- 
+  :65    Property Magento\Framework\Exception\LocalizedException::$logMessage (string) does not accept null.  
+  :73    Property Magento\Framework\Exception\LocalizedException::$logMessage (string) does not accept null.  
+ ------ ----------------------------------------------------------------------------------------------------- 
+
+ ------ ------------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/framework/Filesystem/Directory/Write.php       
+ ------ ------------------------------------------------------------------------------- 
+  :345   Method Magento\Framework\Filesystem\Directory\Write::openFile() should return  
+         Magento\Framework\Filesystem\File\WriteInterface but returns                   
+         Magento\Framework\Filesystem\File\ReadInterface.                               
+ ------ ------------------------------------------------------------------------------- 
+
+ ------ -------------------------------------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/framework/Filesystem/Driver/File.php                                    
+ ------ -------------------------------------------------------------------------------------------------------- 
+  :54    Method Magento\Framework\Filesystem\Driver\File::getWarningMessage() should return string but returns   
+         null.                                                                                                   
+  :647   Method Magento\Framework\Filesystem\Driver\File::filePutContents() should return int but returns true.  
+ ------ -------------------------------------------------------------------------------------------------------- 
+
+ ------ -------------------------------------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/framework/Filesystem/Driver/Http.php                                    
+ ------ -------------------------------------------------------------------------------------------------------- 
+  :119   Method Magento\Framework\Filesystem\Driver\Http::filePutContents() should return int but returns true.  
+ ------ -------------------------------------------------------------------------------------------------------- 
+
+ ------ ------------------------------------------------------------------------------------------ 
+  Line   /var/www/magento/vendor/magento/framework/Filesystem/Driver/Https.php                     
+ ------ ------------------------------------------------------------------------------------------ 
+  :49    Method Magento\Framework\Filesystem\Driver\Https::open() should return array but returns  
+         bool|resource.                                                                            
+ ------ ------------------------------------------------------------------------------------------ 
+
+ ------ ------------------------------------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/framework/Filesystem/Driver/StatefulFile.php                           
+ ------ ------------------------------------------------------------------------------------------------------- 
+  :55    Method Magento\Framework\Filesystem\Driver\StatefulFile::getWarningMessage() should return string but  
+         returns null.                                                                                          
+ ------ ------------------------------------------------------------------------------------------------------- 
+
+ ------ --------------------------------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/framework/Filesystem/Io/File.php                                   
+ ------ --------------------------------------------------------------------------------------------------- 
+  :546   Method Magento\Framework\Filesystem\Io\File::getDestinationFolder() should return bool|string but  
+         returns null.                                                                                      
+ ------ --------------------------------------------------------------------------------------------------- 
+
+ ------ ------------------------------------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/framework/Filesystem/Io/Ftp.php                                        
+ ------ ------------------------------------------------------------------------------------------------------- 
+  :108   Property Magento\Framework\Filesystem\Io\Ftp::$_conn (resource) does not accept FTP\Connection|false.  
+  :110   Property Magento\Framework\Filesystem\Io\Ftp::$_conn (resource) does not accept FTP\Connection|false.  
+ ------ ------------------------------------------------------------------------------------------------------- 
+
+ ------ --------------------------------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/framework/Filter/FilterInput.php                                   
+ ------ --------------------------------------------------------------------------------------------------- 
+  :461   Method Magento\Framework\Filter\FilterInput::getTranslator() should return                         
+         Laminas\I18n\Translator\TranslatorInterface but returns null.                                      
+  :465   Property Magento\Framework\Filter\FilterInput::$_translator                                        
+         (Laminas\I18n\Translator\TranslatorInterface) does not accept Laminas\I18n\Translator\Translator.  
+ ------ --------------------------------------------------------------------------------------------------- 
+
+ ------ -------------------------------------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/framework/GraphQl/Config/Data/WrappedTypeProcessor.php                  
+ ------ -------------------------------------------------------------------------------------------------------- 
+  :121   Method Magento\Framework\GraphQl\Config\Data\WrappedTypeProcessor::processScalarIsNullable() should     
+         return GraphQL\Type\Definition\Type but returns Magento\Framework\GraphQl\Schema\Type\NonNull.          
+  :144   Method Magento\Framework\GraphQl\Config\Data\WrappedTypeProcessor::processScalarIsList() should return  
+         GraphQL\Type\Definition\Type but returns Magento\Framework\GraphQl\Schema\Type\ListOfType.              
+ ------ -------------------------------------------------------------------------------------------------------- 
+
+ ------ ------------------------------------------------------------------------------------------ 
+  Line   /var/www/magento/vendor/magento/framework/GraphQl/Query/BatchContractResolverWrapper.php  
+ ------ ------------------------------------------------------------------------------------------ 
+  :83    Property Magento\Framework\GraphQl\Query\BatchContractResolverWrapper::$objectManager     
+         (Magento\Framework\ObjectManagerInterface) does not accept null.                          
+ ------ ------------------------------------------------------------------------------------------ 
+
+ ------ --------------------------------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/framework/GraphQl/Query/BatchResolverWrapper.php                   
+ ------ --------------------------------------------------------------------------------------------------- 
+  :72    Property Magento\Framework\GraphQl\Query\BatchResolverWrapper::$request                            
+         (array<Magento\Framework\GraphQl\Query\Resolver\BatchRequestItemInterface>) does not accept null.  
+ ------ --------------------------------------------------------------------------------------------------- 
+
+ ------ ------------------------------------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/framework/GraphQl/Query/Resolver/Argument/Filter/Connective.php        
+ ------ ------------------------------------------------------------------------------------------------------- 
+  :35    Property Magento\Framework\GraphQl\Query\Resolver\Argument\Filter\Connective::$operator (string) does  
+         not accept Magento\Framework\GraphQl\Query\Resolver\Argument\Filter\Operator.                          
+  :46    Method Magento\Framework\GraphQl\Query\Resolver\Argument\Filter\Connective::getOperator() should       
+         return Magento\Framework\GraphQl\Query\Resolver\Argument\Filter\Operator but returns string.           
+ ------ ------------------------------------------------------------------------------------------------------- 
+
+ ------ ----------------------------------------------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/framework/GraphQl/Query/Resolver/Argument/SearchCriteria/FilterGroupFactory.php  
+ ------ ----------------------------------------------------------------------------------------------------------------- 
+  :104   Method                                                                                                           
+         Magento\Framework\GraphQl\Query\Resolver\Argument\SearchCriteria\FilterGroupFactory::processConnective()         
+         should return Magento\Framework\Api\Search\FilterGroup but returns                                               
+         Magento\Framework\Api\AbstractSimpleObject.                                                                      
+  :122   Method                                                                                                           
+         Magento\Framework\GraphQl\Query\Resolver\Argument\SearchCriteria\FilterGroupFactory::processClause()             
+         should return Magento\Framework\Api\Search\FilterGroup but returns                                               
+         Magento\Framework\Api\AbstractSimpleObject.                                                                      
+ ------ ----------------------------------------------------------------------------------------------------------------- 
+
+ ------ --------------------------------------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/framework/GraphQl/Schema/Type/Output/ElementMapper/Formatter/Fields.php  
+ ------ --------------------------------------------------------------------------------------------------------- 
+  :127   Method Magento\Framework\GraphQl\Schema\Type\Output\ElementMapper\Formatter\Fields::getFieldType()       
+         should return Magento\Framework\GraphQl\Config\Element\TypeInterface but returns                         
+         GraphQL\Type\Definition\Type|Magento\Framework\GraphQl\Schema\TypeInterface.                             
+ ------ --------------------------------------------------------------------------------------------------------- 
+
+ ------ ------------------------------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/framework/HTTP/Adapter/Curl.php                                  
+ ------ ------------------------------------------------------------------------------------------------- 
+  :150   Method Magento\Framework\HTTP\Adapter\Curl::connect() should return                              
+         $this(Magento\Framework\HTTP\Adapter\Curl) but returns Magento\Framework\HTTP\Adapter\Curl.      
+  :236   Property Magento\Framework\HTTP\Adapter\Curl::$_resource (resource) does not accept null.        
+  :248   Property Magento\Framework\HTTP\Adapter\Curl::$_resource (resource) does not accept CurlHandle.  
+ ------ ------------------------------------------------------------------------------------------------- 
+
+ ------ ----------------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/framework/HTTP/AsyncClient/GuzzleWrapDeferred.php  
+ ------ ----------------------------------------------------------------------------------- 
+  :91    Property Magento\Framework\HTTP\AsyncClient\GuzzleWrapDeferred::$exception         
+         (Magento\Framework\HTTP\AsyncClient\HttpException) does not accept Throwable.      
+ ------ ----------------------------------------------------------------------------------- 
+
+ ------ -------------------------------------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/framework/HTTP/AsyncClient/Request.php                                  
+ ------ -------------------------------------------------------------------------------------------------------- 
+  :101   Method Magento\Framework\HTTP\AsyncClient\Request::getHeaders() should return array<array<string>> but  
+         returns array<string>.                                                                                  
+ ------ -------------------------------------------------------------------------------------------------------- 
+
+ ------ ------------------------------------------------------------------------------------------ 
+  Line   /var/www/magento/vendor/magento/framework/HTTP/Client/Curl.php                            
+ ------ ------------------------------------------------------------------------------------------ 
+  :359   Property Magento\Framework\HTTP\Client\Curl::$_ch (resource) does not accept CurlHandle.  
+ ------ ------------------------------------------------------------------------------------------ 
+
+ ------ ------------------------------------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/framework/HTTP/Client/Socket.php                                       
+ ------ ------------------------------------------------------------------------------------------------------- 
+  :423   Method Magento\Framework\HTTP\Client\Socket::processResponse() with return type void returns null but  
+         should not return anything.                                                                            
+  :467   Property Magento\Framework\HTTP\Client\Socket::$_sock (object) does not accept resource|false.         
+  :470   Method Magento\Framework\HTTP\Client\Socket::makeRequest() with return type void returns null but      
+         should not return anything.                                                                            
+ ------ ------------------------------------------------------------------------------------------------------- 
+
+ ------ ------------------------------------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/framework/HTTP/PhpEnvironment/RemoteAddress.php                        
+ ------ ------------------------------------------------------------------------------------------------------- 
+  :131   Property Magento\Framework\HTTP\PhpEnvironment\RemoteAddress::$remoteAddress (string) does not accept  
+         false.                                                                                                 
+  :133   Method Magento\Framework\HTTP\PhpEnvironment\RemoteAddress::getRemoteAddress() should return string    
+         but returns false.                                                                                     
+  :138   Property Magento\Framework\HTTP\PhpEnvironment\RemoteAddress::$remoteAddress (string) does not accept  
+         false.                                                                                                 
+  :140   Method Magento\Framework\HTTP\PhpEnvironment\RemoteAddress::getRemoteAddress() should return string    
+         but returns false.                                                                                     
+ ------ ------------------------------------------------------------------------------------------------------- 
+
+ ------ ------------------------------------------------------------------------------------------------------ 
+  Line   /var/www/magento/vendor/magento/framework/HTTP/PhpEnvironment/Request.php                             
+ ------ ------------------------------------------------------------------------------------------------------ 
+  :713   Method Magento\Framework\HTTP\PhpEnvironment\Request::getHttpHost() should return string but returns  
+         false.                                                                                                
+ ------ ------------------------------------------------------------------------------------------------------ 
+
+ ------ ---------------------------------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/framework/HTTP/PhpEnvironment/Response.php                          
+ ------ ---------------------------------------------------------------------------------------------------- 
+  :148   Method Magento\Framework\HTTP\PhpEnvironment\Response::setHttpResponseCode() with return type void  
+         returns $this(Magento\Framework\HTTP\PhpEnvironment\Response) but should not return anything.       
+ ------ ---------------------------------------------------------------------------------------------------- 
+
+ ------ ----------------------------------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/framework/HTTP/PhpEnvironment/ServerAddress.php                      
+ ------ ----------------------------------------------------------------------------------------------------- 
+  :40    Method Magento\Framework\HTTP\PhpEnvironment\ServerAddress::getServerAddress() should return string  
+         but returns false.                                                                                   
+ ------ ----------------------------------------------------------------------------------------------------- 
+
+ ------ ----------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/framework/Image/Adapter/AbstractAdapter.php  
+ ------ ----------------------------------------------------------------------------- 
+  :282   Property Magento\Framework\Image\Adapter\AbstractAdapter::$directoryWrite    
+         (Magento\Framework\Filesystem\Directory\Write) does not accept               
+         Magento\Framework\Filesystem\Directory\WriteInterface.                       
+ ------ ----------------------------------------------------------------------------- 
+
+ ------ -------------------------------------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/framework/Image/Adapter/Gd2.php                                         
+ ------ -------------------------------------------------------------------------------------------------------- 
+  :51    Property Magento\Framework\Image\Adapter\AbstractAdapter::$_fileMimeType (string) does not accept       
+         null.                                                                                                   
+  :52    Property Magento\Framework\Image\Adapter\AbstractAdapter::$_fileType (int) does not accept null.        
+  :80    Property Magento\Framework\Image\Adapter\AbstractAdapter::$_imageHandler (resource) does not accept     
+         bool.                                                                                                   
+  :391   Method Magento\Framework\Image\Adapter\Gd2::_getTransparency() should return bool but returns int<0,    
+         max>.                                                                                                   
+  :397   Method Magento\Framework\Image\Adapter\Gd2::_getTransparency() should return bool but returns int<min,  
+         -1>.                                                                                                    
+  :465   Property Magento\Framework\Image\Adapter\AbstractAdapter::$_imageHandler (resource) does not accept     
+         GdImage|false.                                                                                          
+  :715   Property Magento\Framework\Image\Adapter\AbstractAdapter::$_imageHandler (resource) does not accept     
+         GdImage|false.                                                                                          
+  :886   Property Magento\Framework\Image\Adapter\AbstractAdapter::$_imageHandler (resource) does not accept     
+         GdImage|false.                                                                                          
+  :986   Method Magento\Framework\Image\Adapter\Gd2::createTruecolorImageCopy() should return resource but       
+         returns GdImage|false.                                                                                  
+ ------ -------------------------------------------------------------------------------------------------------- 
+
+ ------ ------------------------------------------------------------------------------------------------------ 
+  Line   /var/www/magento/vendor/magento/framework/Image/Adapter/ImageMagick.php                               
+ ------ ------------------------------------------------------------------------------------------------------ 
+  :81    Method Magento\Framework\Image\Adapter\ImageMagick::backgroundColor() should return int but returns   
+         string.                                                                                               
+  :423   Property Magento\Framework\Image\Adapter\ImageMagick::$_imageHandler (Imagick) does not accept null.  
+ ------ ------------------------------------------------------------------------------------------------------ 
+
+ ------ ---------------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/framework/Indexer/Action/Base.php                 
+ ------ ---------------------------------------------------------------------------------- 
+  :162   Property Magento\Framework\Indexer\Action\Base::$string (string) does not accept  
+         Magento\Framework\Stdlib\StringUtils.                                             
+  :245   Property Magento\Framework\Indexer\Action\Base::$saveHandler                      
+         (Magento\Framework\Indexer\SaveHandler\IndexerInterface) does not accept          
+         Magento\Framework\Indexer\IndexerInterface.                                       
+ ------ ---------------------------------------------------------------------------------- 
+
+ ------ ---------------------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/framework/Indexer/GridStructure.php                     
+ ------ ---------------------------------------------------------------------------------------- 
+  :49    Property Magento\Framework\Indexer\GridStructure::$resource (resource) does not accept  
+         Magento\Framework\App\ResourceConnection.                                               
+ ------ ---------------------------------------------------------------------------------------- 
+
+ ------ ----------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/framework/Indexer/Handler/ConcatHandler.php  
+ ------ ----------------------------------------------------------------------------- 
+  :24    Property Magento\Framework\Indexer\Handler\ConcatHandler::$concatExpression  
+         (Magento\Framework\DB\ConcatExpression) does not accept Zend_Db_Expr.        
+ ------ ----------------------------------------------------------------------------- 
+
+ ------ ----------------------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/framework/Indexer/IndexStructure.php                     
+ ------ ----------------------------------------------------------------------------------------- 
+  :60    Property Magento\Framework\Indexer\IndexStructure::$resource (resource) does not accept  
+         Magento\Framework\App\ResourceConnection.                                                
+ ------ ----------------------------------------------------------------------------------------- 
+
+ ------ ----------------------------------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/framework/Indexer/SaveHandler/IndexerHandler.php                     
+ ------ ----------------------------------------------------------------------------------------------------- 
+  :86    Property Magento\Framework\Indexer\SaveHandler\IndexerHandler::$resource (resource) does not accept  
+         Magento\Framework\App\ResourceConnection.                                                            
+ ------ ----------------------------------------------------------------------------------------------------- 
+
+ ------ ----------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/framework/Indexer/SaveHandlerFactory.php     
+ ------ ----------------------------------------------------------------------------- 
+  :47    Method Magento\Framework\Indexer\SaveHandlerFactory::create() should return  
+         Magento\Framework\Indexer\IndexerInterface but returns                       
+         Magento\Framework\Indexer\SaveHandler\IndexerInterface.                      
+ ------ ----------------------------------------------------------------------------- 
+
+ ------ ---------------------------------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/framework/Indexer/ScopeResolver/IndexScopeResolver.php              
+ ------ ---------------------------------------------------------------------------------------------------- 
+  :34    Property Magento\Framework\Indexer\ScopeResolver\IndexScopeResolver::$resource (resource) does not  
+         accept Magento\Framework\App\ResourceConnection.                                                    
+ ------ ---------------------------------------------------------------------------------------------------- 
+
+ ------ ------------------------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/framework/Jwt/Claim/ExpirationTime.php                     
+ ------ ------------------------------------------------------------------------------------------- 
+  :34    Property Magento\Framework\Jwt\Claim\ExpirationTime::$value (string) does not accept int.  
+ ------ ------------------------------------------------------------------------------------------- 
+
+ ------ ------------------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/framework/Jwt/Claim/IssuedAt.php                     
+ ------ ------------------------------------------------------------------------------------- 
+  :34    Property Magento\Framework\Jwt\Claim\IssuedAt::$value (string) does not accept int.  
+ ------ ------------------------------------------------------------------------------------- 
+
+ ------ -------------------------------------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/framework/Mail/Template/TransportBuilder.php                            
+ ------ -------------------------------------------------------------------------------------------------------- 
+  :353   Property Magento\Framework\Mail\Template\TransportBuilder::$templateIdentifier (string) does not        
+         accept null.                                                                                            
+  :354   Property Magento\Framework\Mail\Template\TransportBuilder::$templateVars (array) does not accept null.  
+  :355   Property Magento\Framework\Mail\Template\TransportBuilder::$templateOptions (array) does not accept     
+         null.                                                                                                   
+ ------ -------------------------------------------------------------------------------------------------------- 
+
+ ------ ------------------------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/framework/Mail/Template/TransportBuilderByStore.php        
+ ------ ------------------------------------------------------------------------------------------- 
+  :42    Property Magento\Framework\Mail\Template\TransportBuilderByStore::$message                 
+         (Magento\Framework\Mail\Message) does not accept Magento\Framework\Mail\MessageInterface.  
+ ------ ------------------------------------------------------------------------------------------- 
+
+ ------ -------------------------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/framework/Measure/AbstractMeasure.php                       
+ ------ -------------------------------------------------------------------------------------------- 
+  :217   Property Magento\Framework\Measure\AbstractMeasure::$value (string) does not accept float.  
+ ------ -------------------------------------------------------------------------------------------- 
+
+ ------ -------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/framework/Message/Collection.php    
+ ------ -------------------------------------------------------------------- 
+  :63    Property Magento\Framework\Message\Collection::$lastAddedMessage    
+         (Magento\Framework\Message\MessageInterface) does not accept null.  
+ ------ -------------------------------------------------------------------- 
+
+ ------ ------------------------------------------------------------------------------------------ 
+  Line   /var/www/magento/vendor/magento/framework/Model/AbstractModel.php                         
+ ------ ------------------------------------------------------------------------------------------ 
+  :187   Property Magento\Framework\Model\AbstractModel::$_resource                                
+         (Magento\Framework\Model\ResourceModel\Db\AbstractDb) does not accept                     
+         Magento\Framework\Model\ResourceModel\AbstractResource|null.                              
+  :188   Property Magento\Framework\Model\AbstractModel::$_resourceCollection                      
+         (Magento\Framework\Model\ResourceModel\Db\Collection\AbstractCollection) does not accept  
+         Magento\Framework\Data\Collection\AbstractDb|null.                                        
+ ------ ------------------------------------------------------------------------------------------ 
+
+ ------ ----------------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/framework/Model/Entity/Scope.php                   
+ ------ ----------------------------------------------------------------------------------- 
+  :43    Property Magento\Framework\Model\Entity\Scope::$fallback (string) does not accept  
+         Magento\Framework\Model\Entity\ScopeInterface|null.                                
+  :67    Method Magento\Framework\Model\Entity\Scope::getFallback() should return           
+         Magento\Framework\Model\Entity\ScopeInterface but returns string.                  
+ ------ ----------------------------------------------------------------------------------- 
+
+ ------ -------------------------------------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/framework/Model/ResourceModel/Db/Collection/AbstractCollection.php      
+ ------ -------------------------------------------------------------------------------------------------------- 
+  :189   Method Magento\Framework\Model\ResourceModel\Db\Collection\AbstractCollection::_initSelect() with       
+         return type void returns $this(Magento\Framework\Model\ResourceModel\Db\Collection\AbstractCollection)  
+         but should not return anything.                                                                         
+ ------ -------------------------------------------------------------------------------------------------------- 
+
+ ------ --------------------------------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/framework/Model/ResourceModel/Db/DeleteEntityRow.php               
+ ------ --------------------------------------------------------------------------------------------------- 
+  :41    Method Magento\Framework\Model\ResourceModel\Db\DeleteEntityRow::execute() should return bool but  
+         returns int.                                                                                       
+ ------ --------------------------------------------------------------------------------------------------- 
+
+ ------ --------------------------------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/framework/Model/ResourceModel/Db/UpdateEntityRow.php               
+ ------ --------------------------------------------------------------------------------------------------- 
+  :64    Method Magento\Framework\Model\ResourceModel\Db\UpdateEntityRow::execute() should return bool but  
+         returns int.                                                                                       
+ ------ --------------------------------------------------------------------------------------------------- 
+
+ ------ ------------------------------------------------------------------------------------------------------ 
+  Line   /var/www/magento/vendor/magento/framework/Module/ModuleResource.php                                   
+ ------ ------------------------------------------------------------------------------------------------------ 
+  :60    Static property Magento\Framework\Module\ModuleResource::$dataVersions (array) does not accept null.  
+  :150   Static property Magento\Framework\Module\ModuleResource::$dataVersions (array) does not accept null.  
+ ------ ------------------------------------------------------------------------------------------------------ 
+
+ ------ ---------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/framework/Module/Setup/Migration.php  
+ ------ ---------------------------------------------------------------------- 
+  :154   Property Magento\Framework\Module\Setup\Migration::$_directory        
+         (Magento\Framework\Filesystem\Directory\Read) does not accept         
+         Magento\Framework\Filesystem\Directory\ReadInterface.                 
+ ------ ---------------------------------------------------------------------- 
+
+ ------ ------------------------------------------------------------------------------------------ 
+  Line   /var/www/magento/vendor/magento/framework/Mview/View/Subscription.php                     
+ ------ ------------------------------------------------------------------------------------------ 
+  :120   Property Magento\Framework\Mview\View\Subscription::$view (string) does not accept        
+         Magento\Framework\Mview\ViewInterface.                                                    
+  :123   Property Magento\Framework\Mview\View\Subscription::$resource (resource) does not accept  
+         Magento\Framework\App\ResourceConnection.                                                 
+  :409   Method Magento\Framework\Mview\View\Subscription::getView() should return                 
+         Magento\Framework\Mview\ViewInterface but returns string.                                 
+ ------ ------------------------------------------------------------------------------------------ 
+
+ ------ -------------------------------------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/framework/ObjectManager/Code/Generator/Persistor.php                    
+ ------ -------------------------------------------------------------------------------------------------------- 
+  :252   Method Magento\Framework\ObjectManager\Code\Generator\Persistor::_getLoadEntityMethod() should return   
+         string but returns array<string, array<int|string, array<int|string, array<string,                      
+         string>|string>|string>|string>.                                                                        
+  :289   Method Magento\Framework\ObjectManager\Code\Generator\Persistor::_getRegisterDeletedMethod() should     
+         return string but returns array<string, array<int|string, array<int|string, array<string,               
+         string>|string>|string>|string>.                                                                        
+  :385   Method Magento\Framework\ObjectManager\Code\Generator\Persistor::_getDoPersistEntityMethod() should     
+         return string but returns array<string, array<int|string, array<int|string, array<string,               
+         string>|string>|string>|string>.                                                                        
+  :416   Method Magento\Framework\ObjectManager\Code\Generator\Persistor::_getRegisterFromArrayMethod() should   
+         return string but returns array<string, array<int|string, array<int|string, array<string,               
+         string>|string>|string>|string>.                                                                        
+  :455   Method Magento\Framework\ObjectManager\Code\Generator\Persistor::_getRegisterNewMethod() should return  
+         string but returns array<string, array<int|string, array<int|string, array<string,                      
+         string>|string>|string>|string>.                                                                        
+ ------ -------------------------------------------------------------------------------------------------------- 
+
+ ------ ------------------------------------------------------------------------------------------------------ 
+  Line   /var/www/magento/vendor/magento/framework/ObjectManager/Code/Generator/Repository.php                 
+ ------ ------------------------------------------------------------------------------------------------------ 
+  :581   Method Magento\Framework\ObjectManager\Code\Generator\Repository::_getGetCollectionProcessorMethod()  
+         should return string but returns array<string, array<string, array<int, array<string,                 
+         string>>|string>|string>.                                                                             
+ ------ ------------------------------------------------------------------------------------------------------ 
+
+ ------ -------------------------------------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/framework/ObjectManager/Config/Compiled.php                             
+ ------ -------------------------------------------------------------------------------------------------------- 
+  :87    Method Magento\Framework\ObjectManager\Config\Compiled::getArguments() should return array but returns  
+         null.                                                                                                   
+  :159   Method Magento\Framework\ObjectManager\Config\Compiled::getVirtualTypes() should return string but      
+         returns array.                                                                                          
+ ------ -------------------------------------------------------------------------------------------------------- 
+
+ ------ ------------------------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/framework/Pricing/Price/Pool.php                           
+ ------ ------------------------------------------------------------------------------------------- 
+  :101   Method Magento\Framework\Pricing\Price\Pool::get() should return string but returns        
+         Magento\Framework\Pricing\Price\PriceInterface.                                            
+  :154   Method Magento\Framework\Pricing\Price\Pool::offsetGet() should return string but returns  
+         Magento\Framework\Pricing\Price\PriceInterface|null.                                       
+ ------ ------------------------------------------------------------------------------------------- 
+
+ ------ --------------------------------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/framework/Pricing/Render/Amount.php                                
+ ------ --------------------------------------------------------------------------------------------------- 
+  :227   Method Magento\Framework\Pricing\Render\Amount::formatCurrency() should return float but returns   
+         string.                                                                                            
+  :239   Method Magento\Framework\Pricing\Render\Amount::setAdjustmentCssClasses() should return array but  
+         returns $this(Magento\Framework\Pricing\Render\Amount).                                            
+ ------ --------------------------------------------------------------------------------------------------- 
+
+ ------ -------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/framework/Pricing/Render/Layout.php       
+ ------ -------------------------------------------------------------------------- 
+  :68    Method Magento\Framework\Pricing\Render\Layout::getBlock() should return  
+         Magento\Framework\View\Element\AbstractBlock but returns                  
+         bool|Magento\Framework\View\Element\BlockInterface.                       
+ ------ -------------------------------------------------------------------------- 
+
+ ------ --------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/framework/Reflection/FieldNamer.php  
+ ------ --------------------------------------------------------------------- 
+  :28    No error to ignore is reported on line 28.                           
+ ------ --------------------------------------------------------------------- 
+
+ ------ --------------------------------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/framework/Reflection/NameFinder.php                                
+ ------ --------------------------------------------------------------------------------------------------- 
+  :101   Method Magento\Framework\Reflection\NameFinder::findAccessorMethodName() should return string but  
+         returns bool.                                                                                      
+ ------ --------------------------------------------------------------------------------------------------- 
+
+ ------ ------------------------------------------------------------------------------------------------------ 
+  Line   /var/www/magento/vendor/magento/framework/Reflection/TypeProcessor.php                                
+ ------ ------------------------------------------------------------------------------------------------------ 
+  :143   Method Magento\Framework\Reflection\TypeProcessor::register() should return string but returns null.  
+  :347   Method Magento\Framework\Reflection\TypeProcessor::normalizeType() should return string but returns   
+         null.                                                                                                 
+  :500   Method Magento\Framework\Reflection\TypeProcessor::processSimpleAndAnyType() should return            
+         array<float|int|string>|float|int|string but returns null.                                            
+  :733   Method Magento\Framework\Reflection\TypeProcessor::setType() should return true but returns false.    
+  :735   Method Magento\Framework\Reflection\TypeProcessor::setType() should return true but returns bool.     
+  :868   No error to ignore is reported on line 868.                                                           
+  :883   No error to ignore is reported on line 883.                                                           
+  :896   No error to ignore is reported on line 896.                                                           
+ ------ ------------------------------------------------------------------------------------------------------ 
+
+ ------ ------------------------------------------------------------------------------------------------------ 
+  Line   /var/www/magento/vendor/magento/framework/Search/Request/Aggregation/DynamicBucket.php                
+ ------ ------------------------------------------------------------------------------------------------------ 
+  :42    Property Magento\Framework\Search\Request\Aggregation\DynamicBucket::$method (array) does not accept  
+         string.                                                                                               
+  :78    Method Magento\Framework\Search\Request\Aggregation\DynamicBucket::getMethod() should return string   
+         but returns array.                                                                                    
+ ------ ------------------------------------------------------------------------------------------------------ 
+
+ ------ ----------------------------------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/framework/Search/Request/Config/SchemaLocator.php                    
+ ------ ----------------------------------------------------------------------------------------------------- 
+  :42    Method Magento\Framework\Search\Request\Config\SchemaLocator::getPerFileSchema() should return null  
+         but returns string.                                                                                  
+ ------ ----------------------------------------------------------------------------------------------------- 
+
+ ------ -------------------------------------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/framework/Session/SaveHandlerFactory.php                                
+ ------ -------------------------------------------------------------------------------------------------------- 
+  :66    Method Magento\Framework\Session\SaveHandlerFactory::create() should return SessionHandler but returns  
+         SessionHandlerInterface.                                                                                
+ ------ -------------------------------------------------------------------------------------------------------- 
+
+ ------ ------------------------------------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/framework/Setup/Declaration/Schema/Diff/Diff.php                       
+ ------ ------------------------------------------------------------------------------------------------------- 
+  :218   Method Magento\Framework\Setup\Declaration\Schema\Diff\Diff::register() with return type void returns  
+         $this(Magento\Framework\Setup\Declaration\Schema\Diff\Diff) but should not return anything.            
+  :226   Method Magento\Framework\Setup\Declaration\Schema\Diff\Diff::register() with return type void returns  
+         $this(Magento\Framework\Setup\Declaration\Schema\Diff\Diff) but should not return anything.            
+ ------ ------------------------------------------------------------------------------------------------------- 
+
+ ------ ------------------------------------------------------------------------------------------------------ 
+  Line   /var/www/magento/vendor/magento/framework/Setup/Declaration/Schema/Diff/TableDiff.php                 
+ ------ ------------------------------------------------------------------------------------------------------ 
+  :119   Method Magento\Framework\Setup\Declaration\Schema\Diff\TableDiff::turnOffForeignKeys() should return  
+         Magento\Framework\Setup\Declaration\Schema\Diff\Diff but returns                                      
+         Magento\Framework\Setup\Declaration\Schema\Diff\DiffInterface.                                        
+ ------ ------------------------------------------------------------------------------------------------------ 
+
+ ------ --------------------------------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/framework/Setup/Declaration/Schema/Dto/Columns/Boolean.php         
+ ------ --------------------------------------------------------------------------------------------------- 
+  :74    Method Magento\Framework\Setup\Declaration\Schema\Dto\Columns\Boolean::getDefault() should return  
+         int|null but returns bool.                                                                         
+ ------ --------------------------------------------------------------------------------------------------- 
+
+ ------ -------------------------------------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/framework/Setup/Declaration/Schema/Dto/Columns/StringBinary.php         
+ ------ -------------------------------------------------------------------------------------------------------- 
+  :61    Property Magento\Framework\Setup\Declaration\Schema\Dto\Columns\StringBinary::$default (int) does not   
+         accept string|null.                                                                                     
+  :82    Method Magento\Framework\Setup\Declaration\Schema\Dto\Columns\StringBinary::getDefault() should return  
+         string|null but returns int.                                                                            
+ ------ -------------------------------------------------------------------------------------------------------- 
+
+ ------ ----------------------------------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/framework/Setup/Declaration/Schema/Dto/Columns/Timestamp.php         
+ ------ ----------------------------------------------------------------------------------------------------- 
+  :72    Method Magento\Framework\Setup\Declaration\Schema\Dto\Columns\Timestamp::getDefault() should return  
+         int|null but returns string.                                                                         
+ ------ ----------------------------------------------------------------------------------------------------- 
+
+ ------ ------------------------------------------------------------------------------------------------------ 
+  Line   /var/www/magento/vendor/magento/framework/Setup/Patch/PatchRegistry.php                               
+ ------ ------------------------------------------------------------------------------------------------------ 
+  :97    Method Magento\Framework\Setup\Patch\PatchRegistry::registerPatch() should return                     
+         bool|Magento\Framework\Setup\Patch\PatchInterface but returns string.                                 
+  :101   Method Magento\Framework\Setup\Patch\PatchRegistry::registerPatch() should return                     
+         bool|Magento\Framework\Setup\Patch\PatchInterface but returns string.                                 
+  :188   Method Magento\Framework\Setup\Patch\PatchRegistry::getReverseIterator() should return ArrayIterator  
+         but returns Iterator.                                                                                 
+  :223   Method Magento\Framework\Setup\Patch\PatchRegistry::getIterator() should return ArrayIterator but     
+         returns Iterator.                                                                                     
+ ------ ------------------------------------------------------------------------------------------------------ 
+
+ ------ --------------------------------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/framework/Simplexml/Config.php                                     
+ ------ --------------------------------------------------------------------------------------------------- 
+  :246   Property Magento\Framework\Simplexml\Config::$_xml (Magento\Framework\Simplexml\Element) does not  
+         accept null.                                                                                       
+ ------ --------------------------------------------------------------------------------------------------- 
+
+ ------ --------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/framework/Simplexml/Element.php      
+ ------ --------------------------------------------------------------------- 
+  :153   Method Magento\Framework\Simplexml\Element::descend() should return  
+         Magento\Framework\Simplexml\Element but returns false.               
+ ------ --------------------------------------------------------------------- 
+
+ ------ -------------------------------------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/framework/Stdlib/DateTime/DateTime.php                                  
+ ------ -------------------------------------------------------------------------------------------------------- 
+  :67    Method Magento\Framework\Stdlib\DateTime\DateTime::gmtDate() should return string but returns false.    
+  :108   Method Magento\Framework\Stdlib\DateTime\DateTime::gmtTimestamp() should return int but returns false.  
+ ------ -------------------------------------------------------------------------------------------------------- 
+
+ ------ ------------------------------------------------------------------------ 
+  Line   /var/www/magento/vendor/magento/framework/Stdlib/DateTime/Timezone.php  
+ ------ ------------------------------------------------------------------------ 
+  :244   No error to ignore is reported on line 244.                             
+  :316   No error to ignore is reported on line 316.                             
+  :318   No error to ignore is reported on line 318.                             
+ ------ ------------------------------------------------------------------------ 
+
+ ------ -------------------------------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/framework/System/Ftp.php                                          
+ ------ -------------------------------------------------------------------------------------------------- 
+  :118   Method Magento\Framework\System\Ftp::validateConnectionString() should return string but returns  
+         array<string, int<0, 65535>|string>.                                                              
+  :136   Property Magento\Framework\System\Ftp::$_conn (resource) does not accept FTP\Connection|false.    
+ ------ -------------------------------------------------------------------------------------------------- 
+
+ ------ ----------------------------------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/framework/Translate.php                                              
+ ------ ----------------------------------------------------------------------------------------------------- 
+  :176   Property Magento\Framework\Translate::$directory (Magento\Framework\Filesystem\Directory\Read) does  
+         not accept Magento\Framework\Filesystem\Directory\ReadInterface.                                     
+ ------ ----------------------------------------------------------------------------------------------------- 
+
+ ------ ------------------------------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/framework/Translate/Inline/Proxy.php                             
+ ------ ------------------------------------------------------------------------------------------------- 
+  :131   Method Magento\Framework\Translate\Inline\Proxy::processResponseBody() should return             
+         $this(Magento\Framework\Translate\Inline\Proxy) but returns Magento\Framework\Translate\Inline.  
+ ------ ------------------------------------------------------------------------------------------------- 
+
+ ------ ----------------------------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/framework/Translate/Inline/State.php                           
+ ------ ----------------------------------------------------------------------------------------------- 
+  :82    Property Magento\Framework\Translate\Inline\State::$storedStatus (bool) does not accept null.  
+ ------ ----------------------------------------------------------------------------------------------- 
+
+ ------ ---------------------------------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/framework/Url.php                                                   
+ ------ ---------------------------------------------------------------------------------------------------- 
+  :782   Method Magento\Framework\Url::_setQuery() should return Magento\Framework\UrlInterface but returns  
+         Magento\Framework\Url\QueryParamsResolverInterface.                                                 
+ ------ ---------------------------------------------------------------------------------------------------- 
+
+ ------ ------------------------------------------------------------------------------------------------------ 
+  Line   /var/www/magento/vendor/magento/framework/Url/ScopeResolver.php                                       
+ ------ ------------------------------------------------------------------------------------------------------ 
+  :58    Method Magento\Framework\Url\ScopeResolver::getScopes() should return                                 
+         array<Magento\Framework\Url\ScopeInterface> but returns array<Magento\Framework\App\ScopeInterface>.  
+ ------ ------------------------------------------------------------------------------------------------------ 
+
+ ------ ------------------------------------------------------------------------------------------------------ 
+  Line   /var/www/magento/vendor/magento/framework/Validator/Constraint/Option/Callback.php                    
+ ------ ------------------------------------------------------------------------------------------------------ 
+  :54    Property Magento\Framework\Validator\Constraint\Option\Callback::$_arguments (array) does not accept  
+         null.                                                                                                 
+ ------ ------------------------------------------------------------------------------------------------------ 
+
+ ------ -------------------------------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/framework/Validator/HTML/ConfigurableWYSIWYGValidator.php         
+ ------ -------------------------------------------------------------------------------------------------- 
+  :62    Property Magento\Framework\Validator\HTML\ConfigurableWYSIWYGValidator::$attributesAllowedByTags  
+         (array<string>) does not accept array<string, array<string>>.                                     
+ ------ -------------------------------------------------------------------------------------------------- 
+
+ ------ ------------------------------------------------------------------------------------------------------ 
+  Line   /var/www/magento/vendor/magento/framework/View/Asset/Bundle.php                                       
+ ------ ------------------------------------------------------------------------------------------------------ 
+  :216   Method Magento\Framework\View\Asset\Bundle::getPartContent() should return array but returns string.  
+ ------ ------------------------------------------------------------------------------------------------------ 
+
+ ------ ------------------------------------------------------------------------------------------------------ 
+  Line   /var/www/magento/vendor/magento/framework/View/Asset/File.php                                         
+ ------ ------------------------------------------------------------------------------------------------------ 
+  :208   Method Magento\Framework\View\Asset\File::getContext() should return                                  
+         Magento\Framework\View\Asset\File\Context but returns Magento\Framework\View\Asset\ContextInterface.  
+ ------ ------------------------------------------------------------------------------------------------------ 
+
+ ------ ------------------------------------------------------------------------------------------ 
+  Line   /var/www/magento/vendor/magento/framework/View/Asset/PreProcessor/FileNameResolver.php    
+ ------ ------------------------------------------------------------------------------------------ 
+  :25    Property Magento\Framework\View\Asset\PreProcessor\FileNameResolver::$alternativeSources  
+         (array<Magento\Framework\View\Asset\PreProcessor\AlternativeSource>) does not accept      
+         array<Magento\Framework\View\Asset\PreProcessor\AlternativeSourceInterface>.              
+ ------ ------------------------------------------------------------------------------------------ 
+
+ ------ ------------------------------------------------------------------------------------------------------ 
+  Line   /var/www/magento/vendor/magento/framework/View/Asset/Repository.php                                   
+ ------ ------------------------------------------------------------------------------------------------------ 
+  :299   Method Magento\Framework\View\Asset\Repository::getFallbackContext() should return                    
+         Magento\Framework\View\Asset\File\FallbackContext but returns                                         
+         Magento\Framework\View\Asset\ContextInterface.                                                        
+  :376   Method Magento\Framework\View\Asset\Repository::getFileContext() should return                        
+         Magento\Framework\View\Asset\File\Context but returns Magento\Framework\View\Asset\ContextInterface.  
+ ------ ------------------------------------------------------------------------------------------------------ 
+
+ ------ ----------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/framework/View/BlockPool.php           
+ ------ ----------------------------------------------------------------------- 
+  :72    Method Magento\Framework\View\BlockPool::get() should return           
+         Magento\Framework\View\Element\BlockInterface|null but returns array.  
+ ------ ----------------------------------------------------------------------- 
+
+ ------ ------------------------------------------------------------------------------------------------------ 
+  Line   /var/www/magento/vendor/magento/framework/View/Context.php                                            
+ ------ ------------------------------------------------------------------------------------------------------ 
+  :182   Property Magento\Framework\View\Context::$viewConfig (Magento\Framework\View\Config) does not accept  
+         Magento\Framework\View\ConfigInterface.                                                               
+ ------ ------------------------------------------------------------------------------------------------------ 
+
+ ------ -------------------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/framework/View/Design/Theme/Customization/Path.php    
+ ------ -------------------------------------------------------------------------------------- 
+  :64    Property Magento\Framework\View\Design\Theme\Customization\Path::$mediaDirectoryRead  
+         (Magento\Framework\Filesystem\Directory\Read) does not accept                         
+         Magento\Framework\Filesystem\Directory\ReadInterface.                                 
+ ------ -------------------------------------------------------------------------------------- 
+
+ ------ -------------------------------------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/framework/View/Design/Theme/Image/Uploader.php                          
+ ------ -------------------------------------------------------------------------------------------------------- 
+  :88    Method Magento\Framework\View\Design\Theme\Image\Uploader::uploadPreviewImage() should return bool but  
+         returns string.                                                                                         
+ ------ -------------------------------------------------------------------------------------------------------- 
+
+ ------ ------------------------------------------------------------------------------------------------ 
+  Line   /var/www/magento/vendor/magento/framework/View/Design/Theme/Label.php                           
+ ------ ------------------------------------------------------------------------------------------------ 
+  :28    Property Magento\Framework\View\Design\Theme\Label::$_labelsCollection (array) does not accept  
+         Magento\Framework\View\Design\Theme\Label\ListInterface.                                        
+ ------ ------------------------------------------------------------------------------------------------ 
+
+ ------ ------------------------------------------------------------------------------------------ 
+  Line   /var/www/magento/vendor/magento/framework/View/Design/Theme/ThemeList.php                 
+ ------ ------------------------------------------------------------------------------------------ 
+  :357   Method Magento\Framework\View\Design\Theme\ThemeList::getThemeByFullPath() should return  
+         Magento\Framework\View\Design\ThemeInterface but returns Magento\Framework\DataObject.    
+ ------ ------------------------------------------------------------------------------------------ 
+
+ ------- --------------------------------------------------------------------------------- 
+  Line    /var/www/magento/vendor/magento/framework/View/Element/AbstractBlock.php         
+ ------- --------------------------------------------------------------------------------- 
+  :402    Method Magento\Framework\View\Element\AbstractBlock::addChild() should return    
+          $this(Magento\Framework\View\Element\AbstractBlock) but returns                  
+          Magento\Framework\View\Element\BlockInterface.                                   
+  :1155   Method Magento\Framework\View\Element\AbstractBlock::_saveCache() should return  
+          $this(Magento\Framework\View\Element\AbstractBlock) but returns false.           
+ ------- --------------------------------------------------------------------------------- 
+
+ ------ ----------------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/framework/View/Element/Template.php                
+ ------ ----------------------------------------------------------------------------------- 
+  :361   Method Magento\Framework\View\Element\Template::getMediaDirectory() should return  
+         Magento\Framework\Filesystem\Directory\Read but returns                            
+         Magento\Framework\Filesystem\Directory\ReadInterface.                              
+ ------ ----------------------------------------------------------------------------------- 
+
+ ------ ------------------------------------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/framework/View/Element/Template/File/Validator.php                     
+ ------ ------------------------------------------------------------------------------------------------------- 
+  :94    Property Magento\Framework\View\Element\Template\File\Validator::$_themesDir (string) does not accept  
+         array.                                                                                                 
+  :155   Property Magento\Framework\View\Element\Template\File\Validator::$directory (bool) does not accept     
+         Magento\Framework\Filesystem\Directory\ReadInterface.                                                  
+ ------ ------------------------------------------------------------------------------------------------------- 
+
+ ------ ------------------------------------------------------------------------------------------------------ 
+  Line   /var/www/magento/vendor/magento/framework/View/Element/UiComponent/DataProvider/Reporting.php         
+ ------ ------------------------------------------------------------------------------------------------------ 
+  :36    Property Magento\Framework\View\Element\UiComponent\DataProvider\Reporting::$filterPool (array) does  
+         not accept Magento\Framework\View\Element\UiComponent\DataProvider\FilterPool.                        
+  :54    Method Magento\Framework\View\Element\UiComponent\DataProvider\Reporting::search() should return      
+         Magento\Framework\Api\Search\SearchResultInterface but returns Magento\Framework\Data\Collection.     
+ ------ ------------------------------------------------------------------------------------------------------ 
+
+ ------ -------------------------------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/framework/View/Element/UiComponent/DataProvider/SearchResult.php  
+ ------ -------------------------------------------------------------------------------------------------- 
+  :156   Property Magento\Framework\View\Element\UiComponent\DataProvider\SearchResult::$searchCriteria    
+         (Magento\Framework\Api\Search\SearchCriteriaInterface) does not accept                            
+         Magento\Framework\Api\SearchCriteriaInterface.                                                    
+ ------ -------------------------------------------------------------------------------------------------- 
+
+ ------ ------------------------------------------------------------------------------------------------ 
+  Line   /var/www/magento/vendor/magento/framework/View/Element/UiComponentFactory.php                   
+ ------ ------------------------------------------------------------------------------------------------ 
+  :131   Method Magento\Framework\View\Element\UiComponentFactory::createChildComponent() should return  
+         Magento\Framework\View\Element\UiComponentInterface but returns null.                           
+  :166   Method Magento\Framework\View\Element\UiComponentFactory::createChildComponent() should return  
+         Magento\Framework\View\Element\UiComponentInterface but returns null.                           
+ ------ ------------------------------------------------------------------------------------------------ 
+
+ ------ ------------------------------------------------------------------------------ 
+  Line   /var/www/magento/vendor/magento/framework/View/File.php                       
+ ------ ------------------------------------------------------------------------------ 
+  :64    Property Magento\Framework\View\File::$isBase (string) does not accept bool.  
+ ------ ------------------------------------------------------------------------------ 
+
+ ------ -------------------------------------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/framework/View/Layout.php                                               
+ ------ -------------------------------------------------------------------------------------------------------- 
+  :297   Property Magento\Framework\View\Layout::$_update (Magento\Framework\View\Layout\ProcessorInterface)     
+         does not accept null.                                                                                   
+  :874   Method Magento\Framework\View\Layout::renameElement() should return bool but returns                    
+         $this(Magento\Framework\View\Layout).                                                                   
+  :990   Method Magento\Framework\View\Layout::getMessagesBlock() should return                                  
+         Magento\Framework\View\Element\Messages but returns Magento\Framework\View\Element\AbstractBlock|true.  
+  :992   Method Magento\Framework\View\Layout::getMessagesBlock() should return                                  
+         Magento\Framework\View\Element\Messages but returns Magento\Framework\View\Element\AbstractBlock.       
+ ------ -------------------------------------------------------------------------------------------------------- 
+
+ ------ --------------------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/framework/View/Layout/Generator/Block.php              
+ ------ --------------------------------------------------------------------------------------- 
+  :100   Property Magento\Framework\View\Layout\Generator\Block::$exceptionHandlerBlockFactory  
+         (Magento\Framework\View\Element\ExceptionHandlerBlock) does not accept                 
+         Magento\Framework\View\Element\ExceptionHandlerBlockFactory.                           
+ ------ --------------------------------------------------------------------------------------- 
+
+ ------ --------------------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/framework/View/Layout/Proxy.php                        
+ ------ --------------------------------------------------------------------------------------- 
+  :109   Method Magento\Framework\View\Layout\Proxy::setGeneratorPool() should return           
+         $this(Magento\Framework\View\Layout\Proxy) but returns Magento\Framework\View\Layout.  
+  :117   Method Magento\Framework\View\Layout\Proxy::setBuilder() should return                 
+         $this(Magento\Framework\View\Layout\Proxy) but returns Magento\Framework\View\Layout.  
+  :141   Method Magento\Framework\View\Layout\Proxy::generateXml() should return                
+         $this(Magento\Framework\View\Layout\Proxy) but returns Magento\Framework\View\Layout.  
+  :165   Method Magento\Framework\View\Layout\Proxy::setChild() should return                   
+         $this(Magento\Framework\View\Layout\Proxy) but returns Magento\Framework\View\Layout.  
+  :181   Method Magento\Framework\View\Layout\Proxy::unsetChild() should return                 
+         $this(Magento\Framework\View\Layout\Proxy) but returns Magento\Framework\View\Layout.  
+  :293   Method Magento\Framework\View\Layout\Proxy::setBlock() should return                   
+         $this(Magento\Framework\View\Layout\Proxy) but returns Magento\Framework\View\Layout.  
+  :301   Method Magento\Framework\View\Layout\Proxy::unsetElement() should return               
+         $this(Magento\Framework\View\Layout\Proxy) but returns Magento\Framework\View\Layout.  
+  :381   Method Magento\Framework\View\Layout\Proxy::addOutputElement() should return           
+         $this(Magento\Framework\View\Layout\Proxy) but returns Magento\Framework\View\Layout.  
+  :389   Method Magento\Framework\View\Layout\Proxy::removeOutputElement() should return        
+         $this(Magento\Framework\View\Layout\Proxy) but returns Magento\Framework\View\Layout.  
+  :421   Method Magento\Framework\View\Layout\Proxy::addAdjustableRenderer() should return      
+         $this(Magento\Framework\View\Layout\Proxy) but returns Magento\Framework\View\Layout.  
+  :492   Method Magento\Framework\View\Layout\Proxy::setXml() should return                     
+         $this(Magento\Framework\View\Layout\Proxy) but returns Magento\Framework\View\Layout.  
+  :548   Method Magento\Framework\View\Layout\Proxy::setNode() should return                    
+         $this(Magento\Framework\View\Layout\Proxy) but returns Magento\Framework\View\Layout.  
+  :556   Method Magento\Framework\View\Layout\Proxy::applyExtends() should return               
+         $this(Magento\Framework\View\Layout\Proxy) but returns Magento\Framework\View\Layout.  
+  :572   Method Magento\Framework\View\Layout\Proxy::extend() should return                     
+         $this(Magento\Framework\View\Layout\Proxy) but returns Magento\Framework\View\Layout.  
+ ------ --------------------------------------------------------------------------------------- 
+
+ ------ -------------------------------------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/framework/View/Model/Layout/Merge.php                                   
+ ------ -------------------------------------------------------------------------------------------------------- 
+  :218   Property Magento\Framework\View\Model\Layout\Merge::$scope (Magento\Framework\Url\ScopeInterface) does  
+         not accept Magento\Framework\App\ScopeInterface.                                                        
+  :653   Method Magento\Framework\View\Model\Layout\Merge::validateUpdate() with return type void returns null   
+         but should not return anything.                                                                         
+  :688   Method Magento\Framework\View\Model\Layout\Merge::getDbUpdateString() should return string but returns  
+         null.                                                                                                   
+  :728   Property Magento\Framework\View\Model\Layout\Merge::$layoutUpdatesCache                                 
+         (Magento\Framework\View\Layout\Element) does not accept SimpleXMLElement.                               
+  :729   Method Magento\Framework\View\Model\Layout\Merge::getFileLayoutUpdatesXml() should return               
+         Magento\Framework\View\Layout\Element but returns SimpleXMLElement.                                     
+  :821   Method Magento\Framework\View\Model\Layout\Merge::_loadFileLayoutUpdatesXml() should return             
+         Magento\Framework\View\Layout\Element but returns SimpleXMLElement.                                     
+  :876   Method Magento\Framework\View\Model\Layout\Merge::_getPhysicalTheme() should return                     
+         Magento\Theme\Model\Theme but returns Magento\Framework\View\Design\ThemeInterface.                     
+  :928   Property Magento\Framework\View\Model\Layout\Merge::$layoutUpdatesCache                                 
+         (Magento\Framework\View\Layout\Element) does not accept null.                                           
+ ------ -------------------------------------------------------------------------------------------------------- 
+
+ ------ ---------------------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/framework/View/Model/Layout/Translator.php              
+ ------ ---------------------------------------------------------------------------------------- 
+  :129   Method Magento\Framework\View\Model\Layout\Translator::_translateValue() should return  
+         Magento\Framework\Phrase but returns string.                                            
+ ------ ---------------------------------------------------------------------------------------- 
+
+ ------ -------------------------------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/framework/View/Page/Config.php                                    
+ ------ -------------------------------------------------------------------------------------------------- 
+  :662   Method Magento\Framework\View\Page\Config::getIncludes() should return string but returns array.  
+ ------ -------------------------------------------------------------------------------------------------- 
+
+ ------ --------------------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/framework/View/Page/Title.php                          
+ ------ --------------------------------------------------------------------------------------- 
+  :164   Property Magento\Framework\View\Page\Title::$textValue (string) does not accept null.  
+ ------ --------------------------------------------------------------------------------------- 
+
+ ------ ------------------------------------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/framework/View/Result/Layout.php                                       
+ ------ ------------------------------------------------------------------------------------------------------- 
+  :85    Property Magento\Framework\View\Result\Layout::$request (Magento\Framework\App\Request\Http) does not  
+         accept Magento\Framework\App\RequestInterface.                                                         
+ ------ ------------------------------------------------------------------------------------------------------- 
+
+ ------ ------------------------------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/framework/View/TemplateEngine/Xhtml/Compiler.php                 
+ ------ ------------------------------------------------------------------------------------------------- 
+  :156   Method Magento\Framework\View\TemplateEngine\Xhtml\Compiler::getChildNodes() should return       
+         array<DOMElement> but returns array<int<0, max>, DOMNode>.                                       
+  :171   Method Magento\Framework\View\TemplateEngine\Xhtml\Compiler::getElementCompiler() should return  
+         Magento\Framework\View\TemplateEngine\Xhtml\Compiler\Element\ElementInterface but returns null.  
+ ------ ------------------------------------------------------------------------------------------------- 
+
+ ------ -------------------------------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/framework/Webapi/ErrorProcessor.php                               
+ ------ -------------------------------------------------------------------------------------------------- 
+  :98    Property Magento\Framework\Webapi\ErrorProcessor::$directoryWrite                                 
+         (Magento\Framework\Filesystem\Directory\Write) does not accept                                    
+         Magento\Framework\Filesystem\Directory\WriteInterface.                                            
+  :326   Method Magento\Framework\Webapi\ErrorProcessor::_saveFatalErrorReport() should return string but  
+         returns int<0, max>.                                                                              
+ ------ -------------------------------------------------------------------------------------------------- 
+
+ ------ ---------------------------------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/framework/Webapi/Response.php                                       
+ ------ ---------------------------------------------------------------------------------------------------- 
+  :47    Method Magento\Framework\Webapi\Response::setMimeType() should return                               
+         $this(Magento\Framework\Webapi\Response) but returns Magento\Framework\App\Response\HttpInterface.  
+ ------ ---------------------------------------------------------------------------------------------------- 
+
+ ------ ----------------------------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/framework/Webapi/Rest/Response.php                             
+ ------ ----------------------------------------------------------------------------------------------- 
+  :177   Method Magento\Framework\Webapi\Rest\Response::getException() should return array but returns  
+         Exception.                                                                                     
+ ------ ----------------------------------------------------------------------------------------------- 
+
+ ------ --------------------------------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/framework/Webapi/Rest/Response/Renderer/Xml.php                    
+ ------ --------------------------------------------------------------------------------------------------- 
+  :84    Method Magento\Framework\Webapi\Rest\Response\Renderer\Xml::_formatData() should return array but  
+         returns string.                                                                                    
+ ------ --------------------------------------------------------------------------------------------------- 
+
+ ------ ------------------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/framework/Xml/Generator.php                          
+ ------ ------------------------------------------------------------------------------------- 
+  :38    Method Magento\Framework\Xml\Generator::__construct() with return type void returns  
+         $this(Magento\Framework\Xml\Generator) but should not return anything.               
+ ------ ------------------------------------------------------------------------------------- 
+
+ ------ ---------------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/framework/Xml/Parser.php                          
+ ------ ---------------------------------------------------------------------------------- 
+  :37    Method Magento\Framework\Xml\Parser::__construct() with return type void returns  
+         $this(Magento\Framework\Xml\Parser) but should not return anything.               
+ ------ ---------------------------------------------------------------------------------- 
+
+ -- ----------------------------------------------------------------------------------------------------------- 
+     Error                                                                                                      
+ -- ----------------------------------------------------------------------------------------------------------- 
+     Ignored error pattern #^Function noAdvice\(\) has no return type specified\.$# in path                     
+     /home/kirti/static-impact-analysis/ifCode.php was not matched in reported errors.                          
+     Ignored error pattern #^Function noAdvice\(\) has parameter \$garbage with no type specified\.$# in path   
+     /home/kirti/static-impact-analysis/ifCode.php was not matched in reported errors.                          
+     Ignored error pattern #^Function noAdvice2\(\) has no return type specified\.$# in path                    
+     /home/kirti/static-impact-analysis/ifCode.php was not matched in reported errors.                          
+     Ignored error pattern #^Function noAdvice2\(\) has parameter \$garbage with no type specified\.$# in path  
+     /home/kirti/static-impact-analysis/ifCode.php was not matched in reported errors.                          
+     Ignored error pattern #^Function weatherAdvisory\(\) has no return type specified\.$# in path              
+     /home/kirti/static-impact-analysis/ifCode.php was not matched in reported errors.                          
+     Ignored error pattern #^Function weatherAdvisory\(\) has parameter \$temperature with no type              
+     specified\.$# in path /home/kirti/static-impact-analysis/ifCode.php was not matched in reported errors.    
+ -- ----------------------------------------------------------------------------------------------------------- 
+
+ [ERROR] Found 321 errors                                                                                        
+

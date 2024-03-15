@@ -20,6 +20,8 @@ class ClassDependencyCollector implements Collector
     public function processNode(Node $node, Scope $scope): array
     {
        $name = $scope->getNamespace()."\\".$node->name->name;
+       $fileName = $scope->getFile();
+
        echo $name;
        echo "\n";
 
@@ -35,9 +37,9 @@ class ClassDependencyCollector implements Collector
             $paramLength = count($constructorNode[0]->params);
         }
 
-        $filename = "./class-dependencies/class-cons-params-".$paramLength.".txt";
+        $fileToPut = "./class-dependencies-fileNames/class-cons-params-".$paramLength.".txt";
 
-        file_put_contents($filename, $name. PHP_EOL , FILE_APPEND);
+        file_put_contents($fileToPut, $fileName. PHP_EOL , FILE_APPEND);
         return [];
     }
 }
