@@ -1,5 +1,5 @@
 <?php
-namespace App;
+namespace App\Rules;
 
 use _HumbugBox02f3b3909847\Fidry\Console\Internal\Generator\ClassName;
 use PhpParser\Node;

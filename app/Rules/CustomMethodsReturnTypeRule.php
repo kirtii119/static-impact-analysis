@@ -1,6 +1,6 @@
 <?php declare(strict_types = 1);
 
-namespace App;
+namespace App\Rules;
 
 use PhpParser\Node;
 use PhpParser\Node\Stmt\Return_;

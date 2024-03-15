@@ -1,6 +1,6 @@
 <?php
 
-namespace App;
+namespace App\Collectors;
 
 use PhpParser\{Node, NodeFinder};
 use PHPStan\Analyser\Scope;
