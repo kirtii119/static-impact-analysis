@@ -1,0 +1,2 @@
+/var/www/magento/vendor/magento/module-catalog-search/Model/ResourceModel/Advanced/Collection.php
+/var/www/magento/vendor/magento/module-backend/Block/Widget/Context.php

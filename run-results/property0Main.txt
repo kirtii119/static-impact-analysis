@@ -1,0 +1,483 @@
+ ------ ------------------------------------------------------------------------------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/composer-dependency-version-audit-plugin/tests/Unit/Magento/ComposerDependencyVersionAuditPlugin/PluginTest.php  
+ ------ ------------------------------------------------------------------------------------------------------------------------------------------------- 
+  :131   Property Magento\ComposerDependencyVersionAuditPlugin\PluginTest::$io                                                                            
+         (Composer\IO\IOInterface) does not accept Composer\IO\NullIO.                                                                                    
+ ------ ------------------------------------------------------------------------------------------------------------------------------------------------- 
+
+ ------ ---------------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/framework/App/MutableScopeConfig.php              
+ ------ ---------------------------------------------------------------------------------- 
+  :62    Property Magento\Framework\App\MutableScopeConfig::$data (array) does not accept  
+         null.                                                                             
+ ------ ---------------------------------------------------------------------------------- 
+
+ ------ --------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/framework/Archive/Tar.php      
+ ------ --------------------------------------------------------------- 
+  :101   Property Magento\Framework\Archive\Tar::$_writer               
+         (Magento\Framework\Archive\Helper\File) does not accept null.  
+  :143   Property Magento\Framework\Archive\Tar::$_reader               
+         (Magento\Framework\Archive\Helper\File) does not accept null.  
+ ------ --------------------------------------------------------------- 
+
+ ------ ------------------------------------------------------------------------------ 
+  Line   /var/www/magento/vendor/magento/framework/Backup/Filesystem/Rollback/Ftp.php  
+ ------ ------------------------------------------------------------------------------ 
+  :169   No error to ignore is reported on line 169.                                   
+  :198   No error to ignore is reported on line 198.                                   
+ ------ ------------------------------------------------------------------------------ 
+
+ ------- -------------------------------------------------------------------- 
+  Line    /var/www/magento/vendor/magento/framework/DB/Adapter/Pdo/Mysql.php  
+ ------- -------------------------------------------------------------------- 
+  :2835   No error to ignore is reported on line 2835.                        
+ ------- -------------------------------------------------------------------- 
+
+ ------ ------------------------------------------------------------------------------ 
+  Line   /var/www/magento/vendor/magento/framework/DB/Profiler.php                     
+ ------ ------------------------------------------------------------------------------ 
+  :66    Property Magento\Framework\DB\Profiler::$_lastQueryId (string|null) does not  
+         accept int|null.                                                              
+ ------ ------------------------------------------------------------------------------ 
+
+ ------- ------------------------------------------------------- 
+  Line    /var/www/magento/vendor/magento/framework/DB/Tree.php  
+ ------- ------------------------------------------------------- 
+  :97     No error to ignore is reported on line 97.             
+  :363    No error to ignore is reported on line 363.            
+  :839    No error to ignore is reported on line 839.            
+  :851    No error to ignore is reported on line 851.            
+  :853    No error to ignore is reported on line 853.            
+  :857    No error to ignore is reported on line 857.            
+  :860    No error to ignore is reported on line 860.            
+  :864    No error to ignore is reported on line 864.            
+  :1008   No error to ignore is reported on line 1008.           
+  :1015   No error to ignore is reported on line 1015.           
+  :1066   No error to ignore is reported on line 1066.           
+  :1107   No error to ignore is reported on line 1107.           
+ ------- ------------------------------------------------------- 
+
+ ------ ---------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/framework/DataObject.php  
+ ------ ---------------------------------------------------------- 
+  :15    No error to ignore is reported on line 15.                
+ ------ ---------------------------------------------------------- 
+
+ ------ ----------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/framework/DataObject/IdentityService.php     
+ ------ ----------------------------------------------------------------------------- 
+  :25    Property Magento\Framework\DataObject\IdentityService::$uuidFactory          
+         (Ramsey\Uuid\UuidFactoryInterface) does not accept Ramsey\Uuid\UuidFactory.  
+ ------ ----------------------------------------------------------------------------- 
+
+ ------ -------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/framework/Encryption/Encryptor.php  
+ ------ -------------------------------------------------------------------- 
+  :466   No error to ignore is reported on line 466.                         
+ ------ -------------------------------------------------------------------- 
+
+ ------ --------------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/framework/Filesystem/Io/Ftp.php                  
+ ------ --------------------------------------------------------------------------------- 
+  :108   Property Magento\Framework\Filesystem\Io\Ftp::$_conn (resource) does not accept  
+         FTP\Connection|false.                                                            
+  :110   Property Magento\Framework\Filesystem\Io\Ftp::$_conn (resource) does not accept  
+         FTP\Connection|false.                                                            
+ ------ --------------------------------------------------------------------------------- 
+
+ ------ ------------------------------------------------------------------------------ 
+  Line   /var/www/magento/vendor/magento/framework/HTTP/Adapter/Curl.php               
+ ------ ------------------------------------------------------------------------------ 
+  :236   Property Magento\Framework\HTTP\Adapter\Curl::$_resource (resource) does not  
+         accept null.                                                                  
+  :248   Property Magento\Framework\HTTP\Adapter\Curl::$_resource (resource) does not  
+         accept CurlHandle.                                                            
+ ------ ------------------------------------------------------------------------------ 
+
+ ------ ----------------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/framework/Image/Adapter/Gd2.php                    
+ ------ ----------------------------------------------------------------------------------- 
+  :51    Property Magento\Framework\Image\Adapter\AbstractAdapter::$_fileMimeType (string)  
+         does not accept null.                                                              
+  :52    Property Magento\Framework\Image\Adapter\AbstractAdapter::$_fileType (int) does    
+         not accept null.                                                                   
+  :80    Property Magento\Framework\Image\Adapter\AbstractAdapter::$_imageHandler           
+         (resource) does not accept bool.                                                   
+  :465   Property Magento\Framework\Image\Adapter\AbstractAdapter::$_imageHandler           
+         (resource) does not accept GdImage|false.                                          
+  :715   Property Magento\Framework\Image\Adapter\AbstractAdapter::$_imageHandler           
+         (resource) does not accept GdImage|false.                                          
+  :886   Property Magento\Framework\Image\Adapter\AbstractAdapter::$_imageHandler           
+         (resource) does not accept GdImage|false.                                          
+ ------ ----------------------------------------------------------------------------------- 
+
+ ------ -------------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/framework/Image/Adapter/ImageMagick.php         
+ ------ -------------------------------------------------------------------------------- 
+  :423   Property Magento\Framework\Image\Adapter\ImageMagick::$_imageHandler (Imagick)  
+         does not accept null.                                                           
+ ------ -------------------------------------------------------------------------------- 
+
+ ------ -------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/framework/Message/Collection.php    
+ ------ -------------------------------------------------------------------- 
+  :63    Property Magento\Framework\Message\Collection::$lastAddedMessage    
+         (Magento\Framework\Message\MessageInterface) does not accept null.  
+ ------ -------------------------------------------------------------------- 
+
+ ------ -------------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/framework/Module/ModuleResource.php             
+ ------ -------------------------------------------------------------------------------- 
+  :60    Static property Magento\Framework\Module\ModuleResource::$dataVersions (array)  
+         does not accept null.                                                           
+  :150   Static property Magento\Framework\Module\ModuleResource::$dataVersions (array)  
+         does not accept null.                                                           
+ ------ -------------------------------------------------------------------------------- 
+
+ ------ --------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/framework/Reflection/FieldNamer.php  
+ ------ --------------------------------------------------------------------- 
+  :28    No error to ignore is reported on line 28.                           
+ ------ --------------------------------------------------------------------- 
+
+ ------ ------------------------------------------------------------------------ 
+  Line   /var/www/magento/vendor/magento/framework/Reflection/TypeProcessor.php  
+ ------ ------------------------------------------------------------------------ 
+  :868   No error to ignore is reported on line 868.                             
+  :883   No error to ignore is reported on line 883.                             
+  :896   No error to ignore is reported on line 896.                             
+ ------ ------------------------------------------------------------------------ 
+
+ ------ ------------------------------------------------------------------------ 
+  Line   /var/www/magento/vendor/magento/framework/Stdlib/DateTime/Timezone.php  
+ ------ ------------------------------------------------------------------------ 
+  :244   No error to ignore is reported on line 244.                             
+  :316   No error to ignore is reported on line 316.                             
+  :318   No error to ignore is reported on line 318.                             
+ ------ ------------------------------------------------------------------------ 
+
+ ------ -------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/framework/System/Ftp.php                  
+ ------ -------------------------------------------------------------------------- 
+  :136   Property Magento\Framework\System\Ftp::$_conn (resource) does not accept  
+         FTP\Connection|false.                                                     
+ ------ -------------------------------------------------------------------------- 
+
+ ------ ---------------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/framework/Translate/Inline/State.php              
+ ------ ---------------------------------------------------------------------------------- 
+  :82    Property Magento\Framework\Translate\Inline\State::$storedStatus (bool) does not  
+         accept null.                                                                      
+ ------ ---------------------------------------------------------------------------------- 
+
+ ------ ------------------------------------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/magento-coding-standard/Magento2/Sniffs/Security/XssTemplateSniff.php  
+ ------ ------------------------------------------------------------------------------------------------------- 
+  :128   Property Magento2\Sniffs\Security\XssTemplateSniff::$hasDisallowedAnnotation                           
+         (string) does not accept true.                                                                         
+  :138   Property Magento2\Sniffs\Security\XssTemplateSniff::$hasDisallowedAnnotation                           
+         (string) does not accept false.                                                                        
+ ------ ------------------------------------------------------------------------------------------------------- 
+
+ ------ ------------------------------------------------------------------------------------------------------ 
+  Line   /var/www/magento/vendor/magento/magento2-base/setup/src/Magento/Setup/Module/I18n/ServiceLocator.php  
+ ------ ------------------------------------------------------------------------------------------------------ 
+  :116   Static property Magento\Setup\Module\I18n\ServiceLocator::$_context                                   
+         (Magento\Setup\Module\I18n\Factory) does not accept                                                   
+         Magento\Setup\Module\I18n\Context.                                                                    
+ ------ ------------------------------------------------------------------------------------------------------ 
+
+ ------ ------------------------------------------------------------------------------------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/magento2-functional-testing-framework/src/Magento/FunctionalTestingFramework/DataTransport/Protocol/CurlTransport.php  
+ ------ ------------------------------------------------------------------------------------------------------------------------------------------------------- 
+  :196   Property                                                                                                                                               
+         Magento\FunctionalTestingFramework\DataTransport\Protocol\CurlTransport::$resource                                                                     
+         (resource) does not accept null.                                                                                                                       
+  :207   Property                                                                                                                                               
+         Magento\FunctionalTestingFramework\DataTransport\Protocol\CurlTransport::$resource                                                                     
+         (resource) does not accept CurlHandle.                                                                                                                 
+ ------ ------------------------------------------------------------------------------------------------------------------------------------------------------- 
+
+ ------ ------------------------------------------------------------------------------------------------------------------------------------------ 
+  Line   /var/www/magento/vendor/magento/magento2-functional-testing-framework/src/Magento/FunctionalTestingFramework/Extension/BaseExtension.php  
+ ------ ------------------------------------------------------------------------------------------------------------------------------------------ 
+  :47    Property Magento\FunctionalTestingFramework\Extension\BaseExtension::$uri                                                                 
+         (string) does not accept null.                                                                                                            
+ ------ ------------------------------------------------------------------------------------------------------------------------------------------ 
+
+ ------ ------------------------------------------------------------------------------------------------------------------------------------------ 
+  Line   /var/www/magento/vendor/magento/magento2-functional-testing-framework/src/Magento/FunctionalTestingFramework/Module/MagentoWebDriver.php  
+ ------ ------------------------------------------------------------------------------------------------------------------------------------------ 
+  :732   Property Magento\FunctionalTestingFramework\Module\MagentoWebDriver::$htmlReport                                                          
+         (string) does not accept null.                                                                                                            
+  :733   Property Magento\FunctionalTestingFramework\Module\MagentoWebDriver::$pngReport                                                           
+         (string) does not accept null.                                                                                                            
+ ------ ------------------------------------------------------------------------------------------------------------------------------------------ 
+
+ ------ ------------------------------------------------------------------------------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/magento2-functional-testing-framework/src/Magento/FunctionalTestingFramework/Util/Iterator/AbstractIterator.php  
+ ------ ------------------------------------------------------------------------------------------------------------------------------------------------- 
+  :81    Property Magento\FunctionalTestingFramework\Util\Iterator\AbstractIterator::$key                                                                 
+         (int|string) does not accept null.                                                                                                               
+ ------ ------------------------------------------------------------------------------------------------------------------------------------------------- 
+
+ ------ ------------------------------------------------------------------------------------------------ 
+  Line   /var/www/magento/vendor/magento/module-backend/Block/Store/Switcher/Form/Renderer/Fieldset.php  
+ ------ ------------------------------------------------------------------------------------------------ 
+  :48    Property Magento\Backend\Block\Store\Switcher\Form\Renderer\Fieldset::$_element                 
+         (Magento\Framework\Data\Form\Element\Fieldset) does not accept                                  
+         Magento\Framework\Data\Form\Element\AbstractElement.                                            
+ ------ ------------------------------------------------------------------------------------------------ 
+
+ ------ -------------------------------------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/module-backend/Block/Store/Switcher/Form/Renderer/Fieldset/Element.php  
+ ------ -------------------------------------------------------------------------------------------------------- 
+  :46    Property                                                                                                
+         Magento\Backend\Block\Store\Switcher\Form\Renderer\Fieldset\Element::$_element                          
+         (Magento\Framework\Data\Form\Element\Fieldset) does not accept                                          
+         Magento\Framework\Data\Form\Element\AbstractElement.                                                    
+ ------ -------------------------------------------------------------------------------------------------------- 
+
+ ------ ---------------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/module-backend/Block/Widget/Grid/Column.php       
+ ------ ---------------------------------------------------------------------------------- 
+  :456   Property Magento\Backend\Block\Widget\Grid\Column::$_filter                       
+         (Magento\Backend\Block\Widget\Grid\Column\Filter\AbstractFilter) does not accept  
+         Magento\Framework\View\Element\BlockInterface.                                    
+ ------ ---------------------------------------------------------------------------------- 
+
+ ------ -------------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/module-backend/Block/Widget/Grid/Extended.php   
+ ------ -------------------------------------------------------------------------------- 
+  :185   Property Magento\Backend\Block\Widget\Grid\Extended::$_emptyText (string|null)  
+         does not accept Magento\Framework\Phrase.                                       
+ ------ -------------------------------------------------------------------------------- 
+
+ ------ ----------------------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/module-bundle/Model/ResourceModel/Option/Collection.php  
+ ------ ----------------------------------------------------------------------------------------- 
+  :212   Property Magento\Bundle\Model\ResourceModel\Option\Collection::$_itemIds (array)         
+         does not accept null.                                                                    
+ ------ ----------------------------------------------------------------------------------------- 
+
+ ------ ---------------------------------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/module-catalog-inventory/Block/Adminhtml/Form/Field/Minsaleqty.php  
+ ------ ---------------------------------------------------------------------------------------------------- 
+  :35    Property                                                                                            
+         Magento\CatalogInventory\Block\Adminhtml\Form\Field\Minsaleqty::$_groupRenderer                     
+         (Magento\CatalogInventory\Block\Adminhtml\Form\Field\Customergroup) does not                        
+         accept Magento\Framework\View\Element\BlockInterface.                                               
+  :64    Property                                                                                            
+         Magento\Config\Block\System\Config\Form\Field\FieldArray\AbstractFieldArray::$_addButtonLabel       
+         (string) does not accept Magento\Framework\Phrase.                                                  
+ ------ ---------------------------------------------------------------------------------------------------- 
+
+ ------ ------------------------------------------------------------------------------------ 
+  Line   /var/www/magento/vendor/magento/module-catalog/Block/Product/Widget/Html/Pager.php  
+ ------ ------------------------------------------------------------------------------------ 
+  :69    Property Magento\Catalog\Block\Product\Widget\Html\Pager::$_currentPage (int)       
+         does not accept false.                                                              
+  :160   Property Magento\Catalog\Block\Product\Widget\Html\Pager::$_lastPage (int) does     
+         not accept float.                                                                   
+ ------ ------------------------------------------------------------------------------------ 
+
+ ------ ------------------------------------------------------------------------------------------------ 
+  Line   /var/www/magento/vendor/magento/module-catalog/Model/ResourceModel/Product/Link/Collection.php  
+ ------ ------------------------------------------------------------------------------------------------ 
+  :61    Property                                                                                        
+         Magento\Catalog\Model\ResourceModel\Product\Link\Collection::$_linkTypeId                       
+         (Magento\Catalog\Model\Product\Type) does not accept int.                                       
+ ------ ------------------------------------------------------------------------------------------------ 
+
+ ------ ---------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/module-catalog/Model/ResourceModel/Url.php  
+ ------ ---------------------------------------------------------------------------- 
+  :461   No error to ignore is reported on line 461.                                 
+  :466   No error to ignore is reported on line 466.                                 
+ ------ ---------------------------------------------------------------------------- 
+
+ ------ ----------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/module-catalog/Pricing/Price/FinalPrice.php  
+ ------ ----------------------------------------------------------------------------- 
+  :96    Property Magento\Catalog\Pricing\Price\FinalPrice::$basePrice                
+         (Magento\Catalog\Pricing\Price\BasePrice) does not accept                    
+         Magento\Framework\Pricing\Price\PriceInterface.                              
+ ------ ----------------------------------------------------------------------------- 
+
+ ------ ------------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/module-eav/Model/Attribute.php                 
+ ------ ------------------------------------------------------------------------------- 
+  :53    Property Magento\Eav\Model\Attribute::$_website (Magento\Store\Model\Website)  
+         does not accept Magento\Store\Api\Data\WebsiteInterface.                       
+  :65    Property Magento\Eav\Model\Attribute::$_website (Magento\Store\Model\Website)  
+         does not accept Magento\Store\Api\Data\WebsiteInterface.                       
+ ------ ------------------------------------------------------------------------------- 
+
+ ------ ----------------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/module-import-export/Model/Export/Adapter/Csv.php  
+ ------ ----------------------------------------------------------------------------------- 
+  :82    Property Magento\ImportExport\Model\Export\Adapter\Csv::$_fileHandler              
+         (Magento\Framework\Filesystem\File\Write) does not accept                          
+         Magento\Framework\Filesystem\File\WriteInterface.                                  
+ ------ ----------------------------------------------------------------------------------- 
+
+ ------ ------------------------------------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/module-import-export/Model/Import/ErrorProcessing/ProcessingError.php  
+ ------ ------------------------------------------------------------------------------------------------------- 
+  :71    Property                                                                                               
+         Magento\ImportExport\Model\Import\ErrorProcessing\ProcessingError::$rowNumber                          
+         (string) does not accept int|null.                                                                     
+ ------ ------------------------------------------------------------------------------------------------------- 
+
+ ------ ----------------------------------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/module-indexer/Console/Command/IndexerShowDimensionsModeCommand.php  
+ ------ ----------------------------------------------------------------------------------------------------- 
+  :102   No error to ignore is reported on line 102.                                                          
+ ------ ----------------------------------------------------------------------------------------------------- 
+
+ ------ ---------------------------------------------------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/module-offline-shipping/Model/ResourceModel/Carrier/Tablerate/CSV/ColumnResolver.php  
+ ------ ---------------------------------------------------------------------------------------------------------------------- 
+  :25    No error to ignore is reported on line 25.                                                                            
+ ------ ---------------------------------------------------------------------------------------------------------------------- 
+
+ ------ -------------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/module-paypal/Block/Express/Review/Details.php  
+ ------ -------------------------------------------------------------------------------- 
+  :31    Property Magento\Paypal\Block\Express\Review\Details::$_address                 
+         (Magento\Sales\Model\Order\Address) does not accept                             
+         Magento\Quote\Model\Quote\Address.                                              
+ ------ -------------------------------------------------------------------------------- 
+
+ ------ -------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/module-paypal/Model/Express/Checkout.php  
+ ------ -------------------------------------------------------------------------- 
+  :659   No error to ignore is reported on line 659.                               
+ ------ -------------------------------------------------------------------------- 
+
+ ------ ---------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/module-quote/Model/Quote/Address.php  
+ ------ ---------------------------------------------------------------------- 
+  :557   No error to ignore is reported on line 557.                           
+ ------ ---------------------------------------------------------------------- 
+
+ ------ ------------------------------------------------------------------------------------------ 
+  Line   /var/www/magento/vendor/magento/module-quote/Model/Quote/Address/Total/AbstractTotal.php  
+ ------ ------------------------------------------------------------------------------------------ 
+  :127   Property Magento\Quote\Model\Quote\Address\Total\AbstractTotal::$_address                 
+         (string) does not accept Magento\Quote\Model\Quote\Address.                               
+ ------ ------------------------------------------------------------------------------------------ 
+
+ ------ -------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/module-quote/Model/Quote/Item/Option.php  
+ ------ -------------------------------------------------------------------------- 
+  :135   Property Magento\Quote\Model\Quote\Item\Option::$_item                    
+         (Magento\Quote\Model\Quote\Item) does not accept null.                    
+ ------ -------------------------------------------------------------------------- 
+
+ ------ ----------------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/module-reports/Model/Grouped/Collection.php        
+ ------ ----------------------------------------------------------------------------------- 
+  :76    Property Magento\Reports\Model\Grouped\Collection::$_resourceCollection            
+         (Magento\Framework\Model\ResourceModel\Db\Collection\AbstractCollection) does not  
+         accept Magento\Framework\Data\Collection\AbstractDb.                               
+ ------ ----------------------------------------------------------------------------------- 
+
+ ------ -------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/module-sales/Model/AdminOrder/Create.php  
+ ------ -------------------------------------------------------------------------- 
+  :802   No error to ignore is reported on line 802.                               
+ ------ -------------------------------------------------------------------------- 
+
+ ------ -------------------------------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/module-theme/Model/Design/Config/DataProvider/MetadataLoader.php  
+ ------ -------------------------------------------------------------------------------------------------- 
+  :81    No error to ignore is reported on line 81.                                                        
+ ------ -------------------------------------------------------------------------------------------------- 
+
+ ------ --------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/module-ui/Component/Filters/Type/Date.php  
+ ------ --------------------------------------------------------------------------- 
+  :45    Property Magento\Ui\Component\Filters\Type\Date::$wrappedComponent         
+         (Magento\Ui\Component\Form\Element\DataType\Date) does not accept          
+         Magento\Framework\View\Element\UiComponentInterface.                       
+ ------ --------------------------------------------------------------------------- 
+
+ ------ -------------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/module-ui/Component/Filters/Type/DateRange.php  
+ ------ -------------------------------------------------------------------------------- 
+  :33    Property Magento\Ui\Component\Filters\Type\DateRange::$wrappedComponent         
+         (Magento\Ui\Component\Form\Element\DataType\Date) does not accept               
+         Magento\Framework\View\Element\UiComponentInterface.                            
+ ------ -------------------------------------------------------------------------------- 
+
+ ------ ---------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/module-ui/Component/Filters/Type/Input.php  
+ ------ ---------------------------------------------------------------------------- 
+  :34    Property Magento\Ui\Component\Filters\Type\Input::$wrappedComponent         
+         (Magento\Ui\Component\Form\Element\Input) does not accept                   
+         Magento\Framework\View\Element\UiComponentInterface.                        
+ ------ ---------------------------------------------------------------------------- 
+
+ ------ --------------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/module-ui/DataProvider/AbstractDataProvider.php  
+ ------ --------------------------------------------------------------------------------- 
+  :169   No error to ignore is reported on line 169.                                      
+ ------ --------------------------------------------------------------------------------- 
+
+ ------ ----------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/zend-db/library/Zend/Db/Adapter/Pdo/Ibm.php  
+ ------ ----------------------------------------------------------------------------- 
+  :111   Property Zend_Db_Adapter_Pdo_Ibm::$_serverType (string) does not accept      
+         Zend_Db_Adapter_Pdo_Ibm_Db2.                                                 
+  :120   Property Zend_Db_Adapter_Pdo_Ibm::$_serverType (string) does not accept      
+         Zend_Db_Adapter_Pdo_Ibm_Ids.                                                 
+ ------ ----------------------------------------------------------------------------- 
+
+ ------ ------------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/zend-db/library/Zend/Db/Adapter/Sqlsrv.php     
+ ------ ------------------------------------------------------------------------------- 
+  :386   Property Zend_Db_Adapter_Sqlsrv::$_lastInsertId (int) does not accept string.  
+ ------ ------------------------------------------------------------------------------- 
+
+ ------ ----------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/zend-db/library/Zend/Db/Statement/Db2.php    
+ ------ ----------------------------------------------------------------------------- 
+  :124   Property Zend_Db_Statement::$_stmt (object|resource) does not accept false.  
+ ------ ----------------------------------------------------------------------------- 
+
+ ------ ------------------------------------------------------------------------------ 
+  Line   /var/www/magento/vendor/magento/zend-db/library/Zend/Db/Statement/Mysqli.php  
+ ------ ------------------------------------------------------------------------------ 
+  :106   Property Zend_Db_Statement::$_stmt (object|resource) does not accept null.    
+ ------ ------------------------------------------------------------------------------ 
+
+ ------ ------------------------------------------------------------------------------ 
+  Line   /var/www/magento/vendor/magento/zend-db/library/Zend/Db/Statement/Oracle.php  
+ ------ ------------------------------------------------------------------------------ 
+  :147   Property Zend_Db_Statement::$_stmt (object|resource) does not accept false.   
+ ------ ------------------------------------------------------------------------------ 
+
+ ------ ------------------------------------------------------------------------------ 
+  Line   /var/www/magento/vendor/magento/zend-db/library/Zend/Db/Statement/Sqlsrv.php  
+ ------ ------------------------------------------------------------------------------ 
+  :105   Property Zend_Db_Statement::$_stmt (object|resource) does not accept false.   
+ ------ ------------------------------------------------------------------------------ 
+
+ ------ ---------------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/zend-loader/library/Zend/Loader/Autoloader.php    
+ ------ ---------------------------------------------------------------------------------- 
+  :105   Static property Zend_Loader_Autoloader::$_instance (Zend_Loader_Autoloader) does  
+         not accept null.                                                                  
+ ------ ---------------------------------------------------------------------------------- 
+
+ ------ --------------------------------------------------------------------------------------- 
+  Line   /var/www/magento/vendor/magento/zend-pdf/library/Zend/Pdf/Element/Reference/Table.php  
+ ------ --------------------------------------------------------------------------------------- 
+  :79    Property Zend_Pdf_Element_Reference_Table::$_parent                                    
+         (Zend_Pdf_Element_Reference_Table) does not accept null.                               
+ ------ --------------------------------------------------------------------------------------- 
+
+ [ERROR] Found 95 errors                                                                    
+

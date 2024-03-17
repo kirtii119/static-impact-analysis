@@ -33,7 +33,9 @@ class MainReturnTypeRule implements Rule
 
 	public function __construct(private FunctionReturnTypeCheck $returnTypeCheck)
 	{
-        $this->classList  = file(__DIR__.'/../class-dependencies/class-cons-params-0.txt', FILE_IGNORE_NEW_LINES+FILE_SKIP_EMPTY_LINES);
+		//----------added code-----------
+        $this->classList  = file(__DIR__.'/../../class-dependencies-main/class-cons-params-0.txt', FILE_IGNORE_NEW_LINES+FILE_SKIP_EMPTY_LINES);
+		//---------------------------------
 	}
 
 	public function getNodeType(): string
@@ -67,6 +69,10 @@ class MainReturnTypeRule implements Rule
             }
             
         }
+		else{
+			return [];
+		}
+
 
         //---------------------------
 

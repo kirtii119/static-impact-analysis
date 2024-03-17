@@ -15,15 +15,15 @@ parameters:
             - */TestFramework/*
             - */dev/*
 
-services:
+# services:
     # -
     #     class: App\Collectors\ClassDependencyCollector
     #     tags:
     #         - phpstan.collector
-    -
-        class: App\Collectors\MethodCallCollector
-        tags:
-            - phpstan.collector
+    # -
+    #     class: App\Collectors\MethodCallCollector
+    #     tags:
+    #         - phpstan.collector
     # -
     #     class: App\Collectors\FunctionCallCollector
     #     tags:
@@ -33,8 +33,9 @@ services:
     #     tags:
     #         - phpstan.collector
         
-# rules :
-    # - App\Rules\MainReturnTypeRule
+rules :
+    # - App\Rules\CustomMethodsReturnTypeRule
+    - App\Rules\CustomTypesAssignedToPropertiesRule
     # - PHPStan\Rules\Functions\ArrowFunctionReturnTypeRule
     # - PHPStan\Rules\Functions\ClosureReturnTypeRule
     # - PHPStan\Rules\Functions\ReturnTypeRule

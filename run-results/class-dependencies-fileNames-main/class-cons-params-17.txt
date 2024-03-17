@@ -1,0 +1,8 @@
+/var/www/magento/vendor/magento/module-sales/Block/Adminhtml/Order/Address/Form.php
+/var/www/magento/vendor/magento/module-customer/Model/Address/AbstractAddress.php
+/var/www/magento/vendor/magento/module-customer/Model/ResourceModel/CustomerRepository.php
+/var/www/magento/vendor/magento/module-newsletter/Model/Subscriber.php
+/var/www/magento/vendor/magento/module-eav/Model/Entity/Attribute/AbstractAttribute.php
+/var/www/magento/vendor/magento/module-catalog/Model/Product/Image.php
+/var/www/magento/vendor/magento/module-paypal/Model/Direct.php
+/var/www/magento/vendor/magento/module-page-builder/Model/Stage/Config.php

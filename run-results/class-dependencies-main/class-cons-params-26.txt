@@ -1,0 +1,5 @@
+Magento\Customer\Controller\Adminhtml\Customer\InvalidateToken
+Magento\Customer\Controller\Adminhtml\Index\Validate
+Magento\Bundle\Model\Product\Type
+Magento\Framework\View\Element\Template\Context
+Magento\Catalog\Model\ProductRepository

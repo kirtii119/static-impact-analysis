@@ -1,0 +1,10 @@
+Magento\Customer\Controller\Account\CreatePost
+Magento\Email\Model\Template\Filter
+Magento\InventoryAdminUi\Ui\DataProvider\StockDataProvider
+Magento\CustomerImportExport\Model\Import\Address
+Magento\Catalog\Model\Category\DataProvider
+Magento\Catalog\Model\Entity\Attribute
+Magento\Widget\Model\Template\Filter
+Magento\CatalogRule\Model\Indexer\IndexBuilder
+Magento\Paypal\Model\Payflow\Transparent
+Magento\Wishlist\Model\Wishlist

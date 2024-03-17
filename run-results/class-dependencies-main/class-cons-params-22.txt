@@ -1,0 +1,8 @@
+Magento\Customer\Model\Session
+Magento\Customer\Model\Customer
+Magento\Usps\Model\Carrier
+Magento\CatalogSearch\Model\Indexer\Fulltext\Action\Full
+Magento\CatalogSearch\Model\ResourceModel\Search\Collection
+Magento\Catalog\Model\ResourceModel\Product\Compare\Item\Collection
+Magento\GroupedProduct\Model\ResourceModel\Product\Type\Grouped\AssociatedProductsCollection
+Magento\Wishlist\Model\ResourceModel\Item\Collection

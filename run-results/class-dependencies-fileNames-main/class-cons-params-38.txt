@@ -1,0 +1,2 @@
+/var/www/magento/vendor/magento/module-customer/Model/AccountManagement.php
+/var/www/magento/vendor/magento/module-catalog/Block/Product/Context.php

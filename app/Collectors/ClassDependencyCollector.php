@@ -37,7 +37,7 @@ class ClassDependencyCollector implements Collector
             $paramLength = count($constructorNode[0]->params);
         }
 
-        $fileToPut = "./class-dependencies-fileNames/class-cons-params-".$paramLength.".txt";
+        $fileToPut = __DIR__."/../../run-results/class-dependencies-fileNames/class-cons-params-".$paramLength.".txt";
 
         file_put_contents($fileToPut, $fileName. PHP_EOL , FILE_APPEND);
         return [];

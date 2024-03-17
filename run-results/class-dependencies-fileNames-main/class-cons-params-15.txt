@@ -1,0 +1,14 @@
+/var/www/magento/vendor/magento/module-customer/Model/Customer/DataProviderWithDefaultAddresses.php
+/var/www/magento/vendor/magento/module-newsletter/Model/Template.php
+/var/www/magento/vendor/magento/module-email/Model/Template.php
+/var/www/magento/vendor/magento/module-shipping/Model/Order/Pdf/Packaging.php
+/var/www/magento/vendor/magento/magento2-functional-testing-framework/src/Magento/FunctionalTestingFramework/DataGenerator/Objects/OperationDefinitionObject.php
+/var/www/magento/vendor/magento/framework/View/Context.php
+/var/www/magento/vendor/magento/framework/View/Layout.php
+/var/www/magento/vendor/magento/module-cron/Observer/ProcessCronQueueObserver.php
+/var/www/magento/vendor/magento/module-catalog/Model/ResourceModel/Product.php
+/var/www/magento/vendor/magento/module-catalog/Controller/Adminhtml/Product/Initialization/Helper.php
+/var/www/magento/vendor/magento/module-store/Model/Website.php
+/var/www/magento/vendor/magento/module-backend/Model/Session/Quote.php
+/var/www/magento/vendor/magento/module-paypal/Model/Method/Agreement.php
+/var/www/magento/vendor/magento/module-swatches/Block/Product/Renderer/Listing/Configurable.php

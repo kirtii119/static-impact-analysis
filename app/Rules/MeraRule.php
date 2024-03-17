@@ -1,5 +1,5 @@
 <?php
-namespace App;
+namespace App\Rules;
 
 use PhpParser\Node;
 use PHPStan\Analyser\Scope;

@@ -1,0 +1,4 @@
+Magento\ConfigurableProduct\Model\Product\Type\Configurable
+Magento\Customer\Controller\Adminhtml\Index
+Magento\Quote\Model\QuoteManagement
+Magento\Paypal\Model\Express\Checkout

@@ -1,3 +1,0 @@
-Tester::execute => TestInterface::classMethod
-TestClass::classMethod => TestClass::classMethod2
- => Tester::execute

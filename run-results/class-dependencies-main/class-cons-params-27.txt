@@ -1,0 +1,6 @@
+Magento\Customer\Controller\Adminhtml\Index\Viewfile
+Magento\Customer\Controller\Adminhtml\Index\Cart
+Magento\Multishipping\Model\Checkout\Type\Multishipping
+Magento\Checkout\Model\Type\Onepage
+Magento\Reports\Model\ResourceModel\Product\Lowstock\Collection
+Magento\Catalog\Model\ResourceModel\Product\Link\Product\Collection

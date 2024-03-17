@@ -1,0 +1,13 @@
+Magento\Sales\Block\Adminhtml\Order\Create\Form\Address
+Magento\Customer\Model\Metadata\Form\Image
+Magento\InventoryInStorePickup\Model\PickupLocation
+Magento\Email\Model\BackendTemplate
+Magento\Shipping\Model\Carrier\AbstractCarrierOnline
+Magento\AdvancedPricingImportExport\Model\Import\AdvancedPricing
+Magento\User\Model\User
+Magento\Quote\Model\Quote\Item
+Magento\Reports\Model\ResourceModel\Customer\Collection
+Magento\Catalog\Model\Indexer\Product\Price\Action\Full
+Magento\Paypal\Model\Payflowpro
+Magento\GroupedProduct\Model\Product\Type\Grouped
+Magento\SalesRule\Model\Rule

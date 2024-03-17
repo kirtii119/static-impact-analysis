@@ -1,0 +1,1 @@
+Magento\Quote\Model\Quote

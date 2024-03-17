@@ -1,0 +1,2 @@
+Magento\Customer\Model\AccountManagement
+Magento\Catalog\Block\Product\Context

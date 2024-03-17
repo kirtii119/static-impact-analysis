@@ -1,0 +1,3 @@
+Magento\Reports\Model\ResourceModel\Product\Collection
+Magento\Catalog\Model\ResourceModel\Product\Collection
+Magento\Dhl\Model\Carrier

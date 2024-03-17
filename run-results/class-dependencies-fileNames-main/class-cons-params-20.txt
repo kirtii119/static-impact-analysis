@@ -1,0 +1,10 @@
+/var/www/magento/vendor/magento/module-customer/Controller/Account/CreatePost.php
+/var/www/magento/vendor/magento/module-email/Model/Template/Filter.php
+/var/www/magento/vendor/magento/module-inventory-admin-ui/Ui/DataProvider/StockDataProvider.php
+/var/www/magento/vendor/magento/module-customer-import-export/Model/Import/Address.php
+/var/www/magento/vendor/magento/module-catalog/Model/Category/DataProvider.php
+/var/www/magento/vendor/magento/module-catalog/Model/Entity/Attribute.php
+/var/www/magento/vendor/magento/module-widget/Model/Template/Filter.php
+/var/www/magento/vendor/magento/module-catalog-rule/Model/Indexer/IndexBuilder.php
+/var/www/magento/vendor/magento/module-paypal/Model/Payflow/Transparent.php
+/var/www/magento/vendor/magento/module-wishlist/Model/Wishlist.php

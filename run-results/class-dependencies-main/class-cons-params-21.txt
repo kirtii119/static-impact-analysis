@@ -1,0 +1,10 @@
+Magento\Ups\Model\Carrier
+Magento\Customer\Model\Attribute
+Magento\Cms\Model\Wysiwyg\Images\Storage
+Magento\Eav\Model\Entity\Attribute
+Magento\Reports\Model\ResourceModel\Product\Index\Collection\AbstractCollection
+Magento\Catalog\Model\Category
+Magento\Catalog\Helper\Data
+Magento\Fedex\Model\Carrier
+Magento\Backend\Model\Url
+Magento\Setup\Model\Installer

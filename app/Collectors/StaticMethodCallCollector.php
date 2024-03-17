@@ -41,7 +41,7 @@ class StaticMethodCallCollector implements Collector
         $methCall = $resolvedType. "::" .$methCall;
         
 
-        file_put_contents(__DIR__."/../call-mappings/static-calls.txt", $funcName."=>".$methCall. PHP_EOL , FILE_APPEND);
+        file_put_contents(__DIR__."/../../src/call-mappings/static-calls.txt", $funcName."=>".$methCall. PHP_EOL , FILE_APPEND);
 
         return [];  
     }

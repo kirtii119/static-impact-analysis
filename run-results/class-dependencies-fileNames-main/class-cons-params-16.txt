@@ -1,0 +1,13 @@
+/var/www/magento/vendor/magento/module-sales/Block/Adminhtml/Order/Create/Form/Address.php
+/var/www/magento/vendor/magento/module-customer/Model/Metadata/Form/Image.php
+/var/www/magento/vendor/magento/module-inventory-in-store-pickup/Model/PickupLocation.php
+/var/www/magento/vendor/magento/module-email/Model/BackendTemplate.php
+/var/www/magento/vendor/magento/module-shipping/Model/Carrier/AbstractCarrierOnline.php
+/var/www/magento/vendor/magento/module-advanced-pricing-import-export/Model/Import/AdvancedPricing.php
+/var/www/magento/vendor/magento/module-user/Model/User.php
+/var/www/magento/vendor/magento/module-quote/Model/Quote/Item.php
+/var/www/magento/vendor/magento/module-reports/Model/ResourceModel/Customer/Collection.php
+/var/www/magento/vendor/magento/module-catalog/Model/Indexer/Product/Price/Action/Full.php
+/var/www/magento/vendor/magento/module-paypal/Model/Payflowpro.php
+/var/www/magento/vendor/magento/module-grouped-product/Model/Product/Type/Grouped.php
+/var/www/magento/vendor/magento/module-sales-rule/Model/Rule.php

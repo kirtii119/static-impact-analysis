@@ -6,6 +6,7 @@ use PhpParser\Node;
 use PHPStan\Analyser\Scope;
 use PHPStan\Rules\RuleErrorBuilder;
 use PHPUnit\Framework\Constraint\IsInstanceOf;
+use App\Collectors\MethodCallCollector;
 
 //include this rule only if you are returning somethign from the MethodCallCollector
 class MethodCallRule implements \PHPStan\Rules\Rule

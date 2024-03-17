@@ -1,0 +1,4 @@
+Magento\Bundle\Model\ResourceModel\Selection\Collection
+Magento\Catalog\Model\ResourceModel\Eav\Attribute
+Magento\CatalogRule\Model\Rule
+Magento\Review\Model\ResourceModel\Review\Product\Collection

@@ -1,0 +1,8 @@
+/var/www/magento/vendor/magento/module-customer/Model/Session.php
+/var/www/magento/vendor/magento/module-customer/Model/Customer.php
+/var/www/magento/vendor/magento/module-usps/Model/Carrier.php
+/var/www/magento/vendor/magento/module-catalog-search/Model/Indexer/Fulltext/Action/Full.php
+/var/www/magento/vendor/magento/module-catalog-search/Model/ResourceModel/Search/Collection.php
+/var/www/magento/vendor/magento/module-catalog/Model/ResourceModel/Product/Compare/Item/Collection.php
+/var/www/magento/vendor/magento/module-grouped-product/Model/ResourceModel/Product/Type/Grouped/AssociatedProductsCollection.php
+/var/www/magento/vendor/magento/module-wishlist/Model/ResourceModel/Item/Collection.php

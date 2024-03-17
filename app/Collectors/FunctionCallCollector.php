@@ -37,7 +37,7 @@ class FunctionCallCollector implements Collector
         $methCall = $node->name->parts[0]; 
         var_dump($methCall);
 
-        file_put_contents(__DIR__."/../call-mappings/func-calls.txt", $funcName."=>"."$methCall". PHP_EOL , FILE_APPEND);
+        file_put_contents(__DIR__."/../../src/call-mappings/func-calls.txt", $funcName."=>"."$methCall". PHP_EOL , FILE_APPEND);
 
 
       //  var_dump($funcName);

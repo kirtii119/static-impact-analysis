@@ -35,7 +35,7 @@ class Return_DocTypeCollector implements Collector
                 if ($docType instanceof PHPStan\Type\VoidType) {
                     return [];
                 } else {
-                    file_put_contents("./return-type-results/func-return-type.txt", $funcName . " -> " . get_class($docType) . ", " . "void" . PHP_EOL, FILE_APPEND);
+                    file_put_contents(__DIR__."/../../run-results/return-type-results/func-return-type.txt", $funcName . " -> " . get_class($docType) . ", " . "void" . PHP_EOL, FILE_APPEND);
                     return [];
                 }
 
@@ -51,22 +51,22 @@ class Return_DocTypeCollector implements Collector
 
 
             if ($docType == 'PHPStan\Type\IntersectionType' || $returnExprType == 'PHPStan\Type\IntersectionType' || $returnExprType == 'PHPStan\Type\UnionType' || $docType == 'PHPStan\Type\UnionType') {
-                file_put_contents("./return-type-results/func-doc-type-union-inter.txt", $funcName . " -> " . $docType . ", " . $returnExprType . PHP_EOL, FILE_APPEND);
+                file_put_contents(__DIR__."/../../run-results/return-type-results/func-doc-type-union-inter.txt", $funcName . " -> " . $docType . ", " . $returnExprType . PHP_EOL, FILE_APPEND);
                 return [];
             }
 
             if ($docType == 'PHPStan\Type\MixedType') {
-                file_put_contents("./return-type-results/func-doc-type-mixed.txt", $funcName . " -> " . $docType . ", " . $returnExprType . PHP_EOL, FILE_APPEND);
+                file_put_contents(__DIR__."/../../run-results/return-type-results/func-doc-type-mixed.txt", $funcName . " -> " . $docType . ", " . $returnExprType . PHP_EOL, FILE_APPEND);
                 return [];
             }
 
             if ($returnExprType == 'PHPStan\Type\MixedType') {
-                file_put_contents("./return-type-results/func-return-type-mixed.txt", $funcName . " -> " . $docType . ", " . $returnExprType . PHP_EOL, FILE_APPEND);
+                file_put_contents(__DIR__."/../../run-results/return-type-results/func-return-type-mixed.txt", $funcName . " -> " . $docType . ", " . $returnExprType . PHP_EOL, FILE_APPEND);
                 return [];
             }
 
             if ($docType != $returnExprType) {
-                file_put_contents("./return-type-results/func-return-type.txt", $funcName . " -> " . $docType . ", " . $returnExprType . PHP_EOL, FILE_APPEND);
+                file_put_contents(__DIR__."/../../run-results/return-type-results/func-return-type.txt", $funcName . " -> " . $docType . ", " . $returnExprType . PHP_EOL, FILE_APPEND);
                 return [];
             }
 

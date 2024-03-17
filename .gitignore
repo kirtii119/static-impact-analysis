@@ -3,3 +3,5 @@
 /.vscode
 /phpstan-src
 /tools/phpunit.phar
+/class-dependencies-main
+/class-dependencies-fileNames-main
