@@ -21,32 +21,53 @@ final class EndToEndTest extends TestCase
         file_put_contents(__DIR__.'/../src/controller-url-map.txt',PHP_EOL.'Tester::execute=>testurl' ,FILE_APPEND);
 
         exec("php index.php 'TestClass::classMethod'", $output);
-
+        
+        //cleanup code
         $lines = file(__DIR__.'/../src/controller-url-map.txt', FILE_IGNORE_NEW_LINES);
         array_pop($lines);
         file_put_contents(__DIR__.'/../src/controller-url-map.txt', join(PHP_EOL,$lines));
+        exec("rm -rf 'src/call-graphs/Tester::execute.txt'");
 
         $expectedOutput = ["Array", "(", "    [0] => testurl",")"];
-
-        exec("rm -rf 'src/call-graphs/Tester::execute.txt'");
         $this->assertEquals($output, $expectedOutput);
     }
 
     public function testPlugin(): void
     {
 
-        // $this->runFirst('PlTestCase');
-        file_put_contents(__DIR__.'/../src/controller-url-map.txt',PHP_EOL.'Tester::execute=>testurl' ,FILE_APPEND);
+        $this->runFirst('PluginTestCase');
+        file_put_contents(__DIR__.'/../src/controller-url-map.txt',PHP_EOL.'TestClass::execute=>testurl' ,FILE_APPEND);
 
-        exec("php index.php 'TestClass::testPlugin'", $output);
+        exec("php index.php 'TestPulgin::beforeTestMethod(TestClass \$subject)'", $output);
 
         $lines = file(__DIR__.'/../src/controller-url-map.txt', FILE_IGNORE_NEW_LINES);
         array_pop($lines);
         file_put_contents(__DIR__.'/../src/controller-url-map.txt', join(PHP_EOL,$lines));
+        exec("rm -rf 'src/call-graphs/TestClass::execute.txt'");
 
 
         $expectedOutput = ["Array", "(", "    [0] => testurl",")"];
         
         $this->assertEquals($output, $expectedOutput);
     }
+
+    public function testInterface2(): void
+    {
+
+        $this->runFirst('InterfaceTestCase2');
+        file_put_contents(__DIR__.'/../src/controller-url-map.txt',PHP_EOL.'TestClass::execute=>testurl' ,FILE_APPEND);
+
+        exec("php index.php 'SpecialClass::classMethod'", $output);
+
+        $lines = file(__DIR__.'/../src/controller-url-map.txt', FILE_IGNORE_NEW_LINES);
+        array_pop($lines);
+        file_put_contents(__DIR__.'/../src/controller-url-map.txt', join(PHP_EOL,$lines));
+        exec("rm -rf 'src/call-graphs/TestClass::execute.txt'");
+
+
+        $expectedOutput = ["Array", "(", "    [0] => testurl",")"];
+        
+        $this->assertEquals($output, $expectedOutput);
+    }
+
 }
