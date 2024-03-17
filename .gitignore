@@ -1,7 +1,4 @@
 /vendor
-/node_modules
 /.vscode
 /phpstan-src
 /tools/phpunit.phar
-/class-dependencies-main
-/class-dependencies-fileNames-main
