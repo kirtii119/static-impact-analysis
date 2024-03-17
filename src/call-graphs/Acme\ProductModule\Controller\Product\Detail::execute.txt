@@ -1,1 +1,5 @@
 Acme\ProductModule\Controller\Product\Detail::execute
+Acme\ProductModule\Model\ProductValidation::validPayment
+Acme\OrderModule\Model\Customer::getCustomerBySessionId
+Acme\ProductModule\Model\ProductTemplate::getCustomerNameBySessionId
+Acme\OrderModule\Model\Validation::getCustomerObject

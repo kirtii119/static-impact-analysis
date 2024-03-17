@@ -1,1 +1,5 @@
 Acme\PaymentModule\Controller\Payment\Detail::execute
+Acme\PaymentModule\Model\PaymentValidation::validPayment
+Acme\OrderModule\Model\Customer::getCustomer
+Acme\PaymentModule\Model\TransactionInterface::getCustomerName
+Acme\OrderModule\Model\Validation::getCustomerObject
