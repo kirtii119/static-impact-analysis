@@ -1,0 +1,2350 @@
+{
+  "Magento\\Framework\\App\\Action\\HttpGetActionInterface": [
+    "Magento\\AdvancedPricingImportExport\\Controller\\Adminhtml\\Export\\GetFilter",
+    "Magento\\CatalogSearch\\Controller\\Result\\Index",
+    "Magento\\CatalogSearch\\Controller\\Advanced\\Index",
+    "Magento\\CatalogSearch\\Controller\\Advanced\\Result",
+    "Magento\\Tax\\Controller\\Adminhtml\\Rule\\Index",
+    "Magento\\Tax\\Controller\\Adminhtml\\Rule\\AjaxLoadRates",
+    "Magento\\Tax\\Controller\\Adminhtml\\Rule\\Edit",
+    "Magento\\Tax\\Controller\\Adminhtml\\Rate\\Index",
+    "Magento\\Store\\Controller\\Store\\SwitchAction",
+    "Magento\\Store\\Controller\\Store\\Redirect",
+    "Magento\\Store\\Controller\\Store\\SwitchRequest",
+    "Magento\\MediaGalleryUi\\Controller\\Adminhtml\\Media\\Index",
+    "Magento\\MediaGalleryUi\\Controller\\Adminhtml\\Image\\Details",
+    "Magento\\MediaGalleryUi\\Controller\\Adminhtml\\Asset\\Search",
+    "Magento\\MediaGalleryUi\\Controller\\Adminhtml\\Asset\\GetSelected",
+    "Magento\\MediaGalleryUi\\Controller\\Adminhtml\\Directories\\GetTree",
+    "Magento\\MediaGalleryUi\\Controller\\Adminhtml\\Index\\Index",
+    "Magento\\Search\\Controller\\Adminhtml\\Term\\Index",
+    "Magento\\Search\\Controller\\Adminhtml\\Term\\NewAction",
+    "Magento\\Search\\Controller\\Adminhtml\\Term\\Edit",
+    "Magento\\Search\\Controller\\Adminhtml\\Term\\Report",
+    "Magento\\Search\\Controller\\Ajax\\Suggest",
+    "Magento\\Search\\Controller\\Term\\Popular",
+    "Magento\\InventoryAdminUi\\Controller\\Adminhtml\\Source\\Index",
+    "Magento\\InventoryAdminUi\\Controller\\Adminhtml\\Source\\NewAction",
+    "Magento\\InventoryAdminUi\\Controller\\Adminhtml\\Source\\Edit",
+    "Magento\\InventoryAdminUi\\Controller\\Adminhtml\\Stock\\Index",
+    "Magento\\Swatches\\Controller\\Ajax\\Media",
+    "Magento\\InventoryAdminUi\\Controller\\Adminhtml\\Stock\\NewAction",
+    "Magento\\InventoryAdminUi\\Controller\\Adminhtml\\Stock\\Edit",
+    "Magento\\PageBuilder\\Controller\\Adminhtml\\Stage\\Render",
+    "Magento\\PageBuilder\\Controller\\Adminhtml\\Template\\Index",
+    "Magento\\Indexer\\Controller\\Adminhtml\\Indexer\\ListAction",
+    "Magento\\ProductAlert\\Controller\\Unsubscribe\\Price",
+    "Magento\\ProductAlert\\Controller\\Unsubscribe\\Email",
+    "Magento\\ProductAlert\\Controller\\Add\\Price",
+    "Magento\\ProductAlert\\Controller\\Add\\Stock",
+    "Magento\\Wishlist\\Controller\\Index\\Configure",
+    "Magento\\Review\\Controller\\Adminhtml\\Rating\\Edit",
+    "Magento\\Review\\Controller\\Adminhtml\\Product\\Index",
+    "Magento\\Contact\\Controller\\Index\\Index",
+    "Magento\\Review\\Controller\\Product\\ListAjax",
+    "Magento\\Wishlist\\Controller\\Index\\DownloadCustomOption",
+    "Magento\\Review\\Controller\\Adminhtml\\Product\\NewAction",
+    "Magento\\Review\\Controller\\Adminhtml\\Product\\Pending",
+    "Magento\\Review\\Controller\\Adminhtml\\Product\\Edit",
+    "Magento\\Review\\Controller\\Adminhtml\\Product\\ReviewGrid",
+    "Magento\\Review\\Controller\\Adminhtml\\Product\\JsonProductInfo",
+    "Magento\\Review\\Controller\\Adminhtml\\Rating\\Index",
+    "Magento\\Review\\Controller\\Adminhtml\\Rating\\NewAction",
+    "Magento\\AdminAdobeIms\\Controller\\Adminhtml\\OAuth\\ImsReauthCallback",
+    "Magento\\AdminAdobeIms\\Controller\\Adminhtml\\OAuth\\ImsCallback",
+    "Magento\\MediaGalleryCmsUi\\Controller\\Adminhtml\\Block\\Search",
+    "Magento\\MediaGalleryCmsUi\\Controller\\Adminhtml\\Block\\GetSelected",
+    "Magento\\TaxImportExport\\Controller\\Adminhtml\\Rate\\ImportExport",
+    "Magento\\MediaGalleryCmsUi\\Controller\\Adminhtml\\Page\\Search",
+    "Magento\\EncryptionKey\\Controller\\Adminhtml\\Crypt\\Key\\Index",
+    "Magento\\MediaGalleryCmsUi\\Controller\\Adminhtml\\Page\\GetSelected",
+    "Magento\\Reports\\Controller\\Adminhtml\\Report\\Product\\Sold",
+    "Magento\\Reports\\Controller\\Adminhtml\\Report\\Customer\\Orders",
+    "Magento\\Reports\\Controller\\Adminhtml\\Report\\Customer\\Accounts",
+    "Magento\\Reports\\Controller\\Adminhtml\\Report\\Customer\\Totals",
+    "Magento\\Reports\\Controller\\Adminhtml\\Report\\Shopcart\\Customer",
+    "Magento\\Reports\\Controller\\Adminhtml\\Report\\Review\\Product",
+    "Magento\\Reports\\Controller\\Adminhtml\\Report\\Sales\\Tax",
+    "Magento\\Reports\\Controller\\Adminhtml\\Report\\Review\\Customer",
+    "Magento\\Reports\\Controller\\Adminhtml\\Report\\Product\\Downloads",
+    "Magento\\Reports\\Controller\\Adminhtml\\Report\\Shopcart\\Product",
+    "Magento\\Reports\\Controller\\Adminhtml\\Report\\Sales\\Coupons",
+    "Magento\\Reports\\Controller\\Adminhtml\\Report\\Shopcart\\ExportAbandonedCsv",
+    "Magento\\Reports\\Controller\\Adminhtml\\Report\\Shopcart\\ExportProductExcel",
+    "Magento\\Reports\\Controller\\Adminhtml\\Report\\Sales\\Invoiced",
+    "Magento\\Reports\\Controller\\Adminhtml\\Report\\Shopcart\\ExportProductCsv",
+    "Magento\\Reports\\Controller\\Adminhtml\\Report\\Shopcart\\ExportAbandonedExcel",
+    "Magento\\Reports\\Controller\\Adminhtml\\Report\\Shopcart\\ExportCustomerCsv",
+    "Magento\\Reports\\Controller\\Adminhtml\\Report\\Shopcart\\Abandoned",
+    "Magento\\Reports\\Controller\\Adminhtml\\Report\\Sales\\Refunded",
+    "Magento\\Reports\\Controller\\Adminhtml\\Report\\Product\\Viewed",
+    "Magento\\Reports\\Controller\\Adminhtml\\Report\\Sales\\Sales",
+    "Magento\\Reports\\Controller\\Adminhtml\\Report\\Shopcart\\ExportCustomerExcel",
+    "Magento\\Reports\\Controller\\Adminhtml\\Report\\Sales\\Bestsellers",
+    "Magento\\Reports\\Controller\\Adminhtml\\Report\\Product\\Lowstock",
+    "Magento\\Reports\\Controller\\Adminhtml\\Report\\Statistics",
+    "Magento\\Reports\\Controller\\Adminhtml\\Report\\Statistics\\Index",
+    "Magento\\Cms\\Controller\\Adminhtml\\Block\\Index",
+    "Magento\\Cms\\Controller\\Adminhtml\\Page\\Index",
+    "Magento\\Cms\\Controller\\Adminhtml\\Block\\NewAction",
+    "Magento\\Cms\\Controller\\Adminhtml\\Block\\Edit",
+    "Magento\\Cms\\Controller\\Adminhtml\\Page\\NewAction",
+    "Magento\\SendFriend\\Controller\\Product\\Send",
+    "Magento\\Cms\\Controller\\Adminhtml\\Page\\Edit",
+    "Magento\\Cms\\Controller\\Adminhtml\\Wysiwyg\\Directive",
+    "Magento\\Cms\\Controller\\Page\\View",
+    "Magento\\Cms\\Controller\\Index\\Index"
+  ],
+  "Magento\\Catalog\\Model\\Layer\\StateKeyInterface": [
+    "Magento\\CatalogSearch\\Model\\Layer\\Search\\StateKey"
+  ],
+  "Magento\\CatalogSearch\\Model\\Search\\Request\\ModifierInterface": [
+    "Magento\\CatalogSearch\\Model\\Search\\Request\\SearchModifier",
+    "Magento\\CatalogSearch\\Model\\Search\\Request\\PartialSearchModifier",
+    "Magento\\CatalogSearch\\Model\\Search\\Request\\MatchQueriesModifier",
+    "Magento\\CatalogSearch\\Model\\Search\\Request\\ModifierComposite"
+  ],
+  "Magento\\ReleaseNotification\\Model\\ContentProviderInterface": [
+    "Magento\\ReleaseNotification\\Model\\ContentProvider\\Http\\HttpContentProvider"
+  ],
+  "Magento\\CatalogSearch\\Model\\ResourceModel\\Fulltext\\Collection\\SearchResultApplierInterface": [
+    "Magento\\CatalogSearch\\Model\\ResourceModel\\Fulltext\\Collection\\SearchResultApplier"
+  ],
+  "Magento\\Framework\\Setup\\ConfigOptionsListInterface": [
+    "Magento\\GraphQlCache\\Setup\\ConfigOptionsList",
+    "Magento\\Amqp\\Setup\\ConfigOptionsList"
+  ],
+  "Magento\\Tax\\Api\\TaxClassManagementInterface": [
+    "Magento\\Tax\\Model\\TaxClass\\Management"
+  ],
+  "Magento\\Framework\\View\\Layout\\Condition\\VisibilityConditionInterface": [
+    "Magento\\ReleaseNotification\\Model\\Condition\\CanViewNotification",
+    "Magento\\AdminAnalytics\\Model\\Condition\\CanViewNotification"
+  ],
+  "Magento\\ReCaptchaUi\\Model\\CaptchaTypeResolverInterface": [
+    "Magento\\ReCaptchaFrontendUi\\Model\\CaptchaTypeResolver",
+    "Magento\\ReCaptchaAdminUi\\Model\\CaptchaTypeResolver"
+  ],
+  "Magento\\ReCaptchaUi\\Model\\ErrorMessageConfigInterface": [
+    "Magento\\ReCaptchaFrontendUi\\Model\\ErrorMessageConfig",
+    "Magento\\ReCaptchaAdminUi\\Model\\ErrorMessageConfig"
+  ],
+  "Magento\\InventoryComposerInstaller\\InventoryConfiguratorInterface": [
+    "Magento\\InventoryComposerInstaller\\DisabledInventoryConfiguration",
+    "Magento\\InventoryComposerInstaller\\NoChangesConfigurator"
+  ],
+  "Magento\\CatalogSearch\\Model\\ResourceModel\\Fulltext\\Collection\\SearchCriteriaResolverInterface": [
+    "Magento\\CatalogSearch\\Model\\ResourceModel\\Fulltext\\Collection\\SearchCriteriaResolver"
+  ],
+  "Magento\\CatalogSearch\\Model\\ResourceModel\\Fulltext\\Collection\\TotalRecordsResolverInterface": [
+    "Magento\\CatalogSearch\\Model\\ResourceModel\\Fulltext\\Collection\\TotalRecordsResolver"
+  ],
+  "Magento\\Framework\\Setup\\Patch\\DataPatchInterface": [
+    "Magento\\SampleData\\Setup\\Patch\\Data\\ClearSampleDataState",
+    "Magento\\CatalogSearch\\Setup\\Patch\\Data\\SetInitialSearchWeightForAttributes",
+    "Magento\\CatalogSearch\\Setup\\Patch\\Data\\MySQLSearchRemovalNotification",
+    "Magento\\Tax\\Setup\\Patch\\Data\\UpdateTaxClassAttributeVisibility",
+    "Magento\\Tax\\Setup\\Patch\\Data\\UpdateTaxRegionId",
+    "Magento\\Tax\\Setup\\Patch\\Data\\AddTaxAttributeAndTaxClasses",
+    "Magento\\Store\\Setup\\Patch\\Data\\UpdateStoreGroupCodes",
+    "Magento\\WidgetSampleData\\Setup\\Patch\\Data\\InstallWidgetSampleData",
+    "Magento\\Store\\Setup\\Patch\\Data\\DisableSid",
+    "Magento\\BundleSampleData\\Setup\\Patch\\Data\\InstallBundleSampleData",
+    "Magento\\MediaGalleryUi\\Setup\\Patch\\Data\\AddMediaGalleryPermissions",
+    "Magento\\Quote\\Setup\\Patch\\Data\\ConvertSerializedDataToJson",
+    "Magento\\Quote\\Setup\\Patch\\Data\\WishlistDataCleanUp",
+    "Magento\\Quote\\Setup\\Patch\\Data\\InstallEntityTypes",
+    "Magento\\SwatchesSampleData\\Setup\\Patch\\Data\\InstallSwatchesSampleData",
+    "Magento\\Swatches\\Setup\\Patch\\Data\\AddSwatchImageAttribute",
+    "Magento\\CatalogInventory\\Setup\\Patch\\Data\\ConvertSerializedDataToJson",
+    "Magento\\CatalogInventory\\Setup\\Patch\\Data\\UpdateStockItemsWebsite",
+    "Magento\\Swatches\\Setup\\Patch\\Data\\AddSwatchImageToDefaultAttribtueSet",
+    "Magento\\Swatches\\Setup\\Patch\\Data\\UpdateAdminTextSwatchValues",
+    "Magento\\Swatches\\Setup\\Patch\\Data\\ConvertAdditionalDataToJson",
+    "Magento\\CatalogInventory\\Setup\\Patch\\Data\\CreateDefaultStock",
+    "Magento\\PageBuilder\\Setup\\Patch\\Data\\UpgradePageBuilderStripStyles",
+    "Magento\\PageBuilder\\Setup\\Patch\\Data\\UpdateProductAttribute",
+    "Magento\\OfflineShipping\\Setup\\Patch\\Data\\UpdateQuoteShippingAddresses",
+    "Magento\\OfflineShipping\\Setup\\Patch\\Data\\UpdateShippingTablerate",
+    "Magento\\SalesSampleData\\Setup\\Patch\\Data\\InstallSalesSampleData",
+    "Magento\\Weee\\Setup\\Patch\\Data\\InitQuoteAndOrderAttributes",
+    "Magento\\Downloadable\\Setup\\Patch\\Data\\InstallDownloadableAttributes",
+    "Magento\\Downloadable\\Setup\\Patch\\Data\\UpdateLinksExistDefaultAttributeValue",
+    "Magento\\Downloadable\\Setup\\Patch\\Data\\AddDownloadableHostsConfig",
+    "Magento\\Indexer\\Setup\\Patch\\Data\\InitializeIndexerState",
+    "Magento\\CatalogSampleData\\Setup\\Patch\\Data\\InstallCatalogSampleData",
+    "Magento\\Wishlist\\Setup\\Patch\\Data\\ConvertSerializedData",
+    "Magento\\Wishlist\\Setup\\Patch\\Data\\WishlistDataCleanUp",
+    "Magento\\Review\\Setup\\Patch\\Data\\InitReviewStatusesAndData",
+    "Magento\\Directory\\Setup\\Patch\\Data\\AddDataForVenezuela",
+    "Magento\\Directory\\Setup\\Patch\\Data\\AddDataForSweden",
+    "Magento\\Directory\\Setup\\Patch\\Data\\UpdateRegionNamesForSwitzerland",
+    "Magento\\Directory\\Setup\\Patch\\Data\\AddDataForAustralia",
+    "Magento\\Directory\\Setup\\Patch\\Data\\AddDataForEcuador",
+    "Magento\\Directory\\Setup\\Patch\\Data\\AddDataForCroatia",
+    "Magento\\Directory\\Setup\\Patch\\Data\\AddDataForUruguay",
+    "Magento\\Directory\\Setup\\Patch\\Data\\AddDataForChile",
+    "Magento\\Directory\\Setup\\Patch\\Data\\AddDataForIndia",
+    "Magento\\Directory\\Setup\\Patch\\Data\\AddDataForGreece",
+    "Magento\\Directory\\Setup\\Patch\\Data\\AddDataForSuriname",
+    "Magento\\Directory\\Setup\\Patch\\Data\\AddDataForMexico",
+    "Magento\\Directory\\Setup\\Patch\\Data\\AddDataForCzechia",
+    "Magento\\Directory\\Setup\\Patch\\Data\\AddDataForPortugal",
+    "Magento\\Directory\\Setup\\Patch\\Data\\AddDataForChina",
+    "Magento\\Directory\\Setup\\Patch\\Data\\AddDataForArgentina",
+    "Magento\\Directory\\Setup\\Patch\\Data\\InitializeDirectoryData",
+    "Magento\\Directory\\Setup\\Patch\\Data\\AddDataForBulgaria",
+    "Magento\\Directory\\Setup\\Patch\\Data\\AddDataForBolivia",
+    "Magento\\Directory\\Setup\\Patch\\Data\\AddDataForBelarus",
+    "Magento\\Directory\\Setup\\Patch\\Data\\AddDataForItaly",
+    "Magento\\Directory\\Setup\\Patch\\Data\\AddDataForIceland",
+    "Magento\\Directory\\Setup\\Patch\\Data\\AddCountriesCaribbeanCuracaoKosovoSintMaarten",
+    "Magento\\Directory\\Setup\\Patch\\Data\\AddDataForGuyana",
+    "Magento\\Directory\\Setup\\Patch\\Data\\AddDataForBelgium",
+    "Magento\\Directory\\Setup\\Patch\\Data\\AddDataForDenmark",
+    "Magento\\Directory\\Setup\\Patch\\Data\\AddDataForColombia",
+    "Magento\\Directory\\Setup\\Patch\\Data\\AddDataForParaguay",
+    "Magento\\Directory\\Setup\\Patch\\Data\\AddDataForPoland",
+    "Magento\\Directory\\Setup\\Patch\\Data\\AddDataForAlbania",
+    "Magento\\Directory\\Setup\\Patch\\Data\\AddDataForPeru",
+    "Magento\\EncryptionKey\\Setup\\Patch\\Data\\SodiumChachaPatch",
+    "Magento\\Reports\\Setup\\Patch\\Data\\InitializeReportEntityTypesAndPages",
+    "Magento\\Reports\\Setup\\Patch\\Data\\ReportDisableNotification",
+    "Magento\\Cms\\Setup\\Patch\\Data\\UpdatePrivacyPolicyPage",
+    "Magento\\InventoryLowQuantityNotification\\Setup\\Patch\\Data\\MigrateCatalogInventoryNotifyStockQuantityData",
+    "Magento\\Cms\\Setup\\Patch\\Data\\CreateDefaultPages",
+    "Magento\\Cms\\Setup\\Patch\\Data\\ConvertWidgetConditionsToJson"
+  ],
+  "Composer\\Plugin\\PluginInterface": [
+    "Magento\\InventoryComposerInstaller\\Plugin",
+    "Magento\\ComposerRootUpdatePlugin\\Plugin\\PluginDefinition"
+  ],
+  "Magento\\Tax\\Api\\Data\\TaxClassKeyInterface": [
+    "Magento\\Tax\\Model\\TaxClass\\Key"
+  ],
+  "Magento\\Msrp\\Pricing\\MsrpPriceCalculatorInterface": [
+    "Magento\\MsrpGroupedProduct\\Pricing\\MsrpPriceCalculator",
+    "Magento\\MsrpConfigurableProduct\\Pricing\\MsrpPriceCalculator"
+  ],
+  "Laminas\\Filter\\FilterInterface": [
+    "Magento\\GoogleAdwords\\Model\\Filter\\UppercaseTitle",
+    "Magento\\Directory\\Model\\Currency\\Filter"
+  ],
+  "Magento\\Framework\\Option\\ArrayInterface": [
+    "Magento\\GoogleAdwords\\Model\\Config\\Source\\Language",
+    "Magento\\GoogleAdwords\\Model\\Config\\Source\\ValueType",
+    "Magento\\Tax\\Model\\Config\\Source\\Catalog",
+    "Magento\\Tax\\Model\\Config\\Source\\Apply\\On",
+    "Magento\\Tax\\Model\\Config\\Source\\Basedon",
+    "Magento\\Tax\\Model\\System\\Config\\Source\\Apply",
+    "Magento\\Tax\\Model\\System\\Config\\Source\\PriceType",
+    "Magento\\Tax\\Model\\System\\Config\\Source\\Tax\\Region",
+    "Magento\\Tax\\Model\\System\\Config\\Source\\Tax\\Display\\Type",
+    "Magento\\Tax\\Model\\System\\Config\\Source\\Algorithm",
+    "Magento\\AdvancedSearch\\Model\\Adminhtml\\Search\\Grid\\Options",
+    "Magento\\InventoryDistanceBasedSourceSelectionAdminUi\\Model\\Config\\Source\\GoogleDistanceProvider\\Mode",
+    "Magento\\InventoryDistanceBasedSourceSelectionAdminUi\\Model\\Config\\Source\\GoogleDistanceProvider\\Value",
+    "Magento\\InventoryDistanceBasedSourceSelectionAdminUi\\Model\\Config\\Source\\DistanceProvider",
+    "Magento\\Search\\Model\\Adminhtml\\System\\Config\\Source\\Engine",
+    "Magento\\Payment\\Model\\Config\\Source\\Cctype",
+    "Magento\\Payment\\Model\\Config\\Source\\Allspecificcountries",
+    "Magento\\Payment\\Model\\Config\\Source\\Allmethods",
+    "Magento\\Payment\\Model\\ResourceModel\\Grid\\TypeList",
+    "Magento\\Payment\\Model\\ResourceModel\\Grid\\GroupList",
+    "Magento\\Payment\\Model\\Source\\Cctype",
+    "Magento\\Payment\\Model\\Source\\Invoice",
+    "Magento\\CatalogInventory\\Model\\Source\\Backorders",
+    "Magento\\PageBuilder\\Model\\Config\\Source\\Country",
+    "Magento\\OfflineShipping\\Model\\Config\\Source\\Flatrate",
+    "Magento\\OfflineShipping\\Model\\Config\\Source\\Tablerate",
+    "Magento\\Downloadable\\Model\\System\\Config\\Source\\Contentdisposition",
+    "Magento\\Downloadable\\Model\\System\\Config\\Source\\Orderitemstatus",
+    "Magento\\Weee\\Model\\Config\\Source\\Display",
+    "Magento\\Wishlist\\Model\\Config\\Source\\Summary",
+    "Magento\\Directory\\Model\\Currency\\Import\\Source\\Service",
+    "Magento\\Directory\\Model\\Config\\Source\\WeightUnit",
+    "Magento\\Directory\\Model\\Config\\Source\\Allregion",
+    "Magento\\Directory\\Model\\Config\\Source\\Country",
+    "Magento\\Directory\\Model\\Config\\Source\\Country\\Full",
+    "Magento\\Cms\\Model\\Config\\Source\\Page",
+    "Magento\\Cms\\Model\\Config\\Source\\Wysiwyg\\Editor",
+    "Magento\\Cms\\Model\\Config\\Source\\Wysiwyg\\Enabled",
+    "Magento\\Developer\\Model\\Config\\Source\\WorkflowType"
+  ],
+  "Magento\\Ui\\DataProvider\\Modifier\\ModifierInterface": [
+    "Magento\\ReleaseNotification\\Ui\\DataProvider\\Modifier\\Notifications"
+  ],
+  "Magento\\Framework\\Data\\OptionSourceInterface": [
+    "Magento\\LayeredNavigation\\Model\\Attribute\\Source\\FilterableOptions",
+    "Magento\\Tax\\Model\\Rate\\Source",
+    "Magento\\CatalogSearch\\Model\\Source\\Weight",
+    "Magento\\Store\\Model\\System\\Store",
+    "Magento\\Store\\Ui\\Component\\Listing\\Column\\Store\\Options",
+    "Magento\\MediaGalleryUi\\Model\\Config\\MediaGallery\\Yesno",
+    "Magento\\MediaGalleryUi\\Ui\\Component\\Listing\\Filters\\Options\\Status",
+    "Magento\\MediaGalleryUi\\Ui\\Component\\Listing\\Filters\\Options\\UsedIn",
+    "Magento\\MediaGalleryUi\\Ui\\Component\\Listing\\Columns\\Source\\Options",
+    "Magento\\ReCaptchaAdminUi\\Model\\OptionSource",
+    "Magento\\Search\\Ui\\Component\\Listing\\Column\\Scope\\Options",
+    "Magento\\Search\\Ui\\Component\\Listing\\Column\\Website\\Options",
+    "Magento\\InventoryAdminUi\\Model\\OptionSource\\RegionSource",
+    "Magento\\Payment\\Ui\\Component\\Listing\\Column\\Method\\Options",
+    "Magento\\PageBuilder\\Model\\Catalog\\Sorting\\Options",
+    "Magento\\PageBuilder\\Model\\Template\\Source\\TemplateTypes",
+    "Magento\\PageBuilder\\Model\\Source\\VisualSelect",
+    "Magento\\PageBuilder\\Ui\\Component\\UrlInput\\Page\\Options",
+    "Magento\\OfflineShipping\\Model\\Source\\SalesRule\\FreeShippingOptions",
+    "Magento\\Downloadable\\Model\\Source\\TypeUpload",
+    "Magento\\Downloadable\\Model\\Source\\Shareable",
+    "Magento\\LoginAsCustomerAdminUi\\Model\\Config\\Source\\StoreViewLogin",
+    "Magento\\LoginAsCustomerAdminUi\\Ui\\Customer\\Component\\ConfirmationPopup\\Options",
+    "Magento\\Review\\Ui\\Component\\Listing\\Columns\\Status",
+    "Magento\\Ups\\Model\\Config\\Source\\Type",
+    "Magento\\Cms\\Model\\Page\\Source\\IsActive",
+    "Magento\\Cms\\Model\\Block\\Source\\IsActive",
+    "Magento\\Cms\\Model\\Page\\Source\\PageLayout",
+    "Magento\\Cms\\Model\\Page\\Source\\Theme",
+    "Magento\\Cms\\Model\\Config\\Source\\Block"
+  ],
+  "Magento\\Framework\\Search\\Request\\Aggregation\\StatusInterface": [
+    "Magento\\LayeredNavigation\\Model\\Aggregation\\Status"
+  ],
+  "Magento\\Framework\\Console\\CommandListInterface": [
+    "Magento\\SampleData\\Console\\CommandList"
+  ],
+  "Magento\\Framework\\Notification\\MessageInterface": [
+    "Magento\\Tax\\Model\\System\\Message\\Notifications",
+    "Magento\\Store\\Model\\Message\\EmptyGroupCategory",
+    "Magento\\Indexer\\Model\\Message\\Invalid"
+  ],
+  "Magento\\Framework\\View\\Element\\UiComponent\\DataProvider\\DataProviderInterface": [
+    "Magento\\ReleaseNotification\\Ui\\DataProvider\\NotificationDataProvider"
+  ],
+  "Magento\\Ui\\DataProvider\\AddFilterToCollectionInterface": [
+    "Magento\\CatalogSearch\\Ui\\DataProvider\\Product\\AddFulltextFilterToCollection",
+    "Magento\\CatalogInventory\\Ui\\DataProvider\\Product\\AddQuantityFilterToCollection"
+  ],
+  "Magento\\Framework\\Mview\\ActionInterface": [
+    "Magento\\CatalogSearch\\Model\\Indexer\\Mview\\Action"
+  ],
+  "Magento\\CatalogImportExport\\Model\\Import\\Product\\RowValidatorInterface": [
+    "Magento\\AdvancedPricingImportExport\\Model\\Import\\AdvancedPricing\\Validator\\Website",
+    "Magento\\AdvancedPricingImportExport\\Model\\Import\\AdvancedPricing\\Validator"
+  ],
+  "Magento\\Framework\\Indexer\\IndexStructureInterface": [
+    "Magento\\CatalogSearch\\Model\\Indexer\\IndexStructure",
+    "Magento\\CatalogSearch\\Model\\Indexer\\IndexStructureProxy"
+  ],
+  "Magento\\Framework\\Event\\ObserverInterface": [
+    "Magento\\GoogleAdwords\\Observer\\SetConversionValueObserver",
+    "Magento\\LayeredNavigation\\Observer\\Edit\\Tab\\Front\\ProductAttributeFormBuildFrontTabObserver",
+    "Magento\\LayeredNavigation\\Observer\\Grid\\ProductAttributeGridBuildObserver",
+    "Magento\\CatalogSearch\\Model\\Indexer\\Fulltext\\Store",
+    "Magento\\Tax\\Observer\\GetPriceConfigurationObserver",
+    "Magento\\Tax\\Observer\\UpdateProductOptionsObserver",
+    "Magento\\Tax\\Observer\\AfterAddressSaveObserver",
+    "Magento\\Tax\\Observer\\CustomerLoggedInObserver",
+    "Magento\\MediaContentCms\\Observer\\Page",
+    "Magento\\MediaContentCms\\Observer\\PageDelete",
+    "Magento\\AdvancedSearch\\Model\\Recommendations\\SaveSearchQueryRelationsObserver",
+    "Magento\\MediaContentCms\\Observer\\Block",
+    "Magento\\MediaContentCms\\Observer\\BlockDelete",
+    "Magento\\Quote\\Observer\\SendInvoiceEmailObserver",
+    "Magento\\Quote\\Observer\\Backend\\CustomerQuoteObserver",
+    "Magento\\Quote\\Observer\\SubmitObserver",
+    "Magento\\Quote\\Observer\\Frontend\\Quote\\Address\\CollectTotalsObserver",
+    "Magento\\Swatches\\Observer\\AddSwatchAttributeTypeObserver",
+    "Magento\\Swatches\\Observer\\AddFieldsToAttributeObserver",
+    "Magento\\Payment\\Observer\\AbstractDataAssignObserver",
+    "Magento\\Payment\\Observer\\UpdateOrderStatusForPaymentMethodsObserver",
+    "Magento\\Payment\\Observer\\SalesOrderBeforeSaveObserver",
+    "Magento\\CatalogInventory\\Observer\\UpdateItemsStockUponConfigChangeObserver",
+    "Magento\\CatalogInventory\\Observer\\InvalidatePriceIndexUponConfigChangeObserver",
+    "Magento\\CatalogInventory\\Observer\\ReindexQuoteInventoryObserver",
+    "Magento\\CatalogInventory\\Observer\\CancelOrderItemObserver",
+    "Magento\\CatalogInventory\\Observer\\SubtractQuoteInventoryObserver",
+    "Magento\\CatalogInventory\\Observer\\CheckoutAllSubmitAfterObserver",
+    "Magento\\CatalogInventory\\Observer\\ProcessInventoryDataObserver",
+    "Magento\\CatalogInventory\\Observer\\AddStockItemsObserver",
+    "Magento\\CatalogInventory\\Observer\\DisplayProductStatusInfoObserver",
+    "Magento\\CatalogInventory\\Observer\\RevertQuoteInventoryObserver",
+    "Magento\\CatalogInventory\\Observer\\AddInventoryDataObserver",
+    "Magento\\CatalogInventory\\Observer\\SaveInventoryDataObserver",
+    "Magento\\CatalogInventory\\Observer\\QuantityValidatorObserver",
+    "Magento\\Weee\\Observer\\AfterAddressSave",
+    "Magento\\Weee\\Observer\\UpdateExcludedFieldListObserver",
+    "Magento\\Weee\\Observer\\UpdateProductOptionsObserver",
+    "Magento\\Weee\\Observer\\UpdateElementTypesObserver",
+    "Magento\\PageBuilder\\Observer\\ClearModalDismissedCookie",
+    "Magento\\Weee\\Observer\\AddWeeeTaxAttributeTypeObserver",
+    "Magento\\Weee\\Observer\\CustomerLoggedIn",
+    "Magento\\Weee\\Observer\\AssignBackendModelToAttributeObserver",
+    "Magento\\Weee\\Observer\\SetWeeeRendererInFormObserver",
+    "Magento\\Weee\\Observer\\GetPriceConfigurationObserver",
+    "Magento\\Weee\\Observer\\AddPaymentWeeeItem",
+    "Magento\\Downloadable\\Observer\\InitOptionRendererObserver",
+    "Magento\\Downloadable\\Observer\\UpdateLinkPurchasedObserver",
+    "Magento\\Downloadable\\Observer\\IsAllowedGuestCheckoutObserver",
+    "Magento\\Downloadable\\Observer\\SaveDownloadableOrderItemObserver",
+    "Magento\\GoogleAnalytics\\Observer\\SetGoogleAnalyticsOnOrderSuccessPageViewObserver",
+    "Magento\\Downloadable\\Observer\\SetLinkStatusObserver",
+    "Magento\\Downloadable\\Observer\\SetHasDownloadableProductsObserver",
+    "Magento\\Wishlist\\Observer\\CustomerLogin",
+    "Magento\\Wishlist\\Observer\\CartUpdateBefore",
+    "Magento\\Wishlist\\Observer\\AddToCart",
+    "Magento\\InventoryConfigurableProductAdminUi\\Observer\\ProcessSourceItemsObserver",
+    "Magento\\Wishlist\\Observer\\CustomerLogout",
+    "Magento\\Review\\Observer\\CatalogProductListCollectionAppendSummaryFieldsObserver",
+    "Magento\\Review\\Observer\\PredispatchReviewObserver",
+    "Magento\\Review\\Observer\\ProcessProductAfterDeleteEventObserver",
+    "Magento\\AdminAdobeIms\\Observer\\AdminLogoutObserver",
+    "Magento\\AdminAdobeIms\\Observer\\AuthObserver",
+    "Magento\\Persistent\\Observer\\SetCheckoutSessionPersistentDataObserver",
+    "Magento\\AdminAdobeIms\\Observer\\AdminAccountCreatedObserver",
+    "Magento\\Persistent\\Observer\\MakePersistentQuoteGuestObserver",
+    "Magento\\Persistent\\Observer\\EmulateQuoteObserver",
+    "Magento\\Persistent\\Observer\\RemovePersistentCookieOnRegisterObserver",
+    "Magento\\Persistent\\Observer\\SynchronizePersistentOnLoginObserver",
+    "Magento\\Persistent\\Observer\\UpdateCustomerCookiesObserver",
+    "Magento\\Persistent\\Observer\\RenewCookieObserver",
+    "Magento\\Persistent\\Observer\\SetQuotePersistentDataObserver",
+    "Magento\\Persistent\\Observer\\SetRememberMeCheckedStatusObserver",
+    "Magento\\Persistent\\Observer\\CustomerAuthenticatedEventObserver",
+    "Magento\\Persistent\\Observer\\CheckExpirePersistentQuoteObserver",
+    "Magento\\Persistent\\Observer\\PreventClearCheckoutSessionObserver",
+    "Magento\\Persistent\\Observer\\EmulateCustomerObserver",
+    "Magento\\Persistent\\Observer\\RemoveGuestPersistenceOnEmptyCartObserver",
+    "Magento\\Persistent\\Observer\\SynchronizePersistentOnLogoutObserver",
+    "Magento\\Persistent\\Observer\\ApplyBlockPersistentDataObserver",
+    "Magento\\Persistent\\Observer\\SetRememberMeStatusForAjaxLoginObserver",
+    "Magento\\Persistent\\Observer\\RefreshCustomerData",
+    "Magento\\Persistent\\Observer\\ApplyPersistentDataObserver",
+    "Magento\\Persistent\\Observer\\SynchronizePersistentInfoObserver",
+    "Magento\\Reports\\Observer\\CheckoutCartAddProductObserver",
+    "Magento\\Reports\\Observer\\CustomerLogoutObserver",
+    "Magento\\Reports\\Observer\\SendfriendProductObserver",
+    "Magento\\Reports\\Observer\\WishlistAddProductObserver",
+    "Magento\\Reports\\Observer\\CatalogProductViewObserver",
+    "Magento\\Reports\\Observer\\CustomerLoginObserver",
+    "Magento\\Reports\\Observer\\CatalogProductCompareClearObserver",
+    "Magento\\Reports\\Observer\\WishlistShareObserver",
+    "Magento\\Reports\\Observer\\CatalogProductCompareAddProductObserver",
+    "Magento\\Cms\\Observer\\NoRouteObserver",
+    "Magento\\Cms\\Observer\\PageValidatorObserver",
+    "Magento\\Cms\\Observer\\NoCookiesObserver"
+  ],
+  "Magento\\LayeredNavigation\\Block\\Navigation\\FilterRendererInterface": [
+    "Magento\\LayeredNavigation\\Block\\Navigation\\FilterRenderer"
+  ],
+  "Magento\\Framework\\Indexer\\ActionInterface": [
+    "Magento\\CatalogSearch\\Model\\Indexer\\Fulltext",
+    "Magento\\CatalogInventory\\Model\\Indexer\\Stock"
+  ],
+  "Magento\\InventoryDistanceBasedSourceSelectionApi\\Api\\GetLatLngFromAddressInterface": [
+    "Magento\\InventoryDistanceBasedSourceSelectionApi\\Model\\GetLatLngFromAddress"
+  ],
+  "Magento\\Tax\\Model\\System\\Message\\NotificationInterface": [
+    "Magento\\Tax\\Model\\System\\Message\\Notification\\ApplyDiscountOnPrices",
+    "Magento\\Tax\\Model\\System\\Message\\Notification\\DiscountErrors",
+    "Magento\\Tax\\Model\\System\\Message\\Notification\\RoundingErrors"
+  ],
+  "Magento\\InventoryDistanceBasedSourceSelectionApi\\Api\\GetLatsLngsFromAddressInterface": [
+    "Magento\\InventoryDistanceBasedSourceSelectionApi\\Model\\GetLatsLngsFromAddress"
+  ],
+  "Magento\\InventoryDistanceBasedSourceSelectionApi\\Api\\GetDistanceInterface": [
+    "Magento\\InventoryDistanceBasedSourceSelectionApi\\Model\\GetDistance"
+  ],
+  "Magento\\Tax\\Api\\Data\\TaxRuleInterface": [
+    "Magento\\Tax\\Model\\Calculation\\Rule"
+  ],
+  "Magento\\Framework\\View\\Element\\Block\\ArgumentInterface": [
+    "Magento\\LayeredNavigation\\ViewModel\\Layer\\Filter",
+    "Magento\\CatalogSearch\\Block\\SearchTermsLog",
+    "Magento\\AdminAnalytics\\ViewModel\\Notification",
+    "Magento\\AdminAnalytics\\ViewModel\\Metadata",
+    "Magento\\Store\\ViewModel\\SwitcherUrlProvider",
+    "Magento\\Search\\ViewModel\\AdditionalSearchFormData",
+    "Magento\\Search\\ViewModel\\ConfigProvider",
+    "Magento\\Swatches\\ViewModel\\Product\\Renderer\\Configurable",
+    "Magento\\Wishlist\\ViewModel\\WishlistData",
+    "Magento\\Wishlist\\ViewModel\\AllowedQuantity",
+    "Magento\\Contact\\ViewModel\\UserDataProvider",
+    "Magento\\AdminAdobeIms\\ViewModel\\LinkViewModel",
+    "Magento\\AdminAdobeIms\\ViewModel\\MessageViewModel"
+  ],
+  "Magento\\Framework\\Search\\Dynamic\\IntervalInterface": [
+    "Magento\\CatalogSearch\\Model\\Price\\Interval"
+  ],
+  "Magento\\CatalogSearch\\Model\\Advanced\\ProductCollectionPrepareStrategyInterface": [
+    "Magento\\CatalogSearch\\Model\\Advanced\\ProductCollectionPrepareStrategy"
+  ],
+  "Magento\\Search\\Model\\Autocomplete\\DataProviderInterface": [
+    "Magento\\CatalogSearch\\Model\\Autocomplete\\DataProvider"
+  ],
+  "Zend_Memory_Container_Interface": [
+    "Zend_Memory_AccessController",
+    "Zend_Memory_Container"
+  ],
+  "Magento\\Tax\\Api\\TaxClassRepositoryInterface": [
+    "Magento\\Tax\\Model\\TaxClass\\Repository"
+  ],
+  "Magento\\Framework\\Search\\Adapter\\OptionsInterface": [
+    "Magento\\CatalogSearch\\Model\\Adapter\\Options"
+  ],
+  "Magento\\Framework\\Search\\Adapter\\Aggregation\\AggregationResolverInterface": [
+    "Magento\\CatalogSearch\\Model\\Adapter\\Aggregation\\AggregationResolver"
+  ],
+  "Magento\\CatalogSearch\\Model\\Indexer\\IndexSwitcherInterface": [
+    "Magento\\CatalogSearch\\Model\\Indexer\\IndexSwitcherProxy"
+  ],
+  "Magento\\Framework\\Search\\Request\\IndexScopeResolverInterface": [
+    "Magento\\CatalogSearch\\Model\\Indexer\\Scope\\ScopeProxy"
+  ],
+  "Magento\\Tax\\Api\\Data\\TaxClassInterface": [
+    "Magento\\Tax\\Model\\ClassModel"
+  ],
+  "Magento\\CatalogSearch\\Model\\Search\\ItemCollectionProviderInterface": [
+    "Magento\\CatalogSearch\\Model\\Search\\ItemCollectionProvider"
+  ],
+  "ArrayAccess": ["Zend_Memory_Value", "Zend_Pdf_NameTree"],
+  "Magento\\CatalogSearch\\Model\\Adapter\\Aggregation\\RequestCheckerInterface": [
+    "Magento\\CatalogSearch\\Model\\Adapter\\Aggregation\\Checker\\Query\\AdvancedSearch",
+    "Magento\\CatalogSearch\\Model\\Adapter\\Aggregation\\Checker\\Query\\CatalogView",
+    "Magento\\CatalogSearch\\Model\\Adapter\\Aggregation\\RequestCheckerComposite"
+  ],
+  "Magento\\Framework\\Api\\SearchCriteria\\CollectionProcessor\\JoinProcessor\\CustomJoinInterface": [
+    "Magento\\Tax\\Model\\Api\\SearchCriteria\\JoinProcessor\\RateCode",
+    "Magento\\Tax\\Model\\Api\\SearchCriteria\\JoinProcessor\\CustomerTaxClass",
+    "Magento\\Tax\\Model\\Api\\SearchCriteria\\JoinProcessor\\Rate",
+    "Magento\\Tax\\Model\\Api\\SearchCriteria\\JoinProcessor\\CalculationData",
+    "Magento\\Tax\\Model\\Api\\SearchCriteria\\JoinProcessor\\ProductTaxClass"
+  ],
+  "Magento\\Tax\\Model\\TaxClass\\Type\\TypeInterface": [
+    "Magento\\Tax\\Model\\TaxClass\\AbstractType"
+  ],
+  "Magento\\CatalogSearch\\Model\\Search\\RequestGenerator\\GeneratorInterface": [
+    "Magento\\CatalogSearch\\Model\\Search\\RequestGenerator\\Decimal",
+    "Magento\\CatalogSearch\\Model\\Search\\RequestGenerator\\General"
+  ],
+  "Magento\\Checkout\\Model\\ConfigProviderInterface": [
+    "Magento\\Tax\\Model\\TaxConfigProvider",
+    "Magento\\Payment\\Model\\CcGenericConfigProvider",
+    "Magento\\Payment\\Model\\CcConfigProvider",
+    "Magento\\Payment\\Model\\IframeConfigProvider",
+    "Magento\\Weee\\Model\\WeeeConfigProvider",
+    "Magento\\Persistent\\Model\\CheckoutConfigProvider"
+  ],
+  "Magento\\Framework\\App\\Action\\HttpPostActionInterface": [
+    "Magento\\Tax\\Controller\\Adminhtml\\Rule\\Delete",
+    "Magento\\Tax\\Controller\\Adminhtml\\Rate\\Delete",
+    "Magento\\Tax\\Controller\\Adminhtml\\Rate\\AjaxSave",
+    "Magento\\AdminAnalytics\\Controller\\Adminhtml\\Config\\EnableAdminUsage",
+    "Magento\\AdminAnalytics\\Controller\\Adminhtml\\Config\\DisableAdminUsage",
+    "Magento\\MediaGalleryUi\\Controller\\Adminhtml\\Image\\SaveDetails",
+    "Magento\\MediaGalleryUi\\Controller\\Adminhtml\\Image\\Delete",
+    "Magento\\MediaGalleryUi\\Controller\\Adminhtml\\Image\\Upload",
+    "Magento\\MediaGalleryUi\\Controller\\Adminhtml\\Image\\OnInsert",
+    "Magento\\MediaGalleryUi\\Controller\\Adminhtml\\Directories\\Delete",
+    "Magento\\MediaGalleryUi\\Controller\\Adminhtml\\Directories\\Create",
+    "Magento\\Search\\Controller\\Adminhtml\\Term\\Delete",
+    "Magento\\Search\\Controller\\Adminhtml\\Term\\Save",
+    "Magento\\Search\\Controller\\Adminhtml\\Term\\MassDelete",
+    "Magento\\Search\\Controller\\Adminhtml\\Synonyms\\MassDelete",
+    "Magento\\Search\\Controller\\Adminhtml\\Synonyms\\Delete",
+    "Magento\\InventoryAdminUi\\Controller\\Adminhtml\\Source\\Save",
+    "Magento\\InventoryAdminUi\\Controller\\Adminhtml\\Source\\MassEnable",
+    "Magento\\InventoryAdminUi\\Controller\\Adminhtml\\Source\\InlineEdit",
+    "Magento\\InventoryAdminUi\\Controller\\Adminhtml\\Stock\\MassDelete",
+    "Magento\\InventoryAdminUi\\Controller\\Adminhtml\\Stock\\Delete",
+    "Magento\\InventoryAdminUi\\Controller\\Adminhtml\\Stock\\Save",
+    "Magento\\InventoryAdminUi\\Controller\\Adminhtml\\Stock\\InlineEdit",
+    "Magento\\InventoryAdminUi\\Controller\\Adminhtml\\Source\\MassDisable",
+    "Magento\\PageBuilder\\Controller\\Adminhtml\\GoogleMaps\\ValidateApi",
+    "Magento\\PageBuilder\\Controller\\Adminhtml\\Form\\Element\\ProductConditions\\Child",
+    "Magento\\PageBuilder\\Controller\\Adminhtml\\Form\\Element\\ProductTotals",
+    "Magento\\PageBuilder\\Controller\\Adminhtml\\Stage\\Preview",
+    "Magento\\PageBuilder\\Controller\\Adminhtml\\Template\\Delete",
+    "Magento\\PageBuilder\\Controller\\Adminhtml\\Template\\Save",
+    "Magento\\PageBuilder\\Controller\\Adminhtml\\ContentType\\Image\\Upload",
+    "Magento\\PageBuilder\\Controller\\ContentType\\Preview",
+    "Magento\\Downloadable\\Controller\\Adminhtml\\Downloadable\\Product\\Edit\\CrosssellGrid",
+    "Magento\\Downloadable\\Controller\\Adminhtml\\Downloadable\\Product\\Edit\\RelatedGrid",
+    "Magento\\Downloadable\\Controller\\Adminhtml\\Downloadable\\File\\Upload",
+    "Magento\\Downloadable\\Controller\\Adminhtml\\Downloadable\\Product\\Edit\\Related",
+    "Magento\\Downloadable\\Controller\\Adminhtml\\Downloadable\\Product\\Edit\\Upsell",
+    "Magento\\Downloadable\\Controller\\Adminhtml\\Downloadable\\Product\\Edit\\Crosssell",
+    "Magento\\Downloadable\\Controller\\Adminhtml\\Downloadable\\Product\\Edit\\UpsellGrid",
+    "Magento\\Indexer\\Controller\\Adminhtml\\Indexer\\MassInvalidate",
+    "Magento\\Indexer\\Controller\\Adminhtml\\Indexer\\MassChangelog",
+    "Magento\\Indexer\\Controller\\Adminhtml\\Indexer\\MassOnTheFly",
+    "Magento\\ProductAlert\\Controller\\Unsubscribe\\Stock",
+    "Magento\\Wishlist\\Controller\\Shared\\Allcart",
+    "Magento\\Wishlist\\Controller\\Shared\\Cart",
+    "Magento\\Wishlist\\Controller\\Index\\Update",
+    "Magento\\LoginAsCustomerAdminUi\\Controller\\Adminhtml\\Login\\Login",
+    "Magento\\Wishlist\\Controller\\Index\\Allcart",
+    "Magento\\Review\\Controller\\Adminhtml\\Product\\MassDelete",
+    "Magento\\Wishlist\\Controller\\Index\\Remove",
+    "Magento\\Review\\Controller\\Adminhtml\\Product\\MassVisibleIn",
+    "Magento\\Wishlist\\Controller\\Index\\UpdateItemOptions",
+    "Magento\\Review\\Controller\\Adminhtml\\Product\\RatingItems",
+    "Magento\\Review\\Controller\\Adminhtml\\Product\\MassUpdateStatus",
+    "Magento\\Wishlist\\Controller\\Index\\Add",
+    "Magento\\Review\\Controller\\Adminhtml\\Product\\Post",
+    "Magento\\Review\\Controller\\Product\\Post",
+    "Magento\\Contact\\Controller\\Index\\Post",
+    "Magento\\Wishlist\\Controller\\Index\\Cart",
+    "Magento\\Review\\Controller\\Adminhtml\\Product\\Delete",
+    "Magento\\Review\\Controller\\Adminhtml\\Product\\ProductGrid",
+    "Magento\\Wishlist\\Controller\\Index\\Fromcart",
+    "Magento\\Review\\Controller\\Adminhtml\\Product\\Save",
+    "Magento\\Wishlist\\Controller\\Index\\Send",
+    "Magento\\Review\\Controller\\Adminhtml\\Rating\\Delete",
+    "Magento\\Review\\Controller\\Adminhtml\\Rating\\Save",
+    "Magento\\Review\\Controller\\Adminhtml\\Customer\\ProductReviews",
+    "Magento\\Reports\\Controller\\Adminhtml\\Report\\Statistics\\RefreshRecent",
+    "Magento\\Reports\\Controller\\Adminhtml\\Report\\Statistics\\RefreshLifetime",
+    "Magento\\Cms\\Controller\\Adminhtml\\Block\\MassDelete",
+    "Magento\\Cms\\Controller\\Adminhtml\\Page\\MassDisable",
+    "Magento\\Cms\\Controller\\Adminhtml\\Page\\Widget\\Chooser",
+    "Magento\\Cms\\Controller\\Adminhtml\\Block\\Delete",
+    "Magento\\Cms\\Controller\\Adminhtml\\Block\\Save",
+    "Magento\\Cms\\Controller\\Adminhtml\\Page\\Delete",
+    "Magento\\Cms\\Controller\\Adminhtml\\Page\\Save",
+    "Magento\\SendFriend\\Controller\\Product\\Sendmail",
+    "Magento\\Cms\\Controller\\Adminhtml\\Page\\MassEnable",
+    "Magento\\Cms\\Controller\\Adminhtml\\Page\\InlineEdit",
+    "Magento\\Cms\\Controller\\Adminhtml\\Wysiwyg\\Images\\DeleteFolder",
+    "Magento\\Cms\\Controller\\Adminhtml\\Wysiwyg\\Images\\DeleteFiles",
+    "Magento\\Cms\\Controller\\Adminhtml\\Wysiwyg\\Images\\Upload",
+    "Magento\\Cms\\Controller\\Adminhtml\\Wysiwyg\\Images\\NewFolder",
+    "Magento\\Cms\\Controller\\Adminhtml\\Wysiwyg\\Images\\OnInsert",
+    "Magento\\Cms\\Controller\\Adminhtml\\Page\\MassDelete"
+  ],
+  "Magento\\Tax\\Api\\Data\\TaxRateTitleInterface": [
+    "Magento\\Tax\\Model\\Calculation\\Rate\\Title"
+  ],
+  "Magento\\Tax\\Api\\Data\\OrderTaxDetailsAppliedTaxInterface": [
+    "Magento\\Tax\\Model\\Sales\\Order\\Tax"
+  ],
+  "Magento\\Catalog\\Model\\Layer\\ItemCollectionProviderInterface": [
+    "Magento\\CatalogSearch\\Model\\Layer\\Category\\ItemCollectionProvider"
+  ],
+  "Magento\\Tax\\Api\\Data\\OrderTaxDetailsInterface": [
+    "Magento\\Tax\\Model\\Sales\\Order\\Details"
+  ],
+  "Magento\\Backend\\Block\\Widget\\ContainerInterface": [
+    "Magento\\Tax\\Block\\Adminhtml\\Rate\\Toolbar\\Add",
+    "Magento\\Tax\\Block\\Adminhtml\\Rate\\Toolbar\\Save"
+  ],
+  "Magento\\Tax\\Api\\OrderTaxManagementInterface": [
+    "Magento\\Tax\\Model\\Sales\\Order\\TaxManagement"
+  ],
+  "Magento\\Store\\Model\\StoreSwitcherInterface": [
+    "Magento\\Store\\Model\\StoreSwitcher\\HashProcessor",
+    "Magento\\Store\\Model\\StoreSwitcher\\ManagePrivateContent",
+    "Magento\\Store\\Model\\StoreSwitcher\\CleanTargetUrl",
+    "Magento\\Store\\Model\\StoreSwitcher\\ManageStoreCookie",
+    "Magento\\Store\\Model\\StoreSwitcher"
+  ],
+  "Magento\\Tax\\Api\\Data\\TaxRateSearchResultsInterface": [
+    "Magento\\Tax\\Model\\TaxRateSearchResults"
+  ],
+  "Magento\\Tax\\Api\\Data\\TaxRuleSearchResultsInterface": [
+    "Magento\\Tax\\Model\\TaxRuleSearchResults"
+  ],
+  "Magento\\Tax\\Api\\TaxRuleRepositoryInterface": [
+    "Magento\\Tax\\Model\\TaxRuleRepository"
+  ],
+  "Magento\\Customer\\CustomerData\\JsLayoutDataProviderInterface": [
+    "Magento\\Tax\\CustomerData\\CheckoutTotalsJsLayoutDataProvider"
+  ],
+  "Magento\\Tax\\Api\\Data\\QuoteDetailsItemInterface": [
+    "Magento\\Tax\\Model\\Sales\\Quote\\ItemDetails"
+  ],
+  "Magento\\Tax\\Api\\Data\\GrandTotalDetailsInterface": [
+    "Magento\\Tax\\Model\\Calculation\\GrandTotalDetails"
+  ],
+  "Magento\\Search\\Model\\SearchCollectionInterface": [
+    "Magento\\CatalogSearch\\Model\\ResourceModel\\Search\\Collection"
+  ],
+  "Magento\\Tax\\Api\\Data\\TaxRateInterface": [
+    "Magento\\Tax\\Model\\Calculation\\Rate"
+  ],
+  "Magento\\Store\\Model\\StoreSwitcher\\RedirectDataInterface": [
+    "Magento\\Store\\Model\\StoreSwitcher\\RedirectData"
+  ],
+  "Magento\\Tax\\Api\\Data\\QuoteDetailsInterface": [
+    "Magento\\Tax\\Model\\Sales\\Quote\\QuoteDetails"
+  ],
+  "Magento\\Tax\\Api\\TaxAddressManagerInterface": [
+    "Magento\\Tax\\Model\\TaxAddressManager"
+  ],
+  "Magento\\Store\\Model\\StoreSwitcher\\RedirectDataPreprocessorInterface": [
+    "Magento\\Store\\Model\\StoreSwitcher\\RedirectDataPreprocessorComposite"
+  ],
+  "Magento\\Framework\\Data\\Argument\\InterpreterInterface": [
+    "Magento\\Store\\Model\\Argument\\Interpreter\\ServiceUrl"
+  ],
+  "Magento\\Store\\Model\\StoreSwitcher\\ContextInterface": [
+    "Magento\\Store\\Model\\StoreSwitcher\\Context"
+  ],
+  "Magento\\Store\\Api\\WebsiteRepositoryInterface": [
+    "Magento\\Store\\Model\\WebsiteRepository"
+  ],
+  "Magento\\Tax\\Api\\Data\\TaxClassSearchResultsInterface": [
+    "Magento\\Tax\\Model\\TaxClassSearchResults"
+  ],
+  "Magento\\Framework\\DataObject\\IdentityInterface": [
+    "Magento\\Store\\Model\\Website",
+    "Magento\\Store\\Model\\Group",
+    "Magento\\Swatches\\Block\\Product\\Renderer\\Configurable",
+    "Magento\\CatalogInventory\\Model\\Adminhtml\\Stock\\Item",
+    "Magento\\CatalogInventory\\Block\\Stockqty\\DefaultStockqty",
+    "Magento\\CatalogInventory\\Block\\Qtyincrements",
+    "Magento\\Review\\Model\\Review",
+    "Magento\\Wishlist\\Model\\Wishlist",
+    "Magento\\Contact\\Model\\System\\Config\\Backend\\Links",
+    "Magento\\Review\\Block\\Product\\Review",
+    "Magento\\Review\\Model\\Rating",
+    "Magento\\Cms\\Block\\Block",
+    "Magento\\Reports\\Block\\Product\\Viewed",
+    "Magento\\Cms\\Block\\Page",
+    "Magento\\Cms\\Block\\BlockByIdentifier"
+  ],
+  "Magento\\Tax\\Api\\TaxCalculationInterface": [
+    "Magento\\Tax\\Model\\TaxCalculation"
+  ],
+  "Magento\\Framework\\App\\Config\\Reader\\Source\\SourceInterface": [
+    "Magento\\Store\\Model\\Config\\Reader\\Source\\Initial\\Website",
+    "Magento\\Store\\Model\\Config\\Reader\\Source\\Initial\\DefaultScope",
+    "Magento\\Store\\Model\\Config\\Reader\\Source\\Initial\\Store",
+    "Magento\\Store\\Model\\Config\\Reader\\Source\\Dynamic\\Website",
+    "Magento\\Store\\Model\\Config\\Reader\\Source\\Dynamic\\DefaultScope",
+    "Magento\\Store\\Model\\Config\\Reader\\Source\\Dynamic\\Store"
+  ],
+  "Magento\\Framework\\Model\\Entity\\ScopeProviderInterface": [
+    "Magento\\Store\\Model\\StoreScopeProvider",
+    "Magento\\Store\\Model\\DefaultStoreScopeProvider"
+  ],
+  "Magento\\Tax\\Api\\TaxRateManagementInterface": [
+    "Magento\\Tax\\Model\\TaxRateManagement"
+  ],
+  "Magento\\Framework\\App\\ScopeTreeProviderInterface": [
+    "Magento\\Store\\Model\\ScopeTreeProvider"
+  ],
+  "Magento\\Store\\Model\\Config\\Importer\\Processor\\ProcessorInterface": [
+    "Magento\\Store\\Model\\Config\\Importer\\Processor\\Update",
+    "Magento\\Store\\Model\\Config\\Importer\\Processor\\Delete",
+    "Magento\\Store\\Model\\Config\\Importer\\Processor\\Create"
+  ],
+  "Magento\\Store\\Api\\WebsiteManagementInterface": [
+    "Magento\\Store\\Model\\WebsiteManagement"
+  ],
+  "Magento\\Framework\\App\\Router\\PathConfigInterface": [
+    "Magento\\Store\\Model\\PathConfig"
+  ],
+  "Magento\\CatalogSearch\\Model\\ResourceModel\\Fulltext\\Collection\\DefaultFilterStrategyApplyCheckerInterface": [
+    "Magento\\CatalogSearch\\Model\\ResourceModel\\Fulltext\\Collection\\DefaultFilterStrategyApplyChecker"
+  ],
+  "Magento\\Framework\\App\\ScopeValidatorInterface": [
+    "Magento\\Store\\Model\\ScopeValidator"
+  ],
+  "Magento\\Framework\\App\\ScopeInterface": ["Magento\\Store\\Model\\Store"],
+  "Magento\\Framework\\App\\Response\\RedirectInterface": [
+    "Magento\\Store\\App\\Response\\Redirect"
+  ],
+  "Magento\\Framework\\GraphQl\\Query\\ResolverInterface": [
+    "Magento\\DirectoryGraphQl\\Model\\Resolver\\Countries",
+    "Magento\\DirectoryGraphQl\\Model\\Resolver\\Currency",
+    "Magento\\DirectoryGraphQl\\Model\\Resolver\\Country",
+    "Magento\\GroupedProductGraphQl\\Model\\Resolver\\GroupedItems",
+    "Magento\\CatalogCmsGraphQl\\Model\\Resolver\\Category\\Block",
+    "Magento\\EavGraphQl\\Model\\Resolver\\AttributeOptions",
+    "Magento\\EavGraphQl\\Model\\Resolver\\CustomAttributeMetadata",
+    "Magento\\BundleGraphQl\\Model\\Resolver\\Options\\Label",
+    "Magento\\SendFriendGraphQl\\Model\\Resolver\\SendFriendConfiguration",
+    "Magento\\BundleGraphQl\\Model\\Resolver\\Options\\BundleItemOptionUid",
+    "Magento\\BundleGraphQl\\Model\\Resolver\\Order\\Item\\BundleOptions",
+    "Magento\\BundleGraphQl\\Model\\Resolver\\BundleOption",
+    "Magento\\BundleGraphQl\\Model\\Resolver\\Product\\Fields\\DynamicPrice",
+    "Magento\\BundleGraphQl\\Model\\Resolver\\Product\\Fields\\PriceView",
+    "Magento\\BundleGraphQl\\Model\\Resolver\\Product\\Fields\\ShipBundleItems",
+    "Magento\\BundleGraphQl\\Model\\Resolver\\Product\\Fields\\DynamicSku",
+    "Magento\\BundleGraphQl\\Model\\Resolver\\Product\\Fields\\DynamicWeight",
+    "Magento\\BundleGraphQl\\Model\\Resolver\\BundleItems",
+    "Magento\\BundleGraphQl\\Model\\Resolver\\BundleItemLinks",
+    "Magento\\BundleGraphQl\\Model\\Wishlist\\BundleOptions",
+    "Magento\\SendFriendGraphQl\\Model\\Resolver\\SendEmailToFriend",
+    "Magento\\BundleGraphQl\\Model\\Resolver\\PriceRange",
+    "Magento\\PaypalGraphQl\\Model\\Resolver\\PaypalExpressToken",
+    "Magento\\PaypalGraphQl\\Model\\Resolver\\HostedProUrl",
+    "Magento\\PaypalGraphQl\\Model\\Resolver\\PayflowProResponse",
+    "Magento\\PaypalGraphQl\\Model\\Resolver\\PayflowProToken",
+    "Magento\\PaypalGraphQl\\Model\\Resolver\\PayflowLinkToken",
+    "Magento\\CatalogCustomerGraphQl\\Model\\Resolver\\PriceTiers",
+    "Magento\\CatalogCustomerGraphQl\\Model\\Resolver\\TierPrices",
+    "Magento\\WishlistGraphQl\\Model\\Resolver\\WishlistById",
+    "Magento\\WishlistGraphQl\\Model\\Resolver\\WishlistItems",
+    "Magento\\WishlistGraphQl\\Model\\Resolver\\WishlistItemsResolver",
+    "Magento\\WishlistGraphQl\\Model\\Resolver\\UpdateProductsInWishlist",
+    "Magento\\WishlistGraphQl\\Model\\Resolver\\AddProductsToWishlist",
+    "Magento\\WishlistGraphQl\\Model\\Resolver\\Wishlist\\AddToCart",
+    "Magento\\WishlistGraphQl\\Model\\Resolver\\CustomizableOptions",
+    "Magento\\InventoryInStorePickupGraphQl\\Model\\Resolver\\PickupLocations",
+    "Magento\\WishlistGraphQl\\Model\\Resolver\\WishlistResolver",
+    "Magento\\WishlistGraphQl\\Model\\Resolver\\CustomerWishlistResolver",
+    "Magento\\WishlistGraphQl\\Model\\Resolver\\CustomerWishlists",
+    "Magento\\WishlistGraphQl\\Model\\Resolver\\RemoveProductsFromWishlist",
+    "Magento\\WishlistGraphQl\\Model\\Resolver\\ProductResolver",
+    "Magento\\SwatchesGraphQl\\Model\\Resolver\\Product\\Options\\SwatchData",
+    "Magento\\DownloadableGraphQl\\Model\\Wishlist\\ItemLinks",
+    "Magento\\DownloadableGraphQl\\Resolver\\DownloadableCartItem\\Links",
+    "Magento\\DownloadableGraphQl\\Resolver\\DownloadableCartItem\\Samples",
+    "Magento\\DownloadableGraphQl\\Resolver\\Order\\Item\\Links",
+    "Magento\\DownloadableGraphQl\\Resolver\\Product\\Links",
+    "Magento\\DownloadableGraphQl\\Resolver\\Product\\DownloadableLinksValueUid",
+    "Magento\\DownloadableGraphQl\\Resolver\\Product\\Samples"
+  ],
+  "Magento\\Framework\\App\\ScopeResolverInterface": [
+    "Magento\\Store\\Model\\Resolver\\Website",
+    "Magento\\Store\\Model\\Resolver\\Group",
+    "Magento\\Store\\Model\\Resolver\\Store"
+  ],
+  "Magento\\Tax\\Api\\Data\\GrandTotalRatesInterface": [
+    "Magento\\Tax\\Model\\Calculation\\GrandTotalRates"
+  ],
+  "Magento\\GraphQl\\Controller\\HttpHeaderProcessorInterface": [
+    "Magento\\DirectoryGraphQl\\Controller\\HttpHeaderProcessor\\CurrencyProcessor"
+  ],
+  "Magento\\Store\\Model\\StoreSwitcher\\RedirectDataPostprocessorInterface": [
+    "Magento\\Store\\Model\\StoreSwitcher\\RedirectDataPostprocessorComposite"
+  ],
+  "Magento\\Store\\Model\\StoreSwitcher\\RedirectDataSerializerInterface": [
+    "Magento\\Store\\Model\\StoreSwitcher\\RedirectDataCacheSerializer"
+  ],
+  "Magento\\GraphQl\\Controller\\HttpRequestValidatorInterface": [
+    "Magento\\DirectoryGraphQl\\Controller\\HttpRequestValidator\\CurrencyValidator",
+    "Magento\\GraphQl\\Controller\\HttpRequestValidator\\HttpVerbValidator",
+    "Magento\\GraphQl\\Controller\\HttpRequestValidator\\ContentTypeValidator"
+  ],
+  "Magento\\Tax\\Api\\Data\\TaxDetailsItemInterface": [
+    "Magento\\Tax\\Model\\TaxDetails\\ItemDetails"
+  ],
+  "Magento\\CatalogGraphQl\\Model\\Resolver\\Product\\Price\\ProviderInterface": [
+    "Magento\\GroupedProductGraphQl\\Model\\Resolver\\Product\\Price\\Provider",
+    "Magento\\BundleGraphQl\\Model\\Resolver\\Product\\Price\\Provider"
+  ],
+  "Magento\\Tax\\Api\\TaxRateRepositoryInterface": [
+    "Magento\\Tax\\Model\\Calculation\\RateRepository"
+  ],
+  "Magento\\Tax\\Api\\Data\\AppliedTaxInterface": [
+    "Magento\\Tax\\Model\\TaxDetails\\AppliedTax"
+  ],
+  "Magento\\Tax\\Api\\Data\\AppliedTaxRateInterface": [
+    "Magento\\Tax\\Model\\TaxDetails\\AppliedTaxRate"
+  ],
+  "Magento\\Framework\\GraphQl\\Query\\Resolver\\TypeResolverInterface": [
+    "Magento\\GroupedProductGraphQl\\Model\\GroupedProductTypeResolver",
+    "Magento\\GroupedProductGraphQl\\Model\\GroupedProductLinksTypeResolver",
+    "Magento\\BundleGraphQl\\Model\\BundleProductTypeResolver",
+    "Magento\\WishlistGraphQl\\Model\\Resolver\\Type\\WishlistItemType",
+    "Magento\\SwatchesGraphQl\\Model\\Resolver\\Product\\Options\\SwatchDataTypeResolver",
+    "Magento\\SwatchesGraphQl\\Model\\Resolver\\SwatchLayerFilterItemResolver",
+    "Magento\\GraphQl\\Model\\Mutation\\Resolver\\ErrorTypeResolver",
+    "Magento\\DownloadableGraphQl\\Model\\DownloadableProductTypeResolver"
+  ],
+  "Magento\\Catalog\\Ui\\DataProvider\\Product\\ProductRenderCollectorInterface": [
+    "Magento\\Tax\\Ui\\DataProvider\\Product\\Listing\\Collector\\Tax",
+    "Magento\\Weee\\Ui\\DataProvider\\Product\\Listing\\Collector\\Weee",
+    "Magento\\Review\\Ui\\DataProvider\\Product\\Listing\\Collector\\Review",
+    "Magento\\Wishlist\\Ui\\DataProvider\\Product\\Collector\\Button"
+  ],
+  "Magento\\Tax\\Api\\Data\\TaxDetailsInterface": [
+    "Magento\\Tax\\Model\\TaxDetails\\TaxDetails"
+  ],
+  "Magento\\Framework\\App\\Request\\PathInfoProcessorInterface": [
+    "Magento\\Store\\App\\Request\\PathInfoProcessor"
+  ],
+  "Magento\\AdvancedSearch\\Model\\Client\\ClientFactoryInterface": [
+    "Magento\\AdvancedSearch\\Model\\Client\\ClientFactory"
+  ],
+  "Magento\\AdobeStockImageApi\\Api\\GetRelatedImagesInterface": [
+    "Magento\\AdobeStockImage\\Model\\GetRelatedImages"
+  ],
+  "Magento\\AdobeStockImageApi\\Api\\ConfigInterface": [
+    "Magento\\AdobeStockImage\\Model\\Config"
+  ],
+  "Magento\\AdobeStockImageApi\\Api\\GetImageListInterface": [
+    "Magento\\AdobeStockImage\\Model\\GetImageList"
+  ],
+  "Magento\\Framework\\App\\Config\\Spi\\PostProcessorInterface": [
+    "Magento\\Store\\Model\\Config\\Processor\\Fallback",
+    "Magento\\Store\\Model\\Config\\Processor\\Placeholder"
+  ],
+  "Magento\\AdvancedSearch\\Block\\SearchDataInterface": [
+    "Magento\\AdvancedSearch\\Block\\SearchData"
+  ],
+  "Magento\\Framework\\Pricing\\Adjustment\\AdjustmentInterface": [
+    "Magento\\Tax\\Pricing\\Adjustment",
+    "Magento\\Weee\\Pricing\\TaxAdjustment",
+    "Magento\\Weee\\Pricing\\Adjustment"
+  ],
+  "Magento\\AdobeStockImageApi\\Api\\SaveImageInterface": [
+    "Magento\\AdobeStockImage\\Model\\SaveImage"
+  ],
+  "Magento\\AdobeStockImageApi\\Api\\SaveLicensedImageInterface": [
+    "Magento\\AdobeStockImage\\Model\\SaveLicensedImage"
+  ],
+  "Magento\\Framework\\Setup\\Patch\\SchemaPatchInterface": [
+    "Magento\\Store\\Setup\\Patch\\Schema\\InitializeStoresAndWebsites",
+    "Magento\\Review\\Setup\\Patch\\Schema\\AddUniqueConstraintToReviewEntitySummary"
+  ],
+  "Magento\\Framework\\App\\DeploymentConfig\\ValidatorInterface": [
+    "Magento\\Store\\Model\\Config\\Validator"
+  ],
+  "Magento\\Framework\\App\\DeploymentConfig\\ImporterInterface": [
+    "Magento\\Store\\Model\\Config\\Importer"
+  ],
+  "Magento\\Framework\\App\\ScopeFallbackResolverInterface": [
+    "Magento\\Store\\Model\\ScopeFallbackResolver"
+  ],
+  "Magento\\Framework\\Setup\\SampleData\\InstallerInterface": [
+    "Magento\\WidgetSampleData\\Setup\\Installer",
+    "Magento\\BundleSampleData\\Setup\\Installer",
+    "Magento\\SwatchesSampleData\\Setup\\Installer",
+    "Magento\\SalesSampleData\\Setup\\Installer",
+    "Magento\\CatalogSampleData\\Setup\\Installer"
+  ],
+  "Magento\\Store\\Model\\StoreResolver\\ReaderInterface": [
+    "Magento\\Store\\Model\\StoreResolver\\Website",
+    "Magento\\Store\\Model\\StoreResolver\\Group",
+    "Magento\\Store\\Model\\StoreResolver\\Store"
+  ],
+  "Magento\\Framework\\App\\Config\\ConfigTypeInterface": [
+    "Magento\\Store\\App\\Config\\Type\\Scopes"
+  ],
+  "Magento\\Framework\\View\\Element\\UiComponent\\Control\\ButtonProviderInterface": [
+    "Magento\\MediaGalleryUi\\Ui\\Component\\Control\\DeleteFolder",
+    "Magento\\MediaGalleryUi\\Ui\\Component\\Control\\UploadAssets",
+    "Magento\\MediaGalleryUi\\Ui\\Component\\Control\\CreateFolder",
+    "Magento\\MediaGalleryUi\\Ui\\Component\\Control\\DeleteAssets",
+    "Magento\\MediaGalleryUi\\Ui\\Component\\Control\\InsertAsstes",
+    "Magento\\Search\\Block\\Adminhtml\\Synonyms\\Edit\\SaveAndContinueButton",
+    "Magento\\Search\\Block\\Adminhtml\\Synonyms\\Edit\\SaveButton",
+    "Magento\\Search\\Block\\Adminhtml\\Synonyms\\Edit\\BackButton",
+    "Magento\\Search\\Block\\Adminhtml\\Synonyms\\Edit\\DeleteButton",
+    "Magento\\Search\\Block\\Adminhtml\\Synonyms\\Edit\\ResetButton",
+    "Magento\\InventoryAdminUi\\Ui\\Component\\Listing\\Stock\\Buttons\\NewButton",
+    "Magento\\PageBuilder\\Block\\Adminhtml\\ContentType\\Edit\\CancelButton",
+    "Magento\\PageBuilder\\Block\\Adminhtml\\ContentType\\Edit\\SaveButton",
+    "Magento\\PageBuilder\\Block\\Adminhtml\\ContentType\\Edit\\CloseButton",
+    "Magento\\LoginAsCustomerAdminUi\\Ui\\Customer\\Component\\Control\\LoginAsCustomerButton",
+    "Magento\\Cms\\Block\\Adminhtml\\Block\\Edit\\SaveButton",
+    "Magento\\Cms\\Block\\Adminhtml\\Block\\Edit\\BackButton",
+    "Magento\\Cms\\Block\\Adminhtml\\Block\\Edit\\DeleteButton",
+    "Magento\\Cms\\Block\\Adminhtml\\Page\\Edit\\SaveButton",
+    "Magento\\Cms\\Block\\Adminhtml\\Page\\Edit\\BackButton",
+    "Magento\\Cms\\Block\\Adminhtml\\Page\\Edit\\DeleteButton"
+  ],
+  "Magento\\Framework\\Indexer\\DimensionProviderInterface": [
+    "Magento\\Store\\Model\\StoreDimensionProvider",
+    "Magento\\Store\\Model\\Indexer\\WebsiteDimensionProvider"
+  ],
+  "Magento\\Store\\Api\\StoreResolverInterface": [
+    "Magento\\Store\\Model\\StoreResolver"
+  ],
+  "Magento\\Framework\\App\\Config\\ConfigSourceInterface": [
+    "Magento\\Store\\App\\Config\\Source\\RuntimeConfigSource",
+    "Magento\\Store\\App\\Config\\Source\\InitialConfigSource"
+  ],
+  "Magento\\AdvancedSearch\\Model\\SuggestedQueriesInterface": [
+    "Magento\\AdvancedSearch\\Model\\SuggestedQueries",
+    "Magento\\AdvancedSearch\\Model\\Recommendations\\DataProvider",
+    "Magento\\AdvancedSearch\\Model\\DataProvider\\Suggestions"
+  ],
+  "Magento\\CatalogImportExport\\Model\\Export\\RowCustomizerInterface": [
+    "Magento\\BundleImportExport\\Model\\Export\\RowCustomizer",
+    "Magento\\DownloadableImportExport\\Model\\Export\\RowCustomizer"
+  ],
+  "Magento\\Store\\Model\\StoreManagerInterface": [
+    "Magento\\Store\\Model\\StoreManager"
+  ],
+  "Magento\\Framework\\Data\\Form\\Element\\Renderer\\RendererInterface": [
+    "Magento\\Rule\\Block\\Editable",
+    "Magento\\Rule\\Block\\Newchild",
+    "Magento\\Rule\\Block\\Conditions",
+    "Magento\\Rule\\Model\\Renderer\\Actions",
+    "Magento\\Rule\\Model\\Renderer\\Conditions",
+    "Magento\\Rule\\Block\\Actions",
+    "Magento\\Weee\\Block\\Renderer\\Weee\\Tax"
+  ],
+  "Magento\\MediaGalleryUiApi\\Api\\ConfigInterface": [
+    "Magento\\MediaGalleryUi\\Model\\Config"
+  ],
+  "Magento\\Framework\\Api\\SearchCriteria\\CollectionProcessor\\FilterProcessor\\CustomFilterInterface": [
+    "Magento\\MediaGalleryUi\\Model\\SearchCriteria\\CollectionProcessor\\FilterProcessor\\Entity",
+    "Magento\\MediaGalleryUi\\Model\\SearchCriteria\\CollectionProcessor\\FilterProcessor\\Keyword",
+    "Magento\\MediaGalleryUi\\Model\\SearchCriteria\\CollectionProcessor\\FilterProcessor\\ContentField",
+    "Magento\\MediaGalleryUi\\Model\\SearchCriteria\\CollectionProcessor\\FilterProcessor\\Directory",
+    "Magento\\MediaGalleryUi\\Model\\SearchCriteria\\CollectionProcessor\\FilterProcessor\\Duplicated",
+    "Magento\\MediaGalleryUi\\Model\\SearchCriteria\\CollectionProcessor\\FilterProcessor\\EntityType",
+    "Magento\\Cms\\Model\\Api\\SearchCriteria\\CollectionProcessor\\FilterProcessor\\PageStoreFilter",
+    "Magento\\Cms\\Model\\Api\\SearchCriteria\\CollectionProcessor\\FilterProcessor\\BlockStoreFilter"
+  ],
+  "Magento\\AdvancedSearch\\Model\\Adapter\\DataMapper\\AdditionalFieldsProviderInterface": [
+    "Magento\\AdvancedSearch\\Model\\Adapter\\DataMapper\\AdditionalFieldsProvider"
+  ],
+  "Magento\\Store\\Api\\GroupRepositoryInterface": [
+    "Magento\\Store\\Model\\GroupRepository"
+  ],
+  "Magento\\Store\\Api\\StoreCookieManagerInterface": [
+    "Magento\\Store\\Model\\StoreCookieManager"
+  ],
+  "Magento\\Quote\\Api\\PaymentMethodManagementInterface": [
+    "Magento\\Quote\\Model\\PaymentMethodManagement"
+  ],
+  "Magento\\MediaContentApi\\Model\\GetAssetIdsByContentFieldInterface": [
+    "Magento\\MediaContentCms\\Model\\ResourceModel\\GetAssetIdsByPageStore",
+    "Magento\\MediaContentCms\\Model\\ResourceModel\\GetAssetIdsByBlockStore",
+    "Magento\\MediaContentCms\\Model\\ResourceModel\\GetAssetIdsByContentField"
+  ],
+  "Magento\\Store\\Api\\Data\\StoreConfigInterface": [
+    "Magento\\Store\\Model\\Data\\StoreConfig"
+  ],
+  "Magento\\Store\\Api\\StoreManagementInterface": [
+    "Magento\\Store\\Model\\StoreManagement"
+  ],
+  "Magento\\Quote\\Model\\ShippingAddressManagementInterface": [
+    "Magento\\Quote\\Model\\ShippingAddressManagement"
+  ],
+  "Magento\\Quote\\Model\\Product\\QuoteItemsCleanerInterface": [
+    "Magento\\Quote\\Model\\Product\\QuoteItemsCleaner"
+  ],
+  "Magento\\Quote\\Api\\ChangeQuoteControlInterface": [
+    "Magento\\Quote\\Model\\ChangeQuoteControl"
+  ],
+  "Magento\\Quote\\Api\\GuestShippingMethodManagementInterface": [
+    "Magento\\Quote\\Model\\GuestCart\\GuestShippingMethodManagement"
+  ],
+  "Magento\\Quote\\Api\\CouponManagementInterface": [
+    "Magento\\Quote\\Model\\CouponManagement"
+  ],
+  "Magento\\MediaGalleryUi\\Model\\InsertImageDataInterface": [
+    "Magento\\MediaGalleryUi\\Model\\InsertImageData"
+  ],
+  "Magento\\Store\\Api\\StoreRepositoryInterface": [
+    "Magento\\Store\\Model\\StoreRepository"
+  ],
+  "Magento\\Quote\\Api\\Data\\TotalsInterface": [
+    "Magento\\Quote\\Model\\Cart\\Totals"
+  ],
+  "Magento\\Quote\\Api\\GuestCartItemRepositoryInterface": [
+    "Magento\\Quote\\Model\\GuestCart\\GuestCartItemRepository"
+  ],
+  "Magento\\Quote\\Model\\Quote\\Address\\FreeShippingInterface": [
+    "Magento\\Quote\\Model\\Quote\\Address\\FreeShipping",
+    "Magento\\OfflineShipping\\Model\\Quote\\Address\\FreeShipping"
+  ],
+  "Magento\\Framework\\Model\\ResourceModel\\Db\\VersionControl\\RelationInterface": [
+    "Magento\\Quote\\Model\\Quote\\Address\\Relation",
+    "Magento\\Quote\\Model\\Quote\\Relation"
+  ],
+  "Magento\\Quote\\Api\\Data\\CartInterface": ["Magento\\Quote\\Model\\Quote"],
+  "Magento\\Store\\Api\\StoreConfigManagerInterface": [
+    "Magento\\Store\\Model\\Service\\StoreConfigManager"
+  ],
+  "Magento\\Quote\\Model\\GuestCart\\GuestShippingAddressManagementInterface": [
+    "Magento\\Quote\\Model\\GuestCart\\GuestShippingAddressManagement"
+  ],
+  "Magento\\Quote\\Api\\GuestCartManagementInterface": [
+    "Magento\\Quote\\Model\\GuestCart\\GuestCartManagement"
+  ],
+  "Magento\\Quote\\Api\\Data\\EstimateAddressInterface": [
+    "Magento\\Quote\\Model\\EstimateAddress"
+  ],
+  "Magento\\Quote\\Api\\GuestCouponManagementInterface": [
+    "Magento\\Quote\\Model\\GuestCart\\GuestCouponManagement"
+  ],
+  "Magento\\Quote\\Api\\Data\\TotalsAdditionalDataInterface": [
+    "Magento\\Quote\\Model\\Cart\\TotalsAdditionalData"
+  ],
+  "Magento\\Quote\\Api\\Data\\TotalSegmentInterface": [
+    "Magento\\Quote\\Model\\Cart\\TotalSegment"
+  ],
+  "Magento\\Quote\\Api\\CartTotalRepositoryInterface": [
+    "Magento\\Quote\\Model\\Cart\\CartTotalRepository"
+  ],
+  "Magento\\Rule\\Model\\Action\\ActionInterface": [
+    "Magento\\Rule\\Model\\Action\\AbstractAction"
+  ],
+  "Magento\\Quote\\Api\\GuestPaymentMethodManagementInterface": [
+    "Magento\\Quote\\Model\\GuestCart\\GuestPaymentMethodManagement"
+  ],
+  "Magento\\Quote\\Model\\Quote\\Item\\Option\\ComparatorInterface": [
+    "Magento\\Quote\\Model\\Quote\\Item\\Option\\Comparator"
+  ],
+  "Magento\\MediaGallerySynchronizationApi\\Model\\ImportFilesInterface": [
+    "Magento\\MediaGallerySynchronizationMetadata\\Model\\ImportKeywords"
+  ],
+  "Magento\\Quote\\Api\\CartTotalManagementInterface": [
+    "Magento\\Quote\\Model\\Cart\\CartTotalManagement"
+  ],
+  "Magento\\Quote\\Api\\CartItemRepositoryInterface": [
+    "Magento\\Quote\\Model\\Quote\\Item\\Repository"
+  ],
+  "Magento\\Quote\\Api\\GuestBillingAddressManagementInterface": [
+    "Magento\\Quote\\Model\\GuestCart\\GuestBillingAddressManagement"
+  ],
+  "Magento\\Quote\\Api\\Data\\AddressInterface": [
+    "Magento\\Quote\\Model\\Quote\\Address"
+  ],
+  "Magento\\Quote\\Api\\GuestCartRepositoryInterface": [
+    "Magento\\Quote\\Model\\GuestCart\\GuestCartRepository"
+  ],
+  "Magento\\Quote\\Api\\GuestCartTotalRepositoryInterface": [
+    "Magento\\Quote\\Model\\GuestCart\\GuestCartTotalRepository"
+  ],
+  "Magento\\Quote\\Api\\Data\\ProductOptionInterface": [
+    "Magento\\Quote\\Model\\Quote\\ProductOption"
+  ],
+  "Magento\\Swagger\\Api\\Data\\SchemaTypeInterface": [
+    "Magento\\SwaggerWebapi\\Model\\SchemaType\\Rest",
+    "Magento\\SwaggerWebapiAsync\\Model\\SchemaType\\Async"
+  ],
+  "Magento\\Quote\\Api\\GuestCartTotalManagementInterface": [
+    "Magento\\Quote\\Model\\GuestCart\\GuestCartTotalManagement"
+  ],
+  "Magento\\Quote\\Api\\Data\\PaymentInterface": [
+    "Magento\\Quote\\Model\\Quote\\Payment"
+  ],
+  "Magento\\Framework\\Search\\SearchEngine\\ConfigInterface": [
+    "Magento\\Search\\Model\\SearchEngine\\Config"
+  ],
+  "Magento\\Quote\\Api\\CartRepositoryInterface": [
+    "Magento\\Quote\\Model\\QuoteRepository"
+  ],
+  "Magento\\Search\\Model\\SearchEngine\\ValidatorInterface": [
+    "Magento\\Search\\Model\\SearchEngine\\Validator",
+    "Magento\\OpenSearch\\Setup\\Validator"
+  ],
+  "Magento\\Quote\\Api\\Data\\ShippingMethodInterface": [
+    "Magento\\Quote\\Model\\Cart\\ShippingMethod"
+  ],
+  "Magento\\Quote\\Model\\ValidationRules\\QuoteValidationRuleInterface": [
+    "Magento\\Quote\\Model\\ValidationRules\\MinimumAmountValidationRule",
+    "Magento\\Quote\\Model\\ValidationRules\\AllowedCountryValidationRule",
+    "Magento\\Quote\\Model\\ValidationRules\\PaymentMethodValidationRule",
+    "Magento\\Quote\\Model\\ValidationRules\\QuoteValidationComposite",
+    "Magento\\Quote\\Model\\ValidationRules\\ShippingMethodValidationRule",
+    "Magento\\Quote\\Model\\ValidationRules\\BillingAddressValidationRule",
+    "Magento\\Quote\\Model\\ValidationRules\\ShippingAddressValidationRule"
+  ],
+  "Magento\\Catalog\\Model\\Product\\Configuration\\Item\\Option\\OptionInterface": [
+    "Magento\\Quote\\Model\\Quote\\Item\\Option",
+    "Magento\\Wishlist\\Model\\Item\\Option"
+  ],
+  "Magento\\Quote\\Model\\Cart\\BuyRequest\\BuyRequestDataProviderInterface": [
+    "Magento\\Quote\\Model\\Cart\\BuyRequest\\CustomizableOptionDataProvider",
+    "Magento\\QuoteConfigurableOptions\\Model\\Cart\\BuyRequest\\SuperAttributeDataProvider"
+  ],
+  "Magento\\Search\\Model\\AutocompleteInterface": [
+    "Magento\\Search\\Model\\Autocomplete"
+  ],
+  "Magento\\Quote\\Api\\Data\\CurrencyInterface": [
+    "Magento\\Quote\\Model\\Cart\\Currency"
+  ],
+  "Magento\\Search\\Api\\SearchInterface": ["Magento\\Search\\Model\\Search"],
+  "Magento\\Quote\\Api\\Data\\CartItemInterface": [
+    "Magento\\Quote\\Model\\Quote\\Item"
+  ],
+  "Magento\\Framework\\Search\\EngineResolverInterface": [
+    "Magento\\Search\\Model\\EngineResolver"
+  ],
+  "Magento\\Quote\\Model\\QuoteMutexInterface": [
+    "Magento\\Quote\\Model\\QuoteMutex"
+  ],
+  "Magento\\Search\\Api\\Data\\SynonymGroupInterface": [
+    "Magento\\Search\\Model\\SynonymGroup"
+  ],
+  "Magento\\Quote\\Api\\ShippingMethodManagementInterface": [
+    "Magento\\Quote\\Model\\ShippingMethodManagement"
+  ],
+  "Magento\\Search\\Model\\QueryInterface": ["Magento\\Search\\Model\\Query"],
+  "Magento\\Rule\\Model\\Condition\\ConditionInterface": [
+    "Magento\\Rule\\Model\\Condition\\AbstractCondition"
+  ],
+  "Magento\\Catalog\\Model\\Product\\Configuration\\Item\\ItemInterface": [
+    "Magento\\Quote\\Model\\Quote\\Item\\AbstractItem",
+    "Magento\\Wishlist\\Model\\Item"
+  ],
+  "Magento\\Quote\\Model\\Cart\\ProductReaderInterface": [
+    "Magento\\Quote\\Model\\Cart\\ProductReader"
+  ],
+  "Magento\\Quote\\Api\\Data\\TotalsItemInterface": [
+    "Magento\\Quote\\Model\\Cart\\Totals\\Item"
+  ],
+  "Magento\\Framework\\Search\\SearchEngineInterface": [
+    "Magento\\Search\\Model\\SearchEngine"
+  ],
+  "Magento\\Search\\Model\\Autocomplete\\ItemInterface": [
+    "Magento\\Search\\Model\\Autocomplete\\Item"
+  ],
+  "Magento\\Search\\Model\\QueryFactoryInterface": [
+    "Magento\\Search\\Model\\QueryFactory"
+  ],
+  "Magento\\Framework\\Search\\Adapter\\Preprocessor\\PreprocessorInterface": [
+    "Magento\\Search\\Adapter\\Query\\Preprocessor\\Synonyms"
+  ],
+  "Magento\\Quote\\Model\\QuoteIdToMaskedQuoteIdInterface": [
+    "Magento\\Quote\\Model\\QuoteIdToMaskedQuoteId"
+  ],
+  "Magento\\Quote\\Api\\Data\\ShippingInterface": [
+    "Magento\\Quote\\Model\\Shipping"
+  ],
+  "Magento\\Quote\\Api\\Data\\CartSearchResultsInterface": [
+    "Magento\\Quote\\Model\\CartSearchResults"
+  ],
+  "Magento\\Search\\Api\\SynonymGroupRepositoryInterface": [
+    "Magento\\Search\\Model\\SynonymGroupRepository"
+  ],
+  "Magento\\Quote\\Model\\MaskedQuoteIdToQuoteIdInterface": [
+    "Magento\\Quote\\Model\\MaskedQuoteIdToQuoteId"
+  ],
+  "Magento\\Quote\\Api\\BillingAddressManagementInterface": [
+    "Magento\\Quote\\Model\\BillingAddressManagement"
+  ],
+  "Magento\\Quote\\Model\\Quote\\Address\\Total\\CollectorInterface": [
+    "Magento\\Quote\\Model\\Quote\\Address\\Total\\AbstractTotal"
+  ],
+  "Magento\\Framework\\Webapi\\Rest\\Request\\ParamOverriderInterface": [
+    "Magento\\Quote\\Model\\Webapi\\ParamOverriderCartId"
+  ],
+  "PHP_CodeSniffer\\Sniffs\\Sniff": [
+    "Magento2\\Sniffs\\SQL\\RawQuerySniff",
+    "Magento2\\Sniffs\\Html\\HtmlDirectiveSniff",
+    "Magento2\\Sniffs\\Functions\\StaticFunctionSniff",
+    "Magento2\\Sniffs\\Functions\\FunctionsDeprecatedWithoutArgumentSniff",
+    "Magento2\\Sniffs\\Namespaces\\ImportsFromTestNamespaceSniff",
+    "Magento2\\Sniffs\\Annotation\\MethodAnnotationStructureSniff",
+    "Magento2\\Sniffs\\Less\\PropertiesSortingSniff",
+    "Magento2\\Sniffs\\Templates\\ThisInTemplateSniff",
+    "Magento2\\Sniffs\\Less\\SemicolonSpacingSniff",
+    "Magento2\\Sniffs\\Classes\\AbstractApiSniff",
+    "Magento2\\Sniffs\\Legacy\\InstallUpgradeSniff",
+    "Magento2\\Sniffs\\Classes\\DiscouragedDependenciesSniff",
+    "Magento2\\Sniffs\\Less\\CommentLevelsSniff",
+    "Magento2\\Sniffs\\Legacy\\DiConfigSniff",
+    "Magento2\\Sniffs\\Legacy\\ObsoleteAclSniff",
+    "Magento2\\Sniffs\\Less\\TypeSelectorConcatenationSniff",
+    "Magento2\\Sniffs\\Less\\BracesFormattingSniff",
+    "Magento2\\Sniffs\\Security\\IncludeFileSniff",
+    "Magento2\\Sniffs\\Less\\SelectorDelimiterSniff",
+    "Magento2\\Sniffs\\GraphQL\\AbstractGraphQLSniff",
+    "Magento2\\Sniffs\\Legacy\\PhtmlTemplateSniff",
+    "Magento2\\Sniffs\\Less\\ColourDefinitionSniff",
+    "Magento2\\Sniffs\\Annotation\\MethodArgumentsSniff",
+    "Magento2\\Sniffs\\Exceptions\\ThrowCatchSniff",
+    "Magento2\\Sniffs\\Security\\SuperglobalSniff",
+    "Magento2\\Sniffs\\Less\\AvoidIdSniff",
+    "Magento2\\Sniffs\\Security\\XssTemplateSniff",
+    "Magento2\\Sniffs\\Legacy\\ObsoleteMenuSniff",
+    "Magento2\\Sniffs\\Less\\ColonSpacingSniff",
+    "Magento2\\Sniffs\\Exceptions\\DirectThrowSniff",
+    "Magento2\\Sniffs\\Legacy\\ObsoleteSystemConfigurationSniff",
+    "Magento2\\Sniffs\\Less\\IndentationSniff",
+    "Magento2\\Sniffs\\Exceptions\\TryProcessSystemResourcesSniff",
+    "Magento2\\Sniffs\\Less\\CombinatorIndentationSniff",
+    "Magento2\\Sniffs\\Legacy\\ObsoleteConfigNodesSniff",
+    "Magento2\\Sniffs\\PHP\\AutogeneratedClassNotInConstructorSniff",
+    "Magento2\\Sniffs\\Less\\PropertiesLineBreakSniff",
+    "Magento2\\Sniffs\\Less\\ImportantPropertySniff",
+    "Magento2\\Sniffs\\Less\\VariablesSniff",
+    "Magento2\\Sniffs\\Less\\ClassNamingSniff",
+    "Magento2\\Sniffs\\Security\\LanguageConstructSniff",
+    "Magento2\\Sniffs\\Less\\ZeroUnitsSniff",
+    "Magento2\\Sniffs\\Less\\QuotesSniff",
+    "Magento2\\Sniffs\\PHP\\FinalImplementationSniff",
+    "Magento2\\Sniffs\\Legacy\\WidgetXMLSniff",
+    "Magento2\\Sniffs\\Strings\\ExecutableRegExSniff",
+    "Magento2\\Sniffs\\PHP\\ShortEchoSyntaxSniff",
+    "Magento2\\Sniffs\\Strings\\StringConcatSniff",
+    "Magento2\\Sniffs\\PHP\\ReturnValueCheckSniff",
+    "Magento2\\Sniffs\\PHP\\ArrayAutovivificationSniff",
+    "Magento2\\Sniffs\\Legacy\\LayoutSniff",
+    "Magento2\\Sniffs\\PHP\\VarSniff",
+    "Magento2\\Sniffs\\Whitespace\\MultipleEmptyLinesSniff",
+    "Magento2\\Sniffs\\PHP\\GotoSniff",
+    "Magento2\\Sniffs\\PHP\\LiteralNamespacesSniff",
+    "Magento2\\Sniffs\\NamingConvention\\ReservedWordsSniff",
+    "Magento2\\Sniffs\\Performance\\ForeachArrayMergeSniff",
+    "Magento2\\Sniffs\\Less\\TypeSelectorsSniff",
+    "Magento2\\Sniffs\\NamingConvention\\InterfaceNameSniff",
+    "Magento2\\Sniffs\\Translation\\ConstantUsageSniff",
+    "Magento2\\Sniffs\\Methods\\DeprecatedModelMethodSniff",
+    "Magento2\\Sniffs\\Legacy\\ObsoleteConnectionSniff",
+    "Magento2\\Sniffs\\Commenting\\ConstantsPHPDocFormattingSniff",
+    "Magento2\\Sniffs\\Legacy\\ModuleXMLSniff",
+    "Magento2\\Sniffs\\Commenting\\ClassAndInterfacePHPDocFormattingSniff",
+    "Magento2\\Sniffs\\Legacy\\AbstractBlockSniff",
+    "Magento2\\Sniffs\\Html\\HtmlBindingSniff",
+    "Magento2\\Sniffs\\Legacy\\TableNameSniff",
+    "Magento2\\Sniffs\\Html\\HtmlCollapsibleAttributeSniff",
+    "Magento2\\Sniffs\\Html\\HtmlSelfClosingTagsSniff",
+    "Magento2\\Sniffs\\Html\\HtmlClosingVoidTagsSniff",
+    "Magento2\\Sniffs\\Legacy\\EmailTemplateSniff",
+    "Magento2\\Sniffs\\Legacy\\ClassReferencesInConfigurationFilesSniff",
+    "Magento2Framework\\Sniffs\\Header\\CopyrightGraphQLSniff",
+    "Magento2Framework\\Sniffs\\Header\\CopyrightSniff",
+    "Magento2Framework\\Sniffs\\Header\\LicenseSniff",
+    "Magento2\\Sniffs\\Legacy\\RestrictedCodeSniff",
+    "Magento2Framework\\Sniffs\\Header\\CopyrightAnotherExtensionsFilesSniff",
+    "Magento2\\Sniffs\\Legacy\\MageEntitySniff"
+  ],
+  "Magento\\Search\\Api\\SynonymAnalyzerInterface": [
+    "Magento\\Search\\Model\\SynonymAnalyzer"
+  ],
+  "Magento\\Quote\\Model\\Quote\\Address\\CustomAttributeListInterface": [
+    "Magento\\Quote\\Model\\Quote\\Address\\CustomAttributeList"
+  ],
+  "Magento\\Search\\Setup\\InstallConfigInterface": [
+    "Magento\\Search\\Setup\\CompositeInstallConfig",
+    "Magento\\Search\\Setup\\InstallConfig"
+  ],
+  "Magento\\MediaContentSynchronizationApi\\Api\\SynchronizeIdentitiesInterface": [
+    "Magento\\MediaContentSynchronization\\Model\\SynchronizeIdentities",
+    "Magento\\MediaContentSynchronizationCatalog\\Model\\Synchronizer\\SynchronizeIdentities",
+    "Magento\\MediaContentSynchronizationCms\\Model\\Synchronizer\\SynchronizeIdentities"
+  ],
+  "Magento\\Payment\\Model\\InfoInterface": ["Magento\\Payment\\Model\\Info"],
+  "Magento\\Payment\\Api\\PaymentMethodListInterface": [
+    "Magento\\Payment\\Model\\PaymentMethodList"
+  ],
+  "Magento\\Payment\\Api\\Data\\PaymentAdditionalInfoInterface": [
+    "Magento\\Payment\\Model\\PaymentAdditionalInfo"
+  ],
+  "Magento\\Payment\\Api\\Data\\PaymentMethodInterface": [
+    "Magento\\Payment\\Model\\PaymentMethod"
+  ],
+  "Magento\\Payment\\Model\\MethodInterface": [
+    "Magento\\Payment\\Model\\Method\\AbstractMethod",
+    "Magento\\Payment\\Model\\Method\\Adapter"
+  ],
+  "Magento\\Payment\\Model\\Cart\\SalesModel\\SalesModelInterface": [
+    "Magento\\Payment\\Model\\Cart\\SalesModel\\Quote",
+    "Magento\\Payment\\Model\\Cart\\SalesModel\\Order"
+  ],
+  "Magento\\Framework\\Config\\ConverterInterface": [
+    "Magento\\Payment\\Model\\Config\\Converter",
+    "Magento\\Payment\\Gateway\\ErrorMapper\\XmlToArrayConverter",
+    "Magento\\PageBuilder\\Model\\Config\\MenuSection\\Converter",
+    "Magento\\PageBuilder\\Model\\Config\\ContentType\\Converter",
+    "Magento\\Directory\\Model\\Country\\Postcode\\Config\\Converter",
+    "Magento\\MediaGallery\\Model\\Directory\\Config\\Converter"
+  ],
+  "Magento\\SalesGraphQl\\Model\\Shipment\\Item\\FormatterInterface": [
+    "Magento\\BundleGraphQl\\Model\\Order\\Shipment\\BundleShipmentItemFormatter"
+  ],
+  "Magento\\Framework\\Config\\SchemaLocatorInterface": [
+    "Magento\\Payment\\Model\\Config\\SchemaLocator",
+    "Magento\\PageBuilder\\Model\\Config\\MenuSection\\SchemaLocator",
+    "Magento\\PageBuilder\\Model\\Config\\ContentType\\SchemaLocator",
+    "Magento\\Directory\\Model\\Country\\Postcode\\Config\\SchemaLocator",
+    "Magento\\MediaGallery\\Model\\Directory\\Config\\SchemaLocator"
+  ],
+  "Magento\\QuoteGraphQl\\Model\\Cart\\BuyRequest\\BuyRequestDataProviderInterface": [
+    "Magento\\BundleGraphQl\\Model\\Cart\\BuyRequest\\BundleDataProvider",
+    "Magento\\DownloadableGraphQl\\Model\\Cart\\BuyRequest\\DownloadableLinksDataProvider"
+  ],
+  "Magento\\Payment\\Model\\Checks\\SpecificationInterface": [
+    "Magento\\Payment\\Model\\Checks\\CanUseForCurrency",
+    "Magento\\Payment\\Model\\Checks\\ZeroTotal",
+    "Magento\\Payment\\Model\\Checks\\CanUseForCountry",
+    "Magento\\Payment\\Model\\Checks\\CanUseCheckout",
+    "Magento\\Payment\\Model\\Checks\\Composite",
+    "Magento\\Payment\\Model\\Checks\\CanUseInternal",
+    "Magento\\Payment\\Model\\Checks\\TotalMinMax"
+  ],
+  "Magento\\Quote\\Api\\Data\\ShippingAssignmentInterface": [
+    "Magento\\Quote\\Model\\ShippingAssignment"
+  ],
+  "Magento\\Framework\\ObjectManager\\ContextInterface": [
+    "Magento\\Rule\\Model\\Condition\\Context"
+  ],
+  "Magento\\Quote\\Api\\CartManagementInterface": [
+    "Magento\\Quote\\Model\\QuoteManagement"
+  ],
+  "Magento\\MediaContentSynchronizationApi\\Api\\SynchronizeInterface": [
+    "Magento\\MediaContentSynchronization\\Model\\Synchronize",
+    "Magento\\MediaContentSynchronizationCatalog\\Model\\Synchronizer\\Product",
+    "Magento\\MediaContentSynchronizationCatalog\\Model\\Synchronizer\\Category",
+    "Magento\\MediaContentSynchronizationCms\\Model\\Synchronizer\\Block",
+    "Magento\\MediaContentSynchronizationCms\\Model\\Synchronizer\\Page"
+  ],
+  "Magento\\Payment\\Gateway\\Validator\\ValidatorInterface": [
+    "Magento\\Payment\\Gateway\\Validator\\AbstractValidator"
+  ],
+  "Magento\\ConfigurableProduct\\Model\\AttributesListInterface": [
+    "Magento\\Swatches\\Model\\AttributesList"
+  ],
+  "Magento\\Payment\\Gateway\\ConfigFactoryInterface": [
+    "Magento\\Payment\\Gateway\\Config\\ConfigFactory"
+  ],
+  "Magento\\Payment\\Gateway\\Config\\ValueHandlerPoolInterface": [
+    "Magento\\Payment\\Gateway\\Config\\ValueHandlerPool"
+  ],
+  "Magento\\Payment\\Gateway\\ConfigInterface": [
+    "Magento\\Payment\\Gateway\\Config\\Config"
+  ],
+  "Magento\\Payment\\Gateway\\ErrorMapper\\ErrorMessageMapperInterface": [
+    "Magento\\Payment\\Gateway\\ErrorMapper\\ErrorMessageMapper"
+  ],
+  "Magento\\Payment\\Gateway\\Response\\HandlerInterface": [
+    "Magento\\Payment\\Gateway\\Response\\HandlerChain"
+  ],
+  "Magento\\Framework\\Config\\DataInterface": [
+    "Magento\\Payment\\Gateway\\ErrorMapper\\NullMappingData"
+  ],
+  "Magento\\Payment\\Gateway\\Command\\CommandManagerPoolInterface": [
+    "Magento\\Payment\\Gateway\\Command\\CommandManagerPool"
+  ],
+  "Magento\\Payment\\Gateway\\Data\\PaymentDataObjectFactoryInterface": [
+    "Magento\\Payment\\Gateway\\Data\\PaymentDataObjectFactory"
+  ],
+  "Magento\\Payment\\Gateway\\CommandInterface": [
+    "Magento\\Payment\\Gateway\\Command\\NullCommand",
+    "Magento\\Payment\\Gateway\\Command\\GatewayCommand"
+  ],
+  "Magento\\Payment\\Gateway\\Command\\ResultInterface": [
+    "Magento\\Payment\\Gateway\\Command\\Result\\BoolResult",
+    "Magento\\Payment\\Gateway\\Command\\Result\\ArrayResult"
+  ],
+  "Magento\\Payment\\Gateway\\Http\\ClientInterface": [
+    "Magento\\Payment\\Gateway\\Http\\Client\\Zend",
+    "Magento\\Payment\\Gateway\\Http\\Client\\Soap"
+  ],
+  "Magento\\Payment\\Gateway\\Data\\PaymentDataObjectInterface": [
+    "Magento\\Payment\\Gateway\\Data\\PaymentDataObject"
+  ],
+  "Magento\\Payment\\Gateway\\Data\\OrderAdapterInterface": [
+    "Magento\\Payment\\Gateway\\Data\\Order\\OrderAdapter",
+    "Magento\\Payment\\Gateway\\Data\\Quote\\QuoteAdapter"
+  ],
+  "Magento\\Payment\\Gateway\\Command\\CommandManagerInterface": [
+    "Magento\\Payment\\Gateway\\Command\\CommandManager"
+  ],
+  "Magento\\Payment\\Gateway\\Command\\CommandPoolInterface": [
+    "Magento\\Payment\\Gateway\\Command\\CommandPool"
+  ],
+  "Magento\\Payment\\Gateway\\Config\\ValueHandlerInterface": [
+    "Magento\\Payment\\Gateway\\Config\\ConfigValueHandler"
+  ],
+  "Magento\\Payment\\Gateway\\Data\\AddressAdapterInterface": [
+    "Magento\\Payment\\Gateway\\Data\\Order\\AddressAdapter",
+    "Magento\\Payment\\Gateway\\Data\\Quote\\AddressAdapter"
+  ],
+  "Magento\\CatalogInventory\\Model\\ResourceModel\\Indexer\\Stock\\QueryProcessorInterface": [
+    "Magento\\CatalogInventory\\Model\\ResourceModel\\Indexer\\Stock\\QueryProcessorComposite"
+  ],
+  "Magento\\CatalogInventory\\Model\\ResourceModel\\Indexer\\Stock\\StatusExpression\\ExpressionInterface": [
+    "Magento\\CatalogInventory\\Model\\ResourceModel\\Indexer\\Stock\\StatusExpression\\DefaultExpression"
+  ],
+  "Magento\\CatalogInventory\\Api\\StockIndexInterface": [
+    "Magento\\CatalogInventory\\Model\\StockIndex"
+  ],
+  "Magento\\CatalogInventory\\Model\\ResourceModel\\Indexer\\Stock\\StockInterface": [
+    "Magento\\CatalogInventory\\Model\\ResourceModel\\Indexer\\Stock\\DefaultStock"
+  ],
+  "Magento\\Payment\\Gateway\\Http\\TransferInterface": [
+    "Magento\\Payment\\Gateway\\Http\\Transfer"
+  ],
+  "Magento\\Payment\\Gateway\\Http\\ConverterInterface": [
+    "Magento\\Payment\\Gateway\\Http\\Converter\\HtmlFormConverter",
+    "Magento\\Payment\\Gateway\\Http\\Converter\\Soap\\ObjectToArrayConverter"
+  ],
+  "Magento\\CatalogGraphQl\\Model\\Resolver\\Products\\DataProvider\\Product\\CollectionPostProcessorInterface": [
+    "Magento\\BundleGraphQl\\Model\\Resolver\\Products\\DataProvider\\Product\\DisabledProductOptionPostProcessor"
+  ],
+  "Magento\\CatalogInventory\\Api\\Data\\StockItemCollectionInterface": [
+    "Magento\\CatalogInventory\\Model\\ResourceModel\\Stock\\Item\\Collection"
+  ],
+  "Magento\\CatalogInventory\\Model\\StockStatusApplierInterface": [
+    "Magento\\CatalogInventory\\Model\\StockStatusApplier"
+  ],
+  "Magento\\Catalog\\Model\\Product\\CopyConstructorInterface": [
+    "Magento\\CatalogInventory\\Model\\Product\\CopyConstructor\\CatalogInventory",
+    "Magento\\Downloadable\\Model\\Product\\CopyConstructor\\Downloadable"
+  ],
+  "Magento\\Payment\\Gateway\\Request\\BuilderInterface": [
+    "Magento\\Payment\\Gateway\\Request\\BuilderComposite"
+  ],
+  "Magento\\CatalogInventory\\Model\\Spi\\StockStateProviderInterface": [
+    "Magento\\CatalogInventory\\Model\\StockStateProvider"
+  ],
+  "Magento\\CatalogInventory\\Api\\Data\\StockItemInterface": [
+    "Magento\\CatalogInventory\\Model\\Stock\\Item"
+  ],
+  "Magento\\CatalogInventory\\Api\\StockConfigurationInterface": [
+    "Magento\\CatalogInventory\\Model\\Configuration"
+  ],
+  "Magento\\Catalog\\Model\\ResourceModel\\Product\\BaseSelectProcessorInterface": [
+    "Magento\\CatalogInventory\\Model\\ResourceModel\\Product\\StockStatusBaseSelectProcessor"
+  ],
+  "Magento\\Payment\\Model\\Method\\SpecificationInterface": [
+    "Magento\\Payment\\Model\\Method\\Specification\\AbstractSpecification",
+    "Magento\\Payment\\Model\\Method\\Specification\\Composite"
+  ],
+  "Magento\\CatalogInventory\\Api\\StockManagementInterface": [
+    "Magento\\CatalogInventory\\Model\\StockManagement"
+  ],
+  "Magento\\Framework\\Data\\ValueSourceInterface": [
+    "Magento\\CatalogInventory\\Model\\Source\\StockConfiguration"
+  ],
+  "Magento\\CatalogInventory\\Api\\StockStateInterface": [
+    "Magento\\CatalogInventory\\Model\\StockState"
+  ],
+  "Magento\\Payment\\Gateway\\Validator\\ValidatorPoolInterface": [
+    "Magento\\Payment\\Gateway\\Validator\\ValidatorPool"
+  ],
+  "Magento\\Payment\\Gateway\\Validator\\ResultInterface": [
+    "Magento\\Payment\\Gateway\\Validator\\Result"
+  ],
+  "Magento\\Framework\\Data\\Wysiwyg\\ConfigProviderInterface": [
+    "Magento\\PageBuilder\\Model\\Wysiwyg\\DefaultConfigProvider",
+    "Magento\\Cms\\Model\\Wysiwyg\\Gallery\\DefaultConfigProvider",
+    "Magento\\Cms\\Model\\Wysiwyg\\DefaultConfigProvider",
+    "Magento\\Cms\\Model\\WysiwygDefaultConfig"
+  ],
+  "Magento\\QuoteGraphQl\\Model\\Cart\\Payment\\AdditionalDataProviderInterface": [
+    "Magento\\PaypalGraphQl\\Model\\HostedProAdditionalDataProvider",
+    "Magento\\PaypalGraphQl\\Model\\PayflowProAdditionalDataProvider",
+    "Magento\\PaypalGraphQl\\Model\\PayflowLinkAdditionalDataProvider",
+    "Magento\\PaypalGraphQl\\Model\\PayflowProCcVaultAdditionalDataProvider"
+  ],
+  "Magento\\Framework\\Data\\CollectionModifierInterface": [
+    "Magento\\CatalogInventory\\Model\\ProductCollectionStockCondition"
+  ],
+  "Magento\\PageBuilder\\Api\\Data\\TemplateInterface": [
+    "Magento\\PageBuilder\\Model\\Template"
+  ],
+  "Magento\\Framework\\Api\\Search\\SearchResultInterface": [
+    "Magento\\PageBuilder\\Model\\ResourceModel\\Template\\Grid\\Collection",
+    "Magento\\Cms\\Model\\ResourceModel\\Page\\Grid\\Collection",
+    "Magento\\Cms\\Model\\ResourceModel\\Block\\Grid\\Collection"
+  ],
+  "Magento\\Framework\\View\\File\\CollectorInterface": [
+    "Magento\\PageBuilder\\Model\\View\\File\\Collector\\PageBuilder"
+  ],
+  "Magento\\CatalogInventory\\Api\\StockCriteriaInterface": [
+    "Magento\\CatalogInventory\\Model\\ResourceModel\\Stock\\StockCriteria"
+  ],
+  "Magento\\CatalogInventory\\Api\\Data\\StockCollectionInterface": [
+    "Magento\\CatalogInventory\\Model\\ResourceModel\\Stock\\Collection"
+  ],
+  "Magento\\Catalog\\Model\\ResourceModel\\Product\\Indexer\\Price\\PriceModifierInterface": [
+    "Magento\\CatalogInventory\\Model\\Indexer\\ProductPriceIndexFilter"
+  ],
+  "Magento\\CatalogInventory\\Api\\StockStatusRepositoryInterface": [
+    "Magento\\CatalogInventory\\Model\\Stock\\StockStatusRepository"
+  ],
+  "Magento\\Ui\\DataProvider\\AddFieldToCollectionInterface": [
+    "Magento\\CatalogInventory\\Ui\\DataProvider\\Product\\AddQuantityAndStockStatusFieldToCollection",
+    "Magento\\CatalogInventory\\Ui\\DataProvider\\Product\\AddQuantityFieldToCollection"
+  ],
+  "Magento\\PageBuilder\\Model\\Dom\\Adapter\\TextInterface": [
+    "Magento\\PageBuilder\\Model\\Dom\\Text"
+  ],
+  "Magento\\PageBuilder\\Model\\Dom\\Adapter\\DocumentFragmentInterface": [
+    "Magento\\PageBuilder\\Model\\Dom\\DocumentFragment"
+  ],
+  "Magento\\CatalogInventory\\Api\\StockItemRepositoryInterface": [
+    "Magento\\CatalogInventory\\Model\\Stock\\StockItemRepository"
+  ],
+  "Magento\\PageBuilder\\Model\\Dom\\Adapter\\PropertyAttributeInterface": [
+    "Magento\\PageBuilder\\Model\\Dom\\PropertyAttribute"
+  ],
+  "Magento\\PageBuilder\\Model\\Dom\\Adapter\\XmlDocumentInterface": [
+    "Magento\\PageBuilder\\Model\\Dom\\XmlDocument"
+  ],
+  "Iterator": ["Magento\\PageBuilder\\Model\\Dom\\HtmlCollection"],
+  "Magento\\CatalogInventory\\Api\\Data\\StockInterface": [
+    "Magento\\CatalogInventory\\Model\\Stock"
+  ],
+  "Magento\\Quote\\Api\\Data\\AddressAdditionalDataInterface": [
+    "Magento\\Quote\\Model\\AddressAdditionalData"
+  ],
+  "Magento\\PageBuilder\\Api\\TemplateRepositoryInterface": [
+    "Magento\\PageBuilder\\Model\\TemplateRepository"
+  ],
+  "Magento\\PageBuilder\\Model\\Dom\\Adapter\\AttrInterface": [
+    "Magento\\PageBuilder\\Model\\Dom\\Attr"
+  ],
+  "Magento\\PageBuilder\\Model\\Dom\\Adapter\\CharacterDataInterface": [
+    "Magento\\PageBuilder\\Model\\Dom\\CharacterData"
+  ],
+  "Magento\\PageBuilder\\Model\\Dom\\Adapter\\CommentInterface": [
+    "Magento\\PageBuilder\\Model\\Dom\\Comment"
+  ],
+  "Magento\\PageBuilder\\Model\\Dom\\Adapter\\ElementInterface": [
+    "Magento\\PageBuilder\\Model\\Dom\\Element"
+  ],
+  "Magento\\PageBuilder\\Model\\Stage\\RendererInterface": [
+    "Magento\\PageBuilder\\Model\\Stage\\Renderer\\Block",
+    "Magento\\PageBuilder\\Model\\Stage\\Renderer\\WidgetDirective",
+    "Magento\\PageBuilder\\Model\\Stage\\Renderer\\CmsStaticBlock"
+  ],
+  "Magento\\PageBuilder\\Model\\Dom\\Adapter\\DocumentTypeInterface": [
+    "Magento\\PageBuilder\\Model\\Dom\\DocumentType"
+  ],
+  "Magento\\Framework\\Config\\ReaderInterface": [
+    "Magento\\PageBuilder\\Model\\Config\\CompositeReader"
+  ],
+  "Magento\\Framework\\Config\\FileResolverInterface": [
+    "Magento\\PageBuilder\\Model\\Config\\FileResolver"
+  ],
+  "Magento\\PageBuilder\\Model\\Dom\\Adapter\\DocumentInterface": [
+    "Magento\\PageBuilder\\Model\\Dom\\Document"
+  ],
+  "Magento\\PageBuilder\\Model\\Catalog\\Sorting\\OptionInterface": [
+    "Magento\\PageBuilder\\Model\\Catalog\\Sorting\\Price",
+    "Magento\\PageBuilder\\Model\\Catalog\\Sorting\\SimpleOption",
+    "Magento\\PageBuilder\\Model\\Catalog\\Sorting\\Category\\Position"
+  ],
+  "Magento\\CatalogInventory\\Api\\Data\\StockStatusInterface": [
+    "Magento\\CatalogInventory\\Model\\Stock\\Status"
+  ],
+  "Magento\\CatalogInventory\\Api\\StockRepositoryInterface": [
+    "Magento\\CatalogInventory\\Model\\Stock\\StockRepository"
+  ],
+  "Magento\\PageBuilder\\Model\\ConfigInterface": [
+    "Magento\\PageBuilder\\Model\\Config"
+  ],
+  "Magento\\CatalogInventory\\Api\\Data\\StockStatusCollectionInterface": [
+    "Magento\\CatalogInventory\\Model\\ResourceModel\\Stock\\Status\\Collection"
+  ],
+  "Magento\\Framework\\Validator\\HTML\\TagValidatorInterface": [
+    "Magento\\PageBuilder\\Model\\Validator\\InnerHtmlValidator"
+  ],
+  "Magento\\Framework\\Validator\\HTML\\AttributeValidatorInterface": [
+    "Magento\\PageBuilder\\Model\\Validator\\IframeSrcAttributeValidator"
+  ],
+  "Magento\\CatalogInventory\\Api\\StockStatusCriteriaInterface": [
+    "Magento\\CatalogInventory\\Model\\ResourceModel\\Stock\\Status\\StockStatusCriteria"
+  ],
+  "Magento\\CatalogInventory\\Model\\Spi\\StockRegistryProviderInterface": [
+    "Magento\\CatalogInventory\\Model\\StockRegistryProvider"
+  ],
+  "Magento\\Cms\\Ui\\Component\\AddFilterInterface": [
+    "Magento\\PageBuilder\\Ui\\Component\\Template\\FulltextFilter",
+    "Magento\\Cms\\Ui\\Component\\Page\\FulltextFilter"
+  ],
+  "Magento\\Ui\\Model\\UrlInput\\ConfigInterface": [
+    "Magento\\PageBuilder\\Ui\\Component\\UrlInput\\Page",
+    "Magento\\PageBuilder\\Ui\\Component\\UrlInput\\Url"
+  ],
+  "Zend_Cache_Backend_Interface": [
+    "Zend_Cache_Backend_ZendPlatform",
+    "Zend_Cache_Backend_ZendServer",
+    "Zend_Cache_Backend_ZendServer_ShMem",
+    "Zend_Cache_Backend_ZendServer_Disk",
+    "Zend_Cache_Backend_Xcache",
+    "Zend_Cache_Backend_Static"
+  ],
+  "Magento\\Framework\\Setup\\InstallSchemaInterface": [
+    "Magento\\CatalogInventory\\Setup\\Recurring",
+    "Magento\\Weee\\Setup\\Recurring",
+    "Magento\\Indexer\\Setup\\Recurring",
+    "Magento\\ProductAlert\\Setup\\Recurring",
+    "Magento\\Amqp\\Setup\\Recurring",
+    "Magento\\Wishlist\\Setup\\Recurring",
+    "Magento\\Reports\\Setup\\Recurring"
+  ],
+  "Magento\\CatalogInventory\\Api\\StockItemCriteriaInterface": [
+    "Magento\\CatalogInventory\\Model\\ResourceModel\\Stock\\Item\\StockItemCriteria"
+  ],
+  "Magento\\CatalogInventory\\Api\\StockRegistryInterface": [
+    "Magento\\CatalogInventory\\Model\\StockRegistry"
+  ],
+  "Magento\\PageBuilder\\Model\\Dom\\Adapter\\TokenListInterface": [
+    "Magento\\PageBuilder\\Model\\Dom\\TokenList"
+  ],
+  "Magento\\Catalog\\Ui\\DataProvider\\Product\\Form\\Modifier\\Eav\\WysiwygConfigDataProcessorInterface": [
+    "Magento\\PageBuilder\\Ui\\DataProvider\\Product\\Form\\Modifier\\Eav\\WysiwygConfigDataProcessor"
+  ],
+  "Magento\\PageBuilder\\Model\\Dom\\Adapter\\NodeInterface": [
+    "Magento\\PageBuilder\\Model\\Dom\\Node"
+  ],
+  "Magento\\PageBuilder\\Model\\Dom\\Adapter\\StringMapInterface": [
+    "Magento\\PageBuilder\\Model\\Dom\\StringMap"
+  ],
+  "Magento\\PageBuilder\\Model\\Dom\\Adapter\\NodeListInterface": [
+    "Magento\\PageBuilder\\Model\\Dom\\NodeList"
+  ],
+  "Magento\\CatalogInventory\\Model\\ResourceModel\\QtyCounterInterface": [
+    "Magento\\CatalogInventory\\Model\\ResourceModel\\Stock"
+  ],
+  "Magento\\PageBuilder\\Model\\Dom\\Adapter\\HtmlDocumentInterface": [
+    "Magento\\PageBuilder\\Model\\Dom\\HtmlDocument"
+  ],
+  "Zend_Cache_Backend_ExtendedInterface": [
+    "Zend_Cache_Backend_File",
+    "Zend_Cache_Backend_WinCache",
+    "Zend_Cache_Backend_Test",
+    "Zend_Cache_Backend_Apc",
+    "Zend_Cache_Backend_Memcached",
+    "Zend_Cache_Backend_BlackHole",
+    "Zend_Cache_Backend_Libmemcached",
+    "Zend_Cache_Backend_TwoLevels"
+  ],
+  "Magento\\PageBuilder\\Model\\Config\\ContentType\\AdditionalData\\ProviderInterface": [
+    "Magento\\PageBuilder\\Model\\Config\\ContentType\\AdditionalData\\Provider\\Wysiwyg\\Config",
+    "Magento\\PageBuilder\\Model\\Config\\ContentType\\AdditionalData\\Provider\\Uploader\\SaveUrl",
+    "Magento\\PageBuilder\\Model\\Config\\ContentType\\AdditionalData\\Provider\\Uploader\\MaxFileSize",
+    "Magento\\PageBuilder\\Model\\Config\\ContentType\\AdditionalData\\Provider\\Uploader\\OpenDialogUrl",
+    "Magento\\PageBuilder\\Model\\Config\\ContentType\\AdditionalData\\Provider\\BlockDataUrl",
+    "Magento\\PageBuilder\\Model\\Config\\ContentType\\AdditionalData\\Provider\\StoreId"
+  ],
+  "Zend_Pdf_ElementFactory_Interface": [
+    "Zend_Pdf_ElementFactory",
+    "Zend_Pdf_ElementFactory_Proxy"
+  ],
+  "Zend_Pdf_Filter_Interface": [
+    "Zend_Pdf_Filter_AsciiHex",
+    "Zend_Pdf_Filter_Ascii85",
+    "Zend_Pdf_Filter_RunLength",
+    "Zend_Pdf_Filter_Compression"
+  ],
+  "Magento\\CatalogInventory\\Model\\ResourceModel\\StockStatusFilterInterface": [
+    "Magento\\CatalogInventory\\Model\\ResourceModel\\StockStatusFilter"
+  ],
+  "Magento\\Framework\\DB\\DataConverter\\DataConverterInterface": [
+    "Magento\\PageBuilder\\Setup\\Converters\\PageBuilderStripStyles"
+  ],
+  "RecursiveIterator": [
+    "Zend_Pdf_RecursivelyIteratableObjectsContainer",
+    "Zend_Pdf_Outline",
+    "Zend_Pdf_Action"
+  ],
+  "Zend_Log_Filter_Interface": ["Zend_Log_Filter_Abstract"],
+  "Zend_Log_FactoryInterface": ["Zend_Log_Writer_Abstract"],
+  "Zend_Pdf_Canvas_Interface": ["Zend_Pdf_Canvas_Abstract"],
+  "Magento\\MediaGalleryMetadataApi\\Model\\ReadMetadataInterface": [
+    "Magento\\MediaGalleryMetadata\\Model\\Gif\\Segment\\ReadXmp",
+    "Magento\\MediaGalleryMetadata\\Model\\Png\\Segment\\ReadXmp",
+    "Magento\\MediaGalleryMetadata\\Model\\Png\\Segment\\ReadIptc",
+    "Magento\\MediaGalleryMetadata\\Model\\Png\\Segment\\ReadExif",
+    "Magento\\MediaGalleryMetadata\\Model\\Jpeg\\Segment\\ReadXmp",
+    "Magento\\MediaGalleryMetadata\\Model\\Jpeg\\Segment\\ReadIptc",
+    "Magento\\MediaGalleryMetadata\\Model\\Jpeg\\Segment\\ReadExif"
+  ],
+  "Zend_Log_Formatter_Interface": ["Zend_Log_Formatter_Abstract"],
+  "Magento\\MediaGalleryMetadataApi\\Model\\WriteMetadataInterface": [
+    "Magento\\MediaGalleryMetadata\\Model\\Gif\\Segment\\WriteXmp",
+    "Magento\\MediaGalleryMetadata\\Model\\Png\\Segment\\WriteXmp",
+    "Magento\\MediaGalleryMetadata\\Model\\Png\\Segment\\WriteIptc",
+    "Magento\\MediaGalleryMetadata\\Model\\Jpeg\\Segment\\WriteXmp",
+    "Magento\\MediaGalleryMetadata\\Model\\Jpeg\\Segment\\WriteIptc"
+  ],
+  "Magento\\MediaGalleryMetadataApi\\Model\\WriteFileInterface": [
+    "Magento\\MediaGalleryMetadata\\Model\\Gif\\WriteFile",
+    "Magento\\MediaGalleryMetadata\\Model\\Jpeg\\WriteFile",
+    "Magento\\MediaGalleryMetadata\\Model\\Png\\WriteFile"
+  ],
+  "Magento\\MediaGalleryMetadataApi\\Model\\ReadFileInterface": [
+    "Magento\\MediaGalleryMetadata\\Model\\Gif\\ReadFile",
+    "Magento\\MediaGalleryMetadata\\Model\\Jpeg\\ReadFile",
+    "Magento\\MediaGalleryMetadata\\Model\\Png\\ReadFile"
+  ],
+  "Magento\\Shipping\\Model\\Carrier\\CarrierInterface": [
+    "Magento\\OfflineShipping\\Model\\Carrier\\Flatrate",
+    "Magento\\OfflineShipping\\Model\\Carrier\\Freeshipping",
+    "Magento\\OfflineShipping\\Model\\Carrier\\Pickup",
+    "Magento\\OfflineShipping\\Model\\Carrier\\Tablerate",
+    "Magento\\Ups\\Model\\Carrier"
+  ],
+  "Magento\\MediaGalleryMetadataApi\\Model\\FileInterface": [
+    "Magento\\MediaGalleryMetadata\\Model\\File"
+  ],
+  "Magento\\MediaGalleryMetadataApi\\Api\\ExtractMetadataInterface": [
+    "Magento\\MediaGalleryMetadata\\Model\\File\\ExtractMetadata"
+  ],
+  "Magento\\MediaGalleryMetadataApi\\Model\\SegmentInterface": [
+    "Magento\\MediaGalleryMetadata\\Model\\Segment"
+  ],
+  "Magento\\MediaGalleryMetadataApi\\Api\\AddMetadataInterface": [
+    "Magento\\MediaGalleryMetadata\\Model\\File\\AddMetadata"
+  ],
+  "Magento\\InventorySourceSelectionApi\\Api\\GetDefaultSourceSelectionAlgorithmCodeInterface": [
+    "Magento\\InventorySourceSelection\\Model\\GetDefaultSourceSelectionAlgorithmCode"
+  ],
+  "Magento\\InventorySourceSelectionApi\\Api\\Data\\SourceSelectionAlgorithmInterface": [
+    "Magento\\InventorySourceSelection\\Model\\SourceSelectionAlgorithm"
+  ],
+  "Magento\\InventorySourceSelectionApi\\Api\\Data\\SourceSelectionItemInterface": [
+    "Magento\\InventorySourceSelection\\Model\\Result\\SourceSelectionItem"
+  ],
+  "Magento\\MediaGalleryMetadataApi\\Api\\Data\\MetadataInterface": [
+    "Magento\\MediaGalleryMetadata\\Model\\Metadata"
+  ],
+  "Magento\\InventorySourceSelectionApi\\Api\\Data\\SourceSelectionResultInterface": [
+    "Magento\\InventorySourceSelection\\Model\\Result\\SourceSelectionResult"
+  ],
+  "Magento\\InventorySourceSelectionApi\\Model\\SourceSelectionInterface": [
+    "Magento\\InventorySourceSelection\\Model\\Algorithms\\PriorityBasedAlgorithm"
+  ],
+  "Magento\\InventorySourceSelectionApi\\Api\\Data\\AddressInterface": [
+    "Magento\\InventorySourceSelection\\Model\\Address"
+  ],
+  "Magento\\InventorySourceSelectionApi\\Api\\Data\\InventoryRequestInterface": [
+    "Magento\\InventorySourceSelection\\Model\\Request\\InventoryRequest"
+  ],
+  "Magento\\Framework\\Indexer\\DimensionalIndexerInterface": [
+    "Magento\\Downloadable\\Model\\ResourceModel\\Indexer\\Price"
+  ],
+  "Magento\\InventorySourceSelectionApi\\Api\\Data\\ItemRequestInterface": [
+    "Magento\\InventorySourceSelection\\Model\\Request\\ItemRequest"
+  ],
+  "Magento\\MediaGalleryRenditionsApi\\Api\\GetRenditionPathInterface": [
+    "Magento\\MediaGalleryRenditions\\Model\\GetRenditionPath"
+  ],
+  "Magento\\MediaGalleryRenditionsApi\\Api\\GenerateRenditionsInterface": [
+    "Magento\\MediaGalleryRenditions\\Model\\GenerateRenditions"
+  ],
+  "Magento\\Downloadable\\Api\\Data\\DownloadableOptionInterface": [
+    "Magento\\Downloadable\\Model\\DownloadableOption"
+  ],
+  "Magento\\Downloadable\\Api\\DomainManagerInterface": [
+    "Magento\\Downloadable\\Model\\DomainManager"
+  ],
+  "Magento\\Downloadable\\Model\\ComponentInterface": [
+    "Magento\\Downloadable\\Model\\Sample",
+    "Magento\\Downloadable\\Model\\Link"
+  ],
+  "Magento\\Framework\\EntityManager\\Operation\\ExtensionInterface": [
+    "Magento\\Downloadable\\Model\\Link\\CreateHandler",
+    "Magento\\Downloadable\\Model\\Link\\ReadHandler",
+    "Magento\\Downloadable\\Model\\Sample\\UpdateHandler",
+    "Magento\\Downloadable\\Model\\Link\\UpdateHandler",
+    "Magento\\Downloadable\\Model\\Sample\\DeleteHandler",
+    "Magento\\Downloadable\\Model\\Link\\DeleteHandler",
+    "Magento\\Downloadable\\Model\\Sample\\CreateHandler",
+    "Magento\\Downloadable\\Model\\Sample\\ReadHandler",
+    "Magento\\Cms\\Model\\ResourceModel\\Page\\Relation\\Store\\ReadHandler",
+    "Magento\\Cms\\Model\\ResourceModel\\Page\\Relation\\Store\\SaveHandler",
+    "Magento\\Cms\\Model\\ResourceModel\\Block\\Relation\\Store\\ReadHandler",
+    "Magento\\Cms\\Model\\ResourceModel\\Block\\Relation\\Store\\SaveHandler"
+  ],
+  "Magento\\Downloadable\\Api\\SampleRepositoryInterface": [
+    "Magento\\Downloadable\\Model\\SampleRepository"
+  ],
+  "Magento\\Downloadable\\Api\\Data\\File\\ContentInterface": [
+    "Magento\\Downloadable\\Model\\File\\Content"
+  ],
+  "Magento\\Downloadable\\Api\\Data\\File\\ContentUploaderInterface": [
+    "Magento\\Downloadable\\Model\\File\\ContentUploader"
+  ],
+  "Magento\\AdobeStockAssetApi\\Api\\SaveAssetInterface": [
+    "Magento\\AdobeStockAsset\\Model\\SaveAsset"
+  ],
+  "Magento\\AdobeStockAssetApi\\Api\\Data\\AssetInterface": [
+    "Magento\\AdobeStockAsset\\Model\\Asset"
+  ],
+  "Magento\\AdobeStockAssetApi\\Api\\GetAssetListInterface": [
+    "Magento\\AdobeStockAsset\\Model\\GetAssetList"
+  ],
+  "Magento\\AdobeStockAssetApi\\Api\\Data\\AssetSearchResultsInterface": [
+    "Magento\\AdobeStockAsset\\Model\\SearchResults"
+  ],
+  "Magento\\Quote\\Model\\Quote\\Item\\CartItemProcessorInterface": [
+    "Magento\\Downloadable\\Model\\Quote\\Item\\CartItemProcessor"
+  ],
+  "Magento\\AdobeStockAssetApi\\Api\\GetAssetByIdInterface": [
+    "Magento\\AdobeStockAsset\\Model\\GetAssetById"
+  ],
+  "Magento\\Catalog\\Model\\ProductOptionProcessorInterface": [
+    "Magento\\Downloadable\\Model\\ProductOptionProcessor"
+  ],
+  "Magento\\AdobeStockAssetApi\\Model\\Category\\Command\\SaveInterface": [
+    "Magento\\AdobeStockAsset\\Model\\ResourceModel\\Category\\Command\\Save"
+  ],
+  "Magento\\AdobeStockAssetApi\\Model\\Category\\Command\\LoadByIdInterface": [
+    "Magento\\AdobeStockAsset\\Model\\ResourceModel\\Category\\Command\\LoadById"
+  ],
+  "Magento\\AdobeStockAssetApi\\Api\\Data\\CategoryInterface": [
+    "Magento\\AdobeStockAsset\\Model\\Category"
+  ],
+  "Magento\\Catalog\\Helper\\Product\\Configuration\\ConfigurationInterface": [
+    "Magento\\Downloadable\\Helper\\Catalog\\Product\\Configuration"
+  ],
+  "Magento\\AdobeStockAssetApi\\Model\\Category\\Command\\DeleteByIdInterface": [
+    "Magento\\AdobeStockAsset\\Model\\ResourceModel\\Category\\Command\\DeleteById"
+  ],
+  "Magento\\Downloadable\\Model\\Product\\TypeHandler\\TypeHandlerInterface": [
+    "Magento\\Downloadable\\Model\\Product\\TypeHandler\\TypeHandler"
+  ],
+  "Magento\\AdobeStockAssetApi\\Model\\Creator\\Command\\SaveInterface": [
+    "Magento\\AdobeStockAsset\\Model\\ResourceModel\\Creator\\Command\\Save"
+  ],
+  "Magento\\AdobeStockAssetApi\\Model\\Creator\\Command\\LoadByIdInterface": [
+    "Magento\\AdobeStockAsset\\Model\\ResourceModel\\Creator\\Command\\LoadById"
+  ],
+  "Magento\\AdobeStockAssetApi\\Model\\Creator\\Command\\DeleteByIdInterface": [
+    "Magento\\AdobeStockAsset\\Model\\ResourceModel\\Creator\\Command\\DeleteById"
+  ],
+  "Magento\\AdobeStockAssetApi\\Api\\CreatorRepositoryInterface": [
+    "Magento\\AdobeStockAsset\\Model\\CreatorRepository"
+  ],
+  "Magento\\AdobeStockAssetApi\\Model\\Asset\\Command\\SaveInterface": [
+    "Magento\\AdobeStockAsset\\Model\\ResourceModel\\Asset\\Command\\Save"
+  ],
+  "Magento\\Framework\\Indexer\\StateInterface": [
+    "Magento\\Indexer\\Model\\Indexer\\State"
+  ],
+  "Magento\\AdobeStockAssetApi\\Api\\Data\\CreatorSearchResultsInterface": [
+    "Magento\\AdobeStockAsset\\Model\\CreatorSearchResults"
+  ],
+  "Magento\\AdobeStockAssetApi\\Model\\Asset\\Command\\LoadByIdsInterface": [
+    "Magento\\AdobeStockAsset\\Model\\ResourceModel\\Asset\\Command\\LoadByIds"
+  ],
+  "Magento\\Downloadable\\Pricing\\Price\\LinkPriceInterface": [
+    "Magento\\Downloadable\\Pricing\\Price\\LinkPrice"
+  ],
+  "Magento\\AdobeStockAssetApi\\Model\\Asset\\Command\\LoadByIdInterface": [
+    "Magento\\AdobeStockAsset\\Model\\ResourceModel\\Asset\\Command\\LoadById"
+  ],
+  "Magento\\Framework\\Mview\\View\\StateInterface": [
+    "Magento\\Indexer\\Model\\Mview\\View\\State"
+  ],
+  "Magento\\AdobeStockAssetApi\\Model\\Asset\\Command\\DeleteByIdInterface": [
+    "Magento\\AdobeStockAsset\\Model\\ResourceModel\\Asset\\Command\\DeleteById"
+  ],
+  "Magento\\InventorySales\\Model\\ReservationExecutionInterface": [
+    "Magento\\InventorySalesAsyncOrder\\Model\\ReservationExecution"
+  ],
+  "Magento\\Framework\\Mview\\View\\State\\CollectionInterface": [
+    "Magento\\Indexer\\Model\\ResourceModel\\Mview\\View\\State\\Collection"
+  ],
+  "Magento\\Framework\\View\\Layout\\Argument\\UpdaterInterface": [
+    "Magento\\Indexer\\Block\\Backend\\Grid\\ItemsUpdater"
+  ],
+  "Magento\\Downloadable\\Api\\LinkRepositoryInterface": [
+    "Magento\\Downloadable\\Model\\LinkRepository"
+  ],
+  "Magento\\Framework\\Indexer\\IndexMutexInterface": [
+    "Magento\\Indexer\\Model\\IndexMutex"
+  ],
+  "Magento\\Framework\\Indexer\\IndexerInterface": [
+    "Magento\\Indexer\\Model\\Indexer",
+    "Magento\\Indexer\\Model\\Indexer\\DependencyDecorator"
+  ],
+  "Magento\\InventoryMultiDimensionalIndexerApi\\Model\\IndexTableSwitcherInterface": [
+    "Magento\\InventoryMultiDimensionalIndexerApi\\Model\\IndexTableSwitcher"
+  ],
+  "Magento\\InventoryMultiDimensionalIndexerApi\\Model\\IndexNameResolverInterface": [
+    "Magento\\InventoryMultiDimensionalIndexerApi\\Model\\IndexNameResolver"
+  ],
+  "Magento\\Weee\\Api\\Data\\ProductRender\\WeeeAdjustmentAttributeInterface": [
+    "Magento\\Weee\\Model\\ProductRender\\WeeeAdjustmentAttribute"
+  ],
+  "Magento\\Wishlist\\Model\\AuthenticationStateInterface": [
+    "Magento\\Wishlist\\Model\\AuthenticationState"
+  ],
+  "Magento\\Wishlist\\Model\\Wishlist\\BuyRequest\\BuyRequestDataProviderInterface": [
+    "Magento\\Wishlist\\Model\\Wishlist\\BuyRequest\\CustomizableOptionDataProvider",
+    "Magento\\Wishlist\\Model\\Wishlist\\BuyRequest\\DownloadableLinkDataProvider",
+    "Magento\\Wishlist\\Model\\Wishlist\\BuyRequest\\BundleDataProvider",
+    "Magento\\Wishlist\\Model\\Wishlist\\BuyRequest\\SuperAttributeDataProvider",
+    "Magento\\Wishlist\\Model\\Wishlist\\BuyRequest\\SuperGroupDataProvider"
+  ],
+  "Magento\\Backend\\Block\\Widget\\Tab\\TabInterface": [
+    "Magento\\Downloadable\\Block\\Adminhtml\\Catalog\\Product\\Edit\\Tab\\Downloadable"
+  ],
+  "Magento\\Framework\\AppInterface": ["Magento\\Indexer\\App\\Indexer"],
+  "Magento\\Wishlist\\Controller\\WishlistProviderInterface": [
+    "Magento\\Wishlist\\Controller\\Shared\\WishlistProvider",
+    "Magento\\Wishlist\\Controller\\WishlistProvider"
+  ],
+  "Magento\\Ui\\Component\\Layout\\Tabs\\TabInterface": [
+    "Magento\\Wishlist\\Block\\Adminhtml\\WishlistTab"
+  ],
+  "Magento\\Framework\\Indexer\\ConfigInterface": [
+    "Magento\\Indexer\\Model\\Config"
+  ],
+  "Magento\\AdobeStockAssetApi\\Api\\Data\\CreatorInterface": [
+    "Magento\\AdobeStockAsset\\Model\\Creator"
+  ],
+  "Magento\\Indexer\\Model\\Source\\DataInterface": [
+    "Magento\\Indexer\\Model\\Source\\ServiceSource"
+  ],
+  "Magento\\AdobeStockAssetApi\\Api\\Data\\CategorySearchResultsInterface": [
+    "Magento\\AdobeStockAsset\\Model\\CategorySearchResults"
+  ],
+  "Magento\\AdobeStockAssetApi\\Api\\CategoryRepositoryInterface": [
+    "Magento\\AdobeStockAsset\\Model\\CategoryRepository"
+  ],
+  "Magento\\AdobeStockAssetApi\\Api\\AssetRepositoryInterface": [
+    "Magento\\AdobeStockAsset\\Model\\AssetRepository"
+  ],
+  "Magento\\Customer\\CustomerData\\SectionSourceInterface": [
+    "Magento\\Wishlist\\CustomerData\\Wishlist",
+    "Magento\\Review\\CustomerData\\Review",
+    "Magento\\Persistent\\CustomerData\\Persistent"
+  ],
+  "Magento\\Wishlist\\Model\\ResourceModel\\Item\\Product\\CollectionBuilderInterface": [
+    "Magento\\Wishlist\\Model\\Adminhtml\\ResourceModel\\Item\\Product\\CollectionBuilder",
+    "Magento\\Wishlist\\Model\\ResourceModel\\Item\\Product\\CollectionBuilder"
+  ],
+  "Magento\\Framework\\App\\Rss\\DataProviderInterface": [
+    "Magento\\Wishlist\\Model\\Rss\\Wishlist",
+    "Magento\\Review\\Block\\Adminhtml\\Rss"
+  ],
+  "Magento\\Wishlist\\Controller\\IndexInterface": [
+    "Magento\\Wishlist\\Controller\\AbstractIndex"
+  ],
+  "Magento\\Customer\\Block\\Account\\SortLinkInterface": [
+    "Magento\\Wishlist\\Block\\Link"
+  ],
+  "Magento\\Contact\\Model\\MailInterface": ["Magento\\Contact\\Model\\Mail"],
+  "Magento\\WishlistGraphQl\\Model\\CartItems\\CartItemsRequestDataProviderInterface": [
+    "Magento\\WishlistGraphQl\\Model\\CartItems\\DownloadableLinkDataProvider",
+    "Magento\\WishlistGraphQl\\Model\\CartItems\\BundleDataProvider",
+    "Magento\\WishlistGraphQl\\Model\\CartItems\\CustomizableOptionDataProvider",
+    "Magento\\WishlistGraphQl\\Model\\CartItems\\ConfigurableDataProvider"
+  ],
+  "Magento\\Contact\\Model\\ConfigInterface": [
+    "Magento\\Contact\\Model\\Config"
+  ],
+  "Magento\\Catalog\\Pricing\\Price\\ConfiguredPriceInterface": [
+    "Magento\\Wishlist\\Pricing\\ConfiguredPrice\\Downloadable"
+  ],
+  "Magento\\Framework\\GraphQl\\Query\\Resolver\\IdentityInterface": [
+    "Magento\\InventoryInStorePickupGraphQl\\Model\\Resolver\\PickupLocations\\Identity"
+  ],
+  "Magento\\Framework\\GraphQl\\Query\\Resolver\\Argument\\FieldEntityAttributesInterface": [
+    "Magento\\InventoryInStorePickupGraphQl\\Model\\Resolver\\PickupLocations\\FilterArgument\\PickupLocationsAttributesForAst"
+  ],
+  "Magento\\InventoryInStorePickupGraphQl\\Model\\Resolver\\PickupLocations\\SearchRequest\\ResolverInterface": [
+    "Magento\\InventoryInStorePickupGraphQl\\Model\\Resolver\\PickupLocations\\SearchRequest\\Filter",
+    "Magento\\InventoryInStorePickupGraphQl\\Model\\Resolver\\PickupLocations\\SearchRequest\\PageSize",
+    "Magento\\InventoryInStorePickupGraphQl\\Model\\Resolver\\PickupLocations\\SearchRequest\\Area",
+    "Magento\\InventoryInStorePickupGraphQl\\Model\\Resolver\\PickupLocations\\SearchRequest\\Sort",
+    "Magento\\InventoryInStorePickupGraphQl\\Model\\Resolver\\PickupLocations\\SearchRequest\\CurrentPage"
+  ],
+  "Magento\\Directory\\Model\\Currency\\Import\\ImportInterface": [
+    "Magento\\Directory\\Model\\Currency\\Import\\AbstractImport",
+    "Magento\\Directory\\Model\\Currency\\Import\\FixerIoApiLayer"
+  ],
+  "Magento\\Framework\\App\\Cache\\Tag\\StrategyInterface": [
+    "Magento\\InventoryInStorePickupGraphQl\\Model\\Cache\\Tag\\Strategy\\PickupLocation"
+  ],
+  "Magento\\WishlistGraphQl\\Model\\WishlistItem\\DataProvider\\CustomizableOptionValueInterface": [
+    "Magento\\WishlistGraphQl\\Model\\WishlistItem\\DataProvider\\CustomizableOptionValue\\Text",
+    "Magento\\WishlistGraphQl\\Model\\WishlistItem\\DataProvider\\CustomizableOptionValue\\Multiple",
+    "Magento\\WishlistGraphQl\\Model\\WishlistItem\\DataProvider\\CustomizableOptionValue\\Dropdown",
+    "Magento\\WishlistGraphQl\\Model\\WishlistItem\\DataProvider\\CustomizableOptionValue\\Composite"
+  ],
+  "Magento\\Directory\\Api\\CountryInformationAcquirerInterface": [
+    "Magento\\Directory\\Model\\CountryInformationAcquirer"
+  ],
+  "Magento\\Directory\\Model\\Country\\Postcode\\ValidatorInterface": [
+    "Magento\\Directory\\Model\\Country\\Postcode\\Validator"
+  ],
+  "Magento\\Catalog\\Block\\Product\\ReviewRendererInterface": [
+    "Magento\\Review\\Block\\Product\\ReviewRenderer"
+  ],
+  "Magento\\Framework\\Pricing\\PriceCurrencyInterface": [
+    "Magento\\Directory\\Model\\PriceCurrency"
+  ],
+  "Magento\\Directory\\Api\\CurrencyInformationAcquirerInterface": [
+    "Magento\\Directory\\Model\\CurrencyInformationAcquirer"
+  ],
+  "Magento\\AdminAdobeIms\\Api\\Data\\ImsWebapiInterface": [
+    "Magento\\AdminAdobeIms\\Model\\ImsWebapi"
+  ],
+  "Magento\\Directory\\Api\\Data\\CountryInformationInterface": [
+    "Magento\\Directory\\Model\\Data\\CountryInformation"
+  ],
+  "Magento\\AdminAdobeIms\\Api\\ImsLogOutInterface": [
+    "Magento\\AdminAdobeIms\\Model\\LogOut"
+  ],
+  "Magento\\Directory\\Api\\Data\\RegionInformationInterface": [
+    "Magento\\Directory\\Model\\Data\\RegionInformation"
+  ],
+  "Magento\\AdminAdobeIms\\Api\\TokenReaderInterface": [
+    "Magento\\AdminAdobeIms\\Model\\TokenReader"
+  ],
+  "Magento\\Directory\\Api\\Data\\CurrencyInformationInterface": [
+    "Magento\\Directory\\Model\\Data\\CurrencyInformation"
+  ],
+  "Magento\\Directory\\Api\\Data\\ExchangeRateInterface": [
+    "Magento\\Directory\\Model\\Data\\ExchangeRate"
+  ],
+  "Magento\\AdobeImsApi\\Api\\UserAuthorizedInterface": [
+    "Magento\\AdminAdobeIms\\Model\\UserAuthorizedProxy",
+    "Magento\\AdminAdobeIms\\Model\\UserAuthorizedSession"
+  ],
+  "Magento\\OpenSearch\\Model\\Adapter\\DynamicTemplates\\MapperInterface": [
+    "Magento\\OpenSearch\\Model\\Adapter\\DynamicTemplates\\PositionMapper",
+    "Magento\\OpenSearch\\Model\\Adapter\\DynamicTemplates\\StringMapper",
+    "Magento\\OpenSearch\\Model\\Adapter\\DynamicTemplates\\IntegerMapper",
+    "Magento\\OpenSearch\\Model\\Adapter\\DynamicTemplates\\PriceMapper"
+  ],
+  "Magento\\Elasticsearch\\Model\\Adapter\\FieldMapper\\Product\\FieldProvider\\FieldName\\ResolverInterface": [
+    "Magento\\OpenSearch\\Model\\Adapter\\FieldMapper\\Product\\FieldProvider\\FieldName\\Resolver\\DefaultResolver",
+    "Magento\\Elasticsearch7\\Model\\Adapter\\FieldMapper\\Product\\FieldProvider\\FieldName\\Resolver\\DefaultResolver"
+  ],
+  "Magento\\Directory\\Model\\Country\\Postcode\\ConfigInterface": [
+    "Magento\\Directory\\Model\\Country\\Postcode\\Config"
+  ],
+  "Magento\\MediaGalleryApi\\Api\\GetAssetsKeywordsInterface": [
+    "Magento\\MediaGallery\\Model\\ResourceModel\\Keyword\\GetAssetsKeywords"
+  ],
+  "Magento\\AdminAdobeIms\\Api\\Data\\ImsWebapiSearchResultsInterface": [
+    "Magento\\AdminAdobeIms\\Model\\ImsWebapiSearchResults"
+  ],
+  "Magento\\AdvancedSearch\\Model\\Client\\ClientInterface": [
+    "Magento\\Elasticsearch7\\Model\\Client\\Elasticsearch",
+    "Magento\\OpenSearch\\Model\\SearchClient"
+  ],
+  "Magento\\AdobeImsApi\\Api\\FlushUserTokensInterface": [
+    "Magento\\AdminAdobeIms\\Model\\FlushUserTokens"
+  ],
+  "Magento\\Elasticsearch7\\Model\\Adapter\\DynamicTemplates\\MapperInterface": [
+    "Magento\\Elasticsearch7\\Model\\Adapter\\DynamicTemplates\\PositionMapper",
+    "Magento\\Elasticsearch7\\Model\\Adapter\\DynamicTemplates\\StringMapper",
+    "Magento\\Elasticsearch7\\Model\\Adapter\\DynamicTemplates\\IntegerMapper",
+    "Magento\\Elasticsearch7\\Model\\Adapter\\DynamicTemplates\\PriceMapper"
+  ],
+  "Magento\\Framework\\AuthorizationInterface": [
+    "Magento\\Persistent\\Model\\Customer\\Authorization"
+  ],
+  "Magento\\Framework\\Search\\AdapterInterface": [
+    "Magento\\OpenSearch\\SearchAdapter\\Adapter",
+    "Magento\\Elasticsearch7\\SearchAdapter\\Adapter"
+  ],
+  "Magento\\MediaGalleryApi\\Api\\SaveAssetsKeywordsInterface": [
+    "Magento\\MediaGallery\\Model\\ResourceModel\\Keyword\\SaveAssetsKeywords"
+  ],
+  "Magento\\ReCaptchaWebapiApi\\Api\\WebapiValidationConfigProviderInterface": [
+    "Magento\\ReCaptchaCheckout\\Model\\WebapiConfigProvider"
+  ],
+  "Magento\\Checkout\\Block\\Checkout\\LayoutProcessorInterface": [
+    "Magento\\ReCaptchaCheckout\\Block\\LayoutProcessor\\Checkout\\Onepage"
+  ],
+  "Magento\\MediaGalleryApi\\Api\\Data\\AssetKeywordsInterface": [
+    "Magento\\MediaGallery\\Model\\AssetKeywords"
+  ],
+  "Magento\\MediaGalleryApi\\Api\\Data\\AssetInterface": [
+    "Magento\\MediaGallery\\Model\\Asset"
+  ],
+  "Magento\\MediaGalleryApi\\Api\\Data\\KeywordInterface": [
+    "Magento\\MediaGallery\\Model\\Keyword"
+  ],
+  "Magento\\MediaGalleryApi\\Api\\SearchAssetsInterface": [
+    "Magento\\MediaGallery\\Model\\SearchAssets"
+  ],
+  "Magento\\MediaGalleryApi\\Api\\SaveAssetsInterface": [
+    "Magento\\MediaGallery\\Model\\ResourceModel\\SaveAssets"
+  ],
+  "Magento\\Authorization\\Model\\UserContextInterface": [
+    "Magento\\AdminAdobeIms\\Model\\Authorization\\AdobeImsTokenUserContext"
+  ],
+  "Magento\\MediaGalleryApi\\Model\\Asset\\Command\\GetByIdInterface": [
+    "Magento\\MediaGallery\\Model\\Asset\\Command\\GetById"
+  ],
+  "Magento\\MediaGalleryApi\\Model\\Asset\\Command\\DeleteByPathInterface": [
+    "Magento\\MediaGallery\\Model\\Asset\\Command\\DeleteByPath"
+  ],
+  "Magento\\Reports\\Model\\ResourceModel\\HelperInterface": [
+    "Magento\\Reports\\Model\\ResourceModel\\Helper"
+  ],
+  "Magento\\MediaGalleryApi\\Model\\Asset\\Command\\SaveInterface": [
+    "Magento\\MediaGallery\\Model\\Asset\\Command\\Save"
+  ],
+  "Magento\\MediaGalleryApi\\Api\\GetAssetsByIdsInterface": [
+    "Magento\\MediaGallery\\Model\\ResourceModel\\GetAssetsByIds"
+  ],
+  "Magento\\AdobeImsApi\\Api\\GetAccessTokenInterface": [
+    "Magento\\AdminAdobeIms\\Model\\GetAccessTokenProxy",
+    "Magento\\AdminAdobeIms\\Model\\GetAccessTokenSession"
+  ],
+  "Magento\\MediaGalleryApi\\Api\\DeleteAssetsByPathsInterface": [
+    "Magento\\MediaGallery\\Model\\ResourceModel\\DeleteAssetsByPaths"
+  ],
+  "Magento\\MediaGalleryApi\\Model\\Asset\\Command\\DeleteByDirectoryPathInterface": [
+    "Magento\\MediaGallery\\Model\\Asset\\Command\\DeleteByDirectoryPath"
+  ],
+  "Magento\\MediaGalleryApi\\Api\\GetAssetsByPathsInterface": [
+    "Magento\\MediaGallery\\Model\\ResourceModel\\GetAssetsByPaths"
+  ],
+  "Magento\\MediaGalleryApi\\Model\\Asset\\Command\\GetByPathInterface": [
+    "Magento\\MediaGallery\\Model\\Asset\\Command\\GetByPath"
+  ],
+  "Magento\\MediaGalleryApi\\Api\\IsPathExcludedInterface": [
+    "Magento\\MediaGallery\\Model\\Directory\\IsExcluded"
+  ],
+  "Magento\\MediaGalleryApi\\Api\\CreateDirectoriesByPathsInterface": [
+    "Magento\\MediaGallery\\Model\\Directory\\Command\\CreateByPaths"
+  ],
+  "Magento\\Shipping\\Model\\Carrier\\Source\\GenericInterface": [
+    "Magento\\Ups\\Model\\Config\\Source\\Generic"
+  ],
+  "Magento\\AdminAdobeIms\\Api\\ImsWebapiRepositoryInterface": [
+    "Magento\\AdminAdobeIms\\Model\\ImsWebapiRepository"
+  ],
+  "Magento\\MediaGalleryApi\\Api\\DeleteDirectoriesByPathsInterface": [
+    "Magento\\MediaGallery\\Model\\Directory\\Command\\DeleteByPaths"
+  ],
+  "Magento\\MediaGalleryApi\\Model\\ExcludedPatternsConfigInterface": [
+    "Magento\\MediaGallery\\Model\\Directory\\ExcludedPatternsConfig"
+  ],
+  "Magento\\MediaGalleryApi\\Model\\Keyword\\Command\\SaveAssetKeywordsInterface": [
+    "Magento\\MediaGallery\\Model\\Keyword\\Command\\SaveAssetKeywords"
+  ],
+  "Magento\\MediaGalleryApi\\Model\\Keyword\\Command\\GetAssetKeywordsInterface": [
+    "Magento\\MediaGallery\\Model\\Keyword\\Command\\GetAssetKeywords"
+  ],
+  "Magento\\MediaContentApi\\Api\\GetAssetIdsByContentFieldInterface": [
+    "Magento\\MediaContentApi\\Model\\Composite\\GetAssetIdsByContentField"
+  ],
+  "Magento\\MediaContentApi\\Model\\GetEntityContentsInterface": [
+    "Magento\\MediaContentApi\\Model\\Composite\\GetEntityContents"
+  ],
+  "Magento\\Reports\\Model\\ResourceModel\\Quote\\CollectionFactoryInterface": [
+    "Magento\\Reports\\Model\\ResourceModel\\Quote\\CollectionFactory"
+  ],
+  "Magento\\AdobeStockClient\\Model\\SearchParameterProviderInterface": [
+    "Magento\\AdobeStockClient\\Model\\SearchParametersProvider\\ContentType",
+    "Magento\\AdobeStockClient\\Model\\SearchParametersProvider\\Similar",
+    "Magento\\AdobeStockClient\\Model\\SearchParametersProvider\\Offensive",
+    "Magento\\AdobeStockClient\\Model\\SearchParametersProvider\\Premium",
+    "Magento\\AdobeStockClient\\Model\\SearchParametersProvider\\MediaId",
+    "Magento\\AdobeStockClient\\Model\\SearchParametersProvider\\Orientation",
+    "Magento\\AdobeStockClient\\Model\\SearchParametersProviderComposite",
+    "Magento\\AdobeStockClient\\Model\\SearchParametersProvider\\Isolated",
+    "Magento\\AdobeStockClient\\Model\\SearchParametersProvider\\SimpleFilters",
+    "Magento\\AdobeStockClient\\Model\\SearchParametersProvider\\Sorting",
+    "Magento\\AdobeStockClient\\Model\\SearchParametersProvider\\Words",
+    "Magento\\AdobeStockClient\\Model\\SearchParametersProvider\\Pagination"
+  ],
+  "Magento\\AdobeStockClientApi\\Api\\ConfigInterface": [
+    "Magento\\AdobeStockClient\\Model\\Config"
+  ],
+  "Magento\\AdobeStockClientApi\\Api\\ClientInterface": [
+    "Magento\\AdobeStockClient\\Model\\Client"
+  ],
+  "Magento\\Ui\\Component\\Wysiwyg\\ConfigInterface": [
+    "Magento\\Cms\\Model\\Wysiwyg\\Config"
+  ],
+  "Magento\\AdobeStockClientApi\\Api\\Client\\FilesInterface": [
+    "Magento\\AdobeStockClient\\Model\\Client\\Files"
+  ],
+  "Magento\\Cms\\Api\\PageRepositoryInterface": [
+    "Magento\\Cms\\Model\\PageRepository",
+    "Magento\\Cms\\Model\\PageRepository\\ValidationComposite"
+  ],
+  "Magento\\Cms\\Api\\BlockRepositoryInterface": [
+    "Magento\\Cms\\Model\\BlockRepository"
+  ],
+  "Magento\\Framework\\Config\\ValidationStateInterface": [
+    "Magento\\Cms\\Model\\Page\\DomValidationState"
+  ],
+  "Magento\\AdobeStockClientApi\\Api\\Data\\UserQuotaInterface": [
+    "Magento\\AdobeStockClient\\Model\\UserQuota"
+  ],
+  "Magento\\AdobeStockClientApi\\Api\\Data\\LicenseConfirmationInterface": [
+    "Magento\\AdobeStockClient\\Model\\LicenseConfirmation"
+  ],
+  "Magento\\Cms\\Api\\GetUtilityPageIdentifiersInterface": [
+    "Magento\\Cms\\Model\\GetUtilityPageIdentifiers"
+  ],
+  "Magento\\Cms\\Api\\Data\\PageSearchResultsInterface": [
+    "Magento\\Cms\\Model\\PageSearchResults"
+  ],
+  "Magento\\Cms\\Model\\Page\\CustomLayoutManagerInterface": [
+    "Magento\\Cms\\Model\\Page\\CustomLayout\\CustomLayoutManager"
+  ],
+  "Magento\\Cms\\Api\\GetBlockByIdentifierInterface": [
+    "Magento\\Cms\\Model\\GetBlockByIdentifier"
+  ],
+  "Magento\\Cms\\Api\\Data\\BlockInterface": ["Magento\\Cms\\Model\\Block"],
+  "Magento\\Cms\\Model\\Page\\CustomLayoutRepositoryInterface": [
+    "Magento\\Cms\\Model\\Page\\CustomLayout\\CustomLayoutRepository"
+  ],
+  "Magento\\Cms\\Api\\Data\\PageInterface": ["Magento\\Cms\\Model\\Page"],
+  "Magento\\Cms\\Model\\Page\\CustomLayout\\Data\\CustomLayoutSelectedInterface": [
+    "Magento\\Cms\\Model\\Page\\CustomLayout\\Data\\CustomLayoutSelected"
+  ],
+  "Magento\\Widget\\Block\\BlockInterface": [
+    "Magento\\Reports\\Block\\Product\\Widget\\Viewed",
+    "Magento\\Reports\\Block\\Product\\Widget\\Compared",
+    "Magento\\Reports\\Block\\Product\\Widget\\Viewed\\Item",
+    "Magento\\Cms\\Block\\Widget\\Block",
+    "Magento\\Cms\\Block\\Widget\\Page\\Link"
+  ],
+  "Magento\\Cms\\Model\\PageRepository\\ValidatorInterface": [
+    "Magento\\Cms\\Model\\PageRepository\\Validator\\LayoutUpdateValidator"
+  ],
+  "Magento\\Framework\\View\\Asset\\PreProcessorInterface": [
+    "Magento\\Developer\\Model\\View\\Asset\\PreProcessor\\PreprocessorStrategy",
+    "Magento\\Developer\\Model\\View\\Asset\\PreProcessor\\FrontendCompilation"
+  ],
+  "Magento\\GraphQl\\Model\\Query\\ContextParametersInterface": [
+    "Magento\\GraphQl\\Model\\Query\\ContextParameters"
+  ],
+  "Magento\\GraphQl\\Model\\Query\\ContextInterface": [
+    "Magento\\GraphQl\\Model\\Query\\Context"
+  ],
+  "Magento\\GraphQl\\Model\\Query\\Logger\\LoggerInterface": [
+    "Magento\\GraphQl\\Model\\Query\\Logger\\LoggerPool",
+    "Magento\\GraphQl\\Model\\Query\\Logger\\NewRelic"
+  ],
+  "Magento\\Framework\\Validator\\HTML\\WYSIWYGValidatorInterface": [
+    "Magento\\Cms\\Model\\Wysiwyg\\Validator"
+  ],
+  "Magento\\Cms\\Api\\GetPageByIdentifierInterface": [
+    "Magento\\Cms\\Model\\GetPageByIdentifier"
+  ],
+  "Magento\\GraphQl\\Helper\\Error\\ExceptionMessageFormatterInterface": [
+    "Magento\\GraphQl\\Helper\\Error\\MessageFormatters\\NoSuchEntityExceptionMessageFormatter",
+    "Magento\\GraphQl\\Helper\\Error\\MessageFormatters\\GraphQlExceptionMessageFormatter",
+    "Magento\\GraphQl\\Helper\\Error\\MessageFormatters\\ValidationExceptionMessageFormatter",
+    "Magento\\GraphQl\\Helper\\Error\\MessageFormatters\\PaymentExceptionMessageFormatter"
+  ],
+  "Magento\\Cms\\Api\\Data\\BlockSearchResultsInterface": [
+    "Magento\\Cms\\Model\\BlockSearchResults"
+  ],
+  "Magento\\Framework\\App\\FrontControllerInterface": [
+    "Magento\\GraphQl\\Controller\\GraphQl"
+  ],
+  "Magento\\Framework\\App\\RouterInterface": [
+    "Magento\\Cms\\Controller\\Router"
+  ],
+  "Composer\\Plugin\\Capability\\CommandProvider": [
+    "Magento\\ComposerRootUpdatePlugin\\Plugin\\CommandProvider"
+  ],
+  "Magento\\Framework\\Mview\\View\\ChangeLogBatchWalkerInterface": [
+    "Magento\\Eav\\Model\\Mview\\ChangeLogBatchWalker"
+  ],
+  "Magento\\Eav\\Api\\Data\\AttributeGroupInterface": [
+    "Magento\\Eav\\Model\\Entity\\Attribute\\Group"
+  ],
+  "Magento\\Eav\\Model\\Entity\\Attribute\\AttributeInterface": [
+    "Magento\\Eav\\Model\\Entity\\Attribute\\AbstractAttribute"
+  ],
+  "Magento\\Framework\\Model\\EntitySnapshot\\AttributeProviderInterface": [
+    "Magento\\Eav\\Model\\AttributeProvider"
+  ],
+  "Magento\\Framework\\View\\TemplateEngineInterface": [
+    "Magento\\Developer\\Model\\TemplateEngine\\Decorator\\DebugHints"
+  ],
+  "Magento\\Eav\\Api\\Data\\AttributeSearchResultsInterface": [
+    "Magento\\Eav\\Model\\AttributeSearchResults"
+  ],
+  "Magento\\Eav\\Api\\Data\\AttributeSetInterface": [
+    "Magento\\Eav\\Model\\Entity\\Attribute\\Set"
+  ],
+  "Magento\\Eav\\Model\\Entity\\Attribute\\UniqueValidationInterface": [
+    "Magento\\Eav\\Model\\Entity\\Attribute\\UniqueValidator"
+  ]
+}
