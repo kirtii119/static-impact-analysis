@@ -1,0 +1,4 @@
+Acme\PaymentModule\Controller\Payment\Detail::execute=>paymentpage/payment/detail
+Acme\OrderModule\Controller\Order\Detail::execute=>orderpage/order/detail
+Acme\CartModule\Controller\Cart\Detail::execute=>cartpage/cart/detail
+Acme\ProductModule\Controller\Product\Detail::execute=>productpage/product/detail

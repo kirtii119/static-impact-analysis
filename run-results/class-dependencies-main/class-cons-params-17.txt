@@ -1,0 +1,8 @@
+Magento\Sales\Block\Adminhtml\Order\Address\Form
+Magento\Customer\Model\Address\AbstractAddress
+Magento\Customer\Model\ResourceModel\CustomerRepository
+Magento\Newsletter\Model\Subscriber
+Magento\Eav\Model\Entity\Attribute\AbstractAttribute
+Magento\Catalog\Model\Product\Image
+Magento\Paypal\Model\Direct
+Magento\PageBuilder\Model\Stage\Config

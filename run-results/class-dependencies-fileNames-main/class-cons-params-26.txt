@@ -1,0 +1,5 @@
+/var/www/magento/vendor/magento/module-customer/Controller/Adminhtml/Customer/InvalidateToken.php
+/var/www/magento/vendor/magento/module-customer/Controller/Adminhtml/Index/Validate.php
+/var/www/magento/vendor/magento/module-bundle/Model/Product/Type.php
+/var/www/magento/vendor/magento/framework/View/Element/Template/Context.php
+/var/www/magento/vendor/magento/module-catalog/Model/ProductRepository.php

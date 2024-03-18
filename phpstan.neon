@@ -1,24 +1,41 @@
 parameters:
-    polluteScopeWithLoopInitialAssignments: false
-    checkFunctionNameCase: false
     customRulesetUsed: true
+    parallel:
+        processTimeout: 1000.0
+    
+
     excludePaths:
         analyse:
-            - vendor
-            - node_modules
-            - phpstan-src
             - */Test/*
             - */TestFramework/*
             - */dev/*
 
 services:
+    # -
+    #     class: App\Collectors\ClassDependencyCollector
+    #     tags:
+    #         - phpstan.collector
     -
-        class: App\MethodCallCollector
+        class: App\Collectors\MethodCallCollector
         tags:
             - phpstan.collector
     -
-        class: App\TrialCollector
+        class: App\Collectors\FunctionCallCollector
         tags:
             - phpstan.collector
-includes:
-    - phpstan-baseline.neon
+    -
+        class: App\Collectors\StaticMethodCallCollector
+        tags:
+            - phpstan.collector
+        
+# rules :
+    # - App\Rules\CustomMethodsReturnTypeRule
+    # - App\Rules\CustomTypesAssignedToPropertiesRule
+    # - PHPStan\Rules\Functions\ArrowFunctionReturnTypeRule
+    # - PHPStan\Rules\Functions\ClosureReturnTypeRule
+    # - PHPStan\Rules\Functions\ReturnTypeRule
+    # - PHPStan\Rules\Methods\ReturnTypeRule
+    # - PHPStan\Rules\Properties\TypesAssignedToPropertiesRule
+
+# includes:
+#     - phpstan-baseline.neon

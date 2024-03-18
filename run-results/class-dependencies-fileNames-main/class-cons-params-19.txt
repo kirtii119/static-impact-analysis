@@ -1,0 +1,11 @@
+/var/www/magento/vendor/magento/module-tax/Model/Calculation.php
+/var/www/magento/vendor/magento/module-customer/Model/Address.php
+/var/www/magento/vendor/magento/module-checkout/Model/Session.php
+/var/www/magento/vendor/magento/module-downloadable/Model/Product/Type.php
+/var/www/magento/vendor/magento/module-catalog-import-export/Model/Export/Product.php
+/var/www/magento/vendor/magento/module-sitemap/Model/Sitemap.php
+/var/www/magento/vendor/magento/module-backend/Block/Context.php
+/var/www/magento/vendor/magento/module-backend/App/Action/Context.php
+/var/www/magento/vendor/magento/module-paypal/Model/PayflowExpress.php
+/var/www/magento/vendor/magento/module-paypal/Model/Adminhtml/Express.php
+/var/www/magento/vendor/magento/module-wishlist/Model/ResourceModel/Item/Collection/Grid.php

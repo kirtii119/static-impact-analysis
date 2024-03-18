@@ -1,0 +1,14 @@
+Magento\Customer\Model\Customer\DataProviderWithDefaultAddresses
+Magento\Newsletter\Model\Template
+Magento\Email\Model\Template
+Magento\Shipping\Model\Order\Pdf\Packaging
+Magento\FunctionalTestingFramework\DataGenerator\Objects\OperationDefinitionObject
+Magento\Framework\View\Context
+Magento\Framework\View\Layout
+Magento\Cron\Observer\ProcessCronQueueObserver
+Magento\Catalog\Model\ResourceModel\Product
+Magento\Catalog\Controller\Adminhtml\Product\Initialization\Helper
+Magento\Store\Model\Website
+Magento\Backend\Model\Session\Quote
+Magento\Paypal\Model\Method\Agreement
+Magento\Swatches\Block\Product\Renderer\Listing\Configurable

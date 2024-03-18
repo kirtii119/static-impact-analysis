@@ -1,0 +1,2 @@
+Magento\Sales\Model\Order
+Magento\CatalogSearch\Model\ResourceModel\Fulltext\Collection

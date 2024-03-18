@@ -1,0 +1,3 @@
+/var/www/magento/vendor/magento/module-reports/Model/ResourceModel/Product/Collection.php
+/var/www/magento/vendor/magento/module-catalog/Model/ResourceModel/Product/Collection.php
+/var/www/magento/vendor/magento/module-dhl/Model/Carrier.php

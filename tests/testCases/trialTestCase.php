@@ -26,32 +26,33 @@
     
 // }
 
-class A{
+// class A{
 
-    /** @return object */
-    function foo(){
-        return new B;
-    }
-}
+//     /** @return object */
+//     function foo(){
+//         return new B;
+//     }
+// }
 
-class B{
-    function noFoo(){
-        return null;
-    }
+// class B{
+//     function noFoo(){
+//         return null;
+//     }
 
-}
+// }
 
-class C{
-    function fooWho(){
-        $objA = new  A();
+// class C{
+//     function fooWho(){
+//         $objA = new  A();
 
-        /** @var B $objB  */
-        $objB = $objA->foo();
-        echo $objB->noFoo();
-        $a =false;
-        echo $a->foo2();
-    }
-}
+//         /** @var B $objB  */
+//         $objB = $objA->foo();
+//         echo $objB->noFoo();
+//         $a =false;
+//         echo $a->foo2();
+//     }
+// }
 
-$b = new C;
-echo $b->fooWho();
+// $b = new C;
+// echo $b->fooWho();
+

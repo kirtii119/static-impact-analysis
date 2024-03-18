@@ -1,0 +1,8 @@
+Magento\Sales\Model\Order\Payment
+Magento\Sales\Model\Order\Creditmemo
+Magento\ImportExport\Model\Import
+Magento\AdvancedPricingImportExport\Model\Export\AdvancedPricing
+Magento\Framework\View\Element\Context
+Magento\Widget\Model\Widget\Instance
+Magento\Paypal\Model\Hostedpro
+Magento\Paypal\Model\Express

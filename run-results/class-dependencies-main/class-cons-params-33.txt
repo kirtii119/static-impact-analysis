@@ -1,0 +1,2 @@
+Magento\CatalogSearch\Model\ResourceModel\Advanced\Collection
+Magento\Backend\Block\Widget\Context

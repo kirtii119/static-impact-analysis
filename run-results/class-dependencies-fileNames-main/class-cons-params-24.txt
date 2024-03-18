@@ -1,0 +1,4 @@
+/var/www/magento/vendor/magento/module-bundle/Model/ResourceModel/Selection/Collection.php
+/var/www/magento/vendor/magento/module-catalog/Model/ResourceModel/Eav/Attribute.php
+/var/www/magento/vendor/magento/module-catalog-rule/Model/Rule.php
+/var/www/magento/vendor/magento/module-review/Model/ResourceModel/Review/Product/Collection.php

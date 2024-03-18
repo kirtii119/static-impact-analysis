@@ -1,0 +1,11 @@
+Magento\Tax\Model\Calculation
+Magento\Customer\Model\Address
+Magento\Checkout\Model\Session
+Magento\Downloadable\Model\Product\Type
+Magento\CatalogImportExport\Model\Export\Product
+Magento\Sitemap\Model\Sitemap
+Magento\Backend\App\Action\Context
+Magento\Backend\Block\Context
+Magento\Paypal\Model\Adminhtml\Express
+Magento\Paypal\Model\PayflowExpress
+Magento\Wishlist\Model\ResourceModel\Item\Collection\Grid

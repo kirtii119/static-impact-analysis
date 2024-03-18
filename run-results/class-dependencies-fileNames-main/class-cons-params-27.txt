@@ -1,0 +1,6 @@
+/var/www/magento/vendor/magento/module-customer/Controller/Adminhtml/Index/Viewfile.php
+/var/www/magento/vendor/magento/module-customer/Controller/Adminhtml/Index/Cart.php
+/var/www/magento/vendor/magento/module-multishipping/Model/Checkout/Type/Multishipping.php
+/var/www/magento/vendor/magento/module-checkout/Model/Type/Onepage.php
+/var/www/magento/vendor/magento/module-reports/Model/ResourceModel/Product/Lowstock/Collection.php
+/var/www/magento/vendor/magento/module-catalog/Model/ResourceModel/Product/Link/Product/Collection.php

@@ -1,0 +1,2 @@
+/var/www/magento/vendor/magento/module-checkout/Model/DefaultConfigProvider.php
+/var/www/magento/vendor/magento/module-backend/Block/Template/Context.php

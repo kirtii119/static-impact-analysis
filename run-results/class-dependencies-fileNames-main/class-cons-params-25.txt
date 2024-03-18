@@ -1,0 +1,4 @@
+/var/www/magento/vendor/magento/module-configurable-product/Model/Product/Type/Configurable.php
+/var/www/magento/vendor/magento/module-customer/Controller/Adminhtml/Index.php
+/var/www/magento/vendor/magento/module-quote/Model/QuoteManagement.php
+/var/www/magento/vendor/magento/module-paypal/Model/Express/Checkout.php
