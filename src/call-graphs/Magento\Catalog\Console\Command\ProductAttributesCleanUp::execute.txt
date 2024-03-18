@@ -1,0 +1,1 @@
+Magento\Catalog\Console\Command\ProductAttributesCleanUp::execute
