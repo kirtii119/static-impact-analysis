@@ -23,11 +23,11 @@ class MethodCallCollector implements Collector
         // var_dump($node->getLine()); //line number
         $methCall = $node->name->name; //will only work if name is an identifier, it can also be an expression
         $resolvedType = $scope->getType($node->var); //gives type of method caller
-        $funcName = $scope->getFunctionName(); 
+        $orgfuncName = $scope->getFunctionName(); 
 
         if ($scope->isInClass()) {
             $orgClassName = $scope->getClassReflection()->getName();
-            $funcName = $orgClassName . "::" . $funcName;
+            $orgfuncName = $orgClassName . "::" . $orgfuncName;
         }
 
         if ($resolvedType instanceof \PHPStan\Type\ObjectType or $resolvedType instanceof \PHPStan\Type\ThisType) {
@@ -65,7 +65,7 @@ class MethodCallCollector implements Collector
 
         $methCall = $methCallClassName . "::" . $methCall;
         
-		file_put_contents(__DIR__."/../../src/call-mappings/meth-calls.txt", $funcName." => ".$methCall . PHP_EOL , FILE_APPEND);
+		file_put_contents(__DIR__."/../../src/call-mappings/meth-calls.txt", $orgfuncName." => ".$methCall . PHP_EOL , FILE_APPEND);
         return [];
 
         // return [array($funcName => $methCall), $node->getLine()];

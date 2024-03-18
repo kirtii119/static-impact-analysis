@@ -1,5 +1,5 @@
 <?php
-namespace App;
+namespace App\Collectors;
 
 use PhpParser\Node;
 use PHPStan\Analyser\Scope;
@@ -21,7 +21,7 @@ class InterfaceCollector implements Collector
         if($temp != null){
             $className = implode("\\", $node->namespacedName->parts);
             $implements = implode("\\", $temp2);
-            file_put_contents('InterfaceImpl.txt', $implements ." => ".$className.PHP_EOL,FILE_APPEND);
+            file_put_contents('InterfaceCollected.txt', $implements ." => ".$className.PHP_EOL,FILE_APPEND);
 
         } 
         return [];

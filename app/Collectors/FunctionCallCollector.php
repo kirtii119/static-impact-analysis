@@ -20,7 +20,7 @@ class FunctionCallCollector implements Collector
     public function processNode(Node $node, Scope $scope): array
     {
 
-        $filename = $scope->getFileDescription() ;
+     //   $filename = $scope->getFileDescription() ;
         $funcName = $scope->getFunctionName(); 
 
 
@@ -30,12 +30,12 @@ class FunctionCallCollector implements Collector
             $orgClassName = $scope->getClassReflection()->getName();
             $funcName = $orgClassName . "::" . $funcName;
         }else{
-            $funcName= "calloutsideclass" ;
+            $funcName= "CallOutsideClass" ;
         }
 
 
         $methCall = $node->name->parts[0]; 
-        var_dump($methCall);
+      //  var_dump($methCall);
 
         file_put_contents(__DIR__."/../../src/call-mappings/func-calls.txt", $funcName."=>"."$methCall". PHP_EOL , FILE_APPEND);
 

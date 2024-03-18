@@ -2,7 +2,7 @@
 require_once '../src/CallGraphBuilder.php';
 
 $mapper = new CallGraphBuilder ();
-$map = $mapper->createMapFromTxt(['../InterfaceImpl.txt']);
+$map = $mapper->createMapFromTxt(['../InterfaceCollected.txt']);
 
 //var_dump($map);
-file_put_contents('../MapinterfaceClass.json',json_encode($map));
+file_put_contents("../run-results/MapinterfaceClass.json",json_encode($map));
