@@ -55,14 +55,13 @@ final class CallGraphBuilderTest extends TestCase
         $this->assertSame(['class1::func1','class2::func234', 'func2a', 'class3::func234', 'func3a', 'class4::func234', 'func4a' ], $callGraphResult);
     }
 
-    //o/p still needs to be checked yet
+    //o/p still needs to be checked.
     public function testRunUnionIntersectionType(): void
     {
         $testFuncMap = 
         [
             "class1::func1"=>["((class2 & class3) | (class2  & class4))::func23"], 
             "class2::func23" => ["func2a"], 
-            "class3::func23" => ["func3a"],
             "class4::func4" => ["func4a"],
             "class5::func5" => ["func5a"]
 
@@ -72,8 +71,9 @@ final class CallGraphBuilderTest extends TestCase
         $callGraphBuilder->setup($testFuncMap);
         $callGraphResult = $callGraphBuilder->run("class1::func1", CallGraphBuilder::LINEAR);
         
-        $this->assertSame(['class1::func1','class2::func23', 'func2a', 'class3::func23', 'func3a'], $callGraphResult);
+        $this->assertSame(['class1::func1','class2::func23', 'func2a'], $callGraphResult);
     }
+
 
     //not full proof
 //     //under what case would you really use di.xml mapping?

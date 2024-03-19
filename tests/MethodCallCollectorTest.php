@@ -5,7 +5,7 @@ use PHPUnit\Framework\TestCase;
 class MethodCallCollectorTest extends TestCase
 {
 
-    protected $meth_call_map = __DIR__."/../call-mappings/meth-calls.txt";
+    protected $meth_call_map = __DIR__."/../src/call-mappings/meth-calls.txt";
 
     protected function runFirst($filename) :void {
         file_put_contents($this->meth_call_map, "");

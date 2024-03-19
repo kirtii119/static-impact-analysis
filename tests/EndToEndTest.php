@@ -20,7 +20,7 @@ final class EndToEndTest extends TestCase
         $this->runFirst('InterfaceTestCase');
         file_put_contents(__DIR__.'/../src/controller-url-map.txt',PHP_EOL.'Tester::execute=>testurl' ,FILE_APPEND);
 
-        exec("php index.php 'TestClass::classMethod'", $output);
+        exec("php index.php 'TesttClass::classMethod'", $output);
         
         //cleanup code
         $lines = file(__DIR__.'/../src/controller-url-map.txt', FILE_IGNORE_NEW_LINES);
@@ -40,6 +40,7 @@ final class EndToEndTest extends TestCase
 
         exec("php index.php 'TestPulgin::beforeTestMethod(TestClass \$subject)'", $output);
 
+        //cleanup code
         $lines = file(__DIR__.'/../src/controller-url-map.txt', FILE_IGNORE_NEW_LINES);
         array_pop($lines);
         file_put_contents(__DIR__.'/../src/controller-url-map.txt', join(PHP_EOL,$lines));
@@ -51,14 +52,15 @@ final class EndToEndTest extends TestCase
         $this->assertEquals($output, $expectedOutput);
     }
 
-    public function testInterface2(): void
+    public function testInterfaceDI(): void
     {
 
-        $this->runFirst('InterfaceTestCase2');
+        $this->runFirst('InterfaceTestCaseUsingDI');
         file_put_contents(__DIR__.'/../src/controller-url-map.txt',PHP_EOL.'TestClass::execute=>testurl' ,FILE_APPEND);
 
         exec("php index.php 'SpecialClass::classMethod'", $output);
 
+        //cleanup code
         $lines = file(__DIR__.'/../src/controller-url-map.txt', FILE_IGNORE_NEW_LINES);
         array_pop($lines);
         file_put_contents(__DIR__.'/../src/controller-url-map.txt', join(PHP_EOL,$lines));

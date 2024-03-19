@@ -9,5 +9,5 @@
     <preference for="StockInterface" type="StockClass" />
     <preference for="OrderInterface" type="OrderClass" />
     <preference for="ShippingInterface" type="ShippingClass" />
-    <preference for="HydratorInterface" type="Magento\Framework\EntityManager\Hydrator" />
+    <preference for="SpecialInterface" type="SpecialClass" />
 </config>
