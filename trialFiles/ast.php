@@ -1,4 +1,7 @@
 <?php
+
+//use this file to create and view ASTs
+
 require_once 'vendor/autoload.php';
 use PhpParser\ParserFactory;
 use PhpParser\NodeDumper;

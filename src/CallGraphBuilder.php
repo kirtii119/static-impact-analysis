@@ -15,7 +15,7 @@ class CallGraphBuilder
 
 
     /**
-     * @param array $funCallMap -> ["function"=>["functionCall1", "functionCall2"]]
+     * @param array $map -> ["function"=>["functionCall1", "functionCall2"]]
      */
     public function setup(array $map)
     {
@@ -24,17 +24,17 @@ class CallGraphBuilder
 
     /**
      * @param string $entryPoint
-     * @param int $type
+     * @param int $mode
      */
-    public function run(string $entryPoint, int $type): array|false
+    public function run(string $entryPoint, int $mode): array|string
     {
         if (!$this->funcCallMap) {
-            return false;
+            return "Setup not done";
         }
 
 
         $this->callgraph = [];
-        if ($type == 1) {
+        if ($mode == 1) {
             $this->buildLinearCallsList($entryPoint);
             return $this->callgraph;
         }
@@ -88,7 +88,7 @@ class CallGraphBuilder
     /**
      *  returns associative array like: ["function"=>["functionCall1", "functionCall2"]]
      */
-    function createMapFromTxt(array $txtFile)
+    public function createMapFromTxt(array $txtFile)
     {
         $mainMap = [];
          foreach ($txtFile as $file) {
@@ -111,10 +111,3 @@ class CallGraphBuilder
 
     }
 }
-
-// $funcCallMap  = (array)( json_decode(file_get_contents(__DIR__.'/func-call-mapping.json')));
-// $callGraphBuilder = new CallGraphBuilder();
-// $funCallMap = $callGraphBuilder->createMapFromTxt($inputFilename);
-// $callGraphBuilder->setup($funCallMap);
-// $callGraphResult = $callGraphBuilder->run("Magento\Catalog\Model\Product\Website\SaveHandler::execute", CallGraphBuilder::GRAPH);
-// file_put_contents($resultFile, json_encode($callGraphResult));

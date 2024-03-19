@@ -1,6 +1,6 @@
 <?php
-// Create a call graph pt3
-// Increase spectrum - scan all :)
+
+// Attempt to generate function call mappings by just using node parser. This is cuurently implemented using collectors.
 
 require_once __DIR__.'/vendor/autoload.php';
 use PhpParser\Error;
