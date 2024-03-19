@@ -42,7 +42,7 @@ class CallGraphSearch
   }
 
 
-  function execute(string $functionName, string $methCallsFilename = __DIR__ . '/call-mappings/meth-calls.txt')
+  function execute(string $functionName, string $methCallsFilename = __DIR__ . '/call-mappings/meth-calls.txt') : array | false
   {
 
     try {
@@ -55,25 +55,16 @@ class CallGraphSearch
       //2. build a map for controllers - url
       $this->controllerUrlMap = $callGraphBuilder->createMapFromTxt([__DIR__ . '/controller-url-map.txt']);
 
-
+      //emptying call graph directory.
       if (is_dir($this->callGraphDir)) {
-        // foreach(scandir($this->callGraphDir) as $filename) { 
-        //   if (in_array($filename, [".", ".."])) {
-        //     continue;
-        //   }
-        //   $filePath = $this->callGraphDir . "/$filename";
-        //       unlink($filePath);
-        // }  
-
         $command = "rm -rf ".$this->callGraphDir."/*";
         shell_exec($command);
-      
       } else {
         mkdir($this->callGraphDir);
       }
 
 
-      //3. generate callGraphs for all entry points in urls.txt
+      //3. generate callGraphs for all entry points in controller-url map
       foreach ($this->controllerUrlMap as $entryPoint => $url) {
         $callGraphResult = $callGraphBuilder->run($entryPoint, CallGraphBuilder::LINEAR);
         file_put_contents($this->callGraphDir . "/".$entryPoint . '.txt', "");
@@ -83,7 +74,7 @@ class CallGraphSearch
       }
 
 
-      //3. search input function's name in all extracted files and o/p url if the function is present
+      //4. search input function's name in all generated call-graphs and o/p url if the function is present
       $this->search($functionName);
       $output_urls = [];
       if ($this->output_controllers) {
@@ -95,12 +86,10 @@ class CallGraphSearch
 
         return $output_urls;
       }
-      return -1;
+      return false;
     } catch (Exception $e) {
       error_log("Error: " . $e->getMessage() . PHP_EOL, 3, $this->logfile);
     }
 
   }
 }
-
-//extract_script.sh should have permissions to access /tmp/spx

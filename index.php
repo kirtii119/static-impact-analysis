@@ -18,7 +18,7 @@ function run(string $input, string $methCallsFilename){
                 ?$SearchCallGraphObj->execute($input, $methCallsFilename)
                 :$SearchCallGraphObj->execute($input);
     
-    if ($output == -1){
+    if (!$output){
         return array("output" => "Function not found in any URL/ controller");
     }
     else{
