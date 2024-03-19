@@ -26,7 +26,7 @@ use function strtolower;
 /**
  * @implements Rule<Node\Stmt\Return_>
  */
-class MainReturnTypeRule implements Rule
+class CustomMethodsReturnTypeRule implements Rule
 {
 
     public $classList ;
@@ -34,7 +34,7 @@ class MainReturnTypeRule implements Rule
 	public function __construct(private FunctionReturnTypeCheck $returnTypeCheck)
 	{
 		//----------added code-----------
-        $this->classList  = file(__DIR__.'/../../class-dependencies-main/class-cons-params-0.txt', FILE_IGNORE_NEW_LINES+FILE_SKIP_EMPTY_LINES);
+        $this->classList  = file(__DIR__.'/../../run-results/class-dependencies-main/class-cons-params-0.txt', FILE_IGNORE_NEW_LINES+FILE_SKIP_EMPTY_LINES);
 		//---------------------------------
 	}
 

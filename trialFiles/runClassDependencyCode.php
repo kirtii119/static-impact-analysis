@@ -9,7 +9,7 @@ for( $i = 0; $i<count($filenames); $i++){
 }
 
 $command .= ">> result.txt";
-file_put_contents('./trialFiles/command.txt', $command);
+file_put_contents(__DIR__.'/command.txt', $command);
 exec($command, $output, $ret);
 // var_dump($ret);
 

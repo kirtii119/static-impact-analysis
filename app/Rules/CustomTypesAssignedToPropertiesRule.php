@@ -29,7 +29,7 @@ class CustomTypesAssignedToPropertiesRule implements Rule
 	)
 	{
 			//----------added code-----------
-			$this->classList  = file(__DIR__.'/../../class-dependencies-main/class-cons-params-0.txt', FILE_IGNORE_NEW_LINES+FILE_SKIP_EMPTY_LINES);
+			$this->classList  = file(__DIR__.'/../../run-results/class-dependencies-main/class-cons-params-0.txt', FILE_IGNORE_NEW_LINES+FILE_SKIP_EMPTY_LINES);
 			//---------------------------------
 	}
 
