@@ -10,4 +10,7 @@
     <preference for="OrderInterface" type="OrderClass" />
     <preference for="ShippingInterface" type="ShippingClass" />
     <preference for="SpecialInterface" type="SpecialClass" />
+    <type name="PTestClass">
+        <plugin name="update_ptest_class_for_logged_in_customer_group" type="UpdatePTestClass"/>
+    </type>
 </config>

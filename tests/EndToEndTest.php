@@ -32,19 +32,21 @@ final class EndToEndTest extends TestCase
         $this->assertEquals($output, $expectedOutput);
     }
 
+    //Consider di.xml here
     public function testPlugin(): void
     {
 
         $this->runFirst('PluginTestCase');
-        file_put_contents(__DIR__.'/../src/controller-url-map.txt',PHP_EOL.'TestClass::execute=>testurl' ,FILE_APPEND);
+        file_put_contents(__DIR__.'/../src/controller-url-map.txt',PHP_EOL.'PTestClass::execute=>testurl' ,FILE_APPEND);
+        
 
-        exec("php index.php 'TestPulgin::beforeTestMethod(TestClass \$subject)'", $output);
+        exec("php index.php 'UpdatePTestClass::beforePTestMethod'", $output);
 
         //cleanup code
         $lines = file(__DIR__.'/../src/controller-url-map.txt', FILE_IGNORE_NEW_LINES);
         array_pop($lines);
         file_put_contents(__DIR__.'/../src/controller-url-map.txt', join(PHP_EOL,$lines));
-        exec("rm -rf 'src/call-graphs/TestClass::execute.txt'");
+        exec("rm -rf 'src/call-graphs/PTestClass::execute.txt'");
 
 
         $expectedOutput = ["Array", "(", "    [0] => testurl",")"];
@@ -52,6 +54,7 @@ final class EndToEndTest extends TestCase
         $this->assertEquals($output, $expectedOutput);
     }
 
+    //Consider di.xml here
     public function testInterfaceDI(): void
     {
 
