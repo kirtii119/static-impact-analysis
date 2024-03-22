@@ -39,7 +39,7 @@ function run(string $input, string $methCallsFilename){
 // $input = $_GET['input'];
 // // $input="Acme\CartModule\Controller\Cart\Detail::execute";
 
-// $response = run($input);
+// $response = run($input, '');
 
 // // Set the response headers and send the response
 // header("Content-Type: application/json");
