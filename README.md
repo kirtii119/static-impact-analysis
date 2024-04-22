@@ -1,4 +1,4 @@
-****Static Impact Analysis for Magento:****
+#Static Impact Analysis for Magento:
 
 Impact analysis aims to identify and prioritize URLs for testing within a given pull request. This project focuses on finding URLs/ pages that are affected due to modifications in functions in the magento framework.
 
@@ -10,7 +10,7 @@ This can be done in two ways:
 Check out Spx Profile Analysis [here](https://github.com/kirtii119/impact--analysis-spx/tree/main_api)
 
 
-****Quick Start****
+#Quick Start
 
 Run this using the following steps:
 
