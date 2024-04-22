@@ -5,7 +5,7 @@ This can be done in two ways:
 1. Spx Profile Analysis - Covers url routes already visited and profiled
 2. Static Code Analysis - Aims at covering all possible cases
 
-Check out Spx Profile Analysis here : https://github.com/kirtii119/impact--analysis-spx/tree/main_api
+Check out Spx Profile Analysis [here](https://github.com/kirtii119/impact--analysis-spx/tree/main_api)
 
 Run this using the following steps:
 
