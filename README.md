@@ -1,4 +1,6 @@
-Impact analysis aims to identify and prioritize URLs for testing within a given pull request. This focuses on finding URLs/ pages that are affected due to modifications in functions.
+****Static Impact Analysis for Magento:****
+
+Impact analysis aims to identify and prioritize URLs for testing within a given pull request. This project focuses on finding URLs/ pages that are affected due to modifications in functions in the magento framework.
 
 This can be done in two ways:
 
@@ -7,11 +9,14 @@ This can be done in two ways:
 
 Check out Spx Profile Analysis [here](https://github.com/kirtii119/impact--analysis-spx/tree/main_api)
 
+
+****Quick Start****
+
 Run this using the following steps:
 
 - **Clone the repositories:**
-    - Clone the repository at https://github.com/kirtii119/static-impact-analysis.git. (referred as ‘main_dir’ ahead)
-    - Clone the phpstan-src repository into main_dir - https://github.com/phpstan/phpstan-src.git.
+    - Clone this repository (referred as ‘main_dir’ ahead)
+    - Clone the [phpstan-src](https://github.com/phpstan/phpstan-src.git.) repository into main_dir.
     - Make sure you have [composer](https://getcomposer.org/) setup.
     - Run these commands in main_dir to get php parser and to make sure our ‘App’ namespace (used for Rules and collectors) is autoloaded.
     
