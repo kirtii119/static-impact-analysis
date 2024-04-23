@@ -61,10 +61,9 @@
 - Type System : https://phpstan.org/developing-extensions/type-system
 - How Phpstan narrows down types : https://phpstan.org/writing-php-code/narrowing-types - **Most Important**
 - Php stan Blogs can really help : https://phpstan.org/blog
-- You MIGHT want to add a custom node resolver extension to override how stan converts *PHPDoc Type AST* into *PhpStan Type System. -* it’ll not be required directly in the current approach used but knowing that it exists might be helpful ahead, specially to handle complex types.
-    - https://phpstan.org/developing-extensions/custom-phpdoc-types
+- You MIGHT want to add a custom node resolver extension to override how stan converts *PHPDoc Type AST* into *PhpStan Type System. -* it’ll not be required directly in the current approach used but knowing that it exists might be helpful ahead, specially to handle complex types. https://phpstan.org/developing-extensions/custom-phpdoc-types
 
-Though this functionality completes the flow of the project, there are a few problems which need to be resolved. Check them out in the [Problems Section](https://www.notion.so/Problems-ef9afa103fae422ea2add99506a61aa4?pvs=21).
+Though this functionality completes the flow of the project, there are problems which need to be resolved. Check them out in the [Problems Section](https://github.com/kirtii119/static-impact-analysis/blob/master/docs/Problems.md).
 
 ## Additional Functionality
 
@@ -72,10 +71,10 @@ Though this functionality completes the flow of the project, there are a few pro
     
     These rules & collectors can be found in the `app` directory
     
-    Check [Return Type Check](https://www.notion.so/Problems-ef9afa103fae422ea2add99506a61aa4?pvs=21) in the [Problems Section](https://www.notion.so/Problems-ef9afa103fae422ea2add99506a61aa4?pvs=21) to understand this.
+    Check [Return Type Check](REPLACE THIS) in the [Problems Section](https://github.com/kirtii119/static-impact-analysis/blob/master/docs/Problems.md) to understand this.
     
 - Interface to Class Mappings:
     - The `interfaceCollector` does the job of storing classes and the interfaces they implement in the file `run-results/InterfaceCollected.txt`
     - `trialFiles/mapInterfacetoClass` takes InterfaceCollected.txt as input and creates a map of interfaces to the classes which implement the respective interface in a file present at `run-results/MapinterfaceClass.json`
     
-    Check the [calls to methods of an interface](https://www.notion.so/Problems-ef9afa103fae422ea2add99506a61aa4?pvs=21) problem in the [Problems Section](https://www.notion.so/Problems-ef9afa103fae422ea2add99506a61aa4?pvs=21).
+    Check the [calls to methods of an interface](REPLACE THIS) problem in the [Problems Section](https://github.com/kirtii119/static-impact-analysis/blob/master/docs/Problems.md).
