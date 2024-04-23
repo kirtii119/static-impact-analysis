@@ -1,5 +1,6 @@
 # Demo Module
-This is a Demo module built to understand the functionality of the project better. Demo module is stored at tests/testModule/Acme. You can cut paste this into app/code directory of magento to run it. (You need to have meagento set up for this)
+There is a Demo module built to understand the functionality of the project better. Demo module is stored at tests/testModule/Acme. You can cut paste this into app/code directory of magento to run it. (You need to have magento set up for this)
+![Demo drawio](https://github.com/kirtii119/static-impact-analysis/assets/85681285/64ab37b5-03e1-4263-ace5-84b90b69850f)
 
 ![Demo.drawio.svg](https://prod-files-secure.s3.us-west-2.amazonaws.com/25a6bc0b-1c18-4d82-b275-0aaf39fe05f6/8f08002c-af64-44b2-b796-0470d4d61fbf/Demo.drawio.svg)
 
