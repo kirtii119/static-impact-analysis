@@ -7,7 +7,7 @@
 - Mappings are stored in the form className::MethodName ⇒ MethCallClassName::MethCall. All the calls are dumped into .txt files which can be found at `src/call-mappings`.
     - Magento vendor directory scan for method calls is already stored at `run-results/meth-calls-main.txt`. Re-running this on magento is a time consuming task.
     - Call-mappings are intermediate and will be wiped off after every run (if you run with generate call mappings script or run tests). If you have created any call mappings that you want to save make sure to shift it to a new file in run-results or setup file versioning.
-- The `phpstan.neon` file (located at the repository root) configures these collectors. Make sure it’s rightly configured according to your needs everytime you use phpstan. Fot this step you’ll just need MethodCallCollector, FunctionCallCollector, StaticMethodCallCollector uncommented. Refer https://phpstan.org/config-reference
+- The `phpstan.neon` file (located at the repository root) configures these collectors. Make sure it’s rightly configured according to your needs everytime you use phpstan. For this step you’ll just need MethodCallCollector, FunctionCallCollector, StaticMethodCallCollector uncommented. Refer https://phpstan.org/config-reference
 
 **Notes for phpstan: (These are observations - not facts)**
 
