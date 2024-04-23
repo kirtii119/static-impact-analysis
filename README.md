@@ -60,3 +60,19 @@ Run the project using the following steps:
     - By default it uses mappings at `src/call-mappings`. Currently this is setup for method calls & static method calls. You can add function calls if needed.
     
     This command creates call-graphs as intermediary which can be found at `src/call-graphs`. Refer to [Functionality section](https://www.notion.so/Functionality-2d71be131fcf42e8b6d60a740a6ca8ce?pvs=21) to learn more about this.
+
+# Documentation
+1. Introduction
+2. Functionality
+3. Problems
+4. Demo Module
+
+# References
+
+https://github.com/nikic/PHP-Parser
+
+https://github.com/phpstan/phpstan-src.git
+
+https://phpstan.org/user-guide/getting-started
+
+https://docs.phpunit.de/en/11.0/installation.html
