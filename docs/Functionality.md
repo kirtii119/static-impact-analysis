@@ -71,10 +71,10 @@ Though this functionality completes the flow of the project, there are problems 
     
     These rules & collectors can be found in the `app` directory
     
-    Check [Return Type Check](REPLACE THIS) in the [Problems Section](https://github.com/kirtii119/static-impact-analysis/blob/master/docs/Problems.md) to understand this.
+    Check 'Return Type Check' in the [Problems Section](https://github.com/kirtii119/static-impact-analysis/blob/master/docs/Problems.md) to understand this.
     
 - Interface to Class Mappings:
     - The `interfaceCollector` does the job of storing classes and the interfaces they implement in the file `run-results/InterfaceCollected.txt`
     - `trialFiles/mapInterfacetoClass` takes InterfaceCollected.txt as input and creates a map of interfaces to the classes which implement the respective interface in a file present at `run-results/MapinterfaceClass.json`
     
-    Check the [calls to methods of an interface](REPLACE THIS) problem in the [Problems Section](https://github.com/kirtii119/static-impact-analysis/blob/master/docs/Problems.md).
+    Check 'Call to methods of interface' problem in Collector level Problems in the [Problems Section](https://github.com/kirtii119/static-impact-analysis/blob/master/docs/Problems.md).

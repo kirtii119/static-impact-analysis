@@ -40,7 +40,7 @@ Run the project using the following steps:
         
         **Note:** 
         
-        1. When you run the command from phpstan directly, new results are appended to the old ones in the `src/call-mappings` files. Make sure to clear these files before any new execution. Also, in this case, previous cache is not cleared, so collectors will not always yeild the results you expect. Check [Notes for phpstan](REPLACE THIS) in the [Functionality Section](https://github.com/kirtii119/static-impact-analysis/blob/master/docs/Functionality.md)
+        1. When you run the command from phpstan directly, new results are appended to the old ones in the `src/call-mappings` files. Make sure to clear these files before any new execution. Also, in this case, previous cache is not cleared, so collectors will not always yeild the results you expect. Check 'Notes for phpstan' in the [Functionality Section](https://github.com/kirtii119/static-impact-analysis/blob/master/docs/Functionality.md)
         2. You can try this on our demo module: `tests/testModule/Acme`
     
     Don’t forget to check phpstan.neon if this didn’t work as expected. More details about this are mentioned in the  [Functionality section](https://github.com/kirtii119/static-impact-analysis/blob/master/docs/Functionality.md) .
