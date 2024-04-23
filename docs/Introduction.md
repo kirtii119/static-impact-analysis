@@ -4,7 +4,7 @@ Static Impact Analysis is mainly divided into 3 parts:
 
 1. **Analysing files** to create a mapping from functions to function calls, method calls and static method calls using phpstan Collectors. (Refer php-parser ahead to understand the difference between the 3 types of calls)
     - This mapping looks like
-          - className::FunctionName ⇒ MethodCallClassName::MethodCall
+        -  className::FunctionName ⇒ MethodCallClassName::MethodCall
     
     eg:
     
