@@ -11,26 +11,29 @@ Static Impact Analysis is mainly divided into 3 parts:
     **Code:**
     
     ```php
-    	class TestClass{
-    	protected str;
+    	class TestClass
+        {
+        	protected str;
     
-    		public function echoHi(){
-    		$this->str = "geet";
-    		return  "Hi";
-    }
-      
-        public function getStr() {
-    				$this->echoHi();
-            return $this->str;
-    				}
-    				
+            public function echoHi()
+            {
+        		$this->str = "geet";
+        		return  "Hi";
+            }
+          
+            public function getStr()
+            {
+                $this->echoHi();
+                return $this->str;
+            }				
         }
-    
-    }
-    class Tester{
-        function doSomethingUseful(TestClass $obj){
+
+    class Tester
+    {
+        function doSomethingUseful(TestClass $obj)
+        {
             $var = $obj->getStr();
-    				echo $var
+            echo $var
         }
     }
     ```
