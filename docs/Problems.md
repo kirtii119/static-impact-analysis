@@ -72,9 +72,6 @@ We have divided tests into 3 types
 2. These modify call-mapping-results, because it is considered that call-mappings are intermediate and will be wiped off after every run. If you have created any call mappings that you want to save make sure to shift it to a new file in run-results or setup file versioning. 
 
 
-
-We tried listing these to get a better view of the project, keep appending to reach an exhaustive list
-
 **Track functions by tracing/ keeping track of:**
 
 1. method calls
@@ -84,3 +81,5 @@ We tried listing these to get a better view of the project, keep appending to re
 5. inheritance - only constructor 
 6. XML files to see what is fired
 7. Plugins
+
+We tried listing these to get a better view of the project, keep appending to reach an exhaustive list
