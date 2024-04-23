@@ -12,7 +12,8 @@ Check out Spx Profile Analysis [here](https://github.com/kirtii119/impact--analy
 
 # Quick Start
 
-Run this using the following steps:
+Run the project using the following steps:
+(Refer to [Functionality section](https://www.notion.so/Functionality-2d71be131fcf42e8b6d60a740a6ca8ce?pvs=21) to understand more about the working)
 
 - **Clone the repositories:**
     - Clone this repository (referred as ‘main_dir’ ahead)
@@ -31,7 +32,10 @@ Run this using the following steps:
         ```bash
         php src/generate-new-mappings.php <filepath>
         ```
-        
+        Alternatively, you can also run: 
+        ```bash
+        phpstan-src/bin/phpstan analyse <filepath>
+        ```
         Results are generated in `src/call-mappings`. Three (or less) files are generated as a result: func-calls.txt, meth-calls.txt and static-calls.txt.
         
         **Note:** 
@@ -43,8 +47,7 @@ Run this using the following steps:
     
 - **Running the call graph builder:**
     - Update the `src/controller-url-map.txt` with the <controller> ⇒ <URL> mapping your project has. The controllers mentioned here will act as possible entry points. It currently contains the mappings corresponsing to the demo module.
-    - Run this command in the mai
-    - ]n_dir with the exact function-name in the format “className::functionName”. It will output all the URLs affected by the corresponding function.
+    - Run this command in the main_dir with the exact function-name in the format “className::functionName”. It will output all the URLs affected by the corresponding function.
     
     ```bash
     php index.php '<function-name>'
